@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { View, ScrollView, Pressable, Platform, Alert } from 'react-native';
+import React from 'react';
+import { View, ScrollView, Pressable, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Stack, useRouter } from 'expo-router';
-import { Bell, ShieldAlert, CheckCircle, FileText, ChevronLeft, Send } from 'lucide-react-native';
-import * as Notifications from 'expo-notifications';
-import * as Device from 'expo-device';
+import { Stack } from 'expo-router';
+import { ShieldAlert, CheckCircle, FileText, Send } from 'lucide-react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 
 import { Typography } from '@/components/ui/Typography';
 import { Icon } from '@/components/ui/Icon';
-import { GlassCard } from '@/components/ui/GlassCard';
-
-Notifications.setNotificationHandler({
-  handleNotification: async () => ({
-    shouldShowAlert: true,
-    shouldPlaySound: true,
-    shouldSetBadge: true,
-    shouldShowBanner: true,
-    shouldShowList: true,
-  }),
-});
 
 const MOCK_NOTIFICATIONS = [
   { id: '1', title: 'Application Approved! 🎉', message: 'Your State Free Laptop Scheme application has been approved. Check details.', time: '2 mins ago', type: 'success', icon: CheckCircle, color: '#34C759', route: '/application/1' },
@@ -28,56 +15,11 @@ const MOCK_NOTIFICATIONS = [
 ];
 
 export default function NotificationsScreen() {
-  const [expoPushToken, setExpoPushToken] = useState('');
-
-  useEffect(() => {
-    registerForPushNotificationsAsync().then(token => {
-      if (token) setExpoPushToken(token);
-    });
-  }, []);
-
-  async function registerForPushNotificationsAsync() {
-    let token;
-
-    if (Platform.OS === 'android') {
-      await Notifications.setNotificationChannelAsync('default', {
-        name: 'default',
-        importance: Notifications.AndroidImportance.MAX,
-        vibrationPattern: [0, 250, 250, 250],
-        lightColor: '#FF231F7C',
-      });
-    }
-
-    if (Device.isDevice) {
-      const { status: existingStatus } = await Notifications.getPermissionsAsync();
-      let finalStatus = existingStatus;
-      if (existingStatus !== 'granted') {
-        const { status } = await Notifications.requestPermissionsAsync();
-        finalStatus = status;
-      }
-      if (finalStatus !== 'granted') {
-        Alert.alert('Failed to get push token for push notification!');
-        return;
-      }
-      try {
-        const projectId = 'your-project-id'; // To replace with actual project ID if needed
-        // token = (await Notifications.getExpoPushTokenAsync({ projectId })).data;
-      } catch (e) {
-        // Fallback for demo
-      }
-    }
-    return token;
-  }
-
-  async function sendTestNotification() {
-    await Notifications.scheduleNotificationAsync({
-      content: {
-        title: "Sangwari AI Update 🌟",
-        body: "Your complaint status has been updated to 'Resolved'.",
-        data: { data: 'goes here' },
-      },
-      trigger: null, // Send immediately
-    });
+  function sendTestNotification() {
+    Alert.alert(
+      "Sangwari AI Update 🌟",
+      "Your complaint status has been updated to 'Resolved'."
+    );
   }
 
   return (
@@ -95,7 +37,7 @@ export default function NotificationsScreen() {
               Test Push Notifications
             </Typography>
             <Typography variant="caption" className="text-[#007AFF]/80">
-              Tap here to simulate receiving a live push notification from Sangwari AI.
+              Tap here to simulate receiving a live push notification from Sangwari AI via an alert.
             </Typography>
           </View>
           <View className="bg-[#007AFF] w-10 h-10 rounded-full items-center justify-center ml-3 shadow-sm">

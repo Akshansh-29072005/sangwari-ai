@@ -2,8 +2,8 @@ import React from 'react';
 import { View, Pressable, ViewStyle } from 'react-native';
 import { AlertTriangle, RefreshCcw } from 'lucide-react-native';
 
-import { Typography } from '@/components/ui/Typography';
-import { Icon } from '@/components/ui/Icon';
+import { Typography } from './Typography';
+import { Icon } from './Icon';
 
 export interface ErrorViewProps {
   title?: string;
