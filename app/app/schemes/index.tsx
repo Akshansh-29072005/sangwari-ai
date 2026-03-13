@@ -1,51 +1,52 @@
-import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ArrowLeft, CheckCircle2, ChevronRight, FileText, Search } from 'lucide-react-native';
+import { useTheme } from '../../context/ThemeContext';
 
 export default function SchemesListScreen() {
   const router = useRouter();
+  const { isDark, colors } = useTheme();
 
   const schemes = [
-    { id: '1', name: 'Kisan Samman Nidhi', desc: 'Financial support for farmers', match: '98%', status: 'eligible' },
-    { id: '2', name: 'Mitanin Yojana', desc: 'Health worker support program', match: '85%', status: 'eligible' },
-    { id: '3', name: 'PM Awas Yojana', desc: 'Housing for rural & urban poor', match: '70%', status: 'eligible' }
+    { id: '1', name: 'Kisan Samman Nidhi', desc: 'Financial support for farmers', match: '98%' },
+    { id: '2', name: 'Mitanin Yojana', desc: 'Health worker support program', match: '85%' },
+    { id: '3', name: 'PM Awas Yojana', desc: 'Housing for rural & urban poor', match: '70%' },
   ];
 
   return (
-    <View className="flex-1 bg-[#F2F2F7]">
-      <View className="px-6 py-4 bg-white flex-row items-center shadow-sm z-10 pt-12">
-        <TouchableOpacity onPress={() => router.back()} className="mr-4">
-          <ArrowLeft size={24} color="#374151" />
+    <View style={{ flex: 1, backgroundColor: colors.bg }}>
+      <View style={{ paddingHorizontal: 24, paddingVertical: 16, backgroundColor: colors.headerBg, flexDirection: 'row', alignItems: 'center', shadowColor: '#000', shadowOpacity: 0.05, shadowRadius: 4, elevation: 2, zIndex: 10, paddingTop: 48 }}>
+        <TouchableOpacity onPress={() => router.back()} style={{ marginRight: 16 }}>
+          <ArrowLeft size={24} color={colors.text} />
         </TouchableOpacity>
-        <Text className="text-xl font-bold text-gray-900">Eligible Schemes</Text>
+        <Text style={{ fontSize: 20, fontWeight: '700', color: colors.text }}>Eligible Schemes</Text>
       </View>
 
-      <ScrollView className="flex-1 p-6">
-        <View className="bg-white rounded-xl mb-6 flex-row items-center border border-gray-200 px-4 py-3">
-          <Search size={20} color="#9CA3AF" />
-          <Text className="text-gray-400 ml-3">Search schemes...</Text>
+      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ padding: 24 }}>
+        <View style={{ backgroundColor: colors.card, borderRadius: 12, marginBottom: 20, flexDirection: 'row', alignItems: 'center', borderWidth: 1, borderColor: colors.cardBorder, paddingHorizontal: 16, paddingVertical: 12 }}>
+          <Search size={20} color={colors.textMuted} />
+          <Text style={{ color: colors.textMuted, marginLeft: 12, fontSize: 15 }}>Search schemes...</Text>
         </View>
 
-        <Text className="text-lg font-bold text-gray-900 mb-4">Recommended for You</Text>
+        <Text style={{ fontSize: 18, fontWeight: '700', color: colors.text, marginBottom: 16 }}>Recommended for You</Text>
 
         {schemes.map((s, index) => (
-          <TouchableOpacity 
-            key={index} 
-            className="bg-white rounded-2xl p-5 mb-4 shadow-sm border border-gray-100 flex-row items-center justify-between"
+          <TouchableOpacity
+            key={index}
+            style={{ backgroundColor: colors.card, borderRadius: 16, padding: 20, marginBottom: 14, borderWidth: 1, borderColor: colors.cardBorder, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}
             onPress={() => router.push(`/schemes/${s.id}`)}
           >
-            <View className="flex-1 mr-4">
-              <Text className="text-base font-bold text-gray-900 mb-1">{s.name}</Text>
-              <Text className="text-sm text-gray-500 mb-2">{s.desc}</Text>
-              
-              <View className="flex-row items-center">
-                <View className="bg-green-100 px-2 py-1 rounded flex-row items-center">
+            <View style={{ flex: 1, marginRight: 16 }}>
+              <Text style={{ fontSize: 16, fontWeight: '700', color: colors.text, marginBottom: 4 }}>{s.name}</Text>
+              <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 8 }}>{s.desc}</Text>
+              <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <View style={{ backgroundColor: isDark ? '#064E3B' : '#D1FAE5', paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6, flexDirection: 'row', alignItems: 'center' }}>
                   <CheckCircle2 size={12} color="#16A34A" />
-                  <Text className="text-xs font-bold text-green-700 ml-1">Match: {s.match}</Text>
+                  <Text style={{ fontSize: 11, fontWeight: '700', color: isDark ? '#6EE7B7' : '#065F46', marginLeft: 4 }}>Match: {s.match}</Text>
                 </View>
               </View>
             </View>
-            <ChevronRight size={20} color="#9CA3AF" />
+            <ChevronRight size={20} color={colors.textMuted} />
           </TouchableOpacity>
         ))}
       </ScrollView>
