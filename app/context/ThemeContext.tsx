@@ -3,12 +3,24 @@ import { Platform } from 'react-native';
 
 type Theme = 'light' | 'dark';
 
+interface Colors {
+  bg: string;
+  card: string;
+  cardBorder: string;
+  text: string;
+  textSecondary: string;
+  textMuted: string;
+  headerBg: string;
+  inputBg: string;
+  statusBar: 'dark' | 'light';
+}
+
 interface ThemeContextType {
   theme: Theme;
   isDark: boolean;
   toggleTheme: () => void;
   setTheme: (t: Theme) => void;
-  colors: typeof lightColors;
+  colors: Colors;
 }
 
 const lightColors = {
