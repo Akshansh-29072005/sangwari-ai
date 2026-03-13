@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { User, Mic, Send, FileText, CheckCircle2, Clock, X, MessageCircle, AlertTriangle, Search, Volume2 } from 'lucide-react-native';
 import { useState, useRef, useEffect } from 'react';
 import { useTheme } from '../../context/ThemeContext';
+import { useI18n } from '../../context/I18nContext';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 
@@ -18,6 +19,7 @@ type VoiceState = 'idle' | 'listening' | 'processing' | 'responding';
 export default function HomeScreen() {
   const router = useRouter();
   const { isDark, colors } = useTheme();
+  const { t } = useI18n();
   const [showRegistered, setShowRegistered] = useState(false);
   const [complaintText, setComplaintText] = useState('');
   const inputRef = useRef<TextInput>(null);
@@ -111,27 +113,27 @@ export default function HomeScreen() {
         <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingHorizontal: 24, paddingTop: 16, paddingBottom: 8 }} keyboardShouldPersistTaps="handled">
 
           {/* Schemes Summary Grid */}
-          <Text style={{ fontSize: 18, fontWeight: '700', color: colors.text, marginBottom: 10 }}>My Schemes Dashboard</Text>
+          <Text style={{ fontSize: 18, fontWeight: '700', color: colors.text, marginBottom: 10 }}>{t('my_schemes')}</Text>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             <TouchableOpacity style={{ backgroundColor: colors.card, borderRadius: 16, padding: 14, flex: 1, marginRight: 8, borderWidth: 1, borderColor: colors.cardBorder, height: 110, justifyContent: 'space-between' }} onPress={() => router.push('/schemes')}>
               <FileText size={26} color="#2563EB" />
               <View>
                 <Text style={{ fontSize: 26, fontWeight: '700', color: colors.text }}>12</Text>
-                <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: '500', marginTop: 2 }}>Eligible Schemes</Text>
+                <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: '500', marginTop: 2 }}>{t('eligible_schemes')}</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity style={{ backgroundColor: colors.card, borderRadius: 16, padding: 14, flex: 1, marginLeft: 8, borderWidth: 1, borderColor: colors.cardBorder, height: 110, justifyContent: 'space-between' }} onPress={() => setShowRegistered(true)}>
               <CheckCircle2 size={26} color="#16A34A" />
               <View>
                 <Text style={{ fontSize: 26, fontWeight: '700', color: colors.text }}>3</Text>
-                <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: '500', marginTop: 2 }}>Registered</Text>
+                <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: '500', marginTop: 2 }}>{t('registered')}</Text>
               </View>
             </TouchableOpacity>
           </View>
 
           {/* Application Status */}
           <View style={{ backgroundColor: colors.card, borderRadius: 16, padding: 16, marginTop: 14, borderWidth: 1, borderColor: colors.cardBorder }}>
-            <Text style={{ fontSize: 16, fontWeight: '700', color: colors.text, marginBottom: 12 }}>Application Status</Text>
+            <Text style={{ fontSize: 16, fontWeight: '700', color: colors.text, marginBottom: 12 }}>{t('application_status')}</Text>
             <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
               <View style={{ width: 36, height: 36, backgroundColor: isDark ? '#1E3A5F' : '#DBEAFE', borderRadius: 18, alignItems: 'center', justifyContent: 'center', marginRight: 12 }}>
                 <CheckCircle2 size={18} color="#2563EB" />
@@ -154,7 +156,7 @@ export default function HomeScreen() {
 
           {/* Grievance Tracking */}
           <View style={{ backgroundColor: colors.card, borderRadius: 16, padding: 16, marginTop: 14, borderWidth: 1, borderColor: colors.cardBorder }}>
-            <Text style={{ fontSize: 16, fontWeight: '700', color: colors.text, marginBottom: 12 }}>Grievance Tracking</Text>
+            <Text style={{ fontSize: 16, fontWeight: '700', color: colors.text, marginBottom: 12 }}>{t('grievance_tracking')}</Text>
             <View style={{ backgroundColor: isDark ? '#3B1010' : '#FEF2F2', borderRadius: 12, padding: 12, borderWidth: 1, borderColor: isDark ? '#5C1E1E' : '#FECACA' }}>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
                 <Text style={{ fontWeight: '600', color: isDark ? '#FCA5A5' : '#991B1B', fontSize: 13 }}>#GRV-2024-892</Text>
@@ -174,7 +176,7 @@ export default function HomeScreen() {
             <TextInput
               ref={inputRef}
               style={{ flex: 1, backgroundColor: isDark ? colors.inputBg : '#FFFFFF', borderRadius: 20, paddingHorizontal: 16, paddingVertical: 12, minHeight: 48, maxHeight: 100, color: colors.text, marginRight: 12, fontSize: 15, borderWidth: 1, borderColor: isDark ? colors.cardBorder : '#D1D5DB' }}
-              placeholder="Ask a question or file a complaint..."
+              placeholder={t('ask_question')}
               placeholderTextColor={colors.textMuted}
               multiline
               value={complaintText}
@@ -209,7 +211,7 @@ export default function HomeScreen() {
         <Pressable style={{ flex: 1, backgroundColor: 'rgba(0,0,0,0.4)', justifyContent: 'flex-end' }} onPress={() => setShowRegistered(false)}>
           <View style={{ backgroundColor: colors.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 24, maxHeight: '60%' }}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
-              <Text style={{ fontSize: 20, fontWeight: '700', color: colors.text }}>Registered Schemes</Text>
+              <Text style={{ fontSize: 20, fontWeight: '700', color: colors.text }}>{t('registered_schemes')}</Text>
               <TouchableOpacity onPress={() => setShowRegistered(false)}>
                 <X size={24} color={colors.textSecondary} />
               </TouchableOpacity>
@@ -254,20 +256,20 @@ export default function HomeScreen() {
               {/* Listening State */}
               {voiceState === 'listening' && (
                 <View style={{ alignItems: 'center' }}>
-                  <Text style={{ fontSize: 22, fontWeight: '600', color: colors.text, marginBottom: 40, textAlign: 'center' }}>Listening...</Text>
+                  <Text style={{ fontSize: 22, fontWeight: '600', color: colors.text, marginBottom: 40, textAlign: 'center' }}>{t('listening')}</Text>
                   <Animated.View style={{ transform: [{ scale: pulseAnim }] }}>
                     <View style={{ width: 120, height: 120, borderRadius: 60, backgroundColor: '#2563EB', alignItems: 'center', justifyContent: 'center', shadowColor: '#2563EB', shadowOpacity: 0.5, shadowRadius: 30, elevation: 10 }}>
                       <Mic size={48} color="white" />
                     </View>
                   </Animated.View>
-                  <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 40, textAlign: 'center' }}>Speak now — say anything{'\n'}in Hindi or English</Text>
+                  <Text style={{ fontSize: 14, color: colors.textMuted, marginTop: 40, textAlign: 'center' }}>{t('speak_now')}</Text>
                 </View>
               )}
 
               {/* Processing State */}
               {voiceState === 'processing' && (
                 <View style={{ alignItems: 'center' }}>
-                  <Text style={{ fontSize: 22, fontWeight: '600', color: colors.text, marginBottom: 12, textAlign: 'center' }}>Understanding...</Text>
+                  <Text style={{ fontSize: 22, fontWeight: '600', color: colors.text, marginBottom: 12, textAlign: 'center' }}>{t('understanding')}</Text>
                   <View style={{ backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6', paddingHorizontal: 24, paddingVertical: 16, borderRadius: 16, marginBottom: 30, maxWidth: '100%' }}>
                     <Text style={{ fontSize: 16, color: colors.text, textAlign: 'center', fontStyle: 'italic' }}>"{transcription}"</Text>
                   </View>
@@ -310,13 +312,13 @@ export default function HomeScreen() {
                       style={{ flex: 1, backgroundColor: '#2563EB', paddingVertical: 14, borderRadius: 12, alignItems: 'center' }}
                       onPress={() => { closeVoiceAssistant(); router.push('/schemes'); }}
                     >
-                      <Text style={{ color: 'white', fontWeight: '600', fontSize: 14 }}>Show Schemes</Text>
+                      <Text style={{ color: 'white', fontWeight: '600', fontSize: 14 }}>{t('show_schemes')}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                       style={{ flex: 1, backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6', paddingVertical: 14, borderRadius: 12, alignItems: 'center', borderWidth: 1, borderColor: colors.cardBorder }}
                       onPress={openVoiceAssistant}
                     >
-                      <Text style={{ color: colors.text, fontWeight: '600', fontSize: 14 }}>Ask Again</Text>
+                      <Text style={{ color: colors.text, fontWeight: '600', fontSize: 14 }}>{t('ask_again')}</Text>
                     </TouchableOpacity>
                   </View>
                 </View>

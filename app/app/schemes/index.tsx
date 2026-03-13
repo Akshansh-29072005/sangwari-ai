@@ -3,6 +3,7 @@ import { useRouter } from 'expo-router';
 import { ArrowLeft, CheckCircle2, ChevronRight, XCircle, Search, X } from 'lucide-react-native';
 import { useState, useRef, useCallback } from 'react';
 import { useTheme } from '../../context/ThemeContext';
+import { useI18n } from '../../context/I18nContext';
 
 interface Scheme {
   id: string;
@@ -32,6 +33,7 @@ const allSchemes: Scheme[] = [
 export default function SchemesListScreen() {
   const router = useRouter();
   const { isDark, colors } = useTheme();
+  const { t } = useI18n();
   const [query, setQuery] = useState('');
   const [isSearching, setIsSearching] = useState(false);
   const inputRef = useRef<TextInput>(null);
@@ -116,12 +118,12 @@ export default function SchemesListScreen() {
           {s.eligible ? (
             <View style={{ backgroundColor: isDark ? '#064E3B' : '#D1FAE5', paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6, flexDirection: 'row', alignItems: 'center' }}>
               <CheckCircle2 size={12} color="#16A34A" />
-              <Text style={{ fontSize: 11, fontWeight: '700', color: isDark ? '#6EE7B7' : '#065F46', marginLeft: 4 }}>Eligible • Match {s.match}</Text>
+              <Text style={{ fontSize: 11, fontWeight: '700', color: isDark ? '#6EE7B7' : '#065F46', marginLeft: 4 }}>{t('eligible')} • {t('match')} {s.match}</Text>
             </View>
           ) : (
             <View style={{ backgroundColor: isDark ? '#3B1010' : '#FEF2F2', paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6, flexDirection: 'row', alignItems: 'center' }}>
               <XCircle size={12} color={isDark ? '#FCA5A5' : '#DC2626'} />
-              <Text style={{ fontSize: 11, fontWeight: '700', color: isDark ? '#FCA5A5' : '#991B1B', marginLeft: 4 }}>Not Eligible</Text>
+              <Text style={{ fontSize: 11, fontWeight: '700', color: isDark ? '#FCA5A5' : '#991B1B', marginLeft: 4 }}>{t('not_eligible')}</Text>
             </View>
           )}
         </View>
@@ -139,7 +141,7 @@ export default function SchemesListScreen() {
           <ArrowLeft size={24} color={colors.text} />
         </TouchableOpacity>
         <Text style={{ fontSize: 20, fontWeight: '700', color: colors.text }}>
-          {isSearchActive ? 'Search Results' : 'Eligible Schemes'}
+          {isSearchActive ? t('search_results') : t('eligible_schemes')}
         </Text>
       </View>
 
@@ -150,7 +152,7 @@ export default function SchemesListScreen() {
           <TextInput
             ref={inputRef}
             style={{ flex: 1, paddingVertical: 12, paddingHorizontal: 10, fontSize: 15, color: colors.text }}
-            placeholder="Search all government schemes..."
+            placeholder={t('search_schemes')}
             placeholderTextColor={colors.textMuted}
             value={query}
             onChangeText={handleSearch}
@@ -165,7 +167,7 @@ export default function SchemesListScreen() {
 
         {/* Section Header */}
         {!isSearchActive && (
-          <Text style={{ fontSize: 16, fontWeight: '700', color: colors.text, marginBottom: 14 }}>Recommended for You</Text>
+          <Text style={{ fontSize: 16, fontWeight: '700', color: colors.text, marginBottom: 14 }}>{t('recommended')}</Text>
         )}
 
         {isSearchActive && !isSearching && (
@@ -190,7 +192,7 @@ export default function SchemesListScreen() {
         {isSearching && (
           <View style={{ paddingVertical: 40, alignItems: 'center' }}>
             <ActivityIndicator size="large" color="#2563EB" />
-            <Text style={{ color: colors.textMuted, marginTop: 12, fontSize: 13 }}>Searching schemes...</Text>
+            <Text style={{ color: colors.textMuted, marginTop: 12, fontSize: 13 }}>{t('searching')}</Text>
           </View>
         )}
 
@@ -201,8 +203,8 @@ export default function SchemesListScreen() {
         {isSearchActive && !isSearching && searchResults.length === 0 && (
           <View style={{ paddingVertical: 40, alignItems: 'center' }}>
             <Search size={40} color={colors.textMuted} />
-            <Text style={{ color: colors.text, fontWeight: '600', fontSize: 16, marginTop: 16 }}>No schemes found</Text>
-            <Text style={{ color: colors.textSecondary, fontSize: 13, marginTop: 4, textAlign: 'center' }}>Try different keywords like{'\n'}"pension", "housing" or "health"</Text>
+            <Text style={{ color: colors.text, fontWeight: '600', fontSize: 16, marginTop: 16 }}>{t('no_schemes_found')}</Text>
+            <Text style={{ color: colors.textSecondary, fontSize: 13, marginTop: 4, textAlign: 'center' }}>{t('try_keywords')}</Text>
           </View>
         )}
       </ScrollView>

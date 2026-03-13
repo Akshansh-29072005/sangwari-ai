@@ -32,4 +32,15 @@ export const userRoutes = {
       method: 'PUT',
       body: JSON.stringify({ language }),
     }),
+
+  /** Upload profile picture (base64 encoded) */
+  uploadProfilePic: (base64Data: string, mimeType: string) =>
+    apiFetch('/user/profile-pic', {
+      method: 'POST',
+      body: JSON.stringify({ data: base64Data, mime_type: mimeType }),
+    }),
+
+  /** Get profile picture URL */
+  getProfilePic: () =>
+    apiFetch('/user/profile-pic'),
 };
