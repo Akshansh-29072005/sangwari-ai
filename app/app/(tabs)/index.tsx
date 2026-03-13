@@ -112,7 +112,7 @@ export default function HomeScreen() {
           <View style={{ marginTop: 16, flexDirection: 'row', alignItems: 'flex-end' }}>
             <TextInput
               ref={inputRef}
-              style={{ flex: 1, backgroundColor: colors.inputBg, borderRadius: 20, paddingHorizontal: 16, paddingVertical: 12, minHeight: 48, maxHeight: 100, color: colors.text, marginRight: 12, fontSize: 15 }}
+              style={{ flex: 1, backgroundColor: isDark ? colors.inputBg : '#FFFFFF', borderRadius: 20, paddingHorizontal: 16, paddingVertical: 12, minHeight: 48, maxHeight: 100, color: colors.text, marginRight: 12, fontSize: 15, borderWidth: 1, borderColor: isDark ? colors.cardBorder : '#D1D5DB' }}
               placeholder="Ask a question or file a complaint..."
               placeholderTextColor={colors.textMuted}
               multiline
