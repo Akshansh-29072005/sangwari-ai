@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, TextInput, Modal, FlatList, Pressable, Image, ScrollView, KeyboardAvoidingView, Platform, Animated, Dimensions } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { User, Mic, Send, FileText, CheckCircle2, Clock, X, MessageCircle, AlertTriangle, Search, Volume2 } from 'lucide-react-native';
+import { User, Mic, Send, FileText, CheckCircle2, Clock, X, MessageCircle, AlertTriangle, Search, Volume2, Bell } from 'lucide-react-native';
 import { useState, useRef, useEffect } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import { useI18n } from '../../context/I18nContext';
@@ -104,6 +104,9 @@ export default function HomeScreen() {
           <Text style={{ fontSize: 20, fontWeight: '700', color: colors.text, letterSpacing: -0.3 }}>Sangwari AI</Text>
         </View>
         <View style={{ flex: 1 }} />
+        <TouchableOpacity style={{ backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6', padding: 8, borderRadius: 999, zIndex: 2, marginRight: 8 }} onPress={() => router.push('/notifications')}>
+          <Bell size={24} color={colors.textSecondary} />
+        </TouchableOpacity>
         <TouchableOpacity style={{ backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6', padding: 8, borderRadius: 999, zIndex: 2 }} onPress={() => router.push('/profile')}>
           <User size={24} color={colors.textSecondary} />
         </TouchableOpacity>
