@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { useColorScheme as useSystemColorScheme } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Platform } from 'react-native';
 
 type Theme = 'light' | 'dark';
 
@@ -46,18 +45,37 @@ const ThemeContext = createContext<ThemeContextType>({
 
 export const useTheme = () => useContext(ThemeContext);
 
+// Safe AsyncStorage wrapper that won't crash in Expo Go
+let AsyncStorageModule: any = null;
+async function getAsyncStorage() {
+  if (AsyncStorageModule) return AsyncStorageModule;
+  try {
+    const mod = await import('@react-native-async-storage/async-storage');
+    AsyncStorageModule = mod.default;
+    return AsyncStorageModule;
+  } catch {
+    return null;
+  }
+}
+
 export function ThemeProviderCustom({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<Theme>('light');
 
   useEffect(() => {
-    AsyncStorage.getItem('app_theme').then((val) => {
-      if (val === 'dark' || val === 'light') setThemeState(val);
+    getAsyncStorage().then((storage) => {
+      if (storage) {
+        storage.getItem('app_theme').then((val: string | null) => {
+          if (val === 'dark' || val === 'light') setThemeState(val);
+        }).catch(() => {});
+      }
     });
   }, []);
 
   const setTheme = (t: Theme) => {
     setThemeState(t);
-    AsyncStorage.setItem('app_theme', t);
+    getAsyncStorage().then((storage) => {
+      if (storage) storage.setItem('app_theme', t).catch(() => {});
+    });
   };
 
   const toggleTheme = () => {
