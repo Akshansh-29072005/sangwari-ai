@@ -26,4 +26,8 @@ export const schemeRoutes = {
   /** Get application status timeline */
   getApplicationStatus: () =>
     apiFetch('/schemes/applications/status'),
+
+  /** Search all schemes — returns results with eligible/not-eligible flags */
+  searchSchemes: (query: string) =>
+    apiFetch(`/schemes/search?q=${encodeURIComponent(query)}`),
 };
