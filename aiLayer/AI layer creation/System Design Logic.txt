@@ -1,0 +1,193 @@
+# System Design Logic
+
+## System Overview
+
+The platform consists of four major layers:
+
+1. User Interface Layer
+2. Backend API Layer
+3. AI/ML Intelligence Layer
+4. Data Layer
+
+---
+
+# Architecture
+
+User Interface
+↓
+FastAPI Backend
+↓
+AI Services + Database
+
+---
+
+# User Interface Layer
+
+Citizen Interface:
+
+* Complaint filing
+* Scheme discovery
+* Scheme application
+* Document upload
+* Status tracking
+
+Operator Interface (Future Web Portal Phase):
+
+* Complaint dashboard
+* Complaint forwarding
+* Scheme application review
+
+---
+
+# Backend Layer
+
+The backend acts as the system controller.
+
+Responsibilities:
+
+* Authentication
+* Request routing
+* AI model integration
+* Database interaction
+* Document processing
+
+Technology:
+FastAPI
+
+---
+
+# Data Layer
+
+PostgreSQL database stores structured information.
+
+Main tables:
+
+citizens
+citizen_master
+complaints
+schemes
+scheme_applications
+documents
+operators
+
+Citizen master acts as the central data store for citizen information.
+
+---
+
+# Complaint Processing Logic
+
+Step 1: User submits complaint
+Step 2: Text preprocessing
+Step 3: Multilingual embedding generation
+Step 4: Department classification using ML model
+Step 5: Resolution time prediction
+
+Output:
+
+* predicted_department
+* department_confidence
+* estimated_resolution_days
+
+Complaint stored in database.
+
+Operator reviews and forwards complaint.
+
+---
+
+# Scheme Recommendation Logic
+
+Citizen data from database is passed to eligibility model.
+
+Eligibility model outputs list of schemes user qualifies for.
+
+Eligible schemes are displayed to the user.
+
+---
+
+# Scheme Application Logic
+
+User selects scheme.
+
+System fetches required fields.
+
+Autofill logic:
+
+* Check citizen_master
+* Fill available fields
+* Ask user to fill missing fields
+
+User submits form.
+
+---
+
+# Document Processing Logic
+
+Step 1: User uploads document
+Step 2: OCR extracts text
+Step 3: Extract structured information
+Step 4: Update citizen_master if new data detected
+
+---
+
+# Application Verification Pipeline
+
+Verification steps:
+
+Rule Validation (e.g. uploaded Document fields matching Backend Data)
+↓
+Database Matching
+↓
+Anomaly Detection Model
+↓
+LLM Reasoning (e.g. Grok/Qwen analyzing mismatched text)
+
+Final Output:
+
+Approved / Rejected
+Confidence Score
+Rejection Reason
+
+Approved applications are forwarded to the operator web portal.
+
+Rejected applications return an immediate notification and clear "cause of rejection" to the citizen app, preventing submission of invalid forms.
+
+---
+
+# Operator Workflow (Future Web Portal)
+
+*Note: Operators will use a separate React/NextJS web application, distinct from the Citizen mobile app.*
+
+Operators access their web dashboard.
+
+They can:
+
+* View complaints
+* Edit department if necessary
+* Forward complaint
+
+Operators also review scheme applications with AI-generated approval confidence.
+
+---
+
+# Security Logic
+
+Authentication:
+
+Citizens → Mobile OTP + MPIN
+Operators → Employee ID + Password
+
+Documents stored securely.
+
+All AI outputs logged for traceability.
+
+---
+
+# Scalability Considerations
+
+Microservice-ready architecture.
+
+AI models separated from API logic.
+
+Database indexing for fast queries.
+
+Future integration with government systems possible.

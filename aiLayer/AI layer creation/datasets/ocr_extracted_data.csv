@@ -1,0 +1,601 @@
+ocr_id,citizen_id,document_type,extracted_data_json,confidence_score
+7001,1857,aadhaar,"{""name"": ""Kanta Yadav 9"", ""dob"": ""1983-05-27"", ""aadhar_number"": ""086542438269"", ""address"": ""380, Main Road, Balrampur"", ""gender"": ""Female""}",90
+7002,1141,aadhaar,"{""name"": ""Santosh Dewangan"", ""dob"": ""1989-09-13"", ""aadhar_number"": ""384309883920"", ""address"": ""729, Indira Nagar, Bilaspur"", ""gender"": ""Male""}",82
+7003,1012,domicile_certificate,"{""name"": ""Pratibha Soni 3"", ""dob"": ""1972-01-20"", ""district"": ""Raipur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 11}",77
+7004,1755,domicile_certificate,"{""name"": ""Rani Netam"", ""dob"": ""1959-04-25"", ""district"": ""Gariaband"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 18}",71
+7005,1803,aadhaar,"{""name"": ""Sunil Netam"", ""dob"": ""1941-06-27"", ""aadhar_number"": ""142943000375"", ""address"": ""663, Indira Nagar, Korba"", ""gender"": ""Male""}",81
+7006,1893,income_certificate,"{""name"": ""Prakash Pandey"", ""annual_income"": ""Colony 6"", ""district"": ""Narayanpur"", ""issued_by"": ""Tehsildar Narayanpur"", ""financial_year"": ""2024-25""}",75
+7007,1078,caste_certificate,"{""name"": ""Bimla Mishra 9"", ""caste"": ""OBC"", ""district"": ""Surajpur"", ""certificate_number"": ""CG/SUR/44705""}",75
+7008,1663,domicile_certificate,"{""name"": ""Brijlal Tandon 1"", ""dob"": ""1940-02-21"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 33}",90
+7009,1969,income_certificate,"{""name"": ""Suresh Yadav 7"", ""annual_income"": ""Colony 8"", ""district"": ""Narayanpur"", ""issued_by"": ""Tehsildar Narayanpur"", ""financial_year"": ""2024-25""}",93
+7010,1773,caste_certificate,"{""name"": ""Jyoti Porte"", ""caste"": ""ST"", ""district"": ""Gariaband"", ""certificate_number"": ""CG/GAR/36236""}",87
+7011,1272,income_certificate,"{""name"": ""Kanta Yadav"", ""annual_income"": ""Janjgir-Champa Nagar"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",80
+7012,1794,domicile_certificate,"{""name"": ""Santosh Dewangan"", ""dob"": ""1990-09-26"", ""district"": ""Bijapur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 12}",73
+7013,1853,domicile_certificate,"{""name"": ""Meena Lahre 4"", ""dob"": ""1954-06-04"", ""district"": ""Balrampur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 11}",91
+7014,1321,bank_passbook,"{""name"": ""Chanda Thakur"", ""account_number"": ""888430906407"", ""ifsc"": ""SBIN090099"", ""bank_name"": ""Bank of Baroda"", ""balance"": 71814}",93
+7015,1146,domicile_certificate,"{""name"": ""Anil Sharma"", ""dob"": ""1953-12-13"", ""district"": ""Balod"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 10}",87
+7016,1282,caste_certificate,"{""name"": ""Ganesh Markam 8"", ""caste"": ""General"", ""district"": ""Korba"", ""certificate_number"": ""CG/KOR/51233""}",76
+7017,1450,caste_certificate,"{""name"": ""Brijlal Tandon"", ""caste"": ""OBC"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/80164""}",74
+7018,1412,bank_passbook,"{""name"": ""Jyoti Porte"", ""account_number"": ""890820527378"", ""ifsc"": ""SBIN094037"", ""bank_name"": ""HDFC"", ""balance"": 97664}",71
+7019,1547,aadhaar,"{""name"": ""Santram Dhivar"", ""dob"": ""1938-05-21"", ""aadhar_number"": ""812421140868"", ""address"": ""214, Indira Nagar, Dantewada"", ""gender"": ""Male""}",78
+7020,1872,bank_passbook,"{""name"": ""Sunil Netam"", ""account_number"": ""825214243272"", ""ifsc"": ""SBIN050756"", ""bank_name"": ""SBI"", ""balance"": 48965}",95
+7021,1197,income_certificate,"{""name"": ""Geeta Sharma"", ""annual_income"": ""Village GU"", ""district"": ""Bemetara"", ""issued_by"": ""Tehsildar Bemetara"", ""financial_year"": ""2024-25""}",76
+7022,1356,bank_passbook,"{""name"": ""Poonam Kosare 5"", ""account_number"": ""750131081283"", ""ifsc"": ""SBIN040145"", ""bank_name"": ""Bank of Baroda"", ""balance"": 135001}",71
+7023,1711,income_certificate,"{""name"": ""Bharat Mandavi"", ""annual_income"": ""Colony 5"", ""district"": ""Raigarh"", ""issued_by"": ""Tehsildar Raigarh"", ""financial_year"": ""2024-25""}",91
+7024,1755,caste_certificate,"{""name"": ""Rani Netam"", ""caste"": ""SC"", ""district"": ""Gariaband"", ""certificate_number"": ""CG/GAR/94520""}",75
+7025,1521,bank_passbook,"{""name"": ""Ashok Patle"", ""account_number"": ""469497152440"", ""ifsc"": ""SBIN013672"", ""bank_name"": ""Canara Bank"", ""balance"": 83877}",71
+7026,1894,domicile_certificate,"{""name"": ""Meena Lahre"", ""dob"": ""1996-01-23"", ""district"": ""Rajnandgaon"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 37}",72
+7027,1600,domicile_certificate,"{""name"": ""Mukesh Yadav"", ""dob"": ""1967-07-06"", ""district"": ""Bilaspur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 18}",81
+7028,1266,caste_certificate,"{""name"": ""Chandra Shekhar"", ""caste"": ""General"", ""district"": ""Balod"", ""certificate_number"": ""CG/BAL/27237""}",81
+7029,1186,caste_certificate,"{""name"": ""Manju Tandon"", ""caste"": ""General"", ""district"": ""Kondagaon"", ""certificate_number"": ""CG/KON/72044""}",85
+7030,1501,domicile_certificate,"{""name"": ""Santram Dhivar"", ""dob"": ""2003-04-30"", ""district"": ""Janjgir-Champa"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 21}",79
+7031,1798,caste_certificate,"{""name"": ""Prakash Pandey"", ""caste"": ""General"", ""district"": ""Gariaband"", ""certificate_number"": ""CG/GAR/84120""}",82
+7032,1271,bank_passbook,"{""name"": ""Santosh Dewangan 2"", ""account_number"": ""135413216676"", ""ifsc"": ""SBIN050123"", ""bank_name"": ""Canara Bank"", ""balance"": 75006}",95
+7033,1055,aadhaar,"{""name"": ""Deepak Sinha"", ""dob"": ""1981-06-23"", ""aadhar_number"": ""824225358414"", ""address"": ""787, Gandhi Chowk, Kabirdham"", ""gender"": ""Male""}",83
+7034,1009,domicile_certificate,"{""name"": ""Mahesh Sahu"", ""dob"": ""1956-03-01"", ""district"": ""Mahasamund"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 39}",97
+7035,1524,income_certificate,"{""name"": ""Dilip Nishad"", ""annual_income"": ""Ward 7"", ""district"": ""Raigarh"", ""issued_by"": ""Tehsildar Raigarh"", ""financial_year"": ""2024-25""}",82
+7036,1305,bank_passbook,"{""name"": ""Anil Sharma"", ""account_number"": ""239304645395"", ""ifsc"": ""SBIN098027"", ""bank_name"": ""Canara Bank"", ""balance"": 96460}",95
+7037,1374,income_certificate,"{""name"": ""Ramesh Kumar"", ""annual_income"": ""Korba Nagar"", ""district"": ""Korba"", ""issued_by"": ""Tehsildar Korba"", ""financial_year"": ""2024-25""}",85
+7038,1474,bank_passbook,"{""name"": ""Bimla Mishra 1"", ""account_number"": ""964267120416"", ""ifsc"": ""SBIN083724"", ""bank_name"": ""Bank of Baroda"", ""balance"": 77088}",90
+7039,1824,domicile_certificate,"{""name"": ""Saraswati Patle"", ""dob"": ""1943-11-18"", ""district"": ""Gariaband"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 6}",88
+7040,1104,income_certificate,"{""name"": ""Ravi Gupta 5"", ""annual_income"": ""Ward 11"", ""district"": ""Durg"", ""issued_by"": ""Tehsildar Durg"", ""financial_year"": ""2024-25""}",73
+7041,1023,caste_certificate,"{""name"": ""Ravi Gupta"", ""caste"": ""General"", ""district"": ""Jashpur"", ""certificate_number"": ""CG/JAS/13192""}",84
+7042,1161,caste_certificate,"{""name"": ""Kailash Banjare 9"", ""caste"": ""OBC"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/43198""}",95
+7043,1363,income_certificate,"{""name"": ""Saraswati Patle"", ""annual_income"": ""Ward 16"", ""district"": ""Bastar"", ""issued_by"": ""Tehsildar Bastar"", ""financial_year"": ""2024-25""}",89
+7044,1446,aadhaar,"{""name"": ""Hema Sinha"", ""dob"": ""1936-10-20"", ""aadhar_number"": ""176342507330"", ""address"": ""639, Station Road, Kanker"", ""gender"": ""Female""}",72
+7045,1774,domicile_certificate,"{""name"": ""Deepak Sinha 7"", ""dob"": ""1991-08-30"", ""district"": ""Gariaband"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 8}",88
+7046,1854,bank_passbook,"{""name"": ""Dinesh Patel"", ""account_number"": ""344015385801"", ""ifsc"": ""SBIN028525"", ""bank_name"": ""Bank of Baroda"", ""balance"": 123875}",70
+7047,1451,bank_passbook,"{""name"": ""Ashok Patle 2"", ""account_number"": ""534407268538"", ""ifsc"": ""SBIN027835"", ""bank_name"": ""Bank of Baroda"", ""balance"": 28303}",92
+7048,1489,caste_certificate,"{""name"": ""Nirmala Dhivar"", ""caste"": ""OBC"", ""district"": ""Surguja"", ""certificate_number"": ""CG/SUR/36383""}",73
+7049,1703,domicile_certificate,"{""name"": ""Prakash Pandey 4"", ""dob"": ""1999-08-22"", ""district"": ""Sukma"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 8}",76
+7050,1135,caste_certificate,"{""name"": ""Nirmala Dhivar 6"", ""caste"": ""SC"", ""district"": ""Narayanpur"", ""certificate_number"": ""CG/NAR/17696""}",90
+7051,1846,income_certificate,"{""name"": ""Hema Sinha"", ""annual_income"": ""Raipur Nagar"", ""district"": ""Raipur"", ""issued_by"": ""Tehsildar Raipur"", ""financial_year"": ""2024-25""}",93
+7052,1697,bank_passbook,"{""name"": ""Anil Sharma"", ""account_number"": ""371859175995"", ""ifsc"": ""SBIN098340"", ""bank_name"": ""HDFC"", ""balance"": 134304}",99
+7053,1544,caste_certificate,"{""name"": ""Poonam Kosare"", ""caste"": ""SC"", ""district"": ""Bemetara"", ""certificate_number"": ""CG/BEM/45053""}",74
+7054,1471,bank_passbook,"{""name"": ""Rani Netam 2"", ""account_number"": ""493303930378"", ""ifsc"": ""SBIN030354"", ""bank_name"": ""PNB"", ""balance"": 113035}",72
+7055,1806,domicile_certificate,"{""name"": ""Ramesh Kumar"", ""dob"": ""1991-03-06"", ""district"": ""Korba"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 21}",88
+7056,1425,caste_certificate,"{""name"": ""Chandra Shekhar"", ""caste"": ""General"", ""district"": ""Rajnandgaon"", ""certificate_number"": ""CG/RAJ/54056""}",99
+7057,1818,caste_certificate,"{""name"": ""Savita Bai"", ""caste"": ""SC"", ""district"": ""Baloda Bazar"", ""certificate_number"": ""CG/BAL/89232""}",92
+7058,1767,caste_certificate,"{""name"": ""Sunil Netam"", ""caste"": ""OBC"", ""district"": ""Durg"", ""certificate_number"": ""CG/DUR/91681""}",81
+7059,1863,domicile_certificate,"{""name"": ""Kailash Banjare"", ""dob"": ""1964-12-23"", ""district"": ""Durg"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 37}",98
+7060,1119,income_certificate,"{""name"": ""Chandra Shekhar"", ""annual_income"": ""Colony 14"", ""district"": ""Mahasamund"", ""issued_by"": ""Tehsildar Mahasamund"", ""financial_year"": ""2024-25""}",84
+7061,1743,income_certificate,"{""name"": ""Savita Bai"", ""annual_income"": ""Baloda Bazar Nagar"", ""district"": ""Baloda Bazar"", ""issued_by"": ""Tehsildar Baloda Bazar"", ""financial_year"": ""2024-25""}",93
+7062,1112,domicile_certificate,"{""name"": ""Dilip Nishad 2"", ""dob"": ""1965-03-26"", ""district"": ""Bastar"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 23}",91
+7063,1746,income_certificate,"{""name"": ""Bharat Mandavi"", ""annual_income"": ""Village MM"", ""district"": ""Narayanpur"", ""issued_by"": ""Tehsildar Narayanpur"", ""financial_year"": ""2024-25""}",84
+7064,1747,aadhaar,"{""name"": ""Dilip Nishad"", ""dob"": ""1974-01-11"", ""aadhar_number"": ""620036385646"", ""address"": ""439, Nehru Nagar, Baloda Bazar"", ""gender"": ""Male""}",86
+7065,1235,income_certificate,"{""name"": ""Prakash Pandey 7"", ""annual_income"": ""Village ST"", ""district"": ""Baloda Bazar"", ""issued_by"": ""Tehsildar Baloda Bazar"", ""financial_year"": ""2024-25""}",97
+7066,1149,caste_certificate,"{""name"": ""Dinesh Patel 8"", ""caste"": ""ST"", ""district"": ""Bilaspur"", ""certificate_number"": ""CG/BIL/13102""}",75
+7067,1219,bank_passbook,"{""name"": ""Vandana Nishad"", ""account_number"": ""331777870757"", ""ifsc"": ""SBIN061660"", ""bank_name"": ""PNB"", ""balance"": 125727}",82
+7068,1105,domicile_certificate,"{""name"": ""Chandra Shekhar"", ""dob"": ""1939-12-15"", ""district"": ""Kabirdham"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 31}",99
+7069,1836,caste_certificate,"{""name"": ""Virendra Soni"", ""caste"": ""OBC"", ""district"": ""Dantewada"", ""certificate_number"": ""CG/DAN/13984""}",94
+7070,1683,caste_certificate,"{""name"": ""Sushila Pandey 2"", ""caste"": ""ST"", ""district"": ""Narayanpur"", ""certificate_number"": ""CG/NAR/15299""}",78
+7071,1746,domicile_certificate,"{""name"": ""Bharat Mandavi"", ""dob"": ""1980-06-24"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 26}",91
+7072,1376,aadhaar,"{""name"": ""Chandra Shekhar"", ""dob"": ""1952-03-16"", ""aadhar_number"": ""334324474175"", ""address"": ""389, Station Road, Bijapur"", ""gender"": ""Male""}",72
+7073,1168,bank_passbook,"{""name"": ""Harish Tiwari"", ""account_number"": ""355025593677"", ""ifsc"": ""SBIN076144"", ""bank_name"": ""SBI"", ""balance"": 33183}",70
+7074,1359,aadhaar,"{""name"": ""Brijlal Tandon 4"", ""dob"": ""1994-11-07"", ""aadhar_number"": ""070534967827"", ""address"": ""29, Indira Nagar, Bastar"", ""gender"": ""Male""}",74
+7075,1725,income_certificate,"{""name"": ""Bharat Mandavi 6"", ""annual_income"": ""Balrampur Nagar"", ""district"": ""Balrampur"", ""issued_by"": ""Tehsildar Balrampur"", ""financial_year"": ""2024-25""}",87
+7076,1736,bank_passbook,"{""name"": ""Mohan Thakur"", ""account_number"": ""139350212318"", ""ifsc"": ""SBIN072498"", ""bank_name"": ""Bank of Baroda"", ""balance"": 89738}",88
+7077,1366,income_certificate,"{""name"": ""Virendra Soni"", ""annual_income"": ""Colony 12"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",95
+7078,1970,bank_passbook,"{""name"": ""Anil Sharma"", ""account_number"": ""890176498449"", ""ifsc"": ""SBIN027672"", ""bank_name"": ""Canara Bank"", ""balance"": 111100}",85
+7079,1494,caste_certificate,"{""name"": ""Pushpa Devi"", ""caste"": ""General"", ""district"": ""Mahasamund"", ""certificate_number"": ""CG/MAH/33928""}",76
+7080,1640,income_certificate,"{""name"": ""Sudha Gupta"", ""annual_income"": ""Surajpur Nagar"", ""district"": ""Surajpur"", ""issued_by"": ""Tehsildar Surajpur"", ""financial_year"": ""2024-25""}",80
+7081,1716,caste_certificate,"{""name"": ""Harish Tiwari"", ""caste"": ""General"", ""district"": ""Surajpur"", ""certificate_number"": ""CG/SUR/38445""}",99
+7082,1771,income_certificate,"{""name"": ""Kailash Banjare"", ""annual_income"": ""Village VO"", ""district"": ""Surguja"", ""issued_by"": ""Tehsildar Surguja"", ""financial_year"": ""2024-25""}",96
+7083,1655,domicile_certificate,"{""name"": ""Sanjay Mishra"", ""dob"": ""2001-04-06"", ""district"": ""Balrampur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 17}",93
+7084,1807,income_certificate,"{""name"": ""Hema Sinha 7"", ""annual_income"": ""Kondagaon Nagar"", ""district"": ""Kondagaon"", ""issued_by"": ""Tehsildar Kondagaon"", ""financial_year"": ""2024-25""}",92
+7085,1452,bank_passbook,"{""name"": ""Geeta Sharma 7"", ""account_number"": ""340360929633"", ""ifsc"": ""SBIN089680"", ""bank_name"": ""Canara Bank"", ""balance"": 50048}",72
+7086,1845,caste_certificate,"{""name"": ""Saraswati Patle 4"", ""caste"": ""General"", ""district"": ""Dantewada"", ""certificate_number"": ""CG/DAN/25688""}",71
+7087,1013,income_certificate,"{""name"": ""Dinesh Patel"", ""annual_income"": ""Colony 2"", ""district"": ""Surguja"", ""issued_by"": ""Tehsildar Surguja"", ""financial_year"": ""2024-25""}",82
+7088,1002,domicile_certificate,"{""name"": ""Hemant Kosare 1"", ""dob"": ""2000-07-12"", ""district"": ""Bemetara"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 33}",94
+7089,1170,aadhaar,"{""name"": ""Laxmi Tiwari"", ""dob"": ""1980-12-19"", ""aadhar_number"": ""222064474212"", ""address"": ""787, Gandhi Chowk, Balrampur"", ""gender"": ""Female""}",78
+7090,1199,caste_certificate,"{""name"": ""Rani Netam 2"", ""caste"": ""ST"", ""district"": ""Baloda Bazar"", ""certificate_number"": ""CG/BAL/78409""}",82
+7091,1980,bank_passbook,"{""name"": ""Ravi Gupta"", ""account_number"": ""966150948932"", ""ifsc"": ""SBIN060155"", ""bank_name"": ""Bank of Baroda"", ""balance"": 57774}",97
+7092,1509,aadhaar,"{""name"": ""Nirmala Dhivar"", ""dob"": ""1981-04-29"", ""aadhar_number"": ""942894642036"", ""address"": ""410, Station Road, Raigarh"", ""gender"": ""Female""}",81
+7093,1925,caste_certificate,"{""name"": ""Ashok Patle"", ""caste"": ""SC"", ""district"": ""Kabirdham"", ""certificate_number"": ""CG/KAB/72443""}",77
+7094,1115,aadhaar,"{""name"": ""Suresh Yadav"", ""dob"": ""2000-08-12"", ""aadhar_number"": ""421689421044"", ""address"": ""19, Main Road, Kabirdham"", ""gender"": ""Male""}",81
+7095,1186,aadhaar,"{""name"": ""Manju Tandon"", ""dob"": ""1948-08-15"", ""aadhar_number"": ""512927663723"", ""address"": ""802, Gandhi Chowk, Kondagaon"", ""gender"": ""Female""}",87
+7096,1582,bank_passbook,"{""name"": ""Jagdish Porte"", ""account_number"": ""169555042936"", ""ifsc"": ""SBIN082890"", ""bank_name"": ""Canara Bank"", ""balance"": 59191}",70
+7097,1682,bank_passbook,"{""name"": ""Pratibha Soni 7"", ""account_number"": ""499381035264"", ""ifsc"": ""SBIN016781"", ""bank_name"": ""Canara Bank"", ""balance"": 55943}",96
+7098,1239,domicile_certificate,"{""name"": ""Kanta Yadav 7"", ""dob"": ""1972-02-25"", ""district"": ""Balod"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 33}",97
+7099,1850,income_certificate,"{""name"": ""Ashok Patle"", ""annual_income"": ""Ward 9"", ""district"": ""Kanker"", ""issued_by"": ""Tehsildar Kanker"", ""financial_year"": ""2024-25""}",73
+7100,1134,bank_passbook,"{""name"": ""Rajesh Verma"", ""account_number"": ""404712912888"", ""ifsc"": ""SBIN021224"", ""bank_name"": ""Bank of Baroda"", ""balance"": 136579}",80
+7101,1053,income_certificate,"{""name"": ""Deepak Sinha"", ""annual_income"": ""Village LM"", ""district"": ""Korba"", ""issued_by"": ""Tehsildar Korba"", ""financial_year"": ""2024-25""}",91
+7102,1707,domicile_certificate,"{""name"": ""Saraswati Patle"", ""dob"": ""1958-08-05"", ""district"": ""Kanker"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 28}",89
+7103,1655,aadhaar,"{""name"": ""Sanjay Mishra"", ""dob"": ""2001-04-06"", ""aadhar_number"": ""286693351588"", ""address"": ""854, Main Road, Balrampur"", ""gender"": ""Male""}",86
+7104,1153,domicile_certificate,"{""name"": ""Geeta Sharma 5"", ""dob"": ""1969-04-18"", ""district"": ""Raipur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 39}",92
+7105,1019,aadhaar,"{""name"": ""Kiran Banjare"", ""dob"": ""1985-08-29"", ""aadhar_number"": ""419049663193"", ""address"": ""172, Indira Nagar, Raigarh"", ""gender"": ""Female""}",89
+7106,1061,domicile_certificate,"{""name"": ""Ramkumar Lahre 1"", ""dob"": ""1974-08-18"", ""district"": ""Kanker"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 14}",75
+7107,1029,bank_passbook,"{""name"": ""Naresh Chandel"", ""account_number"": ""790008868152"", ""ifsc"": ""SBIN072598"", ""bank_name"": ""SBI"", ""balance"": 42057}",94
+7108,1125,bank_passbook,"{""name"": ""Pushpa Devi"", ""account_number"": ""479156605964"", ""ifsc"": ""SBIN033591"", ""bank_name"": ""PNB"", ""balance"": 85764}",88
+7109,1424,aadhaar,"{""name"": ""Chanda Thakur 6"", ""dob"": ""1943-10-06"", ""aadhar_number"": ""090814415298"", ""address"": ""913, Nehru Nagar, Kondagaon"", ""gender"": ""Female""}",74
+7110,1241,income_certificate,"{""name"": ""Santosh Dewangan"", ""annual_income"": ""Ward 14"", ""district"": ""Bijapur"", ""issued_by"": ""Tehsildar Bijapur"", ""financial_year"": ""2024-25""}",72
+7111,1833,caste_certificate,"{""name"": ""Sushila Pandey 9"", ""caste"": ""OBC"", ""district"": ""Kondagaon"", ""certificate_number"": ""CG/KON/91353""}",99
+7112,1799,bank_passbook,"{""name"": ""Durga Mandavi"", ""account_number"": ""892490590924"", ""ifsc"": ""SBIN070890"", ""bank_name"": ""Bank of Baroda"", ""balance"": 31143}",84
+7113,1370,domicile_certificate,"{""name"": ""Jagdish Porte"", ""dob"": ""1955-05-05"", ""district"": ""Kabirdham"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 6}",76
+7114,1172,income_certificate,"{""name"": ""Hemant Kosare"", ""annual_income"": ""Colony 3"", ""district"": ""Balrampur"", ""issued_by"": ""Tehsildar Balrampur"", ""financial_year"": ""2024-25""}",70
+7115,1839,bank_passbook,"{""name"": ""Sunil Netam 9"", ""account_number"": ""690668705201"", ""ifsc"": ""SBIN017430"", ""bank_name"": ""Canara Bank"", ""balance"": 1793}",98
+7116,1620,caste_certificate,"{""name"": ""Kamla Sahu"", ""caste"": ""SC"", ""district"": ""Surajpur"", ""certificate_number"": ""CG/SUR/18786""}",84
+7117,1345,aadhaar,"{""name"": ""Ashok Patle 9"", ""dob"": ""1964-10-01"", ""aadhar_number"": ""898469081974"", ""address"": ""70, Gandhi Chowk, Raipur"", ""gender"": ""Male""}",75
+7118,1978,caste_certificate,"{""name"": ""Mahesh Sahu 3"", ""caste"": ""SC"", ""district"": ""Baloda Bazar"", ""certificate_number"": ""CG/BAL/25959""}",77
+7119,1956,aadhaar,"{""name"": ""Saraswati Patle 8"", ""dob"": ""1947-02-21"", ""aadhar_number"": ""375391692809"", ""address"": ""3, Gandhi Chowk, Korba"", ""gender"": ""Female""}",71
+7120,1455,bank_passbook,"{""name"": ""Ramkumar Lahre 8"", ""account_number"": ""699685983141"", ""ifsc"": ""SBIN065469"", ""bank_name"": ""Canara Bank"", ""balance"": 92632}",86
+7121,1718,domicile_certificate,"{""name"": ""Dilip Nishad"", ""dob"": ""1989-01-10"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 25}",80
+7122,1700,bank_passbook,"{""name"": ""Durga Mandavi"", ""account_number"": ""108550815020"", ""ifsc"": ""SBIN087031"", ""bank_name"": ""Bank of Baroda"", ""balance"": 26419}",79
+7123,1344,aadhaar,"{""name"": ""Mukesh Yadav 1"", ""dob"": ""1967-04-28"", ""aadhar_number"": ""339785598217"", ""address"": ""349, Gandhi Chowk, Sukma"", ""gender"": ""Male""}",79
+7124,1634,domicile_certificate,"{""name"": ""Ashok Patle 6"", ""dob"": ""1981-10-13"", ""district"": ""Kanker"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 16}",98
+7125,1255,domicile_certificate,"{""name"": ""Kailash Banjare"", ""dob"": ""1952-06-07"", ""district"": ""Surajpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 31}",89
+7126,1299,domicile_certificate,"{""name"": ""Sunil Netam"", ""dob"": ""1975-04-19"", ""district"": ""Jashpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 13}",84
+7127,1183,bank_passbook,"{""name"": ""Rekha Verma 1"", ""account_number"": ""213125644888"", ""ifsc"": ""SBIN080802"", ""bank_name"": ""SBI"", ""balance"": 76506}",94
+7128,1707,income_certificate,"{""name"": ""Saraswati Patle"", ""annual_income"": ""Colony 6"", ""district"": ""Kanker"", ""issued_by"": ""Tehsildar Kanker"", ""financial_year"": ""2024-25""}",71
+7129,1316,income_certificate,"{""name"": ""Naresh Chandel"", ""annual_income"": ""Raigarh Nagar"", ""district"": ""Raigarh"", ""issued_by"": ""Tehsildar Raigarh"", ""financial_year"": ""2024-25""}",90
+7130,1567,caste_certificate,"{""name"": ""Santosh Dewangan 9"", ""caste"": ""OBC"", ""district"": ""Raipur"", ""certificate_number"": ""CG/RAI/96786""}",80
+7131,1936,aadhaar,"{""name"": ""Meena Lahre"", ""dob"": ""2004-04-05"", ""aadhar_number"": ""958444202248"", ""address"": ""819, Gandhi Chowk, Bastar"", ""gender"": ""Female""}",91
+7132,1978,caste_certificate,"{""name"": ""Mahesh Sahu 3"", ""caste"": ""SC"", ""district"": ""Baloda Bazar"", ""certificate_number"": ""CG/BAL/62607""}",74
+7133,1109,domicile_certificate,"{""name"": ""Harish Tiwari 5"", ""dob"": ""2001-10-14"", ""district"": ""Bemetara"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 29}",78
+7134,1679,income_certificate,"{""name"": ""Mamta Dewangan"", ""annual_income"": ""Village NR"", ""district"": ""Bemetara"", ""issued_by"": ""Tehsildar Bemetara"", ""financial_year"": ""2024-25""}",99
+7135,1303,bank_passbook,"{""name"": ""Rajesh Verma 2"", ""account_number"": ""322779177548"", ""ifsc"": ""SBIN085234"", ""bank_name"": ""Bank of Baroda"", ""balance"": 28949}",83
+7136,1803,domicile_certificate,"{""name"": ""Sunil Netam"", ""dob"": ""1941-06-27"", ""district"": ""Korba"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 33}",78
+7137,1992,aadhaar,"{""name"": ""Kiran Banjare"", ""dob"": ""1953-08-27"", ""aadhar_number"": ""700623945994"", ""address"": ""988, Gandhi Chowk, Surguja"", ""gender"": ""Female""}",84
+7138,1570,bank_passbook,"{""name"": ""Sunil Netam"", ""account_number"": ""562546399306"", ""ifsc"": ""SBIN083877"", ""bank_name"": ""HDFC"", ""balance"": 95346}",87
+7139,1323,domicile_certificate,"{""name"": ""Brijlal Tandon 6"", ""dob"": ""1945-05-12"", ""district"": ""Raigarh"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 22}",89
+7140,1078,aadhaar,"{""name"": ""Bimla Mishra 9"", ""dob"": ""1956-11-03"", ""aadhar_number"": ""646471543799"", ""address"": ""143, Station Road, Surajpur"", ""gender"": ""Female""}",71
+7141,1405,domicile_certificate,"{""name"": ""Mahesh Sahu"", ""dob"": ""1980-07-09"", ""district"": ""Surajpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 34}",90
+7142,1155,domicile_certificate,"{""name"": ""Rani Netam"", ""dob"": ""1957-07-21"", ""district"": ""Bilaspur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 23}",72
+7143,1517,domicile_certificate,"{""name"": ""Shanta Markam 8"", ""dob"": ""1994-11-29"", ""district"": ""Mungeli"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 20}",90
+7144,1593,domicile_certificate,"{""name"": ""Mohan Thakur 3"", ""dob"": ""1945-07-12"", ""district"": ""Durg"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 39}",89
+7145,1915,caste_certificate,"{""name"": ""Umesh Dhruv"", ""caste"": ""ST"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/38393""}",84
+7146,1485,aadhaar,"{""name"": ""Vandana Nishad"", ""dob"": ""2005-05-17"", ""aadhar_number"": ""024617520238"", ""address"": ""764, Nehru Nagar, Narayanpur"", ""gender"": ""Female""}",72
+7147,1991,income_certificate,"{""name"": ""Virendra Soni"", ""annual_income"": ""Colony 4"", ""district"": ""Bijapur"", ""issued_by"": ""Tehsildar Bijapur"", ""financial_year"": ""2024-25""}",78
+7148,1589,income_certificate,"{""name"": ""Suresh Yadav"", ""annual_income"": ""Rajnandgaon Nagar"", ""district"": ""Rajnandgaon"", ""issued_by"": ""Tehsildar Rajnandgaon"", ""financial_year"": ""2024-25""}",98
+7149,1864,aadhaar,"{""name"": ""Meena Lahre"", ""dob"": ""1968-12-06"", ""aadhar_number"": ""617073174457"", ""address"": ""551, Main Road, Bijapur"", ""gender"": ""Female""}",83
+7150,1759,caste_certificate,"{""name"": ""Poonam Kosare"", ""caste"": ""ST"", ""district"": ""Raipur"", ""certificate_number"": ""CG/RAI/56710""}",91
+7151,1687,bank_passbook,"{""name"": ""Sudha Gupta"", ""account_number"": ""387306911687"", ""ifsc"": ""SBIN042354"", ""bank_name"": ""Canara Bank"", ""balance"": 144283}",70
+7152,1277,domicile_certificate,"{""name"": ""Deepak Sinha"", ""dob"": ""1954-02-18"", ""district"": ""Surguja"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 5}",79
+7153,1041,domicile_certificate,"{""name"": ""Suresh Yadav 5"", ""dob"": ""1954-01-05"", ""district"": ""Sukma"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 17}",82
+7154,1353,aadhaar,"{""name"": ""Naresh Chandel"", ""dob"": ""1940-07-08"", ""aadhar_number"": ""181335956164"", ""address"": ""554, Main Road, Narayanpur"", ""gender"": ""Male""}",95
+7155,1522,domicile_certificate,"{""name"": ""Manju Tandon"", ""dob"": ""1940-09-05"", ""district"": ""Bilaspur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 28}",82
+7156,1806,bank_passbook,"{""name"": ""Ramesh Kumar"", ""account_number"": ""252855690713"", ""ifsc"": ""SBIN016576"", ""bank_name"": ""PNB"", ""balance"": 42690}",85
+7157,1976,income_certificate,"{""name"": ""Naresh Chandel"", ""annual_income"": ""Ward 17"", ""district"": ""Raipur"", ""issued_by"": ""Tehsildar Raipur"", ""financial_year"": ""2024-25""}",80
+7158,1795,domicile_certificate,"{""name"": ""Meena Lahre"", ""dob"": ""1983-10-19"", ""district"": ""Balod"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 12}",74
+7159,1373,domicile_certificate,"{""name"": ""Manju Tandon"", ""dob"": ""1936-01-08"", ""district"": ""Raigarh"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 35}",75
+7160,1075,income_certificate,"{""name"": ""Sunita Yadav"", ""annual_income"": ""Ward 26"", ""district"": ""Jashpur"", ""issued_by"": ""Tehsildar Jashpur"", ""financial_year"": ""2024-25""}",97
+7161,1256,aadhaar,"{""name"": ""Dilip Nishad"", ""dob"": ""1940-03-16"", ""aadhar_number"": ""779599594652"", ""address"": ""201, Gandhi Chowk, Janjgir-Champa"", ""gender"": ""Male""}",70
+7162,1566,caste_certificate,"{""name"": ""Suresh Yadav 5"", ""caste"": ""ST"", ""district"": ""Dantewada"", ""certificate_number"": ""CG/DAN/70009""}",91
+7163,1519,bank_passbook,"{""name"": ""Nirmala Dhivar 3"", ""account_number"": ""964787054005"", ""ifsc"": ""SBIN086936"", ""bank_name"": ""SBI"", ""balance"": 97314}",77
+7164,1146,caste_certificate,"{""name"": ""Anil Sharma"", ""caste"": ""OBC"", ""district"": ""Balod"", ""certificate_number"": ""CG/BAL/33806""}",80
+7165,1795,domicile_certificate,"{""name"": ""Meena Lahre"", ""dob"": ""1983-10-19"", ""district"": ""Balod"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 29}",70
+7166,1008,bank_passbook,"{""name"": ""Kiran Banjare 7"", ""account_number"": ""961311247382"", ""ifsc"": ""SBIN010110"", ""bank_name"": ""Bank of Baroda"", ""balance"": 129740}",95
+7167,1551,income_certificate,"{""name"": ""Saraswati Patle 1"", ""annual_income"": ""Ward 25"", ""district"": ""Bilaspur"", ""issued_by"": ""Tehsildar Bilaspur"", ""financial_year"": ""2024-25""}",83
+7168,1670,bank_passbook,"{""name"": ""Ashok Patle 3"", ""account_number"": ""864702510554"", ""ifsc"": ""SBIN036940"", ""bank_name"": ""SBI"", ""balance"": 54001}",98
+7169,1932,caste_certificate,"{""name"": ""Bharat Mandavi"", ""caste"": ""ST"", ""district"": ""Raigarh"", ""certificate_number"": ""CG/RAI/19591""}",96
+7170,1933,income_certificate,"{""name"": ""Ramesh Kumar"", ""annual_income"": ""Ward 19"", ""district"": ""Dantewada"", ""issued_by"": ""Tehsildar Dantewada"", ""financial_year"": ""2024-25""}",96
+7171,1653,domicile_certificate,"{""name"": ""Geeta Sharma"", ""dob"": ""1968-05-04"", ""district"": ""Sukma"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 26}",90
+7172,1194,income_certificate,"{""name"": ""Seema Chandel"", ""annual_income"": ""Ward 8"", ""district"": ""Bemetara"", ""issued_by"": ""Tehsildar Bemetara"", ""financial_year"": ""2024-25""}",88
+7173,1528,caste_certificate,"{""name"": ""Geeta Sharma 6"", ""caste"": ""SC"", ""district"": ""Kondagaon"", ""certificate_number"": ""CG/KON/66843""}",93
+7174,1959,bank_passbook,"{""name"": ""Virendra Soni 1"", ""account_number"": ""775456482531"", ""ifsc"": ""SBIN099083"", ""bank_name"": ""HDFC"", ""balance"": 117341}",97
+7175,1738,domicile_certificate,"{""name"": ""Prakash Pandey 4"", ""dob"": ""2003-11-28"", ""district"": ""Bemetara"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 6}",93
+7176,1511,aadhaar,"{""name"": ""Santosh Dewangan"", ""dob"": ""1980-01-03"", ""aadhar_number"": ""040433335384"", ""address"": ""477, Indira Nagar, Gariaband"", ""gender"": ""Male""}",83
+7177,1046,aadhaar,"{""name"": ""Anita Patel"", ""dob"": ""1948-12-18"", ""aadhar_number"": ""229270653794"", ""address"": ""678, Station Road, Durg"", ""gender"": ""Female""}",85
+7178,1279,domicile_certificate,"{""name"": ""Poonam Kosare"", ""dob"": ""1977-09-11"", ""district"": ""Gariaband"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 11}",96
+7179,1285,income_certificate,"{""name"": ""Rani Netam 2"", ""annual_income"": ""Rajnandgaon Nagar"", ""district"": ""Rajnandgaon"", ""issued_by"": ""Tehsildar Rajnandgaon"", ""financial_year"": ""2024-25""}",77
+7180,1893,domicile_certificate,"{""name"": ""Prakash Pandey"", ""dob"": ""1981-07-21"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 7}",71
+7181,1803,caste_certificate,"{""name"": ""Sunil Netam"", ""caste"": ""General"", ""district"": ""Korba"", ""certificate_number"": ""CG/KOR/87496""}",72
+7182,1748,domicile_certificate,"{""name"": ""Kamla Sahu"", ""dob"": ""1954-08-01"", ""district"": ""Surajpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 24}",98
+7183,1973,caste_certificate,"{""name"": ""Laxmi Tiwari"", ""caste"": ""SC"", ""district"": ""Balod"", ""certificate_number"": ""CG/BAL/35817""}",82
+7184,1574,domicile_certificate,"{""name"": ""Suresh Yadav"", ""dob"": ""1963-04-12"", ""district"": ""Baloda Bazar"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 10}",91
+7185,1746,domicile_certificate,"{""name"": ""Bharat Mandavi"", ""dob"": ""1980-06-24"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 20}",86
+7186,1933,domicile_certificate,"{""name"": ""Ramesh Kumar"", ""dob"": ""1965-10-02"", ""district"": ""Dantewada"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 32}",75
+7187,1896,aadhaar,"{""name"": ""Vandana Nishad"", ""dob"": ""1967-09-27"", ""aadhar_number"": ""637941288669"", ""address"": ""400, Main Road, Sukma"", ""gender"": ""Female""}",99
+7188,1367,domicile_certificate,"{""name"": ""Durga Mandavi"", ""dob"": ""1977-07-18"", ""district"": ""Gariaband"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 36}",95
+7189,1309,aadhaar,"{""name"": ""Mahesh Sahu"", ""dob"": ""1946-04-16"", ""aadhar_number"": ""775662056341"", ""address"": ""402, Gandhi Chowk, Bijapur"", ""gender"": ""Male""}",93
+7190,1333,caste_certificate,"{""name"": ""Kiran Banjare 1"", ""caste"": ""SC"", ""district"": ""Kondagaon"", ""certificate_number"": ""CG/KON/59106""}",96
+7191,1514,domicile_certificate,"{""name"": ""Mukesh Yadav 9"", ""dob"": ""1992-06-01"", ""district"": ""Sukma"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 32}",73
+7192,1537,income_certificate,"{""name"": ""Rani Netam"", ""annual_income"": ""Narayanpur Nagar"", ""district"": ""Narayanpur"", ""issued_by"": ""Tehsildar Narayanpur"", ""financial_year"": ""2024-25""}",79
+7193,1779,bank_passbook,"{""name"": ""Sudha Gupta"", ""account_number"": ""648572263264"", ""ifsc"": ""SBIN050318"", ""bank_name"": ""SBI"", ""balance"": 72841}",75
+7194,1501,bank_passbook,"{""name"": ""Santram Dhivar"", ""account_number"": ""788199216696"", ""ifsc"": ""SBIN018325"", ""bank_name"": ""Bank of Baroda"", ""balance"": 29528}",93
+7195,1752,bank_passbook,"{""name"": ""Mamta Dewangan"", ""account_number"": ""651916668621"", ""ifsc"": ""SBIN071620"", ""bank_name"": ""PNB"", ""balance"": 110645}",76
+7196,1726,caste_certificate,"{""name"": ""Sanjay Mishra"", ""caste"": ""General"", ""district"": ""Rajnandgaon"", ""certificate_number"": ""CG/RAJ/99921""}",88
+7197,1177,aadhaar,"{""name"": ""Dilip Nishad"", ""dob"": ""1942-11-16"", ""aadhar_number"": ""334485714224"", ""address"": ""24, Indira Nagar, Kanker"", ""gender"": ""Male""}",90
+7198,1165,income_certificate,"{""name"": ""Laxmi Tiwari 6"", ""annual_income"": ""Village UJ"", ""district"": ""Kabirdham"", ""issued_by"": ""Tehsildar Kabirdham"", ""financial_year"": ""2024-25""}",76
+7199,1731,income_certificate,"{""name"": ""Ashok Patle"", ""annual_income"": ""Ward 28"", ""district"": ""Surguja"", ""issued_by"": ""Tehsildar Surguja"", ""financial_year"": ""2024-25""}",88
+7200,1891,bank_passbook,"{""name"": ""Jagdish Porte"", ""account_number"": ""984052437081"", ""ifsc"": ""SBIN078701"", ""bank_name"": ""PNB"", ""balance"": 33157}",80
+7201,1577,aadhaar,"{""name"": ""Suresh Yadav 1"", ""dob"": ""1976-01-25"", ""aadhar_number"": ""500666641106"", ""address"": ""967, Station Road, Sukma"", ""gender"": ""Male""}",70
+7202,1473,aadhaar,"{""name"": ""Anita Patel"", ""dob"": ""1950-01-05"", ""aadhar_number"": ""303911142817"", ""address"": ""587, Gandhi Chowk, Gariaband"", ""gender"": ""Female""}",76
+7203,1882,income_certificate,"{""name"": ""Pushpa Devi"", ""annual_income"": ""Village NR"", ""district"": ""Gariaband"", ""issued_by"": ""Tehsildar Gariaband"", ""financial_year"": ""2024-25""}",91
+7204,1713,aadhaar,"{""name"": ""Ganesh Markam"", ""dob"": ""1942-06-14"", ""aadhar_number"": ""368154185899"", ""address"": ""900, Nehru Nagar, Mungeli"", ""gender"": ""Male""}",79
+7205,1736,caste_certificate,"{""name"": ""Mohan Thakur"", ""caste"": ""General"", ""district"": ""Baloda Bazar"", ""certificate_number"": ""CG/BAL/77037""}",78
+7206,1946,caste_certificate,"{""name"": ""Hemant Kosare 6"", ""caste"": ""SC"", ""district"": ""Bastar"", ""certificate_number"": ""CG/BAS/65038""}",84
+7207,1946,domicile_certificate,"{""name"": ""Hemant Kosare 6"", ""dob"": ""2002-05-11"", ""district"": ""Bastar"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 9}",81
+7208,1850,caste_certificate,"{""name"": ""Ashok Patle"", ""caste"": ""OBC"", ""district"": ""Kanker"", ""certificate_number"": ""CG/KAN/24478""}",93
+7209,1974,domicile_certificate,"{""name"": ""Urmila Dhruv"", ""dob"": ""1939-10-22"", ""district"": ""Balod"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 29}",82
+7210,1008,caste_certificate,"{""name"": ""Kiran Banjare 7"", ""caste"": ""ST"", ""district"": ""Surguja"", ""certificate_number"": ""CG/SUR/51372""}",83
+7211,1562,bank_passbook,"{""name"": ""Mahesh Sahu 4"", ""account_number"": ""357001501261"", ""ifsc"": ""SBIN085593"", ""bank_name"": ""SBI"", ""balance"": 26881}",82
+7212,1703,caste_certificate,"{""name"": ""Prakash Pandey 4"", ""caste"": ""ST"", ""district"": ""Sukma"", ""certificate_number"": ""CG/SUK/58573""}",84
+7213,1669,domicile_certificate,"{""name"": ""Kanta Yadav"", ""dob"": ""1971-05-13"", ""district"": ""Sukma"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 36}",99
+7214,1806,domicile_certificate,"{""name"": ""Ramesh Kumar"", ""dob"": ""1991-03-06"", ""district"": ""Korba"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 30}",99
+7215,1382,domicile_certificate,"{""name"": ""Durga Mandavi"", ""dob"": ""1944-08-11"", ""district"": ""Bemetara"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 32}",82
+7216,1411,caste_certificate,"{""name"": ""Naresh Chandel"", ""caste"": ""OBC"", ""district"": ""Kabirdham"", ""certificate_number"": ""CG/KAB/73000""}",82
+7217,1048,bank_passbook,"{""name"": ""Santosh Dewangan"", ""account_number"": ""238954169023"", ""ifsc"": ""SBIN011103"", ""bank_name"": ""HDFC"", ""balance"": 90659}",97
+7218,1657,income_certificate,"{""name"": ""Ashok Patle 7"", ""annual_income"": ""Colony 6"", ""district"": ""Bemetara"", ""issued_by"": ""Tehsildar Bemetara"", ""financial_year"": ""2024-25""}",88
+7219,1447,caste_certificate,"{""name"": ""Hemant Kosare"", ""caste"": ""SC"", ""district"": ""Jashpur"", ""certificate_number"": ""CG/JAS/53192""}",98
+7220,1329,income_certificate,"{""name"": ""Ashok Patle 1"", ""annual_income"": ""Ward 15"", ""district"": ""Raigarh"", ""issued_by"": ""Tehsildar Raigarh"", ""financial_year"": ""2024-25""}",72
+7221,1503,caste_certificate,"{""name"": ""Rajesh Verma"", ""caste"": ""OBC"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/18129""}",79
+7222,1587,bank_passbook,"{""name"": ""Lalita Singh"", ""account_number"": ""669243310296"", ""ifsc"": ""SBIN074894"", ""bank_name"": ""HDFC"", ""balance"": 36221}",88
+7223,1572,bank_passbook,"{""name"": ""Ramkumar Lahre"", ""account_number"": ""611717828073"", ""ifsc"": ""SBIN057263"", ""bank_name"": ""Bank of Baroda"", ""balance"": 73318}",74
+7224,1171,aadhaar,"{""name"": ""Hemant Kosare"", ""dob"": ""1956-05-27"", ""aadhar_number"": ""983022050209"", ""address"": ""453, Main Road, Raigarh"", ""gender"": ""Male""}",83
+7225,1079,bank_passbook,"{""name"": ""Kanta Yadav"", ""account_number"": ""861763196584"", ""ifsc"": ""SBIN015320"", ""bank_name"": ""Canara Bank"", ""balance"": 45608}",89
+7226,1847,bank_passbook,"{""name"": ""Laxmi Tiwari"", ""account_number"": ""961000983592"", ""ifsc"": ""SBIN099055"", ""bank_name"": ""PNB"", ""balance"": 138936}",83
+7227,1804,caste_certificate,"{""name"": ""Bharat Mandavi"", ""caste"": ""ST"", ""district"": ""Jashpur"", ""certificate_number"": ""CG/JAS/14548""}",71
+7228,1390,domicile_certificate,"{""name"": ""Sanjay Mishra"", ""dob"": ""1969-12-28"", ""district"": ""Mungeli"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 13}",79
+7229,1425,domicile_certificate,"{""name"": ""Chandra Shekhar"", ""dob"": ""1975-04-01"", ""district"": ""Rajnandgaon"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 17}",88
+7230,1039,income_certificate,"{""name"": ""Anita Patel"", ""annual_income"": ""Mungeli Nagar"", ""district"": ""Mungeli"", ""issued_by"": ""Tehsildar Mungeli"", ""financial_year"": ""2024-25""}",75
+7231,1820,aadhaar,"{""name"": ""Rajesh Verma"", ""dob"": ""1947-10-20"", ""aadhar_number"": ""208601460519"", ""address"": ""738, Nehru Nagar, Dantewada"", ""gender"": ""Male""}",78
+7232,1254,aadhaar,"{""name"": ""Hemant Kosare"", ""dob"": ""1940-12-18"", ""aadhar_number"": ""990767699150"", ""address"": ""871, Nehru Nagar, Rajnandgaon"", ""gender"": ""Male""}",76
+7233,1092,bank_passbook,"{""name"": ""Naresh Chandel"", ""account_number"": ""309149005969"", ""ifsc"": ""SBIN084274"", ""bank_name"": ""PNB"", ""balance"": 64390}",96
+7234,1021,aadhaar,"{""name"": ""Pratibha Soni"", ""dob"": ""1978-10-21"", ""aadhar_number"": ""136783777014"", ""address"": ""902, Indira Nagar, Raigarh"", ""gender"": ""Female""}",73
+7235,1944,aadhaar,"{""name"": ""Anil Sharma"", ""dob"": ""1971-04-30"", ""aadhar_number"": ""739462487238"", ""address"": ""981, Indira Nagar, Kabirdham"", ""gender"": ""Male""}",95
+7236,1890,bank_passbook,"{""name"": ""Harish Tiwari 4"", ""account_number"": ""835568318799"", ""ifsc"": ""SBIN012811"", ""bank_name"": ""Canara Bank"", ""balance"": 93705}",78
+7237,1514,bank_passbook,"{""name"": ""Mukesh Yadav 9"", ""account_number"": ""475051075347"", ""ifsc"": ""SBIN078559"", ""bank_name"": ""Canara Bank"", ""balance"": 84829}",81
+7238,1137,caste_certificate,"{""name"": ""Poonam Kosare"", ""caste"": ""ST"", ""district"": ""Raipur"", ""certificate_number"": ""CG/RAI/56593""}",74
+7239,1584,domicile_certificate,"{""name"": ""Dilip Nishad 8"", ""dob"": ""1958-01-25"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 11}",80
+7240,1077,caste_certificate,"{""name"": ""Seema Chandel"", ""caste"": ""OBC"", ""district"": ""Bijapur"", ""certificate_number"": ""CG/BIJ/35278""}",83
+7241,1624,domicile_certificate,"{""name"": ""Bharat Mandavi"", ""dob"": ""1951-04-26"", ""district"": ""Bemetara"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 21}",81
+7242,1466,bank_passbook,"{""name"": ""Hemant Kosare"", ""account_number"": ""448799108469"", ""ifsc"": ""SBIN019549"", ""bank_name"": ""Canara Bank"", ""balance"": 144184}",76
+7243,1666,bank_passbook,"{""name"": ""Lalita Singh"", ""account_number"": ""883643740865"", ""ifsc"": ""SBIN021664"", ""bank_name"": ""PNB"", ""balance"": 87030}",81
+7244,1993,domicile_certificate,"{""name"": ""Vijay Singh 3"", ""dob"": ""1999-07-07"", ""district"": ""Bilaspur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 32}",99
+7245,1633,domicile_certificate,"{""name"": ""Umesh Dhruv"", ""dob"": ""1945-03-03"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 20}",91
+7246,1209,bank_passbook,"{""name"": ""Chandra Shekhar 3"", ""account_number"": ""987821486681"", ""ifsc"": ""SBIN085388"", ""bank_name"": ""Bank of Baroda"", ""balance"": 141823}",83
+7247,1681,caste_certificate,"{""name"": ""Savita Bai"", ""caste"": ""SC"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/18951""}",84
+7248,1670,bank_passbook,"{""name"": ""Ashok Patle 3"", ""account_number"": ""258584897085"", ""ifsc"": ""SBIN052863"", ""bank_name"": ""Canara Bank"", ""balance"": 13035}",92
+7249,1126,bank_passbook,"{""name"": ""Harish Tiwari"", ""account_number"": ""922978989572"", ""ifsc"": ""SBIN086435"", ""bank_name"": ""SBI"", ""balance"": 114289}",74
+7250,1271,domicile_certificate,"{""name"": ""Santosh Dewangan 2"", ""dob"": ""1962-10-09"", ""district"": ""Janjgir-Champa"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 24}",90
+7251,1482,domicile_certificate,"{""name"": ""Bharat Mandavi"", ""dob"": ""1943-05-06"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 15}",88
+7252,1201,domicile_certificate,"{""name"": ""Kiran Banjare"", ""dob"": ""1946-01-26"", ""district"": ""Baloda Bazar"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 39}",79
+7253,1141,domicile_certificate,"{""name"": ""Santosh Dewangan"", ""dob"": ""1989-09-13"", ""district"": ""Bilaspur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 38}",97
+7254,1371,aadhaar,"{""name"": ""Mohan Thakur"", ""dob"": ""2001-03-16"", ""aadhar_number"": ""227051028767"", ""address"": ""803, Gandhi Chowk, Balrampur"", ""gender"": ""Male""}",85
+7255,1990,bank_passbook,"{""name"": ""Shanta Markam"", ""account_number"": ""308123696895"", ""ifsc"": ""SBIN066899"", ""bank_name"": ""Canara Bank"", ""balance"": 149003}",93
+7256,1859,bank_passbook,"{""name"": ""Brijlal Tandon"", ""account_number"": ""198993033210"", ""ifsc"": ""SBIN010514"", ""bank_name"": ""PNB"", ""balance"": 130617}",96
+7257,1079,bank_passbook,"{""name"": ""Kanta Yadav"", ""account_number"": ""163389431453"", ""ifsc"": ""SBIN099086"", ""bank_name"": ""HDFC"", ""balance"": 83000}",97
+7258,1738,income_certificate,"{""name"": ""Prakash Pandey 4"", ""annual_income"": ""Village LS"", ""district"": ""Bemetara"", ""issued_by"": ""Tehsildar Bemetara"", ""financial_year"": ""2024-25""}",96
+7259,1010,income_certificate,"{""name"": ""Manju Tandon"", ""annual_income"": ""Village JF"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",87
+7260,1979,domicile_certificate,"{""name"": ""Brijlal Tandon"", ""dob"": ""1974-08-11"", ""district"": ""Dantewada"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 15}",73
+7261,1938,income_certificate,"{""name"": ""Nirmala Dhivar"", ""annual_income"": ""Balod Nagar"", ""district"": ""Balod"", ""issued_by"": ""Tehsildar Balod"", ""financial_year"": ""2024-25""}",73
+7262,1795,caste_certificate,"{""name"": ""Meena Lahre"", ""caste"": ""SC"", ""district"": ""Balod"", ""certificate_number"": ""CG/BAL/93485""}",72
+7263,1586,aadhaar,"{""name"": ""Urmila Dhruv 9"", ""dob"": ""1954-09-18"", ""aadhar_number"": ""462805507740"", ""address"": ""561, Station Road, Narayanpur"", ""gender"": ""Female""}",90
+7264,1281,caste_certificate,"{""name"": ""Harish Tiwari"", ""caste"": ""General"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/60160""}",75
+7265,1847,caste_certificate,"{""name"": ""Laxmi Tiwari"", ""caste"": ""OBC"", ""district"": ""Surajpur"", ""certificate_number"": ""CG/SUR/45476""}",83
+7266,1706,income_certificate,"{""name"": ""Anil Sharma"", ""annual_income"": ""Village UM"", ""district"": ""Kondagaon"", ""issued_by"": ""Tehsildar Kondagaon"", ""financial_year"": ""2024-25""}",74
+7267,1037,aadhaar,"{""name"": ""Pratibha Soni"", ""dob"": ""1996-08-13"", ""aadhar_number"": ""698478961183"", ""address"": ""330, Indira Nagar, Rajnandgaon"", ""gender"": ""Female""}",82
+7268,1345,domicile_certificate,"{""name"": ""Ashok Patle 9"", ""dob"": ""1964-10-01"", ""district"": ""Raipur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 31}",76
+7269,1648,income_certificate,"{""name"": ""Vandana Nishad"", ""annual_income"": ""Ward 28"", ""district"": ""Narayanpur"", ""issued_by"": ""Tehsildar Narayanpur"", ""financial_year"": ""2024-25""}",89
+7270,1218,caste_certificate,"{""name"": ""Ganesh Markam"", ""caste"": ""SC"", ""district"": ""Bijapur"", ""certificate_number"": ""CG/BIJ/14780""}",86
+7271,1160,caste_certificate,"{""name"": ""Kailash Banjare"", ""caste"": ""General"", ""district"": ""Bijapur"", ""certificate_number"": ""CG/BIJ/34721""}",93
+7272,1135,domicile_certificate,"{""name"": ""Nirmala Dhivar 6"", ""dob"": ""1944-04-28"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 13}",80
+7273,1247,bank_passbook,"{""name"": ""Prakash Pandey 6"", ""account_number"": ""114072525864"", ""ifsc"": ""SBIN040804"", ""bank_name"": ""SBI"", ""balance"": 130634}",80
+7274,1321,bank_passbook,"{""name"": ""Chanda Thakur"", ""account_number"": ""678775694759"", ""ifsc"": ""SBIN047200"", ""bank_name"": ""SBI"", ""balance"": 72736}",98
+7275,1164,aadhaar,"{""name"": ""Pushpa Devi 5"", ""dob"": ""1939-10-29"", ""aadhar_number"": ""368157981238"", ""address"": ""679, Station Road, Bemetara"", ""gender"": ""Female""}",74
+7276,1906,caste_certificate,"{""name"": ""Harish Tiwari"", ""caste"": ""General"", ""district"": ""Raipur"", ""certificate_number"": ""CG/RAI/79365""}",79
+7277,1195,caste_certificate,"{""name"": ""Poonam Kosare"", ""caste"": ""OBC"", ""district"": ""Dantewada"", ""certificate_number"": ""CG/DAN/16457""}",85
+7278,1287,caste_certificate,"{""name"": ""Umesh Dhruv"", ""caste"": ""OBC"", ""district"": ""Kondagaon"", ""certificate_number"": ""CG/KON/11898""}",94
+7279,1978,bank_passbook,"{""name"": ""Mahesh Sahu 3"", ""account_number"": ""908365923294"", ""ifsc"": ""SBIN042342"", ""bank_name"": ""PNB"", ""balance"": 136132}",71
+7280,1876,bank_passbook,"{""name"": ""Kanta Yadav"", ""account_number"": ""722263326572"", ""ifsc"": ""SBIN089705"", ""bank_name"": ""Canara Bank"", ""balance"": 7407}",74
+7281,1272,caste_certificate,"{""name"": ""Kanta Yadav"", ""caste"": ""General"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/10512""}",79
+7282,1951,income_certificate,"{""name"": ""Mahesh Sahu"", ""annual_income"": ""Ward 2"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",72
+7283,1025,bank_passbook,"{""name"": ""Saraswati Patle 4"", ""account_number"": ""611152753635"", ""ifsc"": ""SBIN073467"", ""bank_name"": ""SBI"", ""balance"": 147082}",75
+7284,1242,caste_certificate,"{""name"": ""Prakash Pandey"", ""caste"": ""OBC"", ""district"": ""Sukma"", ""certificate_number"": ""CG/SUK/41657""}",99
+7285,1133,domicile_certificate,"{""name"": ""Rani Netam"", ""dob"": ""1978-10-02"", ""district"": ""Mungeli"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 35}",90
+7286,1659,income_certificate,"{""name"": ""Hemant Kosare"", ""annual_income"": ""Village GK"", ""district"": ""Kanker"", ""issued_by"": ""Tehsildar Kanker"", ""financial_year"": ""2024-25""}",85
+7287,1447,caste_certificate,"{""name"": ""Hemant Kosare"", ""caste"": ""SC"", ""district"": ""Jashpur"", ""certificate_number"": ""CG/JAS/54977""}",78
+7288,1452,domicile_certificate,"{""name"": ""Geeta Sharma 7"", ""dob"": ""1944-08-21"", ""district"": ""Bijapur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 9}",84
+7289,1131,domicile_certificate,"{""name"": ""Harish Tiwari"", ""dob"": ""1946-02-13"", ""district"": ""Bilaspur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 27}",85
+7290,1970,income_certificate,"{""name"": ""Anil Sharma"", ""annual_income"": ""Village SO"", ""district"": ""Korba"", ""issued_by"": ""Tehsildar Korba"", ""financial_year"": ""2024-25""}",80
+7291,1329,caste_certificate,"{""name"": ""Ashok Patle 1"", ""caste"": ""SC"", ""district"": ""Raigarh"", ""certificate_number"": ""CG/RAI/83061""}",99
+7292,1110,caste_certificate,"{""name"": ""Virendra Soni"", ""caste"": ""OBC"", ""district"": ""Bastar"", ""certificate_number"": ""CG/BAS/71361""}",73
+7293,1185,domicile_certificate,"{""name"": ""Santram Dhivar"", ""dob"": ""1966-09-22"", ""district"": ""Dantewada"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 31}",83
+7294,1109,caste_certificate,"{""name"": ""Harish Tiwari 5"", ""caste"": ""ST"", ""district"": ""Bemetara"", ""certificate_number"": ""CG/BEM/99566""}",77
+7295,1595,income_certificate,"{""name"": ""Laxmi Tiwari 6"", ""annual_income"": ""Colony 2"", ""district"": ""Rajnandgaon"", ""issued_by"": ""Tehsildar Rajnandgaon"", ""financial_year"": ""2024-25""}",95
+7296,1791,bank_passbook,"{""name"": ""Rekha Verma"", ""account_number"": ""766267697554"", ""ifsc"": ""SBIN044898"", ""bank_name"": ""PNB"", ""balance"": 122286}",92
+7297,1053,income_certificate,"{""name"": ""Deepak Sinha"", ""annual_income"": ""Village LM"", ""district"": ""Korba"", ""issued_by"": ""Tehsildar Korba"", ""financial_year"": ""2024-25""}",72
+7298,1355,aadhaar,"{""name"": ""Deepak Sinha"", ""dob"": ""1952-07-23"", ""aadhar_number"": ""765158815793"", ""address"": ""237, Nehru Nagar, Surajpur"", ""gender"": ""Male""}",99
+7299,1658,aadhaar,"{""name"": ""Dinesh Patel"", ""dob"": ""1957-02-21"", ""aadhar_number"": ""028966605342"", ""address"": ""859, Indira Nagar, Mahasamund"", ""gender"": ""Male""}",76
+7300,1906,caste_certificate,"{""name"": ""Harish Tiwari"", ""caste"": ""General"", ""district"": ""Raipur"", ""certificate_number"": ""CG/RAI/39174""}",90
+7301,1256,bank_passbook,"{""name"": ""Dilip Nishad"", ""account_number"": ""576958434005"", ""ifsc"": ""SBIN030656"", ""bank_name"": ""Canara Bank"", ""balance"": 142451}",89
+7302,1660,caste_certificate,"{""name"": ""Brijlal Tandon"", ""caste"": ""General"", ""district"": ""Kanker"", ""certificate_number"": ""CG/KAN/76092""}",75
+7303,1914,caste_certificate,"{""name"": ""Rajesh Verma"", ""caste"": ""General"", ""district"": ""Durg"", ""certificate_number"": ""CG/DUR/68518""}",85
+7304,1194,income_certificate,"{""name"": ""Seema Chandel"", ""annual_income"": ""Ward 8"", ""district"": ""Bemetara"", ""issued_by"": ""Tehsildar Bemetara"", ""financial_year"": ""2024-25""}",92
+7305,1906,bank_passbook,"{""name"": ""Harish Tiwari"", ""account_number"": ""761990170452"", ""ifsc"": ""SBIN089124"", ""bank_name"": ""SBI"", ""balance"": 58946}",84
+7306,1942,aadhaar,"{""name"": ""Mohan Thakur"", ""dob"": ""1976-12-26"", ""aadhar_number"": ""773759493307"", ""address"": ""26, Main Road, Raipur"", ""gender"": ""Male""}",92
+7307,1615,aadhaar,"{""name"": ""Sushila Pandey"", ""dob"": ""1953-09-21"", ""aadhar_number"": ""430895231202"", ""address"": ""208, Main Road, Jashpur"", ""gender"": ""Female""}",74
+7308,1453,caste_certificate,"{""name"": ""Chanda Thakur"", ""caste"": ""General"", ""district"": ""Kondagaon"", ""certificate_number"": ""CG/KON/88571""}",77
+7309,1581,caste_certificate,"{""name"": ""Mamta Dewangan 3"", ""caste"": ""OBC"", ""district"": ""Baloda Bazar"", ""certificate_number"": ""CG/BAL/51295""}",84
+7310,1684,aadhaar,"{""name"": ""Anil Sharma"", ""dob"": ""1937-02-03"", ""aadhar_number"": ""371616088197"", ""address"": ""536, Main Road, Baloda Bazar"", ""gender"": ""Male""}",79
+7311,1822,income_certificate,"{""name"": ""Mahesh Sahu"", ""annual_income"": ""Sukma Nagar"", ""district"": ""Sukma"", ""issued_by"": ""Tehsildar Sukma"", ""financial_year"": ""2024-25""}",72
+7312,1809,aadhaar,"{""name"": ""Ravi Gupta"", ""dob"": ""1959-02-22"", ""aadhar_number"": ""828967136054"", ""address"": ""210, Gandhi Chowk, Korba"", ""gender"": ""Male""}",83
+7313,1963,income_certificate,"{""name"": ""Laxmi Tiwari"", ""annual_income"": ""Colony 6"", ""district"": ""Kondagaon"", ""issued_by"": ""Tehsildar Kondagaon"", ""financial_year"": ""2024-25""}",75
+7314,1035,domicile_certificate,"{""name"": ""Vijay Singh"", ""dob"": ""1956-03-30"", ""district"": ""Kabirdham"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 25}",89
+7315,1091,aadhaar,"{""name"": ""Kiran Banjare"", ""dob"": ""1956-09-09"", ""aadhar_number"": ""582710910430"", ""address"": ""370, Station Road, Baloda Bazar"", ""gender"": ""Female""}",70
+7316,1735,caste_certificate,"{""name"": ""Dinesh Patel"", ""caste"": ""General"", ""district"": ""Bilaspur"", ""certificate_number"": ""CG/BIL/42955""}",76
+7317,1404,caste_certificate,"{""name"": ""Kamla Sahu 1"", ""caste"": ""ST"", ""district"": ""Korba"", ""certificate_number"": ""CG/KOR/38257""}",82
+7318,1274,caste_certificate,"{""name"": ""Sunita Yadav"", ""caste"": ""ST"", ""district"": ""Baloda Bazar"", ""certificate_number"": ""CG/BAL/42896""}",76
+7319,1844,income_certificate,"{""name"": ""Hema Sinha"", ""annual_income"": ""Colony 14"", ""district"": ""Korba"", ""issued_by"": ""Tehsildar Korba"", ""financial_year"": ""2024-25""}",93
+7320,1797,bank_passbook,"{""name"": ""Santosh Dewangan"", ""account_number"": ""975350257597"", ""ifsc"": ""SBIN064840"", ""bank_name"": ""HDFC"", ""balance"": 25354}",78
+7321,1151,income_certificate,"{""name"": ""Santosh Dewangan"", ""annual_income"": ""Colony 7"", ""district"": ""Kabirdham"", ""issued_by"": ""Tehsildar Kabirdham"", ""financial_year"": ""2024-25""}",92
+7322,1779,aadhaar,"{""name"": ""Sudha Gupta"", ""dob"": ""2004-10-23"", ""aadhar_number"": ""298532436792"", ""address"": ""683, Gandhi Chowk, Bastar"", ""gender"": ""Female""}",90
+7323,1058,domicile_certificate,"{""name"": ""Nirmala Dhivar"", ""dob"": ""1937-02-21"", ""district"": ""Durg"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 14}",75
+7324,1942,domicile_certificate,"{""name"": ""Mohan Thakur"", ""dob"": ""1976-12-26"", ""district"": ""Raipur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 30}",92
+7325,1513,income_certificate,"{""name"": ""Lalita Singh"", ""annual_income"": ""Ward 4"", ""district"": ""Surajpur"", ""issued_by"": ""Tehsildar Surajpur"", ""financial_year"": ""2024-25""}",80
+7326,1161,domicile_certificate,"{""name"": ""Kailash Banjare 9"", ""dob"": ""1997-08-30"", ""district"": ""Janjgir-Champa"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 37}",71
+7327,1868,bank_passbook,"{""name"": ""Kailash Banjare"", ""account_number"": ""593578004196"", ""ifsc"": ""SBIN081482"", ""bank_name"": ""Bank of Baroda"", ""balance"": 127459}",73
+7328,1058,bank_passbook,"{""name"": ""Nirmala Dhivar"", ""account_number"": ""340157398993"", ""ifsc"": ""SBIN034688"", ""bank_name"": ""HDFC"", ""balance"": 98552}",76
+7329,1041,aadhaar,"{""name"": ""Suresh Yadav 5"", ""dob"": ""1954-01-05"", ""aadhar_number"": ""838851606071"", ""address"": ""123, Main Road, Sukma"", ""gender"": ""Male""}",71
+7330,1603,aadhaar,"{""name"": ""Rani Netam"", ""dob"": ""1974-03-26"", ""aadhar_number"": ""634212545080"", ""address"": ""954, Indira Nagar, Kabirdham"", ""gender"": ""Female""}",98
+7331,1062,domicile_certificate,"{""name"": ""Ravi Gupta 5"", ""dob"": ""2004-03-31"", ""district"": ""Dantewada"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 18}",90
+7332,1999,income_certificate,"{""name"": ""Suresh Yadav 9"", ""annual_income"": ""Ward 18"", ""district"": ""Bilaspur"", ""issued_by"": ""Tehsildar Bilaspur"", ""financial_year"": ""2024-25""}",80
+7333,1527,domicile_certificate,"{""name"": ""Nirmala Dhivar 9"", ""dob"": ""1950-12-18"", ""district"": ""Mungeli"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 35}",99
+7334,1457,caste_certificate,"{""name"": ""Umesh Dhruv"", ""caste"": ""General"", ""district"": ""Rajnandgaon"", ""certificate_number"": ""CG/RAJ/47183""}",82
+7335,1379,bank_passbook,"{""name"": ""Bimla Mishra 7"", ""account_number"": ""230623647303"", ""ifsc"": ""SBIN072840"", ""bank_name"": ""PNB"", ""balance"": 145897}",91
+7336,1317,domicile_certificate,"{""name"": ""Lalita Singh"", ""dob"": ""1986-10-24"", ""district"": ""Raipur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 6}",77
+7337,1297,caste_certificate,"{""name"": ""Bharat Mandavi"", ""caste"": ""General"", ""district"": ""Rajnandgaon"", ""certificate_number"": ""CG/RAJ/65201""}",90
+7338,1222,income_certificate,"{""name"": ""Sanjay Mishra"", ""annual_income"": ""Village WL"", ""district"": ""Kabirdham"", ""issued_by"": ""Tehsildar Kabirdham"", ""financial_year"": ""2024-25""}",75
+7339,1729,caste_certificate,"{""name"": ""Dinesh Patel"", ""caste"": ""ST"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/59616""}",81
+7340,1665,domicile_certificate,"{""name"": ""Seema Chandel"", ""dob"": ""1940-02-04"", ""district"": ""Korba"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 38}",79
+7341,1961,aadhaar,"{""name"": ""Harish Tiwari 4"", ""dob"": ""2005-07-06"", ""aadhar_number"": ""451160895897"", ""address"": ""726, Station Road, Bemetara"", ""gender"": ""Male""}",80
+7342,1304,domicile_certificate,"{""name"": ""Umesh Dhruv"", ""dob"": ""1972-04-27"", ""district"": ""Korba"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 17}",80
+7343,1124,domicile_certificate,"{""name"": ""Kanta Yadav 7"", ""dob"": ""1989-02-12"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 25}",85
+7344,1209,caste_certificate,"{""name"": ""Chandra Shekhar 3"", ""caste"": ""OBC"", ""district"": ""Dantewada"", ""certificate_number"": ""CG/DAN/18910""}",96
+7345,1528,caste_certificate,"{""name"": ""Geeta Sharma 6"", ""caste"": ""SC"", ""district"": ""Kondagaon"", ""certificate_number"": ""CG/KON/24185""}",95
+7346,1747,domicile_certificate,"{""name"": ""Dilip Nishad"", ""dob"": ""1974-01-11"", ""district"": ""Baloda Bazar"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 30}",88
+7347,1691,domicile_certificate,"{""name"": ""Brijlal Tandon"", ""dob"": ""1996-07-16"", ""district"": ""Gariaband"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 27}",92
+7348,1837,bank_passbook,"{""name"": ""Dinesh Patel"", ""account_number"": ""549167318300"", ""ifsc"": ""SBIN052887"", ""bank_name"": ""Canara Bank"", ""balance"": 4304}",71
+7349,1805,income_certificate,"{""name"": ""Anil Sharma"", ""annual_income"": ""Janjgir-Champa Nagar"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",92
+7350,1225,domicile_certificate,"{""name"": ""Deepak Sinha 3"", ""dob"": ""1939-07-13"", ""district"": ""Mahasamund"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 25}",74
+7351,1187,bank_passbook,"{""name"": ""Sudha Gupta"", ""account_number"": ""537412386694"", ""ifsc"": ""SBIN045657"", ""bank_name"": ""HDFC"", ""balance"": 68184}",90
+7352,1144,aadhaar,"{""name"": ""Anil Sharma"", ""dob"": ""1996-05-07"", ""aadhar_number"": ""211179080759"", ""address"": ""894, Station Road, Raigarh"", ""gender"": ""Male""}",70
+7353,1578,income_certificate,"{""name"": ""Dinesh Patel"", ""annual_income"": ""Ward 25"", ""district"": ""Bastar"", ""issued_by"": ""Tehsildar Bastar"", ""financial_year"": ""2024-25""}",75
+7354,1995,income_certificate,"{""name"": ""Rekha Verma"", ""annual_income"": ""Village DJ"", ""district"": ""Durg"", ""issued_by"": ""Tehsildar Durg"", ""financial_year"": ""2024-25""}",80
+7355,1095,caste_certificate,"{""name"": ""Naresh Chandel"", ""caste"": ""OBC"", ""district"": ""Raigarh"", ""certificate_number"": ""CG/RAI/54369""}",81
+7356,1492,bank_passbook,"{""name"": ""Naresh Chandel"", ""account_number"": ""506449495168"", ""ifsc"": ""SBIN035947"", ""bank_name"": ""Canara Bank"", ""balance"": 35199}",77
+7357,1497,domicile_certificate,"{""name"": ""Urmila Dhruv 1"", ""dob"": ""2002-03-14"", ""district"": ""Bemetara"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 31}",71
+7358,1280,aadhaar,"{""name"": ""Kanta Yadav 9"", ""dob"": ""1976-12-10"", ""aadhar_number"": ""025643471287"", ""address"": ""250, Gandhi Chowk, Surguja"", ""gender"": ""Female""}",79
+7359,1148,domicile_certificate,"{""name"": ""Poonam Kosare 3"", ""dob"": ""1950-02-05"", ""district"": ""Jashpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 24}",76
+7360,1059,income_certificate,"{""name"": ""Deepak Sinha"", ""annual_income"": ""Ward 22"", ""district"": ""Balrampur"", ""issued_by"": ""Tehsildar Balrampur"", ""financial_year"": ""2024-25""}",89
+7361,1867,domicile_certificate,"{""name"": ""Meena Lahre"", ""dob"": ""2006-11-17"", ""district"": ""Kanker"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 7}",87
+7362,1080,income_certificate,"{""name"": ""Kanta Yadav 2"", ""annual_income"": ""Village PE"", ""district"": ""Balod"", ""issued_by"": ""Tehsildar Balod"", ""financial_year"": ""2024-25""}",95
+7363,1499,income_certificate,"{""name"": ""Hema Sinha"", ""annual_income"": ""Colony 5"", ""district"": ""Raigarh"", ""issued_by"": ""Tehsildar Raigarh"", ""financial_year"": ""2024-25""}",75
+7364,1605,bank_passbook,"{""name"": ""Vijay Singh"", ""account_number"": ""233757064971"", ""ifsc"": ""SBIN012115"", ""bank_name"": ""HDFC"", ""balance"": 53511}",81
+7365,1654,income_certificate,"{""name"": ""Ravi Gupta"", ""annual_income"": ""Kanker Nagar"", ""district"": ""Kanker"", ""issued_by"": ""Tehsildar Kanker"", ""financial_year"": ""2024-25""}",79
+7366,1914,income_certificate,"{""name"": ""Rajesh Verma"", ""annual_income"": ""Durg Nagar"", ""district"": ""Durg"", ""issued_by"": ""Tehsildar Durg"", ""financial_year"": ""2024-25""}",89
+7367,1157,income_certificate,"{""name"": ""Sunil Netam 2"", ""annual_income"": ""Ward 21"", ""district"": ""Raigarh"", ""issued_by"": ""Tehsildar Raigarh"", ""financial_year"": ""2024-25""}",89
+7368,1654,caste_certificate,"{""name"": ""Ravi Gupta"", ""caste"": ""General"", ""district"": ""Kanker"", ""certificate_number"": ""CG/KAN/14317""}",72
+7369,1734,caste_certificate,"{""name"": ""Ashok Patle"", ""caste"": ""SC"", ""district"": ""Balrampur"", ""certificate_number"": ""CG/BAL/84418""}",82
+7370,1920,income_certificate,"{""name"": ""Mohan Thakur"", ""annual_income"": ""Ward 14"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",87
+7371,1267,aadhaar,"{""name"": ""Vijay Singh"", ""dob"": ""1976-07-11"", ""aadhar_number"": ""041257771183"", ""address"": ""391, Station Road, Raipur"", ""gender"": ""Male""}",84
+7372,1825,domicile_certificate,"{""name"": ""Urmila Dhruv"", ""dob"": ""1942-09-29"", ""district"": ""Mahasamund"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 26}",76
+7373,1618,aadhaar,"{""name"": ""Urmila Dhruv"", ""dob"": ""1953-07-30"", ""aadhar_number"": ""965466345443"", ""address"": ""629, Station Road, Balod"", ""gender"": ""Female""}",99
+7374,1559,domicile_certificate,"{""name"": ""Laxmi Tiwari"", ""dob"": ""1986-12-21"", ""district"": ""Kondagaon"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 39}",99
+7375,1218,caste_certificate,"{""name"": ""Ganesh Markam"", ""caste"": ""SC"", ""district"": ""Bijapur"", ""certificate_number"": ""CG/BIJ/75382""}",82
+7376,1469,bank_passbook,"{""name"": ""Bharat Mandavi 4"", ""account_number"": ""151642889644"", ""ifsc"": ""SBIN067449"", ""bank_name"": ""HDFC"", ""balance"": 41849}",79
+7377,1311,domicile_certificate,"{""name"": ""Savita Bai"", ""dob"": ""1969-05-06"", ""district"": ""Baloda Bazar"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 32}",82
+7378,1387,bank_passbook,"{""name"": ""Chanda Thakur"", ""account_number"": ""857239703976"", ""ifsc"": ""SBIN083663"", ""bank_name"": ""PNB"", ""balance"": 114096}",99
+7379,1701,aadhaar,"{""name"": ""Durga Mandavi 8"", ""dob"": ""1976-04-24"", ""aadhar_number"": ""193759192267"", ""address"": ""929, Main Road, Dantewada"", ""gender"": ""Female""}",91
+7380,1991,bank_passbook,"{""name"": ""Virendra Soni"", ""account_number"": ""442024491831"", ""ifsc"": ""SBIN037572"", ""bank_name"": ""HDFC"", ""balance"": 108079}",86
+7381,1163,caste_certificate,"{""name"": ""Rajesh Verma"", ""caste"": ""SC"", ""district"": ""Rajnandgaon"", ""certificate_number"": ""CG/RAJ/12149""}",86
+7382,1335,caste_certificate,"{""name"": ""Kanta Yadav"", ""caste"": ""OBC"", ""district"": ""Kabirdham"", ""certificate_number"": ""CG/KAB/85927""}",75
+7383,1343,domicile_certificate,"{""name"": ""Manju Tandon 5"", ""dob"": ""1945-05-02"", ""district"": ""Bilaspur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 15}",88
+7384,1489,income_certificate,"{""name"": ""Nirmala Dhivar"", ""annual_income"": ""Village DY"", ""district"": ""Surguja"", ""issued_by"": ""Tehsildar Surguja"", ""financial_year"": ""2024-25""}",82
+7385,1390,bank_passbook,"{""name"": ""Sanjay Mishra"", ""account_number"": ""328261804479"", ""ifsc"": ""SBIN028710"", ""bank_name"": ""Bank of Baroda"", ""balance"": 118421}",93
+7386,1835,income_certificate,"{""name"": ""Kailash Banjare"", ""annual_income"": ""Colony 10"", ""district"": ""Balod"", ""issued_by"": ""Tehsildar Balod"", ""financial_year"": ""2024-25""}",85
+7387,1251,caste_certificate,"{""name"": ""Ashok Patle"", ""caste"": ""OBC"", ""district"": ""Balrampur"", ""certificate_number"": ""CG/BAL/64115""}",99
+7388,1554,bank_passbook,"{""name"": ""Prakash Pandey"", ""account_number"": ""283444944327"", ""ifsc"": ""SBIN072072"", ""bank_name"": ""SBI"", ""balance"": 71905}",84
+7389,1182,income_certificate,"{""name"": ""Hemant Kosare"", ""annual_income"": ""Ward 28"", ""district"": ""Korba"", ""issued_by"": ""Tehsildar Korba"", ""financial_year"": ""2024-25""}",94
+7390,1689,income_certificate,"{""name"": ""Shanta Markam"", ""annual_income"": ""Colony 10"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",78
+7391,1654,caste_certificate,"{""name"": ""Ravi Gupta"", ""caste"": ""General"", ""district"": ""Kanker"", ""certificate_number"": ""CG/KAN/66416""}",83
+7392,1408,aadhaar,"{""name"": ""Bharat Mandavi"", ""dob"": ""1945-02-23"", ""aadhar_number"": ""425859177932"", ""address"": ""878, Indira Nagar, Baloda Bazar"", ""gender"": ""Male""}",71
+7393,1362,aadhaar,"{""name"": ""Kamla Sahu"", ""dob"": ""2002-10-17"", ""aadhar_number"": ""562779630448"", ""address"": ""679, Nehru Nagar, Sukma"", ""gender"": ""Female""}",99
+7394,1980,caste_certificate,"{""name"": ""Ravi Gupta"", ""caste"": ""SC"", ""district"": ""Gariaband"", ""certificate_number"": ""CG/GAR/88577""}",93
+7395,1762,domicile_certificate,"{""name"": ""Bimla Mishra 9"", ""dob"": ""1947-12-24"", ""district"": ""Mahasamund"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 10}",87
+7396,1050,domicile_certificate,"{""name"": ""Mohan Thakur"", ""dob"": ""1967-02-06"", ""district"": ""Durg"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 37}",82
+7397,1173,bank_passbook,"{""name"": ""Mahesh Sahu"", ""account_number"": ""704790474700"", ""ifsc"": ""SBIN060608"", ""bank_name"": ""HDFC"", ""balance"": 137780}",85
+7398,1966,bank_passbook,"{""name"": ""Rekha Verma 9"", ""account_number"": ""288836694289"", ""ifsc"": ""SBIN045630"", ""bank_name"": ""Bank of Baroda"", ""balance"": 67799}",98
+7399,1020,income_certificate,"{""name"": ""Mahesh Sahu"", ""annual_income"": ""Colony 2"", ""district"": ""Raipur"", ""issued_by"": ""Tehsildar Raipur"", ""financial_year"": ""2024-25""}",91
+7400,1958,bank_passbook,"{""name"": ""Ramesh Kumar"", ""account_number"": ""191741474641"", ""ifsc"": ""SBIN078175"", ""bank_name"": ""Canara Bank"", ""balance"": 85937}",83
+7401,1820,aadhaar,"{""name"": ""Rajesh Verma"", ""dob"": ""1947-10-20"", ""aadhar_number"": ""208601460519"", ""address"": ""738, Nehru Nagar, Dantewada"", ""gender"": ""Male""}",77
+7402,1684,caste_certificate,"{""name"": ""Anil Sharma"", ""caste"": ""General"", ""district"": ""Baloda Bazar"", ""certificate_number"": ""CG/BAL/45792""}",71
+7403,1871,bank_passbook,"{""name"": ""Sushila Pandey"", ""account_number"": ""696893152538"", ""ifsc"": ""SBIN039865"", ""bank_name"": ""PNB"", ""balance"": 27606}",87
+7404,1254,bank_passbook,"{""name"": ""Hemant Kosare"", ""account_number"": ""233262781996"", ""ifsc"": ""SBIN061778"", ""bank_name"": ""HDFC"", ""balance"": 50968}",78
+7405,1481,domicile_certificate,"{""name"": ""Bharat Mandavi"", ""dob"": ""1973-11-01"", ""district"": ""Korba"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 9}",95
+7406,1139,income_certificate,"{""name"": ""Mamta Dewangan"", ""annual_income"": ""Village TR"", ""district"": ""Durg"", ""issued_by"": ""Tehsildar Durg"", ""financial_year"": ""2024-25""}",85
+7407,1989,domicile_certificate,"{""name"": ""Manju Tandon"", ""dob"": ""1978-03-05"", ""district"": ""Mungeli"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 20}",90
+7408,1994,bank_passbook,"{""name"": ""Chandra Shekhar"", ""account_number"": ""987129937480"", ""ifsc"": ""SBIN010309"", ""bank_name"": ""SBI"", ""balance"": 42353}",75
+7409,1953,aadhaar,"{""name"": ""Dilip Nishad 2"", ""dob"": ""1978-01-29"", ""aadhar_number"": ""611258423300"", ""address"": ""728, Indira Nagar, Kondagaon"", ""gender"": ""Male""}",72
+7410,1395,income_certificate,"{""name"": ""Mahesh Sahu 9"", ""annual_income"": ""Colony 1"", ""district"": ""Mungeli"", ""issued_by"": ""Tehsildar Mungeli"", ""financial_year"": ""2024-25""}",73
+7411,1514,caste_certificate,"{""name"": ""Mukesh Yadav 9"", ""caste"": ""General"", ""district"": ""Sukma"", ""certificate_number"": ""CG/SUK/33642""}",70
+7412,1007,income_certificate,"{""name"": ""Dinesh Patel"", ""annual_income"": ""Ward 14"", ""district"": ""Balod"", ""issued_by"": ""Tehsildar Balod"", ""financial_year"": ""2024-25""}",77
+7413,1594,aadhaar,"{""name"": ""Sanjay Mishra"", ""dob"": ""1976-02-11"", ""aadhar_number"": ""711523802362"", ""address"": ""474, Nehru Nagar, Kabirdham"", ""gender"": ""Male""}",81
+7414,1156,income_certificate,"{""name"": ""Santosh Dewangan"", ""annual_income"": ""Colony 9"", ""district"": ""Kondagaon"", ""issued_by"": ""Tehsildar Kondagaon"", ""financial_year"": ""2024-25""}",72
+7415,1951,income_certificate,"{""name"": ""Mahesh Sahu"", ""annual_income"": ""Ward 2"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",77
+7416,1834,domicile_certificate,"{""name"": ""Seema Chandel"", ""dob"": ""1937-11-13"", ""district"": ""Sukma"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 18}",91
+7417,1069,caste_certificate,"{""name"": ""Hemant Kosare 1"", ""caste"": ""SC"", ""district"": ""Bijapur"", ""certificate_number"": ""CG/BIJ/10638""}",88
+7418,1567,income_certificate,"{""name"": ""Santosh Dewangan 9"", ""annual_income"": ""Village EH"", ""district"": ""Raipur"", ""issued_by"": ""Tehsildar Raipur"", ""financial_year"": ""2024-25""}",72
+7419,1172,domicile_certificate,"{""name"": ""Hemant Kosare"", ""dob"": ""1997-11-06"", ""district"": ""Balrampur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 7}",75
+7420,1251,aadhaar,"{""name"": ""Ashok Patle"", ""dob"": ""1998-06-27"", ""aadhar_number"": ""999219212493"", ""address"": ""114, Station Road, Balrampur"", ""gender"": ""Male""}",87
+7421,1610,domicile_certificate,"{""name"": ""Durga Mandavi 9"", ""dob"": ""1955-01-02"", ""district"": ""Mungeli"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 35}",75
+7422,1036,aadhaar,"{""name"": ""Chanda Thakur 3"", ""dob"": ""1944-12-04"", ""aadhar_number"": ""268117758917"", ""address"": ""809, Gandhi Chowk, Kondagaon"", ""gender"": ""Female""}",75
+7423,1638,caste_certificate,"{""name"": ""Seema Chandel"", ""caste"": ""General"", ""district"": ""Kondagaon"", ""certificate_number"": ""CG/KON/89219""}",70
+7424,1920,income_certificate,"{""name"": ""Mohan Thakur"", ""annual_income"": ""Ward 14"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",73
+7425,1680,domicile_certificate,"{""name"": ""Ravi Gupta"", ""dob"": ""2001-05-09"", ""district"": ""Sukma"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 36}",90
+7426,1328,domicile_certificate,"{""name"": ""Mukesh Yadav"", ""dob"": ""1959-04-12"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 5}",70
+7427,1716,aadhaar,"{""name"": ""Harish Tiwari"", ""dob"": ""1962-03-21"", ""aadhar_number"": ""867066320162"", ""address"": ""61, Station Road, Surajpur"", ""gender"": ""Male""}",92
+7428,1108,bank_passbook,"{""name"": ""Kailash Banjare"", ""account_number"": ""923567780213"", ""ifsc"": ""SBIN020378"", ""bank_name"": ""Canara Bank"", ""balance"": 99623}",97
+7429,1351,income_certificate,"{""name"": ""Saraswati Patle"", ""annual_income"": ""Colony 7"", ""district"": ""Sukma"", ""issued_by"": ""Tehsildar Sukma"", ""financial_year"": ""2024-25""}",96
+7430,1776,income_certificate,"{""name"": ""Suresh Yadav"", ""annual_income"": ""Ward 5"", ""district"": ""Surajpur"", ""issued_by"": ""Tehsildar Surajpur"", ""financial_year"": ""2024-25""}",79
+7431,1871,caste_certificate,"{""name"": ""Sushila Pandey"", ""caste"": ""OBC"", ""district"": ""Mungeli"", ""certificate_number"": ""CG/MUN/79415""}",77
+7432,1264,income_certificate,"{""name"": ""Kamla Sahu"", ""annual_income"": ""Ward 27"", ""district"": ""Bilaspur"", ""issued_by"": ""Tehsildar Bilaspur"", ""financial_year"": ""2024-25""}",95
+7433,1885,bank_passbook,"{""name"": ""Mukesh Yadav"", ""account_number"": ""958605497432"", ""ifsc"": ""SBIN073040"", ""bank_name"": ""SBI"", ""balance"": 98705}",99
+7434,1075,caste_certificate,"{""name"": ""Sunita Yadav"", ""caste"": ""ST"", ""district"": ""Jashpur"", ""certificate_number"": ""CG/JAS/47313""}",93
+7435,1505,caste_certificate,"{""name"": ""Pratibha Soni"", ""caste"": ""General"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/67063""}",89
+7436,1119,aadhaar,"{""name"": ""Chandra Shekhar"", ""dob"": ""1945-04-11"", ""aadhar_number"": ""120216979729"", ""address"": ""707, Nehru Nagar, Mahasamund"", ""gender"": ""Male""}",84
+7437,2000,aadhaar,"{""name"": ""Kiran Banjare 5"", ""dob"": ""1998-11-24"", ""aadhar_number"": ""405013320344"", ""address"": ""708, Indira Nagar, Narayanpur"", ""gender"": ""Female""}",98
+7438,1733,bank_passbook,"{""name"": ""Dilip Nishad"", ""account_number"": ""110532101895"", ""ifsc"": ""SBIN027481"", ""bank_name"": ""Canara Bank"", ""balance"": 37865}",87
+7439,1991,income_certificate,"{""name"": ""Virendra Soni"", ""annual_income"": ""Colony 4"", ""district"": ""Bijapur"", ""issued_by"": ""Tehsildar Bijapur"", ""financial_year"": ""2024-25""}",98
+7440,1034,caste_certificate,"{""name"": ""Sanjay Mishra"", ""caste"": ""General"", ""district"": ""Balrampur"", ""certificate_number"": ""CG/BAL/16976""}",71
+7441,1639,income_certificate,"{""name"": ""Rajesh Verma"", ""annual_income"": ""Ward 4"", ""district"": ""Balod"", ""issued_by"": ""Tehsildar Balod"", ""financial_year"": ""2024-25""}",91
+7442,1751,bank_passbook,"{""name"": ""Brijlal Tandon"", ""account_number"": ""700735229430"", ""ifsc"": ""SBIN036490"", ""bank_name"": ""Bank of Baroda"", ""balance"": 149871}",90
+7443,1117,income_certificate,"{""name"": ""Bharat Mandavi"", ""annual_income"": ""Gariaband Nagar"", ""district"": ""Gariaband"", ""issued_by"": ""Tehsildar Gariaband"", ""financial_year"": ""2024-25""}",96
+7444,1210,income_certificate,"{""name"": ""Seema Chandel"", ""annual_income"": ""Rajnandgaon Nagar"", ""district"": ""Rajnandgaon"", ""issued_by"": ""Tehsildar Rajnandgaon"", ""financial_year"": ""2024-25""}",73
+7445,1390,aadhaar,"{""name"": ""Sanjay Mishra"", ""dob"": ""1969-12-28"", ""aadhar_number"": ""241039773973"", ""address"": ""741, Gandhi Chowk, Mungeli"", ""gender"": ""Male""}",70
+7446,1384,bank_passbook,"{""name"": ""Savita Bai"", ""account_number"": ""881127568817"", ""ifsc"": ""SBIN038140"", ""bank_name"": ""PNB"", ""balance"": 70546}",92
+7447,1078,bank_passbook,"{""name"": ""Bimla Mishra 9"", ""account_number"": ""251326456656"", ""ifsc"": ""SBIN099553"", ""bank_name"": ""Bank of Baroda"", ""balance"": 49995}",92
+7448,1462,domicile_certificate,"{""name"": ""Mohan Thakur"", ""dob"": ""1998-01-17"", ""district"": ""Balod"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 15}",81
+7449,1152,aadhaar,"{""name"": ""Ramkumar Lahre"", ""dob"": ""1951-11-29"", ""aadhar_number"": ""312073564757"", ""address"": ""191, Main Road, Kanker"", ""gender"": ""Male""}",98
+7450,1168,aadhaar,"{""name"": ""Harish Tiwari"", ""dob"": ""1957-03-15"", ""aadhar_number"": ""817703886086"", ""address"": ""738, Station Road, Balod"", ""gender"": ""Male""}",77
+7451,1115,aadhaar,"{""name"": ""Suresh Yadav"", ""dob"": ""2000-08-12"", ""aadhar_number"": ""421689421044"", ""address"": ""19, Main Road, Kabirdham"", ""gender"": ""Male""}",83
+7452,1479,bank_passbook,"{""name"": ""Chanda Thakur"", ""account_number"": ""896056393136"", ""ifsc"": ""SBIN048028"", ""bank_name"": ""PNB"", ""balance"": 139708}",98
+7453,1763,income_certificate,"{""name"": ""Brijlal Tandon 4"", ""annual_income"": ""Village KU"", ""district"": ""Kanker"", ""issued_by"": ""Tehsildar Kanker"", ""financial_year"": ""2024-25""}",75
+7454,1912,domicile_certificate,"{""name"": ""Santosh Dewangan"", ""dob"": ""1978-03-05"", ""district"": ""Bilaspur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 36}",91
+7455,1028,aadhaar,"{""name"": ""Kamla Sahu"", ""dob"": ""1948-11-16"", ""aadhar_number"": ""398214658404"", ""address"": ""426, Nehru Nagar, Baloda Bazar"", ""gender"": ""Female""}",93
+7456,1776,aadhaar,"{""name"": ""Suresh Yadav"", ""dob"": ""1955-11-20"", ""aadhar_number"": ""113484339133"", ""address"": ""382, Nehru Nagar, Surajpur"", ""gender"": ""Male""}",82
+7457,1457,bank_passbook,"{""name"": ""Umesh Dhruv"", ""account_number"": ""220735038421"", ""ifsc"": ""SBIN066755"", ""bank_name"": ""Canara Bank"", ""balance"": 141775}",83
+7458,1755,income_certificate,"{""name"": ""Rani Netam"", ""annual_income"": ""Ward 1"", ""district"": ""Gariaband"", ""issued_by"": ""Tehsildar Gariaband"", ""financial_year"": ""2024-25""}",89
+7459,1008,income_certificate,"{""name"": ""Kiran Banjare 7"", ""annual_income"": ""Colony 5"", ""district"": ""Surguja"", ""issued_by"": ""Tehsildar Surguja"", ""financial_year"": ""2024-25""}",80
+7460,1099,caste_certificate,"{""name"": ""Vandana Nishad"", ""caste"": ""SC"", ""district"": ""Raigarh"", ""certificate_number"": ""CG/RAI/34746""}",86
+7461,1407,caste_certificate,"{""name"": ""Rajesh Verma"", ""caste"": ""SC"", ""district"": ""Surguja"", ""certificate_number"": ""CG/SUR/32188""}",83
+7462,1454,income_certificate,"{""name"": ""Rajesh Verma 4"", ""annual_income"": ""Colony 1"", ""district"": ""Jashpur"", ""issued_by"": ""Tehsildar Jashpur"", ""financial_year"": ""2024-25""}",94
+7463,1017,income_certificate,"{""name"": ""Shanta Markam"", ""annual_income"": ""Ward 7"", ""district"": ""Bilaspur"", ""issued_by"": ""Tehsildar Bilaspur"", ""financial_year"": ""2024-25""}",75
+7464,1042,bank_passbook,"{""name"": ""Prakash Pandey 8"", ""account_number"": ""428880129763"", ""ifsc"": ""SBIN020966"", ""bank_name"": ""Canara Bank"", ""balance"": 89606}",76
+7465,1657,aadhaar,"{""name"": ""Ashok Patle 7"", ""dob"": ""1947-08-11"", ""aadhar_number"": ""058561547315"", ""address"": ""582, Gandhi Chowk, Bemetara"", ""gender"": ""Male""}",79
+7466,1969,aadhaar,"{""name"": ""Suresh Yadav 7"", ""dob"": ""1954-02-07"", ""aadhar_number"": ""327639904600"", ""address"": ""499, Indira Nagar, Narayanpur"", ""gender"": ""Male""}",81
+7467,1811,income_certificate,"{""name"": ""Ravi Gupta 4"", ""annual_income"": ""Ward 13"", ""district"": ""Kabirdham"", ""issued_by"": ""Tehsildar Kabirdham"", ""financial_year"": ""2024-25""}",72
+7468,1623,bank_passbook,"{""name"": ""Suresh Yadav"", ""account_number"": ""955905428782"", ""ifsc"": ""SBIN019733"", ""bank_name"": ""SBI"", ""balance"": 90841}",70
+7469,1459,caste_certificate,"{""name"": ""Dilip Nishad"", ""caste"": ""SC"", ""district"": ""Baloda Bazar"", ""certificate_number"": ""CG/BAL/51907""}",70
+7470,1541,caste_certificate,"{""name"": ""Jagdish Porte"", ""caste"": ""SC"", ""district"": ""Bemetara"", ""certificate_number"": ""CG/BEM/75772""}",80
+7471,1168,bank_passbook,"{""name"": ""Harish Tiwari"", ""account_number"": ""552222318138"", ""ifsc"": ""SBIN074145"", ""bank_name"": ""Canara Bank"", ""balance"": 17327}",77
+7472,1801,domicile_certificate,"{""name"": ""Laxmi Tiwari 7"", ""dob"": ""1993-06-16"", ""district"": ""Jashpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 37}",78
+7473,1447,domicile_certificate,"{""name"": ""Hemant Kosare"", ""dob"": ""1953-01-04"", ""district"": ""Jashpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 36}",71
+7474,1752,aadhaar,"{""name"": ""Mamta Dewangan"", ""dob"": ""1994-10-08"", ""aadhar_number"": ""764000687586"", ""address"": ""910, Nehru Nagar, Gariaband"", ""gender"": ""Female""}",87
+7475,1671,income_certificate,"{""name"": ""Seema Chandel"", ""annual_income"": ""Colony 12"", ""district"": ""Durg"", ""issued_by"": ""Tehsildar Durg"", ""financial_year"": ""2024-25""}",70
+7476,1667,domicile_certificate,"{""name"": ""Ashok Patle"", ""dob"": ""1975-11-12"", ""district"": ""Bastar"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 30}",78
+7477,1676,caste_certificate,"{""name"": ""Dilip Nishad"", ""caste"": ""General"", ""district"": ""Jashpur"", ""certificate_number"": ""CG/JAS/15287""}",80
+7478,1957,bank_passbook,"{""name"": ""Ashok Patle"", ""account_number"": ""453185007648"", ""ifsc"": ""SBIN052948"", ""bank_name"": ""SBI"", ""balance"": 23075}",85
+7479,1925,income_certificate,"{""name"": ""Ashok Patle"", ""annual_income"": ""Village RP"", ""district"": ""Kabirdham"", ""issued_by"": ""Tehsildar Kabirdham"", ""financial_year"": ""2024-25""}",84
+7480,1172,domicile_certificate,"{""name"": ""Hemant Kosare"", ""dob"": ""1997-11-06"", ""district"": ""Balrampur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 33}",77
+7481,1953,income_certificate,"{""name"": ""Dilip Nishad 2"", ""annual_income"": ""Kondagaon Nagar"", ""district"": ""Kondagaon"", ""issued_by"": ""Tehsildar Kondagaon"", ""financial_year"": ""2024-25""}",87
+7482,1192,bank_passbook,"{""name"": ""Santosh Dewangan"", ""account_number"": ""228959823606"", ""ifsc"": ""SBIN081715"", ""bank_name"": ""PNB"", ""balance"": 35193}",70
+7483,1370,aadhaar,"{""name"": ""Jagdish Porte"", ""dob"": ""1955-05-05"", ""aadhar_number"": ""488319213424"", ""address"": ""841, Nehru Nagar, Kabirdham"", ""gender"": ""Male""}",72
+7484,1770,income_certificate,"{""name"": ""Jyoti Porte"", ""annual_income"": ""Rajnandgaon Nagar"", ""district"": ""Rajnandgaon"", ""issued_by"": ""Tehsildar Rajnandgaon"", ""financial_year"": ""2024-25""}",72
+7485,1847,income_certificate,"{""name"": ""Laxmi Tiwari"", ""annual_income"": ""Surajpur Nagar"", ""district"": ""Surajpur"", ""issued_by"": ""Tehsildar Surajpur"", ""financial_year"": ""2024-25""}",78
+7486,1029,domicile_certificate,"{""name"": ""Naresh Chandel"", ""dob"": ""1968-11-26"", ""district"": ""Bemetara"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 17}",97
+7487,1393,bank_passbook,"{""name"": ""Hema Sinha"", ""account_number"": ""177442701759"", ""ifsc"": ""SBIN090996"", ""bank_name"": ""HDFC"", ""balance"": 11365}",81
+7488,1031,income_certificate,"{""name"": ""Meena Lahre"", ""annual_income"": ""Colony 10"", ""district"": ""Surguja"", ""issued_by"": ""Tehsildar Surguja"", ""financial_year"": ""2024-25""}",79
+7489,1043,domicile_certificate,"{""name"": ""Bimla Mishra"", ""dob"": ""1976-09-07"", ""district"": ""Sukma"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 25}",72
+7490,1068,domicile_certificate,"{""name"": ""Durga Mandavi 9"", ""dob"": ""1946-12-29"", ""district"": ""Jashpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 22}",97
+7491,1974,domicile_certificate,"{""name"": ""Urmila Dhruv"", ""dob"": ""1939-10-22"", ""district"": ""Balod"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 9}",93
+7492,1091,domicile_certificate,"{""name"": ""Kiran Banjare"", ""dob"": ""1956-09-09"", ""district"": ""Baloda Bazar"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 8}",91
+7493,1403,caste_certificate,"{""name"": ""Jyoti Porte"", ""caste"": ""ST"", ""district"": ""Gariaband"", ""certificate_number"": ""CG/GAR/80879""}",81
+7494,1962,domicile_certificate,"{""name"": ""Hemant Kosare"", ""dob"": ""1940-07-07"", ""district"": ""Raipur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 32}",99
+7495,1523,bank_passbook,"{""name"": ""Pushpa Devi"", ""account_number"": ""792328295300"", ""ifsc"": ""SBIN096161"", ""bank_name"": ""SBI"", ""balance"": 43867}",98
+7496,1979,caste_certificate,"{""name"": ""Brijlal Tandon"", ""caste"": ""OBC"", ""district"": ""Dantewada"", ""certificate_number"": ""CG/DAN/17341""}",84
+7497,1756,bank_passbook,"{""name"": ""Mukesh Yadav 2"", ""account_number"": ""435115853384"", ""ifsc"": ""SBIN093194"", ""bank_name"": ""Bank of Baroda"", ""balance"": 143350}",91
+7498,1083,income_certificate,"{""name"": ""Bharat Mandavi"", ""annual_income"": ""Ward 7"", ""district"": ""Raigarh"", ""issued_by"": ""Tehsildar Raigarh"", ""financial_year"": ""2024-25""}",87
+7499,1674,bank_passbook,"{""name"": ""Vijay Singh"", ""account_number"": ""731877608663"", ""ifsc"": ""SBIN018184"", ""bank_name"": ""SBI"", ""balance"": 27161}",94
+7500,1972,caste_certificate,"{""name"": ""Anil Sharma"", ""caste"": ""OBC"", ""district"": ""Kanker"", ""certificate_number"": ""CG/KAN/53944""}",92
+7501,1417,domicile_certificate,"{""name"": ""Brijlal Tandon"", ""dob"": ""1953-11-05"", ""district"": ""Mungeli"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 30}",84
+7502,1450,domicile_certificate,"{""name"": ""Brijlal Tandon"", ""dob"": ""1958-06-16"", ""district"": ""Janjgir-Champa"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 9}",88
+7503,1882,caste_certificate,"{""name"": ""Pushpa Devi"", ""caste"": ""General"", ""district"": ""Gariaband"", ""certificate_number"": ""CG/GAR/26940""}",78
+7504,1579,domicile_certificate,"{""name"": ""Dinesh Patel"", ""dob"": ""1996-04-04"", ""district"": ""Kondagaon"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 6}",73
+7505,1496,aadhaar,"{""name"": ""Dinesh Patel"", ""dob"": ""1993-07-17"", ""aadhar_number"": ""556684732365"", ""address"": ""110, Station Road, Raigarh"", ""gender"": ""Male""}",88
+7506,1157,aadhaar,"{""name"": ""Sunil Netam 2"", ""dob"": ""1936-03-27"", ""aadhar_number"": ""948014138113"", ""address"": ""370, Indira Nagar, Raigarh"", ""gender"": ""Male""}",84
+7507,1433,caste_certificate,"{""name"": ""Sushila Pandey"", ""caste"": ""ST"", ""district"": ""Mahasamund"", ""certificate_number"": ""CG/MAH/53398""}",72
+7508,1955,domicile_certificate,"{""name"": ""Ashok Patle 2"", ""dob"": ""1974-04-03"", ""district"": ""Kondagaon"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 34}",94
+7509,1818,aadhaar,"{""name"": ""Savita Bai"", ""dob"": ""1960-08-02"", ""aadhar_number"": ""010162600802"", ""address"": ""343, Nehru Nagar, Baloda Bazar"", ""gender"": ""Female""}",74
+7510,1906,income_certificate,"{""name"": ""Harish Tiwari"", ""annual_income"": ""Ward 10"", ""district"": ""Raipur"", ""issued_by"": ""Tehsildar Raipur"", ""financial_year"": ""2024-25""}",91
+7511,1211,bank_passbook,"{""name"": ""Hema Sinha"", ""account_number"": ""374895930492"", ""ifsc"": ""SBIN055876"", ""bank_name"": ""PNB"", ""balance"": 81041}",84
+7512,1517,income_certificate,"{""name"": ""Shanta Markam 8"", ""annual_income"": ""Ward 24"", ""district"": ""Mungeli"", ""issued_by"": ""Tehsildar Mungeli"", ""financial_year"": ""2024-25""}",84
+7513,1472,income_certificate,"{""name"": ""Mamta Dewangan"", ""annual_income"": ""Kabirdham Nagar"", ""district"": ""Kabirdham"", ""issued_by"": ""Tehsildar Kabirdham"", ""financial_year"": ""2024-25""}",80
+7514,1883,income_certificate,"{""name"": ""Sanjay Mishra"", ""annual_income"": ""Colony 3"", ""district"": ""Narayanpur"", ""issued_by"": ""Tehsildar Narayanpur"", ""financial_year"": ""2024-25""}",93
+7515,1153,aadhaar,"{""name"": ""Geeta Sharma 5"", ""dob"": ""1969-04-18"", ""aadhar_number"": ""183764520881"", ""address"": ""790, Nehru Nagar, Raipur"", ""gender"": ""Female""}",89
+7516,1940,caste_certificate,"{""name"": ""Ramesh Kumar 8"", ""caste"": ""OBC"", ""district"": ""Bastar"", ""certificate_number"": ""CG/BAS/93376""}",88
+7517,1660,income_certificate,"{""name"": ""Brijlal Tandon"", ""annual_income"": ""Colony 10"", ""district"": ""Kanker"", ""issued_by"": ""Tehsildar Kanker"", ""financial_year"": ""2024-25""}",87
+7518,1275,bank_passbook,"{""name"": ""Manju Tandon"", ""account_number"": ""712307839795"", ""ifsc"": ""SBIN072167"", ""bank_name"": ""PNB"", ""balance"": 95571}",92
+7519,1515,domicile_certificate,"{""name"": ""Ramkumar Lahre"", ""dob"": ""2000-08-14"", ""district"": ""Dantewada"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 16}",84
+7520,1981,income_certificate,"{""name"": ""Dinesh Patel"", ""annual_income"": ""Ward 2"", ""district"": ""Narayanpur"", ""issued_by"": ""Tehsildar Narayanpur"", ""financial_year"": ""2024-25""}",89
+7521,1623,income_certificate,"{""name"": ""Suresh Yadav"", ""annual_income"": ""Village WE"", ""district"": ""Kanker"", ""issued_by"": ""Tehsildar Kanker"", ""financial_year"": ""2024-25""}",76
+7522,1644,caste_certificate,"{""name"": ""Kailash Banjare"", ""caste"": ""OBC"", ""district"": ""Balrampur"", ""certificate_number"": ""CG/BAL/71944""}",98
+7523,1701,aadhaar,"{""name"": ""Durga Mandavi 8"", ""dob"": ""1976-04-24"", ""aadhar_number"": ""193759192267"", ""address"": ""929, Main Road, Dantewada"", ""gender"": ""Female""}",75
+7524,1717,caste_certificate,"{""name"": ""Dilip Nishad"", ""caste"": ""ST"", ""district"": ""Surguja"", ""certificate_number"": ""CG/SUR/13933""}",98
+7525,1836,bank_passbook,"{""name"": ""Virendra Soni"", ""account_number"": ""732402488680"", ""ifsc"": ""SBIN075933"", ""bank_name"": ""Canara Bank"", ""balance"": 112067}",76
+7526,1732,bank_passbook,"{""name"": ""Sushila Pandey"", ""account_number"": ""683256172582"", ""ifsc"": ""SBIN050414"", ""bank_name"": ""Canara Bank"", ""balance"": 76020}",87
+7527,1293,caste_certificate,"{""name"": ""Chandra Shekhar"", ""caste"": ""SC"", ""district"": ""Balrampur"", ""certificate_number"": ""CG/BAL/27736""}",91
+7528,1466,income_certificate,"{""name"": ""Hemant Kosare"", ""annual_income"": ""Jashpur Nagar"", ""district"": ""Jashpur"", ""issued_by"": ""Tehsildar Jashpur"", ""financial_year"": ""2024-25""}",88
+7529,1571,income_certificate,"{""name"": ""Hemant Kosare"", ""annual_income"": ""Ward 22"", ""district"": ""Baloda Bazar"", ""issued_by"": ""Tehsildar Baloda Bazar"", ""financial_year"": ""2024-25""}",80
+7530,1741,domicile_certificate,"{""name"": ""Pushpa Devi"", ""dob"": ""1974-07-17"", ""district"": ""Surajpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 27}",74
+7531,1728,income_certificate,"{""name"": ""Mohan Thakur"", ""annual_income"": ""Ward 5"", ""district"": ""Mahasamund"", ""issued_by"": ""Tehsildar Mahasamund"", ""financial_year"": ""2024-25""}",89
+7532,1080,bank_passbook,"{""name"": ""Kanta Yadav 2"", ""account_number"": ""708738783217"", ""ifsc"": ""SBIN064566"", ""bank_name"": ""Canara Bank"", ""balance"": 107236}",75
+7533,1808,income_certificate,"{""name"": ""Dilip Nishad"", ""annual_income"": ""Sukma Nagar"", ""district"": ""Sukma"", ""issued_by"": ""Tehsildar Sukma"", ""financial_year"": ""2024-25""}",85
+7534,1255,caste_certificate,"{""name"": ""Kailash Banjare"", ""caste"": ""OBC"", ""district"": ""Surajpur"", ""certificate_number"": ""CG/SUR/39589""}",96
+7535,1241,caste_certificate,"{""name"": ""Santosh Dewangan"", ""caste"": ""General"", ""district"": ""Bijapur"", ""certificate_number"": ""CG/BIJ/10389""}",82
+7536,1646,income_certificate,"{""name"": ""Ramesh Kumar"", ""annual_income"": ""Ward 21"", ""district"": ""Jashpur"", ""issued_by"": ""Tehsildar Jashpur"", ""financial_year"": ""2024-25""}",71
+7537,1873,aadhaar,"{""name"": ""Mahesh Sahu"", ""dob"": ""1999-05-05"", ""aadhar_number"": ""421959730912"", ""address"": ""839, Station Road, Sukma"", ""gender"": ""Male""}",83
+7538,1435,income_certificate,"{""name"": ""Umesh Dhruv"", ""annual_income"": ""Ward 4"", ""district"": ""Kondagaon"", ""issued_by"": ""Tehsildar Kondagaon"", ""financial_year"": ""2024-25""}",77
+7539,1277,aadhaar,"{""name"": ""Deepak Sinha"", ""dob"": ""1954-02-18"", ""aadhar_number"": ""141614150937"", ""address"": ""266, Nehru Nagar, Surguja"", ""gender"": ""Male""}",73
+7540,1269,income_certificate,"{""name"": ""Prakash Pandey"", ""annual_income"": ""Kondagaon Nagar"", ""district"": ""Kondagaon"", ""issued_by"": ""Tehsildar Kondagaon"", ""financial_year"": ""2024-25""}",72
+7541,1384,domicile_certificate,"{""name"": ""Savita Bai"", ""dob"": ""1961-10-08"", ""district"": ""Jashpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 17}",78
+7542,1904,caste_certificate,"{""name"": ""Hema Sinha"", ""caste"": ""General"", ""district"": ""Kanker"", ""certificate_number"": ""CG/KAN/33206""}",97
+7543,1426,income_certificate,"{""name"": ""Jagdish Porte"", ""annual_income"": ""Ward 3"", ""district"": ""Mahasamund"", ""issued_by"": ""Tehsildar Mahasamund"", ""financial_year"": ""2024-25""}",82
+7544,1176,bank_passbook,"{""name"": ""Rani Netam"", ""account_number"": ""561952099904"", ""ifsc"": ""SBIN033848"", ""bank_name"": ""PNB"", ""balance"": 52107}",81
+7545,1471,aadhaar,"{""name"": ""Rani Netam 2"", ""dob"": ""1988-12-23"", ""aadhar_number"": ""369709317069"", ""address"": ""213, Gandhi Chowk, Narayanpur"", ""gender"": ""Female""}",79
+7546,1283,caste_certificate,"{""name"": ""Chandra Shekhar"", ""caste"": ""SC"", ""district"": ""Raipur"", ""certificate_number"": ""CG/RAI/57684""}",81
+7547,1819,aadhaar,"{""name"": ""Pratibha Soni"", ""dob"": ""1953-04-20"", ""aadhar_number"": ""967914638664"", ""address"": ""367, Nehru Nagar, Janjgir-Champa"", ""gender"": ""Female""}",93
+7548,1930,caste_certificate,"{""name"": ""Urmila Dhruv 7"", ""caste"": ""ST"", ""district"": ""Raipur"", ""certificate_number"": ""CG/RAI/36658""}",78
+7549,1893,caste_certificate,"{""name"": ""Prakash Pandey"", ""caste"": ""ST"", ""district"": ""Narayanpur"", ""certificate_number"": ""CG/NAR/29306""}",72
+7550,1080,aadhaar,"{""name"": ""Kanta Yadav 2"", ""dob"": ""2006-06-12"", ""aadhar_number"": ""179796886805"", ""address"": ""248, Station Road, Balod"", ""gender"": ""Female""}",84
+7551,1348,caste_certificate,"{""name"": ""Kailash Banjare 1"", ""caste"": ""OBC"", ""district"": ""Janjgir-Champa"", ""certificate_number"": ""CG/JAN/85479""}",78
+7552,1301,bank_passbook,"{""name"": ""Mohan Thakur"", ""account_number"": ""625413871239"", ""ifsc"": ""SBIN094088"", ""bank_name"": ""Bank of Baroda"", ""balance"": 44699}",94
+7553,1833,aadhaar,"{""name"": ""Sushila Pandey 9"", ""dob"": ""1974-01-04"", ""aadhar_number"": ""855451460919"", ""address"": ""114, Main Road, Kondagaon"", ""gender"": ""Female""}",90
+7554,1568,bank_passbook,"{""name"": ""Saraswati Patle"", ""account_number"": ""429503847340"", ""ifsc"": ""SBIN033544"", ""bank_name"": ""Bank of Baroda"", ""balance"": 100238}",77
+7555,1518,aadhaar,"{""name"": ""Ramkumar Lahre"", ""dob"": ""1991-03-22"", ""aadhar_number"": ""184285969325"", ""address"": ""891, Station Road, Balod"", ""gender"": ""Male""}",98
+7556,1376,aadhaar,"{""name"": ""Chandra Shekhar"", ""dob"": ""1952-03-16"", ""aadhar_number"": ""334324474175"", ""address"": ""389, Station Road, Bijapur"", ""gender"": ""Male""}",75
+7557,1640,aadhaar,"{""name"": ""Sudha Gupta"", ""dob"": ""1988-04-12"", ""aadhar_number"": ""429907472966"", ""address"": ""617, Station Road, Surajpur"", ""gender"": ""Female""}",73
+7558,1932,domicile_certificate,"{""name"": ""Bharat Mandavi"", ""dob"": ""2006-01-10"", ""district"": ""Raigarh"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 22}",94
+7559,1503,bank_passbook,"{""name"": ""Rajesh Verma"", ""account_number"": ""826930410336"", ""ifsc"": ""SBIN060776"", ""bank_name"": ""Bank of Baroda"", ""balance"": 47670}",88
+7560,1611,bank_passbook,"{""name"": ""Rani Netam"", ""account_number"": ""589586316494"", ""ifsc"": ""SBIN032744"", ""bank_name"": ""Bank of Baroda"", ""balance"": 116586}",93
+7561,1210,caste_certificate,"{""name"": ""Seema Chandel"", ""caste"": ""General"", ""district"": ""Rajnandgaon"", ""certificate_number"": ""CG/RAJ/38102""}",90
+7562,1930,bank_passbook,"{""name"": ""Urmila Dhruv 7"", ""account_number"": ""682476253919"", ""ifsc"": ""SBIN074991"", ""bank_name"": ""Bank of Baroda"", ""balance"": 31999}",81
+7563,1246,aadhaar,"{""name"": ""Hemant Kosare"", ""dob"": ""1987-11-23"", ""aadhar_number"": ""118242241246"", ""address"": ""425, Main Road, Bilaspur"", ""gender"": ""Male""}",71
+7564,1476,caste_certificate,"{""name"": ""Urmila Dhruv"", ""caste"": ""SC"", ""district"": ""Sukma"", ""certificate_number"": ""CG/SUK/25627""}",78
+7565,1378,aadhaar,"{""name"": ""Ramkumar Lahre 6"", ""dob"": ""1935-10-09"", ""aadhar_number"": ""797996673459"", ""address"": ""192, Station Road, Surguja"", ""gender"": ""Male""}",95
+7566,1542,income_certificate,"{""name"": ""Jagdish Porte"", ""annual_income"": ""Village RG"", ""district"": ""Surajpur"", ""issued_by"": ""Tehsildar Surajpur"", ""financial_year"": ""2024-25""}",97
+7567,1285,domicile_certificate,"{""name"": ""Rani Netam 2"", ""dob"": ""1942-06-23"", ""district"": ""Rajnandgaon"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 16}",99
+7568,1704,income_certificate,"{""name"": ""Ravi Gupta"", ""annual_income"": ""Colony 11"", ""district"": ""Baloda Bazar"", ""issued_by"": ""Tehsildar Baloda Bazar"", ""financial_year"": ""2024-25""}",71
+7569,1348,domicile_certificate,"{""name"": ""Kailash Banjare 1"", ""dob"": ""1999-08-23"", ""district"": ""Janjgir-Champa"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 40}",75
+7570,1267,caste_certificate,"{""name"": ""Vijay Singh"", ""caste"": ""General"", ""district"": ""Raipur"", ""certificate_number"": ""CG/RAI/35764""}",72
+7571,1027,bank_passbook,"{""name"": ""Brijlal Tandon"", ""account_number"": ""250718090736"", ""ifsc"": ""SBIN042898"", ""bank_name"": ""Canara Bank"", ""balance"": 79606}",98
+7572,1973,income_certificate,"{""name"": ""Laxmi Tiwari"", ""annual_income"": ""Ward 1"", ""district"": ""Balod"", ""issued_by"": ""Tehsildar Balod"", ""financial_year"": ""2024-25""}",93
+7573,1490,bank_passbook,"{""name"": ""Anil Sharma"", ""account_number"": ""850072883751"", ""ifsc"": ""SBIN060322"", ""bank_name"": ""PNB"", ""balance"": 81881}",76
+7574,1763,aadhaar,"{""name"": ""Brijlal Tandon 4"", ""dob"": ""1944-01-18"", ""aadhar_number"": ""993844404588"", ""address"": ""451, Main Road, Kanker"", ""gender"": ""Male""}",96
+7575,1651,aadhaar,"{""name"": ""Umesh Dhruv"", ""dob"": ""1944-09-11"", ""aadhar_number"": ""296914336299"", ""address"": ""286, Nehru Nagar, Kabirdham"", ""gender"": ""Male""}",99
+7576,1276,domicile_certificate,"{""name"": ""Hema Sinha"", ""dob"": ""1971-12-28"", ""district"": ""Sukma"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 5}",83
+7577,1431,bank_passbook,"{""name"": ""Ravi Gupta"", ""account_number"": ""226225895423"", ""ifsc"": ""SBIN013471"", ""bank_name"": ""Canara Bank"", ""balance"": 109323}",77
+7578,1768,domicile_certificate,"{""name"": ""Sudha Gupta 3"", ""dob"": ""1988-02-16"", ""district"": ""Bijapur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 24}",89
+7579,1105,income_certificate,"{""name"": ""Chandra Shekhar"", ""annual_income"": ""Colony 5"", ""district"": ""Kabirdham"", ""issued_by"": ""Tehsildar Kabirdham"", ""financial_year"": ""2024-25""}",95
+7580,1879,aadhaar,"{""name"": ""Anita Patel"", ""dob"": ""1979-03-20"", ""aadhar_number"": ""360622901138"", ""address"": ""356, Nehru Nagar, Gariaband"", ""gender"": ""Female""}",86
+7581,1935,domicile_certificate,"{""name"": ""Ramesh Kumar 4"", ""dob"": ""1938-06-01"", ""district"": ""Korba"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 7}",82
+7582,1347,aadhaar,"{""name"": ""Virendra Soni 4"", ""dob"": ""1982-12-27"", ""aadhar_number"": ""668217195535"", ""address"": ""566, Nehru Nagar, Balrampur"", ""gender"": ""Male""}",83
+7583,1080,caste_certificate,"{""name"": ""Kanta Yadav 2"", ""caste"": ""ST"", ""district"": ""Balod"", ""certificate_number"": ""CG/BAL/67379""}",72
+7584,1359,bank_passbook,"{""name"": ""Brijlal Tandon 4"", ""account_number"": ""211707755950"", ""ifsc"": ""SBIN024087"", ""bank_name"": ""PNB"", ""balance"": 84472}",70
+7585,1143,income_certificate,"{""name"": ""Bimla Mishra 6"", ""annual_income"": ""Ward 22"", ""district"": ""Bemetara"", ""issued_by"": ""Tehsildar Bemetara"", ""financial_year"": ""2024-25""}",72
+7586,1426,aadhaar,"{""name"": ""Jagdish Porte"", ""dob"": ""1974-02-06"", ""aadhar_number"": ""080314998250"", ""address"": ""330, Indira Nagar, Mahasamund"", ""gender"": ""Male""}",70
+7587,1932,caste_certificate,"{""name"": ""Bharat Mandavi"", ""caste"": ""ST"", ""district"": ""Raigarh"", ""certificate_number"": ""CG/RAI/16907""}",75
+7588,1933,domicile_certificate,"{""name"": ""Ramesh Kumar"", ""dob"": ""1965-10-02"", ""district"": ""Dantewada"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 15}",87
+7589,1951,bank_passbook,"{""name"": ""Mahesh Sahu"", ""account_number"": ""557590684222"", ""ifsc"": ""SBIN077035"", ""bank_name"": ""PNB"", ""balance"": 36039}",73
+7590,1948,income_certificate,"{""name"": ""Hemant Kosare 9"", ""annual_income"": ""Baloda Bazar Nagar"", ""district"": ""Baloda Bazar"", ""issued_by"": ""Tehsildar Baloda Bazar"", ""financial_year"": ""2024-25""}",71
+7591,1568,domicile_certificate,"{""name"": ""Saraswati Patle"", ""dob"": ""1977-12-24"", ""district"": ""Narayanpur"", ""state"": ""Chhattisgarh"", ""years_of_residence"": 10}",78
+7592,1766,bank_passbook,"{""name"": ""Prakash Pandey"", ""account_number"": ""424476171901"", ""ifsc"": ""SBIN028482"", ""bank_name"": ""Bank of Baroda"", ""balance"": 10617}",97
+7593,1474,bank_passbook,"{""name"": ""Bimla Mishra 1"", ""account_number"": ""939215261508"", ""ifsc"": ""SBIN059902"", ""bank_name"": ""HDFC"", ""balance"": 119661}",86
+7594,1897,caste_certificate,"{""name"": ""Harish Tiwari 7"", ""caste"": ""SC"", ""district"": ""Rajnandgaon"", ""certificate_number"": ""CG/RAJ/31486""}",71
+7595,1954,aadhaar,"{""name"": ""Jyoti Porte 9"", ""dob"": ""1947-07-25"", ""aadhar_number"": ""273654852207"", ""address"": ""41, Nehru Nagar, Gariaband"", ""gender"": ""Female""}",90
+7596,1070,caste_certificate,"{""name"": ""Prakash Pandey"", ""caste"": ""General"", ""district"": ""Korba"", ""certificate_number"": ""CG/KOR/21111""}",78
+7597,1859,caste_certificate,"{""name"": ""Brijlal Tandon"", ""caste"": ""ST"", ""district"": ""Kanker"", ""certificate_number"": ""CG/KAN/27880""}",78
+7598,1402,aadhaar,"{""name"": ""Chandra Shekhar"", ""dob"": ""1981-01-07"", ""aadhar_number"": ""191818281979"", ""address"": ""810, Indira Nagar, Kabirdham"", ""gender"": ""Male""}",90
+7599,1488,income_certificate,"{""name"": ""Umesh Dhruv"", ""annual_income"": ""Ward 21"", ""district"": ""Sukma"", ""issued_by"": ""Tehsildar Sukma"", ""financial_year"": ""2024-25""}",96
+7600,1501,income_certificate,"{""name"": ""Santram Dhivar"", ""annual_income"": ""Janjgir-Champa Nagar"", ""district"": ""Janjgir-Champa"", ""issued_by"": ""Tehsildar Janjgir-Champa"", ""financial_year"": ""2024-25""}",77

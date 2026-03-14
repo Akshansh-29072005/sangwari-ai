@@ -5,19 +5,13 @@
  * import this config so you only need to change it in one place.
  */
 
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 // Change this to your backend URL (e.g. http://192.168.x.x:8000 for local dev)
-export const API_BASE_URL = 'http://localhost:8000';
+export const API_BASE_URL = 'http://172.16.196.91:8000';
 
 // Default request timeout in milliseconds
 export const API_TIMEOUT = 15000;
-
-// Common headers for all requests
-export const defaultHeaders = (): Record<string, string> => ({
-  'Content-Type': 'application/json',
-  'Accept': 'application/json',
-  // Add auth token here once implemented:
-  // 'Authorization': `Bearer ${getToken()}`,
-});
 
 /**
  * Centralized fetch wrapper with timeout and error handling.
@@ -32,9 +26,21 @@ export async function apiFetch<T = any>(
   const timeoutId = setTimeout(() => controller.abort(), API_TIMEOUT);
 
   try {
+    const token = await AsyncStorage.getItem('auth_token');
+    
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      ...(options.headers as Record<string, string>),
+    };
+
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
+    }
+
     const response = await fetch(url, {
       ...options,
-      headers: { ...defaultHeaders(), ...(options.headers as Record<string, string>) },
+      headers,
       signal: controller.signal,
     });
 

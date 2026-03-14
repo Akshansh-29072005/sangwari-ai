@@ -1,0 +1,121 @@
+case_id,citizen_id,anomaly_type,description
+3001,1070,income_mismatch,Citizen declared income 30000 but bank statement shows 5 lakh annual
+3002,1736,age_mismatch,Aadhar says born in 1998 but birth certificate shows 1968
+3003,1363,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3004,1593,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3005,1378,invalid_document_data,Bank account number format incorrect and does not match bank records
+3006,1174,income_mismatch,Two different income certificates submitted with contradicting amounts
+3007,1532,age_mismatch,Scholarship applicant age exceeds maximum allowed age for scheme
+3008,1722,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3009,1949,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3010,1864,invalid_document_data,"Birth certificate format is unofficial template, not government issued"
+3011,1330,income_mismatch,Widow pension applicant's income certificate has tampered figures
+3012,1758,age_mismatch,Age on ration card and aadhar differ by more than 10 years
+3013,1614,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3014,1726,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3015,1888,invalid_document_data,Forged college ID submitted as proof of student status for scholarship
+3016,1615,income_mismatch,Citizen declared income 30000 but bank statement shows 5 lakh annual
+3017,1280,age_mismatch,Aadhar says born in 1998 but birth certificate shows 1968
+3018,1468,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3019,1999,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3020,1332,invalid_document_data,"Domicile certificate issued for future date, not yet valid"
+3021,1676,income_mismatch,Two different income certificates submitted with contradicting amounts
+3022,1482,age_mismatch,Scholarship applicant age exceeds maximum allowed age for scheme
+3023,1715,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3024,1448,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3025,1219,invalid_document_data,Photo on submitted ID card does not match selfie taken at enrollment
+3026,1917,income_mismatch,Widow pension applicant's income certificate has tampered figures
+3027,1772,age_mismatch,Age on ration card and aadhar differ by more than 10 years
+3028,1920,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3029,1502,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3030,1720,invalid_document_data,Residential address on income certificate is outside Chhattisgarh
+3031,1784,income_mismatch,Citizen declared income 30000 but bank statement shows 5 lakh annual
+3032,1624,age_mismatch,Aadhar says born in 1998 but birth certificate shows 1968
+3033,1516,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3034,1175,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3035,1608,invalid_document_data,"Scanned documents heavily blurred, original details not verifiable"
+3036,1236,income_mismatch,Two different income certificates submitted with contradicting amounts
+3037,1030,age_mismatch,Scholarship applicant age exceeds maximum allowed age for scheme
+3038,1349,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3039,1322,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3040,1511,invalid_document_data,Pincode on domicile certificate does not exist in Chhattisgarh
+3041,1490,income_mismatch,Widow pension applicant's income certificate has tampered figures
+3042,1589,age_mismatch,Age on ration card and aadhar differ by more than 10 years
+3043,1481,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3044,1676,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3045,1841,invalid_document_data,Caste category on certificate and aadhar do not match each other
+3046,1616,income_mismatch,Citizen declared income 30000 but bank statement shows 5 lakh annual
+3047,1657,age_mismatch,Aadhar says born in 1998 but birth certificate shows 1968
+3048,1548,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3049,1869,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3050,1852,invalid_document_data,Income certificate showing impossible amount like negative income
+3051,1214,income_mismatch,Two different income certificates submitted with contradicting amounts
+3052,1400,age_mismatch,Scholarship applicant age exceeds maximum allowed age for scheme
+3053,1455,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3054,1445,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3055,1017,invalid_document_data,Certificate serial number does not match issuing office database
+3056,1481,income_mismatch,Widow pension applicant's income certificate has tampered figures
+3057,1320,age_mismatch,Age on ration card and aadhar differ by more than 10 years
+3058,1738,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3059,1641,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3060,1103,invalid_document_data,Certificate date before the applicant's own birth year
+3061,1042,income_mismatch,Citizen declared income 30000 but bank statement shows 5 lakh annual
+3062,1378,age_mismatch,Aadhar says born in 1998 but birth certificate shows 1968
+3063,1601,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3064,1224,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3065,1620,invalid_document_data,Caste certificate issued by unauthorized unofficial local authority
+3066,1280,income_mismatch,Two different income certificates submitted with contradicting amounts
+3067,1748,age_mismatch,Scholarship applicant age exceeds maximum allowed age for scheme
+3068,1689,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3069,1549,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3070,1106,invalid_document_data,Digitally altered aadhar document detected during OCR verification
+3071,1325,income_mismatch,Widow pension applicant's income certificate has tampered figures
+3072,1005,age_mismatch,Age on ration card and aadhar differ by more than 10 years
+3073,1791,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3074,1288,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3075,1837,invalid_document_data,Document submitted in name different from aadhar registered name
+3076,1868,income_mismatch,Citizen declared income 30000 but bank statement shows 5 lakh annual
+3077,1236,age_mismatch,Aadhar says born in 1998 but birth certificate shows 1968
+3078,1584,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3079,1058,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3080,1999,invalid_document_data,OCR detected doctored text in income certificate amount field
+3081,1243,income_mismatch,Two different income certificates submitted with contradicting amounts
+3082,1350,age_mismatch,Scholarship applicant age exceeds maximum allowed age for scheme
+3083,1997,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3084,1828,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3085,1445,invalid_document_data,Bank account number format incorrect and does not match bank records
+3086,1760,income_mismatch,Widow pension applicant's income certificate has tampered figures
+3087,1027,age_mismatch,Age on ration card and aadhar differ by more than 10 years
+3088,1896,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3089,1137,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3090,1544,invalid_document_data,"Birth certificate format is unofficial template, not government issued"
+3091,1365,income_mismatch,Citizen declared income 30000 but bank statement shows 5 lakh annual
+3092,1786,age_mismatch,Aadhar says born in 1998 but birth certificate shows 1968
+3093,1565,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3094,1648,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3095,1420,invalid_document_data,Forged college ID submitted as proof of student status for scholarship
+3096,1634,income_mismatch,Two different income certificates submitted with contradicting amounts
+3097,1648,age_mismatch,Scholarship applicant age exceeds maximum allowed age for scheme
+3098,1987,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3099,1393,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3100,1436,invalid_document_data,"Domicile certificate issued for future date, not yet valid"
+3101,1734,income_mismatch,Widow pension applicant's income certificate has tampered figures
+3102,1016,age_mismatch,Age on ration card and aadhar differ by more than 10 years
+3103,1876,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3104,1633,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3105,1430,invalid_document_data,Photo on submitted ID card does not match selfie taken at enrollment
+3106,1217,income_mismatch,Citizen declared income 30000 but bank statement shows 5 lakh annual
+3107,1366,age_mismatch,Aadhar says born in 1998 but birth certificate shows 1968
+3108,1315,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3109,1693,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3110,1480,invalid_document_data,Residential address on income certificate is outside Chhattisgarh
+3111,1929,income_mismatch,Two different income certificates submitted with contradicting amounts
+3112,1940,age_mismatch,Scholarship applicant age exceeds maximum allowed age for scheme
+3113,1403,duplicate_aadhar,One aadhar number linked to three different mobile numbers in system
+3114,1018,deceased_person_application,Ration card still active for a person confirmed dead by village record
+3115,1929,invalid_document_data,"Scanned documents heavily blurred, original details not verifiable"
+3116,1498,income_mismatch,Widow pension applicant's income certificate has tampered figures
+3117,1335,age_mismatch,Age on ration card and aadhar differ by more than 10 years
+3118,1866,duplicate_aadhar,Multiple scheme benefits claimed using single aadhar through agents
+3119,1084,deceased_person_application,Applicant listed as alive in system but obituary published in local news
+3120,1817,invalid_document_data,Pincode on domicile certificate does not exist in Chhattisgarh

@@ -1,18 +1,16 @@
-import { View, Text, TouchableOpacity, TextInput, Modal, FlatList, Pressable, Image, ScrollView, KeyboardAvoidingView, Platform, Animated, Dimensions } from 'react-native';
+import { View, Text, TouchableOpacity, TextInput, Modal, FlatList, Pressable, Image, ScrollView, KeyboardAvoidingView, Platform, Animated, Dimensions, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { User, Mic, Send, FileText, CheckCircle2, Clock, X, MessageCircle, AlertTriangle, Search, Volume2, Bell } from 'lucide-react-native';
 import { useState, useRef, useEffect } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import { useI18n } from '../../context/I18nContext';
+import { apiFetch } from '../../api/api';
+import { NotificationService } from '../../services/NotificationService';
 
 const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 
-const registeredSchemes = [
-  { id: '1', name: 'Kisan Samman Nidhi', status: 'Active', since: 'Jan 2024' },
-  { id: '2', name: 'Ayushman Bharat', status: 'Active', since: 'Mar 2024' },
-  { id: '3', name: 'PM Ujjwala Yojana', status: 'Active', since: 'Aug 2023' },
-];
+
 
 type VoiceState = 'idle' | 'listening' | 'processing' | 'responding';
 
@@ -23,6 +21,12 @@ export default function HomeScreen() {
   const [showRegistered, setShowRegistered] = useState(false);
   const [complaintText, setComplaintText] = useState('');
   const inputRef = useRef<TextInput>(null);
+  
+  // Data from backend
+  const [user, setUser] = useState<any>(null);
+  const [stats, setStats] = useState({ eligible: 0, registered: 0 });
+  const [registeredSchemesData, setRegisteredSchemesData] = useState<any[]>([]);
+  const [complaintsData, setComplaintsData] = useState<any[]>([]);
 
   // Voice assistant state
   const [showVoice, setShowVoice] = useState(false);
@@ -50,11 +54,90 @@ export default function HomeScreen() {
     }
   }, [voiceState]);
 
-  const handleSendComplaint = () => {
+  // Fetch true user data and applications
+  useEffect(() => {
+    const fetchDashboardData = async () => {
+      try {
+        // Fetch Profile
+        const { data: profileResp } = await apiFetch('/user/profile');
+        if (profileResp?.success && profileResp?.data) {
+          setUser(profileResp.data);
+        }
+
+        // Fetch Applications
+        const { data: appsResp } = await apiFetch('/applications');
+        if (appsResp?.success && appsResp?.data) {
+          const apps = appsResp.data;
+          setStats(prev => ({ ...prev, registered: apps.length }));
+          
+          setRegisteredSchemesData(apps.map((app: any) => {
+            const id = app.id || app.ID;
+            const title = app.scheme?.title || app.Scheme?.Title || 'Unknown Scheme';
+            const status = app.status || app.Status || 'Active';
+            const sla = app.estimated_resolution_days || app.EstimatedResolutionDays || 15;
+            const createdAt = app.created_at || app.CreatedAt;
+            
+            return {
+              id,
+              name: title,
+              status,
+              estimatedDays: sla,
+              since: createdAt ? new Date(createdAt).toLocaleDateString() : 'N/A'
+            };
+          }));
+        }
+
+        // Fetch Eligible Schemes Count
+        const { data: eligibleResp } = await apiFetch('/schemes/eligible');
+        if (eligibleResp?.success && Array.isArray(eligibleResp?.data)) {
+          const eligibleCount = eligibleResp.data.filter((s: any) => s.eligible).length;
+          setStats(prev => ({ ...prev, eligible: eligibleCount }));
+        }
+
+        // Fetch Complaints
+        const { data: compResp } = await apiFetch('/complaints');
+        if (compResp?.success && compResp?.data) {
+          setComplaintsData(compResp.data);
+        }
+      } catch (err) {
+        console.error('Failed to load dashboard data:', err);
+      }
+    };
+    fetchDashboardData();
+  }, []);
+
+
+  const handleSendComplaint = async () => {
     if (!hasText) return;
-    // TODO: Call complaintRoutes.fileComplaint(...)
-    alert(`Complaint sent: "${complaintText}"`);
+    const text = complaintText.trim();
     setComplaintText('');
+    try {
+      const { data, error } = await apiFetch('/complaints/file', {
+        method: 'POST',
+        body: JSON.stringify({
+          title: text.length > 80 ? text.substring(0, 80) : text,
+          description: text,
+          category: 'General',
+        }),
+      });
+      if (data?.success) {
+        // Refresh grievances list
+        const { data: compResp } = await apiFetch('/complaints');
+        if (compResp?.success && compResp?.data) setComplaintsData(compResp.data);
+        
+        // Premium Success Feedback
+        NotificationService.show({
+          title: '✅ Complaint Filed',
+          message: 'Your grievance has been submitted. We will get back to you shortly.',
+          type: 'success'
+        });
+      } else {
+        Alert.alert('Failed to Submit', error || 'Could not file your complaint.');
+        setComplaintText(text); // restore text
+      }
+    } catch (err: any) {
+      Alert.alert('Error', err.message);
+    }
   };
 
   const openVoiceAssistant = () => {
@@ -101,7 +184,9 @@ export default function HomeScreen() {
       <View style={{ paddingHorizontal: 24, paddingVertical: 14, flexDirection: 'row', alignItems: 'center', backgroundColor: colors.headerBg, shadowColor: '#000', shadowOpacity: 0.05, shadowRadius: 4, elevation: 2, zIndex: 10, position: 'relative' }}>
         <Image source={require('../../assets/images/icon.png')} style={{ width: 36, height: 36, borderRadius: 18, zIndex: 2 }} />
         <View style={{ position: 'absolute', left: 0, right: 0, alignItems: 'center', zIndex: 1 }}>
-          <Text style={{ fontSize: 20, fontWeight: '700', color: colors.text, letterSpacing: -0.3 }}>Sangwari AI</Text>
+          <Text style={{ fontSize: 20, fontWeight: '700', color: colors.text, letterSpacing: -0.3 }}>
+            {user?.name ? `Hi, ${user.name.split(' ')[0]}` : 'Sangwari AI'}
+          </Text>
         </View>
         <View style={{ flex: 1 }} />
         <TouchableOpacity style={{ backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6', padding: 8, borderRadius: 999, zIndex: 2, marginRight: 8 }} onPress={() => router.push('/notifications')}>
@@ -121,14 +206,14 @@ export default function HomeScreen() {
             <TouchableOpacity style={{ backgroundColor: colors.card, borderRadius: 16, padding: 14, flex: 1, marginRight: 8, borderWidth: 1, borderColor: colors.cardBorder, height: 110, justifyContent: 'space-between' }} onPress={() => router.push('/schemes')}>
               <FileText size={26} color="#2563EB" />
               <View>
-                <Text style={{ fontSize: 26, fontWeight: '700', color: colors.text }}>12</Text>
+                <Text style={{ fontSize: 26, fontWeight: '700', color: colors.text }}>{stats.eligible}</Text>
                 <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: '500', marginTop: 2 }}>{t('eligible_schemes')}</Text>
               </View>
             </TouchableOpacity>
             <TouchableOpacity style={{ backgroundColor: colors.card, borderRadius: 16, padding: 14, flex: 1, marginLeft: 8, borderWidth: 1, borderColor: colors.cardBorder, height: 110, justifyContent: 'space-between' }} onPress={() => setShowRegistered(true)}>
               <CheckCircle2 size={26} color="#16A34A" />
               <View>
-                <Text style={{ fontSize: 26, fontWeight: '700', color: colors.text }}>3</Text>
+                <Text style={{ fontSize: 26, fontWeight: '700', color: colors.text }}>{stats.registered}</Text>
                 <Text style={{ fontSize: 12, color: colors.textSecondary, fontWeight: '500', marginTop: 2 }}>{t('registered')}</Text>
               </View>
             </TouchableOpacity>
@@ -137,41 +222,58 @@ export default function HomeScreen() {
           {/* Application Status */}
           <View style={{ backgroundColor: colors.card, borderRadius: 16, padding: 16, marginTop: 14, borderWidth: 1, borderColor: colors.cardBorder }}>
             <Text style={{ fontSize: 16, fontWeight: '700', color: colors.text, marginBottom: 12 }}>{t('application_status')}</Text>
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
-              <View style={{ width: 36, height: 36, backgroundColor: isDark ? '#1E3A5F' : '#DBEAFE', borderRadius: 18, alignItems: 'center', justifyContent: 'center', marginRight: 12 }}>
-                <CheckCircle2 size={18} color="#2563EB" />
-              </View>
-              <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 14, fontWeight: '600', color: colors.text }}>Kisan Samman Nidhi</Text>
-                <Text style={{ fontSize: 12, color: colors.textSecondary }}>Approved • Transfer Pending</Text>
-              </View>
-            </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <View style={{ width: 36, height: 36, backgroundColor: isDark ? '#422006' : '#FEF3C7', borderRadius: 18, alignItems: 'center', justifyContent: 'center', marginRight: 12 }}>
-                <Clock size={18} color="#CA8A04" />
-              </View>
-              <View style={{ flex: 1 }}>
-                <Text style={{ fontSize: 14, fontWeight: '600', color: colors.text }}>PM Awas Yojana</Text>
-                <Text style={{ fontSize: 12, color: colors.textSecondary }}>Document Verification in Progress</Text>
-              </View>
-            </View>
+            {registeredSchemesData.length === 0 ? (
+              <Text style={{ color: colors.textSecondary, fontSize: 14 }}>No applications submitted yet.</Text>
+            ) : (
+              registeredSchemesData.slice(0, 3).map((app, idx) => (
+                <View key={app.id || idx} style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+                  <View style={{ width: 36, height: 36, backgroundColor: isDark ? (app.status === 'approved' ? '#1E3A5F' : '#422006') : (app.status === 'approved' ? '#DBEAFE' : '#FEF3C7'), borderRadius: 18, alignItems: 'center', justifyContent: 'center', marginRight: 12 }}>
+                    {app.status === 'approved' ? <CheckCircle2 size={18} color="#2563EB" /> : <Clock size={18} color="#CA8A04" />}
+                  </View>
+                  <View style={{ flex: 1 }}>
+                    <Text style={{ fontSize: 14, fontWeight: '600', color: colors.text }}>{app.name}</Text>
+                    <Text style={{ fontSize: 12, color: colors.textSecondary, textTransform: 'capitalize' }}>
+                      {app.status} • Est: {app.estimatedDays} days
+                    </Text>
+                  </View>
+                </View>
+              ))
+            )}
           </View>
 
           {/* Grievance Tracking */}
           <View style={{ backgroundColor: colors.card, borderRadius: 16, padding: 16, marginTop: 14, borderWidth: 1, borderColor: colors.cardBorder }}>
             <Text style={{ fontSize: 16, fontWeight: '700', color: colors.text, marginBottom: 12 }}>{t('grievance_tracking')}</Text>
-            <View style={{ backgroundColor: isDark ? '#3B1010' : '#FEF2F2', borderRadius: 12, padding: 12, borderWidth: 1, borderColor: isDark ? '#5C1E1E' : '#FECACA' }}>
-              <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
-                <Text style={{ fontWeight: '600', color: isDark ? '#FCA5A5' : '#991B1B', fontSize: 13 }}>#GRV-2024-892</Text>
-                <View style={{ backgroundColor: isDark ? '#5C1E1E' : '#FECACA', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4 }}>
-                  <Text style={{ fontSize: 10, fontWeight: '700', color: isDark ? '#FCA5A5' : '#7F1D1D' }}>Escalated: L2</Text>
-                </View>
-              </View>
-              <Text style={{ fontSize: 12, color: colors.textSecondary, marginBottom: 1 }}><Text style={{ fontWeight: '500' }}>Dept:</Text> Water Resources</Text>
-              <Text style={{ fontSize: 12, color: colors.textSecondary, marginBottom: 1 }}><Text style={{ fontWeight: '500' }}>Officer:</Text> Suresh K.</Text>
-              <Text style={{ fontSize: 12, color: colors.textSecondary, marginBottom: 4 }}><Text style={{ fontWeight: '500' }}>Stage:</Text> Field Inspection</Text>
-              <Text style={{ fontSize: 10, color: isDark ? '#FCA5A5' : '#B91C1C', fontWeight: '600' }}>ETA: 2 Days remaining</Text>
-            </View>
+            {complaintsData.length === 0 ? (
+              <Text style={{ color: colors.textSecondary, fontSize: 14 }}>No grievances filed yet.</Text>
+            ) : (
+              complaintsData.slice(0, 3).map((comp: any, idx: number) => {
+                const id = comp.id || comp.ID;
+                const title = comp.title || comp.Title;
+                const status = comp.status || comp.Status;
+                const dept = comp.department || comp.Department;
+                const cat = comp.category || comp.Category;
+                const createdAt = comp.created_at || comp.CreatedAt;
+                const sla = comp.estimated_resolution_days || comp.EstimatedResolutionDays;
+                
+                return (
+                  <View key={id || idx} style={{ backgroundColor: isDark ? '#3B1010' : '#FEF2F2', borderRadius: 12, padding: 12, borderWidth: 1, borderColor: isDark ? '#5C1E1E' : '#FECACA', marginBottom: 10 }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+                      <Text style={{ fontWeight: '600', color: isDark ? '#FCA5A5' : '#991B1B', fontSize: 13, flex: 1 }} numberOfLines={1}>{title || `Grievance #${String(id || '').substring(0,8)}`}</Text>
+                      <View style={{ backgroundColor: isDark ? '#5C1E1E' : '#FECACA', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4, marginLeft: 8 }}>
+                        <Text style={{ fontSize: 10, fontWeight: '700', color: isDark ? '#FCA5A5' : '#7F1D1D', textTransform: 'capitalize' }}>{status}</Text>
+                      </View>
+                    </View>
+                    <Text style={{ fontSize: 12, color: colors.textSecondary, marginBottom: 1 }}><Text style={{ fontWeight: '500' }}>Dept:</Text> {dept || 'Pending Assignment'}</Text>
+                    <Text style={{ fontSize: 12, color: colors.textSecondary, marginBottom: 1 }}><Text style={{ fontWeight: '500' }}>Category:</Text> {cat || 'General'}</Text>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 4 }}>
+                      <Text style={{ fontSize: 10, color: isDark ? '#FCA5A5' : '#B91C1C', fontWeight: '600' }}>Filed: {createdAt ? new Date(createdAt).toLocaleDateString() : 'Invalid Date'}</Text>
+                      <Text style={{ fontSize: 10, color: colors.textMuted, fontWeight: '600' }}>Est: {sla || '7-10'} days</Text>
+                    </View>
+                  </View>
+                );
+              })
+            )}
           </View>
 
           {/* Smart Input Bar — Mic ↔ Send toggle */}
@@ -220,8 +322,13 @@ export default function HomeScreen() {
               </TouchableOpacity>
             </View>
             <FlatList
-              data={registeredSchemes}
+              data={registeredSchemesData}
               keyExtractor={(item) => item.id}
+              ListEmptyComponent={
+                <View style={{ padding: 20, alignItems: 'center' }}>
+                  <Text style={{ color: colors.textSecondary }}>No schemes registered yet.</Text>
+                </View>
+              }
               renderItem={({ item }) => (
                 <View style={{ backgroundColor: isDark ? '#2C2C2E' : '#F9FAFB', borderRadius: 12, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: colors.cardBorder }}>
                   <Text style={{ fontSize: 16, fontWeight: '600', color: colors.text, marginBottom: 4 }}>{item.name}</Text>
@@ -229,6 +336,10 @@ export default function HomeScreen() {
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                       <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: '#16A34A', marginRight: 6 }} />
                       <Text style={{ fontSize: 13, color: '#16A34A', fontWeight: '600' }}>{item.status}</Text>
+                    </View>
+                    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                      <Clock size={12} color={colors.textMuted} style={{ marginRight: 4 }} />
+                      <Text style={{ fontSize: 12, color: colors.textMuted }}>Est: {item.estimatedDays} days</Text>
                     </View>
                     <Text style={{ fontSize: 12, color: colors.textMuted }}>Since {item.since}</Text>
                   </View>

@@ -1,73 +1,144 @@
-import React from 'react';
-import { View, ScrollView, Pressable, Alert } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, ScrollView, Pressable, RefreshControl, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Stack } from 'expo-router';
-import { ShieldAlert, CheckCircle, FileText, Send } from 'lucide-react-native';
+import { ShieldAlert, CheckCircle, FileText, Bell, Info } from 'lucide-react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 
 import { Typography } from '@/components/ui/Typography';
 import { Icon } from '@/components/ui/Icon';
-
-const MOCK_NOTIFICATIONS = [
-  { id: '1', title: 'Application Approved! 🎉', message: 'Your State Free Laptop Scheme application has been approved. Check details.', time: '2 mins ago', type: 'success', icon: CheckCircle, color: '#34C759', route: '/application/1' },
-  { id: '2', title: 'Complaint Assigned', message: 'Your complaint regarding water supply (#CMP-492) is now under review.', time: '1 hour ago', type: 'info', icon: FileText, color: '#007AFF', route: '/complaint/CMP-492' },
-  { id: '3', title: 'Important Update', message: 'The deadline for PM Awas Yojana is approaching in 3 days.', time: 'Yesterday', type: 'alert', icon: ShieldAlert, color: '#FF9500', route: undefined },
-];
+import { useTheme } from '@/context/ThemeContext';
+import { getNotifications, markNotificationAsRead, Notification } from '@/api/routes/notifications';
 
 export default function NotificationsScreen() {
-  function sendTestNotification() {
-    Alert.alert(
-      "Sangwari AI Update 🌟",
-      "Your complaint status has been updated to 'Resolved'."
-    );
-  }
+  const { colors, isDark } = useTheme();
+  const [notifications, setNotifications] = useState<Notification[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
+
+  useEffect(() => {
+    fetchNotifications();
+  }, []);
+
+  const fetchNotifications = async () => {
+    setLoading(true);
+    const { notifications: data } = await getNotifications();
+    setNotifications(data);
+    setLoading(false);
+  };
+
+  const onRefresh = async () => {
+    setRefreshing(true);
+    const { notifications: data } = await getNotifications();
+    setNotifications(data);
+    setRefreshing(false);
+  };
+
+  const handleMarkAsRead = async (id: string) => {
+    await markNotificationAsRead(id);
+    setNotifications(prev => prev.map(n => n.id === id ? { ...n, is_read: true } : n));
+  };
+
+  const getIcon = (type: string) => {
+    switch (type) {
+      case 'success': return CheckCircle;
+      case 'alert': return ShieldAlert;
+      case 'info': return Info;
+      default: return Bell;
+    }
+  };
+
+  const getColor = (type: string) => {
+    switch (type) {
+      case 'success': return '#34C759';
+      case 'alert': return '#FF9500';
+      case 'info': return '#007AFF';
+      case 'error': return '#FF3B30';
+      default: return colors.textSecondary;
+    }
+  };
+
+  const formatTime = (dateStr: string) => {
+    const date = new Date(dateStr);
+    const now = new Date();
+    const diff = now.getTime() - date.getTime();
+    const mins = Math.floor(diff / 60000);
+    if (mins < 1) return 'Just now';
+    if (mins < 60) return `${mins}m ago`;
+    const hours = Math.floor(mins / 60);
+    if (hours < 24) return `${hours}h ago`;
+    return date.toLocaleDateString();
+  };
 
   return (
-    <SafeAreaView className="flex-1 bg-[#F2F2F7]">
-      <Stack.Screen options={{ title: 'Notifications', headerShadowVisible: false, headerStyle: { backgroundColor: '#F2F2F7' } }} />
+    <SafeAreaView className="flex-1" style={{ backgroundColor: colors.bg }}>
+      <Stack.Screen 
+        options={{ 
+          title: 'Notifications', 
+          headerShadowVisible: false, 
+          headerStyle: { backgroundColor: colors.headerBg },
+          headerTintColor: colors.text
+        }} 
+      />
       
-      <ScrollView className="flex-1 px-4 pt-2" showsVerticalScrollIndicator={false}>
-        
-        <Pressable 
-          onPress={sendTestNotification}
-          className="bg-[#007AFF]/10 p-4 rounded-2xl flex-row items-center justify-between mb-6 border border-[#007AFF]/20"
-        >
-          <View className="flex-1">
-            <Typography variant="body" weight="semibold" className="text-[#007AFF] mb-1">
-              Test Push Notifications
-            </Typography>
-            <Typography variant="caption" className="text-[#007AFF]/80">
-              Tap here to simulate receiving a live push notification from Sangwari AI via an alert.
-            </Typography>
-          </View>
-          <View className="bg-[#007AFF] w-10 h-10 rounded-full items-center justify-center ml-3 shadow-sm">
-            <Icon icon={Send} color="#FFF" size={18} />
-          </View>
-        </Pressable>
-
-        <Typography variant="caption" weight="semibold" className="mb-3 ml-2 uppercase tracking-wider text-secondary">
-          Recent Alerts
+      <ScrollView 
+        className="flex-1 px-4 pt-4" 
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.text} />
+        }
+      >
+        <Typography variant="caption" weight="semibold" className="mb-4 ml-2 uppercase tracking-wider" style={{ color: colors.textSecondary }}>
+          {notifications.length > 0 ? 'Recent Alerts' : ''}
         </Typography>
 
-        {MOCK_NOTIFICATIONS.map((notif, index) => (
-          <Animated.View key={notif.id} entering={FadeInDown.delay(index * 100).duration(500)}>
-            {/* Using a simple Pressable link for now instead of router pushing logic without navigation hook */}
-            <View className="bg-white rounded-3xl p-4 mb-3 shadow-sm border border-gray-100 flex-row">
-               <View className="w-12 h-12 rounded-full items-center justify-center mr-4" style={{ backgroundColor: `${notif.color}15` }}>
-                  <Icon icon={notif.icon} color={notif.color} size={24} />
-               </View>
-               <View className="flex-1 justify-center">
-                 <View className="flex-row justify-between items-start mb-1">
-                   <Typography variant="body" weight="bold" className="flex-1 mr-2">{notif.title}</Typography>
-                   <Typography variant="caption" className="text-gray-400 text-xs">{notif.time}</Typography>
+        {loading && notifications.length === 0 ? (
+          <View className="flex-1 items-center justify-center pt-20">
+            <ActivityIndicator color={colors.text} />
+          </View>
+        ) : notifications.length === 0 ? (
+          <View className="flex-1 items-center justify-center pt-20">
+            <Typography variant="body" style={{ color: colors.textMuted }}>No notifications yet</Typography>
+          </View>
+        ) : (
+          notifications.map((notif, index) => (
+            <Animated.View key={notif.id} entering={FadeInDown.delay(index * 100).duration(500)}>
+              <Pressable 
+                onPress={() => !notif.is_read && handleMarkAsRead(notif.id)}
+                className="rounded-3xl p-4 mb-3 shadow-sm border flex-row"
+                style={{ 
+                  backgroundColor: colors.card,
+                  borderColor: colors.cardBorder,
+                  opacity: notif.is_read ? 0.7 : 1
+                }}
+              >
+                 <View className="w-12 h-12 rounded-full items-center justify-center mr-4" style={{ backgroundColor: `${getColor(notif.type)}15` }}>
+                    <Icon icon={getIcon(notif.type)} color={getColor(notif.type)} size={24} />
                  </View>
-                 <Typography variant="caption" className="text-gray-600 leading-snug">{notif.message}</Typography>
-               </View>
-            </View>
-          </Animated.View>
-        ))}
+                 <View className="flex-1 justify-center">
+                   <View className="flex-row justify-between items-start mb-1">
+                     <Typography variant="body" weight="bold" className="flex-1 mr-2" style={{ color: colors.text }}>
+                        {notif.title}
+                     </Typography>
+                     <Typography variant="caption" style={{ color: colors.textMuted }}>
+                        {formatTime(notif.created_at)}
+                     </Typography>
+                   </View>
+                   <Typography variant="caption" className="leading-snug" style={{ color: colors.textSecondary }}>
+                      {notif.message}
+                   </Typography>
+                   {!notif.is_read && (
+                     <View className="w-2 h-2 rounded-full absolute -top-1 -right-1" style={{ backgroundColor: '#007AFF' }} />
+                   )}
+                 </View>
+              </Pressable>
+            </Animated.View>
+          ))
+        )}
 
+        <View className="h-10" />
       </ScrollView>
     </SafeAreaView>
   );
 }
+

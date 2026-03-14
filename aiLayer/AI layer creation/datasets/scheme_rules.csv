@@ -1,0 +1,26 @@
+rule_id,scheme_id,field,operator,value
+1,1,age,>=,60
+2,1,annual_income,<,200000
+3,1,caste,in,"SC,ST,OBC,General"
+4,1,occupation,!=,Government Employee
+5,1,gender,in,"Male,Female"
+6,2,gender,=,Female
+7,2,marital_status,=,Widow
+8,2,annual_income,<,180000
+9,2,age,>=,18
+10,2,age,<=,79
+11,3,occupation,=,Government Employee
+12,3,annual_income,<,350000
+13,3,age,>=,21
+14,3,age,<=,58
+15,3,caste,in,"SC,ST,OBC"
+16,4,occupation,=,Student
+17,4,annual_income,<,300000
+18,4,age,>=,14
+19,4,age,<=,28
+20,4,caste,in,"SC,ST,OBC,General"
+21,5,annual_income,<,150000
+22,5,age,>=,18
+23,5,caste,in,"SC,ST,OBC"
+24,5,occupation,in,"Farmer,Labour,Unemployed"
+25,5,gender,in,"Male,Female"

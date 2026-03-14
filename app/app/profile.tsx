@@ -1,8 +1,11 @@
-import { View, Text, ScrollView, TouchableOpacity, Switch, Image, Alert } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Switch, Image, Alert, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
-import { ArrowLeft, Upload, FileText, ChevronRight, Settings, HelpCircle, LogOut, ShieldAlert, Camera } from 'lucide-react-native';
-import { useState } from 'react';
+import { ArrowLeft, Upload, FileText, ChevronRight, Settings, HelpCircle, LogOut, ShieldAlert, Camera, MapPin, Briefcase } from 'lucide-react-native';
+import { useState, useEffect } from 'react';
+import { apiFetch, API_BASE_URL } from '../api/api';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as ImagePicker from 'expo-image-picker';
+import * as DocumentPicker from 'expo-document-picker';
 import { useTheme } from '../context/ThemeContext';
 import { useI18n } from '../context/I18nContext';
 
@@ -11,6 +14,99 @@ export default function ProfileScreen() {
   const { isDark, toggleTheme, colors } = useTheme();
   const { isHindi, toggleLang, t } = useI18n();
   const [profileImage, setProfileImage] = useState<string | null>(null);
+  const [user, setUser] = useState<any>(null);
+  const [userDocs, setUserDocs] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchProfile();
+    fetchDocuments();
+  }, []);
+
+  const fetchProfile = async () => {
+    try {
+      // Fetching profile from backend API pulling from PostgreSQL
+      const { data, error } = await apiFetch('/user/profile');
+      if (data?.success && data?.data) {
+        setUser(data.data);
+      } else {
+        console.error('Failed to fetch profile:', error);
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const fetchDocuments = async () => {
+    try {
+      const { data } = await apiFetch('/user/documents');
+      if (data?.success && data?.data) {
+        setUserDocs(data.data);
+      }
+    } catch (err) {
+      console.error('Failed to fetch documents:', err);
+    }
+  };
+
+  const handleDocumentUpload = async (docType: string) => {
+    try {
+      const result = await DocumentPicker.getDocumentAsync({
+        type: ['application/pdf', 'image/*'],
+        copyToCacheDirectory: true,
+        multiple: false,
+      });
+
+      if (result.canceled || !result.assets || result.assets.length === 0) return;
+
+      const asset = result.assets[0];
+      setLoading(true);
+
+      const formData = new FormData();
+      formData.append('file', { uri: asset.uri, name: asset.name, type: asset.mimeType || 'application/octet-stream' } as any);
+      formData.append('type', docType);
+
+      const token = await AsyncStorage.getItem('auth_token');
+      const resp = await fetch(`${API_BASE_URL}/user/documents/upload`, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
+      const data = await resp.json();
+      if (data.success) {
+        Alert.alert('✅ Success', `"${asset.name}" uploaded successfully!`);
+        fetchDocuments();
+      } else {
+        Alert.alert('Upload Failed', data.message || 'Something went wrong');
+      }
+    } catch (err: any) {
+      Alert.alert('Upload Error', err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const uploadProfilePicToServer = async (localUri: string, filename: string, mimeType: string) => {
+    try {
+      const formData = new FormData();
+      formData.append('file', { uri: localUri, name: filename, type: mimeType } as any);
+      const token = await AsyncStorage.getItem('auth_token');
+      const resp = await fetch(`${API_BASE_URL}/user/profile-pic`, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
+      const data = await resp.json();
+      if (data.success) {
+        setProfileImage(localUri); // Show immediately locally
+        // Refresh user profile to get updated URL
+        fetchProfile();
+      } else {
+        Alert.alert('Upload Failed', data.message || 'Could not save profile picture');
+      }
+    } catch (err: any) {
+      Alert.alert('Upload Error', err.message);
+    }
+  };
 
   const pickImage = async () => {
     const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -25,8 +121,9 @@ export default function ProfileScreen() {
       quality: 0.8,
     });
     if (!result.canceled && result.assets[0]) {
-      setProfileImage(result.assets[0].uri);
-      // TODO: Call userRoutes.uploadProfilePic(result.assets[0].uri)
+      const asset = result.assets[0];
+      const filename = asset.uri.split('/').pop() || 'profile.jpg';
+      await uploadProfilePicToServer(asset.uri, filename, 'image/jpeg');
     }
   };
 
@@ -42,7 +139,9 @@ export default function ProfileScreen() {
       quality: 0.8,
     });
     if (!result.canceled && result.assets[0]) {
-      setProfileImage(result.assets[0].uri);
+      const asset = result.assets[0];
+      const filename = asset.uri.split('/').pop() || 'profile.jpg';
+      await uploadProfilePicToServer(asset.uri, filename, 'image/jpeg');
     }
   };
 
@@ -75,54 +174,99 @@ export default function ProfileScreen() {
             style={{ width: 96, height: 96, borderRadius: 48, alignItems: 'center', justifyContent: 'center', marginBottom: 16, position: 'relative', overflow: 'hidden' }}
             onPress={handleChangePhoto}
           >
-            {profileImage ? (
-              <Image source={{ uri: profileImage }} style={{ width: 96, height: 96, borderRadius: 48 }} />
+            {profileImage || user?.profile_pic_url ? (
+              <Image
+                source={{ uri: profileImage || (user?.profile_pic_url ? `${API_BASE_URL}${user.profile_pic_url}` : undefined) }}
+                style={{ width: 96, height: 96, borderRadius: 48 }}
+              />
             ) : (
               <View style={{ width: 96, height: 96, borderRadius: 48, backgroundColor: isDark ? '#1E3A5F' : '#DBEAFE', alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={{ color: '#2563EB', fontSize: 28, fontWeight: '700' }}>AK</Text>
+                <Text style={{ color: '#2563EB', fontSize: 28, fontWeight: '700' }}>
+                  {user?.name ? user.name.substring(0, 2).toUpperCase() : 'AK'}
+                </Text>
               </View>
             )}
             <View style={{ position: 'absolute', bottom: 0, right: 0, backgroundColor: '#2563EB', padding: 8, borderRadius: 999, borderWidth: 2, borderColor: colors.card }}>
               <Camera size={14} color="white" />
             </View>
           </TouchableOpacity>
-          <Text style={{ fontSize: 20, fontWeight: '700', color: colors.text }}>Amit Kumar</Text>
-          <Text style={{ color: colors.textSecondary, marginTop: 4 }}>+91 98765 43210</Text>
+          <Text style={{ fontSize: 20, fontWeight: '700', color: colors.text }}>
+            {loading ? 'Loading...' : user?.name || 'Unknown User'}
+          </Text>
+          <Text style={{ color: colors.textSecondary, marginTop: 4 }}>
+            {user?.phone || ''}
+          </Text>
           <TouchableOpacity onPress={handleChangePhoto} style={{ marginTop: 10, paddingVertical: 6, paddingHorizontal: 14, borderRadius: 8, backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6' }}>
             <Text style={{ color: '#2563EB', fontSize: 12, fontWeight: '600' }}>{t('change_photo')}</Text>
           </TouchableOpacity>
         </View>
+
+        {/* Dynamic Citizen Data Overview (From dataset) */}
+        {!loading && user && (
+          <View style={{ backgroundColor: colors.card, marginHorizontal: 16, padding: 20, borderRadius: 16, borderWidth: 1, borderColor: colors.cardBorder, marginBottom: 24 }}>
+            <Text style={{ fontSize: 18, fontWeight: '700', color: colors.text, marginBottom: 16 }}>Citizen Profile</Text>
+            
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+              <MapPin size={20} color={colors.textSecondary} />
+              <View style={{ marginLeft: 12 }}>
+                <Text style={{ fontSize: 13, color: colors.textMuted }}>Address & District</Text>
+                <Text style={{ fontWeight: '500', color: colors.text, marginTop: 2 }}>{user.address}, {user.village_or_city}, {user.district}</Text>
+              </View>
+            </View>
+
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+              <Briefcase size={20} color={colors.textSecondary} />
+              <View style={{ marginLeft: 12 }}>
+                <Text style={{ fontSize: 13, color: colors.textMuted }}>Occupation</Text>
+                <Text style={{ fontWeight: '500', color: colors.text, marginTop: 2 }}>{user.occupation}</Text>
+              </View>
+            </View>
+
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12 }}>
+              <FileText size={20} color={colors.textSecondary} />
+              <View style={{ marginLeft: 12 }}>
+                <Text style={{ fontSize: 13, color: colors.textMuted }}>Annual Income</Text>
+                <Text style={{ fontWeight: '500', color: colors.text, marginTop: 2 }}>₹{user.annual_income}</Text>
+              </View>
+            </View>
+            
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <ShieldAlert size={20} color={colors.textSecondary} />
+              <View style={{ marginLeft: 12 }}>
+                <Text style={{ fontSize: 13, color: colors.textMuted }}>Aadhaar Info</Text>
+                <Text style={{ fontWeight: '500', color: colors.text, marginTop: 2 }}>DOB: {user.dob} | Age: {user.age} | {user.gender}</Text>
+              </View>
+            </View>
+          </View>
+        )}
 
         {/* Documents Upload */}
         <View style={{ backgroundColor: colors.card, marginHorizontal: 16, padding: 20, borderRadius: 16, borderWidth: 1, borderColor: colors.cardBorder, marginBottom: 24 }}>
           <Text style={{ fontSize: 18, fontWeight: '700', color: colors.text, marginBottom: 12 }}>{t('my_documents')}</Text>
           <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 12, lineHeight: 18 }}>{t('doc_desc')}</Text>
 
-          <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, backgroundColor: isDark ? '#2C2C2E' : '#F9FAFB', borderRadius: 12, marginBottom: 10, borderWidth: 1, borderColor: colors.cardBorder }}>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <FileText size={20} color="#2563EB" />
-              <Text style={{ marginLeft: 12, fontWeight: '500', color: colors.text }}>{t('pan_card')}</Text>
-            </View>
-            <View style={{ backgroundColor: isDark ? '#064E3B' : '#D1FAE5', paddingHorizontal: 12, paddingVertical: 4, borderRadius: 999 }}>
-              <Text style={{ color: isDark ? '#6EE7B7' : '#065F46', fontSize: 11, fontWeight: '700' }}>{t('uploaded')}</Text>
-            </View>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, backgroundColor: isDark ? '#2C2C2E' : '#F9FAFB', borderRadius: 12, marginBottom: 10, borderWidth: 1, borderColor: colors.cardBorder, borderStyle: 'dashed' }}>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <Upload size={20} color={colors.textMuted} />
-              <Text style={{ marginLeft: 12, fontWeight: '500', color: colors.textSecondary }}>{t('driving_license')}</Text>
-            </View>
-            <ChevronRight size={20} color={colors.textMuted} />
-          </TouchableOpacity>
-
-          <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, backgroundColor: isDark ? '#2C2C2E' : '#F9FAFB', borderRadius: 12, borderWidth: 1, borderColor: colors.cardBorder, borderStyle: 'dashed' }}>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <Upload size={20} color={colors.textMuted} />
-              <Text style={{ marginLeft: 12, fontWeight: '500', color: colors.textSecondary }}>{t('income_cert')}</Text>
-            </View>
-            <ChevronRight size={20} color={colors.textMuted} />
-          </TouchableOpacity>
+          {[
+            { id: 'pan_card', label: t('pan_card') },
+            { id: 'driving_license', label: t('driving_license') },
+            { id: 'income_certificate', label: t('income_cert') }
+          ].map(docOption => {
+            const isUploaded = userDocs.some((d: any) => d.Type === docOption.id);
+            return (
+              <TouchableOpacity key={docOption.id} onPress={() => !isUploaded && handleDocumentUpload(docOption.id)} style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 14, backgroundColor: isDark ? '#2C2C2E' : '#F9FAFB', borderRadius: 12, marginBottom: 10, borderWidth: 1, borderColor: colors.cardBorder, borderStyle: isUploaded ? 'solid' : 'dashed' }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  {isUploaded ? <FileText size={20} color="#2563EB" /> : <Upload size={20} color={colors.textMuted} />}
+                  <Text style={{ marginLeft: 12, fontWeight: '500', color: isUploaded ? colors.text : colors.textSecondary }}>{docOption.label}</Text>
+                </View>
+                {isUploaded ? (
+                  <View style={{ backgroundColor: isDark ? '#064E3B' : '#D1FAE5', paddingHorizontal: 12, paddingVertical: 4, borderRadius: 999 }}>
+                    <Text style={{ color: isDark ? '#6EE7B7' : '#065F46', fontSize: 11, fontWeight: '700' }}>{t('uploaded')}</Text>
+                  </View>
+                ) : (
+                  <ChevronRight size={20} color={colors.textMuted} />
+                )}
+              </TouchableOpacity>
+            )
+          })}
         </View>
 
         {/* Preferences */}

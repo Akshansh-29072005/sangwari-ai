@@ -9,3 +9,5 @@ export { schemeRoutes } from './schemes';
 export { complaintRoutes } from './complaints';
 export { voiceRoutes } from './voice';
 export { userRoutes } from './user';
+export * from './notifications';
+

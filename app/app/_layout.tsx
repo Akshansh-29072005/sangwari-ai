@@ -5,6 +5,9 @@ import 'react-native-reanimated';
 import '../global.css';
 import { ThemeProviderCustom, useTheme } from '../context/ThemeContext';
 import { I18nProvider } from '../context/I18nContext';
+import { NotificationService } from '../services/NotificationService';
+import { useEffect, useRef } from 'react';
+import { NotificationToast, NotificationToastRef } from '../components/ui/NotificationToast';
 
 export const unstable_settings = {
   anchor: '(tabs)',
@@ -12,6 +15,17 @@ export const unstable_settings = {
 
 function InnerLayout() {
   const { isDark, colors } = useTheme();
+  const toastRef = useRef<NotificationToastRef>(null);
+
+  useEffect(() => {
+    NotificationService.setToastRef(toastRef.current);
+    NotificationService.init();
+    NotificationService.startPolling(30000); // 30 second poll
+    return () => {
+      NotificationService.stopPolling();
+      NotificationService.setToastRef(null);
+    };
+  }, []);
 
   return (
     <ThemeProvider value={isDark ? DarkTheme : DefaultTheme}>
@@ -27,10 +41,12 @@ function InnerLayout() {
         <Stack.Screen name="profile" options={{ presentation: 'modal', animation: 'slide_from_bottom' }} />
         <Stack.Screen name="schemes" options={{ animation: 'slide_from_right' }} />
       </Stack>
+      <NotificationToast ref={toastRef} />
       <StatusBar style={colors.statusBar} />
     </ThemeProvider>
   );
 }
+
 
 export default function RootLayout() {
   return (

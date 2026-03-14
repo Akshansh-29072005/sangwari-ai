@@ -1,9 +1,10 @@
-import { View, Text, ScrollView, TouchableOpacity, TextInput, ActivityIndicator } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, TextInput, ActivityIndicator, Alert } from 'react-native';
 import { useRouter } from 'expo-router';
 import { ArrowLeft, CheckCircle2, ChevronRight, XCircle, Search, X } from 'lucide-react-native';
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import { useI18n } from '../../context/I18nContext';
+import { schemeRoutes } from '../../api/routes/schemes';
 
 interface Scheme {
   id: string;
@@ -14,22 +15,6 @@ interface Scheme {
   category: string;
 }
 
-// Full mock database — will be replaced by backend search
-const allSchemes: Scheme[] = [
-  { id: '1', name: 'Kisan Samman Nidhi', desc: 'Financial support for farmers', match: '98%', eligible: true, category: 'Agriculture' },
-  { id: '2', name: 'Mitanin Yojana', desc: 'Health worker support program', match: '85%', eligible: true, category: 'Health' },
-  { id: '3', name: 'PM Awas Yojana', desc: 'Housing for rural & urban poor', match: '70%', eligible: true, category: 'Housing' },
-  { id: '4', name: 'Ayushman Bharat', desc: 'Health insurance up to ₹5 lakh', match: '92%', eligible: true, category: 'Health' },
-  { id: '5', name: 'PM Vishwakarma Yojana', desc: 'Support for traditional artisans', match: '40%', eligible: false, category: 'Skill Dev' },
-  { id: '6', name: 'PM Mudra Yojana', desc: 'Loans up to ₹10 lakh for small business', match: '30%', eligible: false, category: 'Finance' },
-  { id: '7', name: 'Sukanya Samriddhi Yojana', desc: 'Savings scheme for girl child', match: '0%', eligible: false, category: 'Finance' },
-  { id: '8', name: 'Atal Pension Yojana', desc: 'Pension scheme for unorganized sector', match: '55%', eligible: false, category: 'Pension' },
-  { id: '9', name: 'PM Ujjwala Yojana', desc: 'Free LPG connections for BPL families', match: '88%', eligible: true, category: 'Energy' },
-  { id: '10', name: 'Jan Dhan Yojana', desc: 'Bank accounts with zero balance & insurance', match: '95%', eligible: true, category: 'Finance' },
-  { id: '11', name: 'PM Garib Kalyan Yojana', desc: 'Free food grains for poor families', match: '78%', eligible: true, category: 'Welfare' },
-  { id: '12', name: 'Stand Up India', desc: 'Loans for SC/ST and women entrepreneurs', match: '25%', eligible: false, category: 'Finance' },
-];
-
 export default function SchemesListScreen() {
   const router = useRouter();
   const { isDark, colors } = useTheme();
@@ -39,11 +24,29 @@ export default function SchemesListScreen() {
   const inputRef = useRef<TextInput>(null);
   const searchTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Eligible schemes (default view)
-  const eligibleSchemes = allSchemes.filter(s => s.eligible);
-
-  // Search results — simulates backend search with debounce
+  // States for backend data
+  const [eligibleSchemes, setEligibleSchemes] = useState<Scheme[]>([]);
   const [searchResults, setSearchResults] = useState<Scheme[]>([]);
+  const [loadingInitial, setLoadingInitial] = useState(true);
+
+  // Fetch initial eligible schemes from backend
+  useEffect(() => {
+    const fetchSchemes = async () => {
+      try {
+        const resp = await schemeRoutes.getEligibleSchemes();
+        if (resp.data?.success && Array.isArray(resp.data?.data)) {
+          setEligibleSchemes(resp.data.data);
+        } else {
+          Alert.alert("Error", "Could not load schemes");
+        }
+      } catch (err) {
+        Alert.alert("Error", "Failed to connect to server");
+      } finally {
+        setLoadingInitial(false);
+      }
+    };
+    fetchSchemes();
+  }, []);
 
   const handleSearch = useCallback((text: string) => {
     setQuery(text);
@@ -58,20 +61,24 @@ export default function SchemesListScreen() {
 
     setIsSearching(true);
 
-    // Debounce 300ms — simulates backend API call (schemeRoutes.searchSchemes)
-    searchTimeout.current = setTimeout(() => {
-      const q = text.toLowerCase();
-      const results = allSchemes.filter(
-        s => s.name.toLowerCase().includes(q) || s.desc.toLowerCase().includes(q) || s.category.toLowerCase().includes(q)
-      );
-      // Sort: eligible first, then by match percentage
-      results.sort((a, b) => {
-        if (a.eligible !== b.eligible) return a.eligible ? -1 : 1;
-        return parseInt(b.match) - parseInt(a.match);
-      });
-      setSearchResults(results);
-      setIsSearching(false);
-    }, 300);
+    // Debounce backend search
+    searchTimeout.current = setTimeout(async () => {
+      try {
+        const resp = await schemeRoutes.searchSchemes(text);
+        if (resp.data?.success && Array.isArray(resp.data?.data)) {
+          // Sort results: eligible first
+          const sorted = [...resp.data.data].sort((a, b) => {
+            if (a.eligible !== b.eligible) return a.eligible ? -1 : 1;
+            return 0; // fallback
+          });
+          setSearchResults(sorted);
+        }
+      } catch (err) {
+        console.error("Search failed", err);
+      } finally {
+        setIsSearching(false);
+      }
+    }, 500); // 500ms debounce
   }, []);
 
   const clearSearch = () => {
@@ -107,7 +114,7 @@ export default function SchemesListScreen() {
         <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 4, flexWrap: 'wrap' }}>
           <Text style={{ fontSize: 15, fontWeight: '700', color: colors.text, marginRight: 8 }}>{s.name}</Text>
           <View style={{ backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4 }}>
-            <Text style={{ fontSize: 9, fontWeight: '600', color: colors.textMuted, textTransform: 'uppercase', letterSpacing: 0.5 }}>{s.category}</Text>
+            <Text style={{ fontSize: 9, fontWeight: '600', color: colors.textMuted, textTransform: 'uppercase', letterSpacing: 0.5 }}>{s.category || 'WELFARE'}</Text>
           </View>
         </View>
 
@@ -118,7 +125,7 @@ export default function SchemesListScreen() {
           {s.eligible ? (
             <View style={{ backgroundColor: isDark ? '#064E3B' : '#D1FAE5', paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6, flexDirection: 'row', alignItems: 'center' }}>
               <CheckCircle2 size={12} color="#16A34A" />
-              <Text style={{ fontSize: 11, fontWeight: '700', color: isDark ? '#6EE7B7' : '#065F46', marginLeft: 4 }}>{t('eligible')} • {t('match')} {s.match}</Text>
+              <Text style={{ fontSize: 11, fontWeight: '700', color: isDark ? '#6EE7B7' : '#065F46', marginLeft: 4 }}>{t('eligible')} • {t('match')} {s.match || 'High'}</Text>
             </View>
           ) : (
             <View style={{ backgroundColor: isDark ? '#3B1010' : '#FEF2F2', paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6, flexDirection: 'row', alignItems: 'center' }}>
@@ -188,8 +195,8 @@ export default function SchemesListScreen() {
           </View>
         )}
 
-        {/* Loading Spinner */}
-        {isSearching && (
+        {/* Loading Spinners */}
+        {(isSearching || loadingInitial) && (
           <View style={{ paddingVertical: 40, alignItems: 'center' }}>
             <ActivityIndicator size="large" color="#2563EB" />
             <Text style={{ color: colors.textMuted, marginTop: 12, fontSize: 13 }}>{t('searching')}</Text>
@@ -197,9 +204,9 @@ export default function SchemesListScreen() {
         )}
 
         {/* Results or Default List */}
-        {!isSearching && displaySchemes.map(renderSchemeCard)}
+        {!isSearching && !loadingInitial && displaySchemes.map(renderSchemeCard)}
 
-        {/* No Results */}
+        {/* No Results Search */}
         {isSearchActive && !isSearching && searchResults.length === 0 && (
           <View style={{ paddingVertical: 40, alignItems: 'center' }}>
             <Search size={40} color={colors.textMuted} />

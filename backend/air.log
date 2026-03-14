@@ -1,0 +1,141 @@
+nohup: ignoring input
+[warning] build.bin is deprecated; set build.entrypoint instead
+
+  __    _   ___  
+ / /\  | | | |_) 
+/_/--\ |_| |_| \_ v1.64.5, built with Go go1.25.3
+
+mkdir /home/akshansh/sangwari-ai/backend/tmp
+watching .
+watching internal
+watching internal/modules
+watching internal/modules/ai
+watching internal/modules/ai/dto
+watching internal/modules/ai/entity
+watching internal/modules/ai/handler
+watching internal/modules/ai/model
+watching internal/modules/ai/repository
+watching internal/modules/ai/service
+watching internal/modules/application
+watching internal/modules/application/dto
+watching internal/modules/application/entity
+watching internal/modules/application/handler
+watching internal/modules/application/model
+watching internal/modules/application/repository
+watching internal/modules/application/service
+watching internal/modules/complaint
+watching internal/modules/complaint/dto
+watching internal/modules/complaint/entity
+watching internal/modules/complaint/handler
+watching internal/modules/complaint/model
+watching internal/modules/complaint/repository
+watching internal/modules/complaint/service
+watching internal/modules/document
+watching internal/modules/document/dto
+watching internal/modules/document/entity
+watching internal/modules/document/handler
+watching internal/modules/document/model
+watching internal/modules/document/repository
+watching internal/modules/document/service
+watching internal/modules/notification
+watching internal/modules/notification/dto
+watching internal/modules/notification/entity
+watching internal/modules/notification/handler
+watching internal/modules/notification/model
+watching internal/modules/notification/repository
+watching internal/modules/notification/service
+watching internal/modules/scheme
+watching internal/modules/scheme/dto
+watching internal/modules/scheme/entity
+watching internal/modules/scheme/handler
+watching internal/modules/scheme/model
+watching internal/modules/scheme/repository
+watching internal/modules/scheme/service
+watching internal/modules/user
+watching internal/modules/user/dto
+watching internal/modules/user/entity
+watching internal/modules/user/handler
+watching internal/modules/user/model
+watching internal/modules/user/repository
+watching internal/modules/user/service
+watching internal/modules/voice
+watching internal/modules/voice/handler
+!exclude migrations
+watching platform
+watching platform/database
+watching platform/errors
+watching platform/jwt
+watching platform/logger
+watching platform/middleware
+watching platform/response
+watching platform/server
+watching platform/validator
+!exclude tmp
+building...
+running...
+[90m12:11PM[0m [32mINF[0m [1mStarting Sangwari AI Backend...[0m
+[90m12:11PM[0m [32mINF[0m [1mDatabase connected successfully[0m
+[90m12:11PM[0m [32mINF[0m [1mRunning database migrations...[0m
+[90m12:11PM[0m [32mINF[0m [1mDatabase migrations completed[0m
+[90m12:11PM[0m [32mINF[0m [1mServer listening[0m [36mport=[0m8000
+[2Jinternal/modules/ai/handler/ai.go has changed
+building...
+# github.com/Akshansh-29072005/sangwari-ai/backend/internal/modules/ai/handler
+internal/modules/ai/handler/ai.go:3:2: syntax error: non-declaration statement outside function body
+failed to build, error: exit status 1
+[2Jinternal/modules/ai/handler/ai.go has changed
+building...
+# github.com/Akshansh-29072005/sangwari-ai/backend/internal/modules/ai/handler
+internal/modules/ai/handler/ai.go:65:10: undefined: logger.Log
+internal/modules/ai/handler/ai.go:66:12: undefined: response.InternalServerError
+internal/modules/ai/handler/ai.go:72:12: undefined: response.InternalServerError
+internal/modules/ai/handler/ai.go:78:12: undefined: response.InternalServerError
+failed to build, error: exit status 1
+[2Jinternal/modules/ai/handler/ai.go has changed
+building...
+# github.com/Akshansh-29072005/sangwari-ai/backend/internal/modules/ai/handler
+internal/modules/ai/handler/ai.go:65:16: cannot call pointer method Error on zerolog.Logger
+failed to build, error: exit status 1
+[2Jinternal/modules/ai/handler/ai.go has changed
+building...
+# github.com/Akshansh-29072005/sangwari-ai/backend/internal/modules/ai/handler
+internal/modules/ai/handler/ai.go:119:26: not enough arguments in call to response.BadRequest
+	have (*gin.Context, string)
+	want (*gin.Context, string, interface{})
+internal/modules/ai/handler/ai.go:137:26: not enough arguments in call to response.BadRequest
+	have (*gin.Context, string)
+	want (*gin.Context, string, interface{})
+internal/modules/ai/handler/ai.go:154:26: not enough arguments in call to response.BadRequest
+	have (*gin.Context, string)
+	want (*gin.Context, string, interface{})
+internal/modules/ai/handler/ai.go:170:26: not enough arguments in call to response.BadRequest
+	have (*gin.Context, string)
+	want (*gin.Context, string, interface{})
+failed to build, error: exit status 1
+[2Jinternal/modules/ai/route.go has changed
+building...
+# github.com/Akshansh-29072005/sangwari-ai/backend/internal/modules/ai/handler
+internal/modules/ai/handler/ai.go:119:26: not enough arguments in call to response.BadRequest
+	have (*gin.Context, string)
+	want (*gin.Context, string, interface{})
+internal/modules/ai/handler/ai.go:137:26: not enough arguments in call to response.BadRequest
+	have (*gin.Context, string)
+	want (*gin.Context, string, interface{})
+internal/modules/ai/handler/ai.go:154:26: not enough arguments in call to response.BadRequest
+	have (*gin.Context, string)
+	want (*gin.Context, string, interface{})
+internal/modules/ai/handler/ai.go:170:26: not enough arguments in call to response.BadRequest
+	have (*gin.Context, string)
+	want (*gin.Context, string, interface{})
+failed to build, error: exit status 1
+[2Jinternal/modules/ai/handler/ai.go has changed
+building...
+running...
+[90m12:45PM[0m [32mINF[0m [1mStarting Sangwari AI Backend...[0m
+[90m12:45PM[0m [32mINF[0m [1mDatabase connected successfully[0m
+[90m12:45PM[0m [32mINF[0m [1mRunning database migrations...[0m
+[90m12:45PM[0m [32mINF[0m [1mDatabase migrations completed[0m
+[90m12:45PM[0m [32mINF[0m [1mServer listening[0m [36mport=[0m8000
+cleaning...
+deleting /home/akshansh/sangwari-ai/backend/tmp
+see you again~
