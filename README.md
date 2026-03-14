@@ -8,6 +8,14 @@ AI-assisted citizen services platform composed of:
 
 The platform handles scheme discovery, eligibility analysis, application submission, grievance routing, document checks, multilingual assistant responses, and citizen notifications.
 
+## Layer Documentation (In-Depth)
+
+For full, layer-specific implementation and operations documentation, refer to:
+
+- [Backend README](backend/README.md)
+- [App README](app/README.md)
+- [AI Layer README](aiLayer/README.md)
+
 ---
 
 ## 1) High-Level Architecture
