@@ -16,6 +16,44 @@ For full, layer-specific implementation and operations documentation, refer to:
 - [App README](app/README.md)
 - [AI Layer README](aiLayer/README.md)
 
+## Languages, Frameworks, Tools & Technologies
+
+### Programming Languages
+
+- Go
+- Python
+- TypeScript
+- JavaScript
+- SQL
+
+### Frameworks & Libraries
+
+- **Mobile App**: Expo, React Native, Expo Router, Nativewind, Tailwind CSS
+- **Backend**: Gin, GORM, JWT, Zerolog, Go Validator
+- **AI Layer**: FastAPI, SQLAlchemy, Pydantic, Scikit-learn, Pandas, Llama.cpp (`llama-cpp-python`)
+
+### Databases & Storage
+
+- PostgreSQL
+- SQLite (fallback for AI layer local setup)
+- AsyncStorage (mobile local persistence)
+
+### DevOps & Tooling
+
+- Docker, Docker Compose
+- Adminer (DB administration)
+- Uvicorn (ASGI server)
+- npm / Node.js
+- Go modules
+- Python virtual environments (`venv`)
+
+### AI/ML Tooling
+
+- Hugging Face Hub (model artifact retrieval)
+- Random Forest models (classification and regression)
+- TF-IDF vectorization
+- Rule-based inference engines (eligibility and anomaly checks)
+
 ---
 
 ## 1) High-Level Architecture
