@@ -167,7 +167,41 @@ func (h *UserHandler) Login(c *gin.Context) {
 
 // POST /auth/change-mpin
 func (h *UserHandler) ChangeMPIN(c *gin.Context) {
-	response.OK(c, "MPIN changed", nil)
+	userID, _ := c.Get("user_id")
+	var req struct {
+		OldMPIN string `json:"old_mpin" binding:"required"`
+		NewMPIN string `json:"new_mpin" binding:"required,len=6"`
+	}
+	if err := c.ShouldBindJSON(&req); err != nil {
+		response.BadRequest(c, "Invalid request. New MPIN must be 6 digits.", err)
+		return
+	}
+
+	var user entity.User
+	if err := h.db.First(&user, "id = ?", userID).Error; err != nil {
+		response.NotFound(c, "User not found")
+		return
+	}
+
+	// Verify old MPIN
+	if err := bcrypt.CompareHashAndPassword([]byte(user.MPINHash), []byte(req.OldMPIN)); err != nil {
+		response.Unauthorized(c, "Current MPIN is incorrect")
+		return
+	}
+
+	// Hash new MPIN
+	hashedMPIN, err := bcrypt.GenerateFromPassword([]byte(req.NewMPIN), bcrypt.DefaultCost)
+	if err != nil {
+		response.InternalError(c, "Failed to update MPIN")
+		return
+	}
+
+	if err := h.db.Model(&user).Update("mpin_hash", string(hashedMPIN)).Error; err != nil {
+		response.InternalError(c, "Failed to save new MPIN")
+		return
+	}
+
+	response.OK(c, "MPIN updated successfully", nil)
 }
 
 // ──────────────── User Profile Routes ────────────────
@@ -196,12 +230,15 @@ func (h *UserHandler) GetProfile(c *gin.Context) {
 		"pincode":         user.Pincode,
 		"occupation":      user.Occupation,
 		"annual_income":   user.AnnualIncome,
-		"caste":           user.Caste,
-		"aadhar_number":   user.AadharNumber,
-		"role":            user.Role,
-		"language":        user.Language,
-		"profile_pic_url": user.ProfilePicURL,
-		"is_verified":     user.IsVerified,
+		"caste":                  user.Caste,
+		"aadhar_number":          user.AadharNumber,
+		"pan_number":             user.PanNumber,
+		"ration_card_number":    user.RationCardNumber,
+		"driving_license_number": user.DrivingLicenseNumber,
+		"role":                   user.Role,
+		"language":               user.Language,
+		"profile_pic_url":        user.ProfilePicURL,
+		"is_verified":            user.IsVerified,
 	})
 }
 
@@ -209,8 +246,11 @@ func (h *UserHandler) GetProfile(c *gin.Context) {
 func (h *UserHandler) UpdateProfile(c *gin.Context) {
 	userID, _ := c.Get("user_id")
 	var req struct {
-		Name     string `json:"name"`
-		Language string `json:"language"`
+		Name                 string `json:"name"`
+		Language             string `json:"language"`
+		PanNumber            string `json:"pan_number"`
+		RationCardNumber     string `json:"ration_card_number"`
+		DrivingLicenseNumber string `json:"driving_license_number"`
 	}
 	if err := c.ShouldBindJSON(&req); err != nil {
 		response.BadRequest(c, "Invalid payload", err)
@@ -287,6 +327,31 @@ func (h *UserHandler) SetLanguage(c *gin.Context) {
 
 	h.db.Model(&entity.User{}).Where("id = ?", userID).Update("language", req.Language)
 	response.OK(c, "Language preference updated", nil)
+}
+
+// POST /user/verify-mpin
+func (h *UserHandler) VerifyMPIN(c *gin.Context) {
+	userID, _ := c.Get("user_id")
+	var req struct {
+		MPIN string `json:"mpin" binding:"required"`
+	}
+	if err := c.ShouldBindJSON(&req); err != nil {
+		response.BadRequest(c, "Invalid request", err)
+		return
+	}
+
+	var user entity.User
+	if err := h.db.First(&user, "id = ?", userID).Error; err != nil {
+		response.NotFound(c, "User not found")
+		return
+	}
+
+	if err := bcrypt.CompareHashAndPassword([]byte(user.MPINHash), []byte(req.MPIN)); err != nil {
+		response.Unauthorized(c, "Invalid MPIN")
+		return
+	}
+
+	response.OK(c, "MPIN verified successfully", map[string]bool{"verified": true})
 }
 
 // POST /user/profile-pic

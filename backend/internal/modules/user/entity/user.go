@@ -20,9 +20,12 @@ type User struct {
 	Pincode       string    `gorm:"size:20" json:"pincode"`
 	Occupation    string    `gorm:"size:100" json:"occupation"`
 	AnnualIncome  float64   `json:"annual_income"`
-	Caste         string    `gorm:"size:50" json:"caste"`
-	AadharNumber  string    `gorm:"size:20" json:"aadhar_number"`
-	MPINHash      string    `gorm:"size:255" json:"-"`                      // hashed 6-digit MPIN
+	Caste                    string    `gorm:"size:50" json:"caste"`
+	AadharNumber             string    `gorm:"size:20" json:"aadhar_number"`
+	PanNumber                string    `gorm:"size:20" json:"pan_number"`
+	RationCardNumber         string    `gorm:"size:50" json:"ration_card_number"`
+	DrivingLicenseNumber      string    `gorm:"size:50" json:"driving_license_number"`
+	MPINHash                 string    `gorm:"size:255" json:"-"`                      // hashed 6-digit MPIN
 	Role          string    `gorm:"size:50;default:'citizen'" json:"role"`  // citizen, admin
 	Language      string    `gorm:"size:10;default:'en'" json:"language"`   // en, hi
 	ProfilePicURL string    `gorm:"size:500" json:"profile_pic_url"`

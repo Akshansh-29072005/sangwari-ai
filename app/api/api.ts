@@ -8,7 +8,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Change this to your backend URL (e.g. http://192.168.x.x:8000 for local dev)
-export const API_BASE_URL = 'http://172.16.196.91:8000';
+export const API_BASE_URL = 'http://172.16.197.82:8000';
 
 // Default request timeout in milliseconds
 export const API_TIMEOUT = 15000;

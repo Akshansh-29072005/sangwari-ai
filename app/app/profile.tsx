@@ -1,6 +1,6 @@
-import { View, Text, ScrollView, TouchableOpacity, Switch, Image, Alert, ActivityIndicator } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Switch, Image, Alert, ActivityIndicator, Modal, TextInput } from 'react-native';
 import { useRouter } from 'expo-router';
-import { ArrowLeft, Upload, FileText, ChevronRight, Settings, HelpCircle, LogOut, ShieldAlert, Camera, MapPin, Briefcase } from 'lucide-react-native';
+import { ArrowLeft, Upload, FileText, ChevronRight, Settings, HelpCircle, LogOut, ShieldAlert, Camera, MapPin, Briefcase, Lock, Pencil, ShieldCheck } from 'lucide-react-native';
 import { useState, useEffect } from 'react';
 import { apiFetch, API_BASE_URL } from '../api/api';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -17,6 +17,18 @@ export default function ProfileScreen() {
   const [user, setUser] = useState<any>(null);
   const [userDocs, setUserDocs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [showMpinModal, setShowMpinModal] = useState(false);
+  const [mpin, setMpin] = useState('');
+  const [verifyingMpin, setVerifyingMpin] = useState(false);
+  const [isVerified, setIsVerified] = useState(false);
+  const [editingField, setEditingField] = useState<string | null>(null);
+  const [tempValue, setTempValue] = useState('');
+
+  const [showChangeMpinModal, setShowMpinModalState] = useState(false);
+  const [oldMpin, setOldMpin] = useState('');
+  const [newMpin, setNewMpin] = useState('');
+  const [confirmMpin, setConfirmMpin] = useState('');
+  const [updatingMpin, setUpdatingMpin] = useState(false);
 
   useEffect(() => {
     fetchProfile();
@@ -157,6 +169,63 @@ export default function ProfileScreen() {
     );
   };
 
+  const handleVerifyMpin = async () => {
+    if (mpin.length !== 6) return;
+    setVerifyingMpin(true);
+    try {
+      const { data, error } = await apiFetch('/user/verify-mpin', {
+        method: 'POST',
+        body: JSON.stringify({ mpin }),
+      });
+      if (data?.success) {
+        setIsVerified(true);
+        setShowMpinModal(false);
+        setMpin('');
+        if (editingField) {
+          setTempValue(user?.[editingField] || '');
+        }
+      } else {
+        Alert.alert('Verification Failed', (error as string) || 'Incorrect MPIN');
+        setMpin('');
+      }
+    } catch (err: any) {
+      Alert.alert('Error', err.message);
+    } finally {
+      setVerifyingMpin(false);
+    }
+  };
+
+  const handleSaveDocField = async () => {
+    if (!editingField) return;
+    setLoading(true);
+    try {
+      const { data, error } = await apiFetch('/user/profile', {
+        method: 'PUT',
+        body: JSON.stringify({ [editingField]: tempValue }),
+      });
+      if (data?.success) {
+        Alert.alert('✅ Success', 'Profile updated successfully');
+        setEditingField(null);
+        fetchProfile();
+      } else {
+        Alert.alert('Update Failed', (error as string) || 'Could not save data');
+      }
+    } catch (err: any) {
+      Alert.alert('Error', err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const startEditingField = (field: string) => {
+    setEditingField(field);
+    if (!isVerified) {
+      setShowMpinModal(true);
+    } else {
+      setTempValue(user?.[field] || '');
+    }
+  };
+
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
       <View style={{ paddingHorizontal: 24, paddingVertical: 16, backgroundColor: colors.headerBg, flexDirection: 'row', alignItems: 'center', shadowColor: '#000', shadowOpacity: 0.05, shadowRadius: 4, elevation: 2, zIndex: 10, paddingTop: 48 }}>
@@ -239,6 +308,64 @@ export default function ProfileScreen() {
             </View>
           </View>
         )}
+        
+        {/* Secure Documents & IDs */}
+        <View style={{ backgroundColor: colors.card, marginHorizontal: 16, padding: 20, borderRadius: 16, borderWidth: 1, borderColor: colors.cardBorder, marginBottom: 24 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12, justifyContent: 'space-between' }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <Lock size={20} color={isVerified ? "#16A34A" : colors.textSecondary} />
+              <Text style={{ fontSize: 18, fontWeight: '700', color: colors.text, marginLeft: 8 }}>Secure Documents</Text>
+            </View>
+            {!isVerified && (
+              <TouchableOpacity onPress={() => setShowMpinModal(true)} style={{ backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6', paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8 }}>
+                 <Text style={{ color: '#2563EB', fontSize: 11, fontWeight: '600' }}>UNLOCK</Text>
+              </TouchableOpacity>
+            )}
+          </View>
+
+          {[
+            { key: 'pan_number', label: 'PAN Card No.', icon: ShieldCheck },
+            { key: 'ration_card_number', label: 'Ration Card No.', icon: ShieldCheck },
+            { key: 'driving_license_number', label: 'Driving License No.', icon: ShieldCheck },
+          ].map((field) => {
+            const val = user?.[field.key];
+            const isFieldEditing = editingField === field.key && isVerified;
+
+            return (
+              <View key={field.key} style={{ marginBottom: 16 }}>
+                <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 6 }}>{field.label}</Text>
+                {isFieldEditing ? (
+                   <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                      <TextInput 
+                        style={{ flex: 1, backgroundColor: isDark ? '#1C1C1E' : '#FFFFFF', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, color: colors.text, borderWidth: 1, borderColor: '#2563EB' }}
+                        value={tempValue}
+                        onChangeText={setTempValue}
+                        autoFocus
+                        placeholder={`Enter ${field.label}`}
+                        placeholderTextColor={colors.textMuted}
+                      />
+                      <TouchableOpacity onPress={handleSaveDocField} style={{ marginLeft: 10, backgroundColor: '#2563EB', padding: 10, borderRadius: 10 }}>
+                        <Text style={{ color: 'white', fontWeight: '600' }}>Save</Text>
+                      </TouchableOpacity>
+                      <TouchableOpacity onPress={() => setEditingField(null)} style={{ marginLeft: 6, padding: 10 }}>
+                        <Text style={{ color: colors.textSecondary }}>Cancel</Text>
+                      </TouchableOpacity>
+                   </View>
+                ) : (
+                  <TouchableOpacity 
+                    onPress={() => startEditingField(field.key)}
+                    style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 12, backgroundColor: isDark ? '#2C2C2E' : '#F9FAFB', borderRadius: 10, borderWidth: 1, borderColor: colors.cardBorder }}
+                  >
+                    <Text style={{ color: val && isVerified ? colors.text : colors.textMuted, fontWeight: '500' }}>
+                      {isVerified ? (val || 'Not set') : '●●●● ●●●● ●●●●'}
+                    </Text>
+                    <Pencil size={14} color={colors.textSecondary} />
+                  </TouchableOpacity>
+                )}
+              </View>
+            );
+          })}
+        </View>
 
         {/* Documents Upload */}
         <View style={{ backgroundColor: colors.card, marginHorizontal: 16, padding: 20, borderRadius: 16, borderWidth: 1, borderColor: colors.cardBorder, marginBottom: 24 }}>
@@ -289,7 +416,10 @@ export default function ProfileScreen() {
             <Switch value={isHindi} onValueChange={toggleLang} trackColor={{ false: '#D1D5DB', true: '#2563EB' }} />
           </View>
 
-          <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 14, borderBottomWidth: 1, borderBottomColor: colors.cardBorder }}>
+          <TouchableOpacity 
+            onPress={() => setShowMpinModalState(true)}
+            style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 14, borderBottomWidth: 1, borderBottomColor: colors.cardBorder }}
+          >
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
               <ShieldAlert size={20} color={colors.textSecondary} />
               <Text style={{ marginLeft: 12, fontWeight: '500', color: colors.text }}>{t('change_mpin')}</Text>
@@ -297,7 +427,10 @@ export default function ProfileScreen() {
             <ChevronRight size={20} color={colors.textMuted} />
           </TouchableOpacity>
 
-          <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 14 }}>
+          <TouchableOpacity 
+            onPress={() => router.push('/faq')}
+            style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 14 }}
+          >
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
               <HelpCircle size={20} color={colors.textSecondary} />
               <Text style={{ marginLeft: 12, fontWeight: '500', color: colors.text }}>{t('faq_support')}</Text>
@@ -316,6 +449,142 @@ export default function ProfileScreen() {
         </TouchableOpacity>
 
       </ScrollView>
+
+      {/* MPIN Verification Modal */}
+      <Modal visible={showMpinModal} transparent animationType="fade">
+        <View style={{ flex: 1, backgroundColor: 'rgba(0,0,0,0.6)', justifyContent: 'center', padding: 24 }}>
+          <View style={{ backgroundColor: colors.card, borderRadius: 24, padding: 32, alignItems: 'center', shadowColor: '#000', shadowOpacity: 0.2, shadowRadius: 10, elevation: 10 }}>
+            <View style={{ backgroundColor: isDark ? '#1E3A5F' : '#DBEAFE', padding: 20, borderRadius: 99, marginBottom: 20 }}>
+              <Lock size={32} color="#2563EB" />
+            </View>
+            <Text style={{ fontSize: 22, fontWeight: '700', color: colors.text, marginBottom: 8 }}>Verify MPIN</Text>
+            <Text style={{ fontSize: 14, color: colors.textSecondary, textAlign: 'center', marginBottom: 24, lineHeight: 20 }}>
+              Enter your 6-digit secure MPIN to access sensitive identity documents.
+            </Text>
+            
+            <TextInput
+              style={{ width: '100%', backgroundColor: isDark ? '#1C1C1E' : '#F3F4F6', borderRadius: 16, padding: 16, fontSize: 24, letterSpacing: 8, textAlign: 'center', color: colors.text, borderWidth: 1, borderColor: colors.cardBorder, marginBottom: 24 }}
+              keyboardType="number-pad"
+              maxLength={6}
+              secureTextEntry
+              value={mpin}
+              onChangeText={setMpin}
+              autoFocus
+            />
+
+            <View style={{ flexDirection: 'row', width: '100%' }}>
+              <TouchableOpacity 
+                onPress={() => { setShowMpinModal(false); setMpin(''); setEditingField(null); }}
+                style={{ flex: 1, padding: 16, borderRadius: 16, alignItems: 'center', marginRight: 12, backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6' }}
+              >
+                <Text style={{ fontWeight: '600', color: colors.textSecondary }}>Cancel</Text>
+              </TouchableOpacity>
+              <TouchableOpacity 
+                onPress={handleVerifyMpin}
+                disabled={mpin.length !== 6 || verifyingMpin}
+                style={{ flex: 2, padding: 16, borderRadius: 16, alignItems: 'center', backgroundColor: mpin.length === 6 ? '#2563EB' : (isDark ? '#1E3A5F' : '#DBEAFE') }}
+              >
+                {verifyingMpin ? <ActivityIndicator color="white" /> : <Text style={{ fontWeight: '700', color: 'white' }}>Verify & Unlock</Text>}
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
+
+      {/* Change MPIN Modal */}
+      <Modal visible={showChangeMpinModal} transparent animationType="slide">
+        <View style={{ flex: 1, backgroundColor: 'rgba(0,0,0,0.6)', justifyContent: 'flex-end' }}>
+          <View style={{ backgroundColor: colors.card, borderTopLeftRadius: 32, borderTopRightRadius: 32, padding: 32, shadowColor: '#000', shadowOpacity: 0.2, shadowRadius: 10, elevation: 10 }}>
+            <View style={{ height: 4, width: 40, backgroundColor: colors.cardBorder, alignSelf: 'center', borderRadius: 2, marginBottom: 24 }} />
+            
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 24 }}>
+              <View style={{ backgroundColor: isDark ? '#1E3A5F' : '#DBEAFE', padding: 12, borderRadius: 12, marginRight: 16 }}>
+                <ShieldAlert size={24} color="#2563EB" />
+              </View>
+              <Text style={{ fontSize: 22, fontWeight: '700', color: colors.text }}>Change MPIN</Text>
+            </View>
+
+            <View style={{ marginBottom: 20 }}>
+              <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 8 }}>Old 6-digit MPIN</Text>
+              <TextInput
+                style={{ backgroundColor: isDark ? '#1C1C1E' : '#F3F4F6', borderRadius: 12, padding: 16, fontSize: 18, color: colors.text, borderWidth: 1, borderColor: colors.cardBorder }}
+                keyboardType="number-pad"
+                maxLength={6}
+                secureTextEntry
+                value={oldMpin}
+                onChangeText={setOldMpin}
+              />
+            </View>
+
+            <View style={{ marginBottom: 20 }}>
+              <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 8 }}>New 6-digit MPIN</Text>
+              <TextInput
+                style={{ backgroundColor: isDark ? '#1C1C1E' : '#F3F4F6', borderRadius: 12, padding: 16, fontSize: 18, color: colors.text, borderWidth: 1, borderColor: colors.cardBorder }}
+                keyboardType="number-pad"
+                maxLength={6}
+                secureTextEntry
+                value={newMpin}
+                onChangeText={setNewMpin}
+              />
+            </View>
+
+            <View style={{ marginBottom: 32 }}>
+              <Text style={{ fontSize: 13, color: colors.textSecondary, marginBottom: 8 }}>Confirm New MPIN</Text>
+              <TextInput
+                style={{ backgroundColor: isDark ? '#1C1C1E' : '#F3F4F6', borderRadius: 12, padding: 16, fontSize: 18, color: colors.text, borderWidth: 1, borderColor: colors.cardBorder }}
+                keyboardType="number-pad"
+                maxLength={6}
+                secureTextEntry
+                value={confirmMpin}
+                onChangeText={setConfirmMpin}
+              />
+            </View>
+
+            <View style={{ flexDirection: 'row' }}>
+              <TouchableOpacity 
+                onPress={() => { setShowMpinModalState(false); setOldMpin(''); setNewMpin(''); setConfirmMpin(''); }}
+                style={{ flex: 1, padding: 16, borderRadius: 16, alignItems: 'center', marginRight: 12, backgroundColor: isDark ? '#2C2C2E' : '#F3F4F6' }}
+              >
+                <Text style={{ fontWeight: '600', color: colors.textSecondary }}>Cancel</Text>
+              </TouchableOpacity>
+              <TouchableOpacity 
+                onPress={async () => {
+                  if (newMpin !== confirmMpin) {
+                    Alert.alert('Error', 'New MPIN and Confirmation do not match');
+                    return;
+                  }
+                  if (newMpin.length !== 6) {
+                    Alert.alert('Error', 'MPIN must be 6 digits');
+                    return;
+                  }
+                  setUpdatingMpin(true);
+                  try {
+                    const { data, error } = await apiFetch('/auth/change-mpin', {
+                      method: 'POST',
+                      body: JSON.stringify({ old_mpin: oldMpin, new_mpin: newMpin }),
+                    });
+                    if (data?.success) {
+                      Alert.alert('Success', 'MPIN changed successfully!');
+                      setShowMpinModalState(false);
+                      setOldMpin(''); setNewMpin(''); setConfirmMpin('');
+                    } else {
+                      Alert.alert('Failed', error || 'Failed to change MPIN');
+                    }
+                  } catch (err: any) {
+                    Alert.alert('Error', err.message);
+                  } finally {
+                    setUpdatingMpin(false);
+                  }
+                }}
+                disabled={oldMpin.length !== 6 || newMpin.length !== 6 || confirmMpin.length !== 6 || updatingMpin}
+                style={{ flex: 2, padding: 16, borderRadius: 16, alignItems: 'center', backgroundColor: (oldMpin.length === 6 && newMpin.length === 6) ? '#2563EB' : (isDark ? '#1E3A5F' : '#DBEAFE') }}
+              >
+                {updatingMpin ? <ActivityIndicator color="white" /> : <Text style={{ fontWeight: '700', color: 'white' }}>Update MPIN</Text>}
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }

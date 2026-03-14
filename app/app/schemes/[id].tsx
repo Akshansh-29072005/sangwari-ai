@@ -51,6 +51,12 @@ export default function SchemeApplicationScreen() {
         annual_income:  profile.annual_income   ? String(profile.annual_income) : '',
         village_or_city: profile.village_or_city || '',
         district:       profile.district        || '',
+        pan_number:     profile.pan_number      || '',
+        pan_card:       profile.pan_number      || '',
+        ration_card:    profile.ration_card_number || '',
+        ration_card_no: profile.ration_card_number || '',
+        driving_license: profile.driving_license_number || '',
+        dl_number:      profile.driving_license_number || '',
       };
 
       const runtimeSchema = parsedFields.map((field: any) => {

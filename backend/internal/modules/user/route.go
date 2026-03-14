@@ -31,6 +31,7 @@ func RegisterRoutes(rg *gin.RouterGroup, db *gorm.DB) {
 	{
 		user.GET("/profile", h.GetProfile)
 		user.PUT("/profile", h.UpdateProfile)
+		user.POST("/verify-mpin", h.VerifyMPIN)
 		user.GET("/documents", h.GetDocuments)
 		user.POST("/documents/upload", h.UploadDocument)
 		user.PUT("/preferences/language", h.SetLanguage)
