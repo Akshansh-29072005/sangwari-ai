@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# CSC operator backend generated artifacts
+backend/*.db
+backend/*.db.bak
+backend/*.pkl
+backend/*log*.txt
+backend/*debug*.json
+backend/storage/documents/
+
+# Local datasets (keep out of code-only commits)
+backend/datasets/
+backend/dataset.1/
+dataset_info.json
+dataset_info.txt
+
+# Binary image assets (code-only repository policy)
+src/assets/*.png

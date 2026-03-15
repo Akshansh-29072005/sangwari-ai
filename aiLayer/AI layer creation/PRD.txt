@@ -1,0 +1,215 @@
+# Product Requirements Document (PRD)
+
+## Product Name
+
+AI-enabled Citizen Services Platform for Chhattisgarh
+
+## Purpose
+
+The platform enables citizens to file complaints, discover government schemes they are eligible for, and apply for those schemes.
+The system uses machine learning and AI models to automate complaint routing, scheme eligibility detection, and application verification.
+
+This system is designed as a prototype for a hackathon and demonstrates AI-driven governance automation.
+
+---
+
+# Target Users
+
+### Citizens
+
+Residents of Chhattisgarh who want to:
+
+* File government complaints
+* Track complaint status
+* Discover eligible welfare schemes
+* Apply for schemes digitally
+
+### Operators (Phase 2 - Web Portal)
+
+Government or administrative staff who will use a separate web portal (to be designed later) to:
+
+* View complaints routed by the AI system
+* Forward complaints to departments
+* Review scheme applications with AI-generated confidence scores
+
+---
+
+# Core Features
+
+## Citizen Features
+
+### Registration & Login
+
+Users register using:
+
+* Mobile number
+* OTP verification
+* MPIN creation
+
+Login uses:
+
+* Mobile number
+* MPIN
+
+---
+
+### Complaint Filing
+
+Users can:
+
+* Submit complaints in Hindi, English, or mixed language
+* Provide complaint description
+
+System automatically:
+
+* Classifies complaint department
+* Predicts resolution time
+* Stores complaint for operator review
+
+Users can track complaint status.
+
+---
+
+### Scheme Discovery
+
+The system analyzes citizen data and shows schemes they are eligible for.
+
+Eligibility prediction uses:
+
+* Machine learning model
+* Citizen master data
+
+---
+
+### Scheme Application
+
+Users can apply for eligible schemes.
+
+Application forms:
+
+* Vary by scheme
+* Some fields are automatically filled using citizen data
+
+Users manually fill missing fields.
+
+---
+
+### Document Upload
+
+Users can upload official documents such as:
+
+* Aadhaar
+* Income certificate
+* Caste certificate
+* Address proof
+
+Uploaded documents are processed using OCR to extract structured data.
+
+---
+
+### Application Verification
+
+Applications go through a verification pipeline:
+
+1. Rule validation
+2. Database matching
+3. Anomaly detection
+4. LLM reasoning
+
+Applications are either:
+
+Approved → sent to operator
+Rejected → user receives instant rejection reason
+
+---
+
+# Operator Features (Future Web Portal Phase)
+
+*Note: The CSC Operator workflow will be built as a separate web portal in a future phase. The current application focuses entirely on the citizens.*
+
+Operators log in using:
+
+* Employee ID
+* Email
+* Password
+
+Operators can:
+
+* View complaints with predicted department
+* See department confidence score
+* See predicted resolution time
+* Edit department if necessary
+* Forward complaint to department
+
+Operators can also:
+
+* View scheme applications
+* See approval confidence score
+* Review citizen data and documents
+
+---
+
+# AI Capabilities
+
+## Complaint Routing
+
+ML classification model predicts department.
+
+## Resolution Time Prediction
+
+Regression model predicts resolution time.
+
+## Multilingual Complaint Handling
+
+Sentence-transformer multilingual embeddings.
+
+## Scheme Eligibility Prediction
+
+ML model determines which schemes a citizen qualifies for.
+
+## Document Intelligence
+
+OCR extracts text from uploaded documents.
+
+## AI Verification
+
+LLM performs reasoning-based validation of scheme applications.
+
+---
+
+# Non Functional Requirements
+
+Performance:
+
+* Complaint prediction under 2 seconds
+
+Scalability:
+
+* Designed for thousands of users
+
+Security:
+
+* Encrypted MPIN
+* Secure document storage
+
+Reliability:
+
+* All AI decisions logged for audit
+
+# Success Metrics & Evaluation
+
+## Evaluation Features
+1. **Beneficiary Discovery Coverage**: Recall rate of the entity resolution model in identifying eligible but unenrolled citizens from a benchmark dataset, measured against ground truth labels.
+2. **Semantic Classification Accuracy**: F1 score of the grievance routing model across department categories, with specific evaluation on Hindi and code-switched Chhattisgarhi input.
+3. **Document Mismatch Detection Precision**: Accuracy in identifying specific conflicting fields between submitted documents, along with the quality and actionability of the suggested resolution pathway.
+4. **Rejection Risk Prediction Performance**: AUC-ROC of the application rejection prediction model, evaluated on held-out historical application data with appropriate handling of class imbalance.
+5. **Grievance SLA Prediction Accuracy**: Mean absolute error between predicted and actual resolution timelines across grievance categories.
+6. **Operator Usability**: Assessed through task-completion benchmarks: whether a non-technical CSC operator can detect a mismatch, understand the correction required, and re-submit a corrected application within a defined time window.
+7. **Contextual Appropriateness for Chhattisgarh**: Evaluation of whether the solution accounts for low-bandwidth environments, multilingual requirements, and the literacy and accessibility constraints of its target users.
+
+## Expected Outcomes
+* A proactive beneficiary discovery engine that surfaces unreached, eligible citizens from government data — enabling field workers to initiate enrollment without waiting for citizens to self-identify and navigate complex application processes.
+* A fine-tuned multilingual semantic classification model that correctly routes Hindi and Chhattisgarhi grievances to the appropriate government department with high accuracy, reducing misrouted complaints to near zero.
+* A grievance intelligence layer that predicts resolution timelines, auto-escalates stalled cases, and provides citizens with meaningful, real-time updates — reducing physical follow-up visits to government offices and Lok Seva Kendras.
+* A rejection risk prediction system trained on historical application data that gives operators advance warning of likely failure points, enabling proactive document correction and increasing first-time approval rates.
+* An end-to-end citizen service intelligence platform that shifts the e-District ecosystem from a transaction-processing model to one genuinely oriented around whether citizens actually receive the services they are entitled to.

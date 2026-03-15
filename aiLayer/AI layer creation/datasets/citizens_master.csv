@@ -1,0 +1,1001 @@
+citizen_id,full_name,dob,age,gender,district,village_or_city,address,pincode,occupation,annual_income,caste,aadhar_number,mobile_number
+1001,Ramesh Kumar,1957-01-12,68,Male,Janjgir-Champa,Ward 5,"605, Nehru Nagar, Janjgir-Champa",490261,Farmer,50495,General,838637940265,9423511615
+1002,Hemant Kosare 1,2000-07-12,25,Male,Bemetara,Village DM,"850, Indira Nagar, Bemetara",497254,Government Employee,334700,General,034131647525,9534192832
+1003,Durga Mandavi 9,1954-10-07,71,Female,Kondagaon,Kondagaon Nagar,"842, Main Road, Kondagaon",496595,Government Employee,167351,OBC,953767242388,9496965328
+1004,Sunita Yadav,1944-11-24,81,Female,Korba,Colony 11,"611, Main Road, Korba",493153,Self Employed,272697,SC,801845146270,9482814893
+1005,Rani Netam,1983-06-15,42,Female,Sukma,Village QA,"501, Main Road, Sukma",490917,Government Employee,561226,OBC,039117182278,9248963834
+1006,Vandana Nishad,1974-05-14,51,Female,Gariaband,Ward 15,"347, Main Road, Gariaband",494820,Housewife,48864,General,103105183473,9829973763
+1007,Dinesh Patel,1966-11-06,59,Male,Balod,Ward 14,"63, Nehru Nagar, Balod",495966,Government Employee,457289,OBC,338726247317,9810801326
+1008,Kiran Banjare 7,1940-04-28,85,Female,Surguja,Colony 5,"293, Nehru Nagar, Surguja",495707,Weaver,691383,ST,234309805009,9788208121
+1009,Mahesh Sahu,1956-03-01,69,Male,Mahasamund,Ward 4,"635, Main Road, Mahasamund",493435,Carpenter,287045,SC,435346247510,9799118384
+1010,Manju Tandon,1941-03-27,84,Female,Janjgir-Champa,Village JF,"627, Indira Nagar, Janjgir-Champa",490065,Carpenter,556961,General,241182449353,9487401640
+1011,Prakash Pandey,1992-03-21,33,Male,Bastar,Colony 9,"575, Main Road, Bastar",490917,Student,762294,OBC,805982620450,9533158692
+1012,Pratibha Soni 3,1972-01-20,53,Female,Raipur,Colony 13,"822, Gandhi Chowk, Raipur",492186,Labour,178337,ST,073375433036,9541458685
+1013,Dinesh Patel,1958-07-01,67,Male,Surguja,Colony 2,"354, Station Road, Surguja",493575,Driver,460632,ST,934060883561,9595148465
+1014,Seema Chandel 3,1952-04-10,73,Female,Balod,Balod Nagar,"631, Indira Nagar, Balod",492466,Self Employed,150107,SC,436995777387,9214895134
+1015,Kanta Yadav 1,1939-03-18,86,Female,Janjgir-Champa,Colony 2,"425, Indira Nagar, Janjgir-Champa",491593,Weaver,279599,ST,320163287083,9172788957
+1016,Chandra Shekhar,1980-05-07,45,Male,Balod,Balod Nagar,"762, Nehru Nagar, Balod",493687,Shop Owner,370166,SC,873471434558,9122362316
+1017,Shanta Markam,1972-05-13,53,Female,Bilaspur,Ward 7,"878, Indira Nagar, Bilaspur",493117,Unemployed,66105,SC,668893734670,9656272980
+1018,Hema Sinha,1937-06-30,88,Female,Durg,Colony 14,"187, Main Road, Durg",492132,Self Employed,79598,SC,564641708053,9100330923
+1019,Kiran Banjare,1985-08-29,40,Female,Raigarh,Village WI,"172, Indira Nagar, Raigarh",494975,Weaver,353894,OBC,419049663193,9149190586
+1020,Mahesh Sahu,1965-09-04,60,Male,Raipur,Colony 2,"984, Station Road, Raipur",495207,Unemployed,264161,OBC,849877694531,9473799650
+1021,Pratibha Soni,1978-10-21,47,Female,Raigarh,Village ZI,"902, Indira Nagar, Raigarh",495745,Shop Owner,285431,OBC,136783777014,9363495788
+1022,Bharat Mandavi,1984-06-10,41,Male,Kanker,Village WO,"258, Gandhi Chowk, Kanker",490989,Weaver,35670,OBC,337498941343,9524082400
+1023,Ravi Gupta,1946-05-23,79,Male,Jashpur,Ward 28,"588, Station Road, Jashpur",493846,Unemployed,198330,General,471167190229,9413186999
+1024,Bimla Mishra,1975-06-25,50,Female,Bemetara,Ward 10,"625, Main Road, Bemetara",497763,Teacher,219376,General,232812067974,9034471349
+1025,Saraswati Patle 4,1993-03-01,32,Female,Korba,Ward 30,"170, Station Road, Korba",494875,Weaver,551316,ST,174648877190,9659401399
+1026,Brijlal Tandon,1959-03-30,66,Male,Surajpur,Colony 3,"532, Nehru Nagar, Surajpur",497505,Shop Owner,96720,ST,717565512567,9468071545
+1027,Brijlal Tandon,1981-03-25,44,Male,Raipur,Ward 22,"193, Indira Nagar, Raipur",492964,Driver,313948,ST,034824771093,9248086131
+1028,Kamla Sahu,1948-11-16,77,Female,Baloda Bazar,Village WJ,"426, Nehru Nagar, Baloda Bazar",493869,Teacher,187918,ST,398214658404,9499727875
+1029,Naresh Chandel,1968-11-26,57,Male,Bemetara,Bemetara Nagar,"586, Nehru Nagar, Bemetara",491914,Self Employed,117609,ST,662702895171,9870262174
+1030,Hemant Kosare,1993-05-12,32,Male,Durg,Colony 14,"978, Station Road, Durg",495135,Weaver,655826,General,913431611724,9005045562
+1031,Meena Lahre,1996-03-25,29,Female,Surguja,Colony 10,"635, Gandhi Chowk, Surguja",494077,Driver,80443,SC,740748217594,9647436713
+1032,Hema Sinha,1961-08-10,64,Female,Narayanpur,Village AV,"9, Indira Nagar, Narayanpur",497087,Carpenter,162857,ST,439533942104,9709521456
+1033,Lalita Singh 9,1967-11-20,58,Female,Gariaband,Colony 5,"991, Station Road, Gariaband",496116,Government Employee,645541,General,236851604817,9549651370
+1034,Sanjay Mishra,1964-06-28,61,Male,Balrampur,Colony 11,"932, Station Road, Balrampur",495319,Self Employed,25943,General,471138267586,9926179640
+1035,Vijay Singh,1956-03-30,69,Male,Kabirdham,Village VL,"63, Nehru Nagar, Kabirdham",492261,Teacher,638403,General,390053293183,9933529042
+1036,Chanda Thakur 3,1944-12-04,81,Female,Kondagaon,Village AE,"809, Gandhi Chowk, Kondagaon",494824,Government Employee,54782,General,268117758917,9839084700
+1037,Pratibha Soni,1996-08-13,29,Female,Rajnandgaon,Ward 16,"330, Indira Nagar, Rajnandgaon",491216,Student,101830,SC,698478961183,9673657661
+1038,Bharat Mandavi,1957-12-06,68,Male,Kabirdham,Ward 5,"852, Main Road, Kabirdham",490764,Self Employed,116835,SC,280988516560,9494519832
+1039,Anita Patel,1966-06-22,59,Female,Mungeli,Mungeli Nagar,"827, Nehru Nagar, Mungeli",496924,Housewife,725963,General,940244550229,9612018366
+1040,Shanta Markam 5,1999-10-20,26,Female,Kanker,Ward 25,"160, Gandhi Chowk, Kanker",496181,Driver,30693,SC,767976438156,9149784036
+1041,Suresh Yadav 5,1954-01-05,71,Male,Sukma,Village YI,"123, Main Road, Sukma",494075,Weaver,183866,ST,838851606071,9596966416
+1042,Prakash Pandey 8,1996-12-06,29,Male,Kabirdham,Colony 4,"604, Nehru Nagar, Kabirdham",494293,Student,60668,SC,352181883552,9312432921
+1043,Bimla Mishra,1976-09-07,49,Female,Sukma,Village YS,"885, Station Road, Sukma",491237,Unemployed,77961,SC,490581477005,9411998679
+1044,Mukesh Yadav,1938-09-29,87,Male,Bemetara,Bemetara Nagar,"330, Indira Nagar, Bemetara",493897,Housewife,28109,ST,151820377889,9255466590
+1045,Mahesh Sahu,1985-02-13,40,Male,Kondagaon,Kondagaon Nagar,"342, Main Road, Kondagaon",494774,Carpenter,65851,SC,629148652816,9850542357
+1046,Anita Patel,1948-12-18,77,Female,Durg,Ward 10,"678, Station Road, Durg",497180,Driver,69377,OBC,229270653794,9738347359
+1047,Urmila Dhruv,2004-11-14,21,Female,Mahasamund,Mahasamund Nagar,"821, Indira Nagar, Mahasamund",491134,Shop Owner,82991,SC,818141247826,9137506068
+1048,Santosh Dewangan,1942-05-21,83,Male,Kabirdham,Ward 8,"860, Station Road, Kabirdham",496483,Labour,57601,ST,277901043289,9861434103
+1049,Jyoti Porte,1976-01-27,49,Female,Durg,Ward 4,"648, Indira Nagar, Durg",494711,Teacher,226356,ST,095396218518,9888806706
+1050,Mohan Thakur,1967-02-06,58,Male,Durg,Ward 12,"791, Indira Nagar, Durg",496023,Government Employee,66176,SC,277221704303,9054868740
+1051,Sudha Gupta,2005-02-11,20,Female,Bilaspur,Ward 28,"819, Station Road, Bilaspur",493580,Self Employed,384524,ST,527758416169,9284511544
+1052,Poonam Kosare,1950-01-05,75,Female,Narayanpur,Village LO,"630, Nehru Nagar, Narayanpur",492250,Carpenter,430073,General,658202970213,9556909275
+1053,Deepak Sinha,1986-07-21,39,Male,Korba,Village LM,"256, Main Road, Korba",490213,Weaver,87861,ST,814473947312,9172715518
+1054,Ravi Gupta,1949-03-12,76,Male,Narayanpur,Village WU,"521, Gandhi Chowk, Narayanpur",490995,Teacher,212059,ST,058957829114,9678669125
+1055,Deepak Sinha,1981-06-23,44,Male,Kabirdham,Kabirdham Nagar,"787, Gandhi Chowk, Kabirdham",493545,Housewife,429053,General,824225358414,9384249818
+1056,Hema Sinha,1948-11-23,77,Female,Surguja,Village TX,"863, Indira Nagar, Surguja",490338,Farmer,144327,SC,396907844736,9471027677
+1057,Shanta Markam,1963-02-08,62,Female,Narayanpur,Narayanpur Nagar,"779, Station Road, Narayanpur",494219,Housewife,51685,ST,147321046963,9259532787
+1058,Nirmala Dhivar,1937-02-21,88,Female,Durg,Durg Nagar,"598, Station Road, Durg",490399,Farmer,98317,ST,480162456506,9098358416
+1059,Deepak Sinha,1960-02-27,65,Male,Balrampur,Ward 22,"404, Station Road, Balrampur",496512,Government Employee,245842,OBC,398680002578,9729825952
+1060,Poonam Kosare,1961-11-28,64,Female,Surajpur,Colony 9,"726, Indira Nagar, Surajpur",492456,Unemployed,593126,SC,169409749930,9972896230
+1061,Ramkumar Lahre 1,1974-08-18,51,Male,Kanker,Kanker Nagar,"421, Indira Nagar, Kanker",496349,Driver,785791,General,283857865278,9585497334
+1062,Ravi Gupta 5,2004-03-31,21,Male,Dantewada,Colony 12,"325, Nehru Nagar, Dantewada",492858,Housewife,778360,SC,419866524041,9574733848
+1063,Rajesh Verma 4,1956-10-24,69,Male,Bilaspur,Bilaspur Nagar,"54, Main Road, Bilaspur",493386,Government Employee,176358,OBC,082677345401,9938026206
+1064,Geeta Sharma,1961-01-12,64,Female,Bilaspur,Ward 1,"951, Station Road, Bilaspur",492332,Unemployed,684846,ST,287431527420,9549329668
+1065,Mahesh Sahu,1943-08-15,82,Male,Surguja,Surguja Nagar,"7, Station Road, Surguja",493143,Teacher,219991,SC,499045301742,9684145933
+1066,Kiran Banjare 6,1972-05-15,53,Female,Narayanpur,Narayanpur Nagar,"781, Gandhi Chowk, Narayanpur",495574,Driver,442924,ST,851910883982,9258713971
+1067,Deepak Sinha,1975-09-29,50,Male,Korba,Ward 17,"573, Nehru Nagar, Korba",495512,Shop Owner,253796,SC,039106518017,9046226567
+1068,Durga Mandavi 9,1946-12-29,79,Female,Jashpur,Colony 3,"542, Gandhi Chowk, Jashpur",495963,Teacher,796456,General,478686337524,9310690331
+1069,Hemant Kosare 1,1957-01-07,68,Male,Bijapur,Bijapur Nagar,"773, Main Road, Bijapur",491148,Housewife,522769,SC,995342836440,9892687056
+1070,Prakash Pandey,1971-09-09,54,Male,Korba,Colony 13,"247, Gandhi Chowk, Korba",492464,Weaver,80689,General,866882634351,9751830469
+1071,Suresh Yadav,1951-12-11,74,Male,Sukma,Sukma Nagar,"491, Gandhi Chowk, Sukma",497123,Government Employee,139143,General,331739363854,9678544587
+1072,Kamla Sahu,1999-11-16,26,Female,Baloda Bazar,Village KG,"424, Main Road, Baloda Bazar",494609,Teacher,154252,SC,899642353693,9785477725
+1073,Rekha Verma,1978-11-15,47,Female,Surguja,Ward 30,"860, Main Road, Surguja",497743,Carpenter,20836,ST,231203875099,9770088600
+1074,Santram Dhivar 5,1936-08-07,89,Male,Gariaband,Gariaband Nagar,"110, Main Road, Gariaband",494296,Labour,101235,SC,546156793341,9016668700
+1075,Sunita Yadav,1973-12-28,52,Female,Jashpur,Ward 26,"917, Indira Nagar, Jashpur",497530,Farmer,138131,ST,401489025039,9261429396
+1076,Prakash Pandey,2001-06-05,24,Male,Korba,Village WX,"55, Main Road, Korba",493581,Teacher,578569,ST,504773586629,9619431142
+1077,Seema Chandel,1948-11-26,77,Female,Bijapur,Ward 13,"6, Station Road, Bijapur",493644,Government Employee,176800,OBC,126788861015,9819956046
+1078,Bimla Mishra 9,1956-11-03,69,Female,Surajpur,Surajpur Nagar,"143, Station Road, Surajpur",492467,Shop Owner,166586,OBC,646471543799,9371240659
+1079,Kanta Yadav,1974-07-23,51,Female,Kanker,Village UT,"329, Indira Nagar, Kanker",497761,Weaver,61180,OBC,654793564651,9939828073
+1080,Kanta Yadav 2,2006-06-12,19,Female,Balod,Village PE,"248, Station Road, Balod",495396,Labour,356852,ST,179796886805,9891135290
+1081,Jagdish Porte,1970-11-30,55,Male,Sukma,Ward 11,"101, Station Road, Sukma",491819,Housewife,296275,OBC,756798250714,9611254573
+1082,Ashok Patle,1943-10-27,82,Male,Bemetara,Ward 24,"308, Main Road, Bemetara",496638,Weaver,131303,SC,123828258673,9622660937
+1083,Bharat Mandavi,1998-04-15,27,Male,Raigarh,Ward 7,"592, Main Road, Raigarh",496550,Housewife,62727,OBC,714785969691,9557924991
+1084,Shanta Markam 5,1945-07-22,80,Female,Surguja,Colony 9,"429, Indira Nagar, Surguja",491130,Driver,44347,ST,828274225790,9507236887
+1085,Vandana Nishad,1998-10-09,27,Female,Bemetara,Ward 16,"815, Gandhi Chowk, Bemetara",492393,Farmer,90465,SC,279788191485,9807836134
+1086,Deepak Sinha 2,1974-06-15,51,Male,Rajnandgaon,Village ZH,"882, Indira Nagar, Rajnandgaon",495184,Self Employed,38249,OBC,309584982544,9948126042
+1087,Anita Patel 6,1957-04-09,68,Female,Sukma,Sukma Nagar,"592, Station Road, Sukma",495144,Self Employed,29898,General,684577590175,9186363745
+1088,Prakash Pandey,1946-10-12,79,Male,Surajpur,Ward 28,"48, Main Road, Surajpur",495130,Unemployed,141822,OBC,770632424154,9152064361
+1089,Ramesh Kumar 2,1946-12-20,79,Male,Surajpur,Ward 8,"9, Station Road, Surajpur",496694,Student,621415,OBC,713611155426,9221890927
+1090,Santram Dhivar 3,1971-12-31,54,Male,Balrampur,Ward 22,"144, Main Road, Balrampur",494830,Weaver,146254,ST,523413899940,9438983640
+1091,Kiran Banjare,1956-09-09,69,Female,Baloda Bazar,Ward 21,"370, Station Road, Baloda Bazar",491082,Self Employed,697996,ST,582710910430,9068486661
+1092,Naresh Chandel,1959-12-16,66,Male,Durg,Durg Nagar,"998, Gandhi Chowk, Durg",494395,Government Employee,103138,General,463031617990,9421020275
+1093,Umesh Dhruv,1999-09-23,26,Male,Bastar,Village LE,"751, Main Road, Bastar",496320,Farmer,76272,SC,814917785079,9252419138
+1094,Suresh Yadav,1936-03-01,89,Male,Janjgir-Champa,Janjgir-Champa Nagar,"184, Main Road, Janjgir-Champa",494530,Weaver,259936,OBC,536541951802,9380617445
+1095,Naresh Chandel,1968-02-28,57,Male,Raigarh,Raigarh Nagar,"476, Station Road, Raigarh",494848,Unemployed,502458,OBC,206038505064,9138367024
+1096,Suresh Yadav,1981-09-10,44,Male,Balod,Ward 23,"595, Main Road, Balod",494141,Labour,253377,General,990623445655,9743132912
+1097,Anil Sharma,1963-03-28,62,Male,Balod,Balod Nagar,"463, Station Road, Balod",493796,Shop Owner,447407,OBC,490352135680,9442067883
+1098,Deepak Sinha 3,1945-12-16,80,Male,Raipur,Raipur Nagar,"844, Nehru Nagar, Raipur",493050,Carpenter,319001,General,994101372151,9070296670
+1099,Vandana Nishad,1966-10-26,59,Female,Raigarh,Colony 5,"905, Gandhi Chowk, Raigarh",490284,Driver,214432,SC,768701462638,9380657875
+1100,Umesh Dhruv,1959-04-29,66,Male,Surguja,Ward 1,"918, Station Road, Surguja",490480,Unemployed,351024,OBC,213348039652,9239559059
+1101,Rajesh Verma,1951-12-14,74,Male,Baloda Bazar,Ward 18,"93, Main Road, Baloda Bazar",491906,Driver,89002,ST,059325250029,9218515691
+1102,Ravi Gupta,1949-03-12,76,Male,Bijapur,Village ZU,"179, Indira Nagar, Bijapur",495682,Driver,208521,OBC,644220969029,9593917251
+1103,Rani Netam,1950-02-15,75,Female,Jashpur,Village CW,"458, Main Road, Jashpur",492173,Teacher,28885,SC,410067626765,9861793271
+1104,Ravi Gupta 5,1944-06-16,81,Male,Durg,Ward 11,"561, Main Road, Durg",492769,Driver,653094,General,629620153368,9844431069
+1105,Chandra Shekhar,1939-12-15,86,Male,Kabirdham,Colony 5,"205, Main Road, Kabirdham",490211,Teacher,58248,General,714677418625,9652704774
+1106,Sushila Pandey 1,1948-08-15,77,Female,Sukma,Village VD,"828, Indira Nagar, Sukma",493392,Driver,27993,ST,868793741608,9989921722
+1107,Kanta Yadav 1,1973-01-17,52,Female,Durg,Durg Nagar,"855, Indira Nagar, Durg",492113,Government Employee,435134,General,686854870998,9616229991
+1108,Kailash Banjare,2005-07-22,20,Male,Dantewada,Colony 15,"271, Nehru Nagar, Dantewada",495365,Unemployed,274007,General,246299606530,9745054447
+1109,Harish Tiwari 5,2001-10-14,24,Male,Bemetara,Colony 12,"620, Main Road, Bemetara",491540,Unemployed,127999,ST,785082148628,9902330307
+1110,Virendra Soni,1952-12-04,73,Male,Bastar,Ward 12,"698, Main Road, Bastar",491982,Government Employee,266944,OBC,798552414060,9293333468
+1111,Harish Tiwari,2003-12-04,22,Male,Kondagaon,Kondagaon Nagar,"616, Main Road, Kondagaon",491834,Shop Owner,397204,SC,466574374896,9910858994
+1112,Dilip Nishad 2,1965-03-26,60,Male,Bastar,Village KI,"193, Gandhi Chowk, Bastar",494238,Teacher,714591,ST,520744666099,9353875842
+1113,Anil Sharma 8,1946-07-17,79,Male,Bijapur,Bijapur Nagar,"970, Station Road, Bijapur",495362,Student,49272,SC,655494717099,9917381684
+1114,Pushpa Devi,1948-08-03,77,Female,Korba,Colony 10,"147, Station Road, Korba",497065,Weaver,30592,ST,525007432927,9129666676
+1115,Suresh Yadav,2000-08-12,25,Male,Kabirdham,Kabirdham Nagar,"19, Main Road, Kabirdham",495134,Weaver,110901,SC,421689421044,9789856257
+1116,Brijlal Tandon 7,1936-10-11,89,Male,Janjgir-Champa,Ward 8,"604, Indira Nagar, Janjgir-Champa",491385,Student,105267,General,648909010016,9761847230
+1117,Bharat Mandavi,1994-07-01,31,Male,Gariaband,Gariaband Nagar,"429, Main Road, Gariaband",494191,Weaver,224110,General,173934835642,9087375300
+1118,Virendra Soni 8,1948-06-11,77,Male,Durg,Ward 25,"927, Station Road, Durg",495279,Teacher,227601,SC,701204556110,9022557941
+1119,Chandra Shekhar,1945-04-11,80,Male,Mahasamund,Colony 14,"707, Nehru Nagar, Mahasamund",496553,Self Employed,358906,OBC,120216979729,9659027716
+1120,Pushpa Devi 6,1936-03-04,89,Female,Narayanpur,Narayanpur Nagar,"979, Station Road, Narayanpur",494253,Housewife,312068,General,637562890028,9772175354
+1121,Umesh Dhruv 7,1971-03-30,54,Male,Janjgir-Champa,Colony 13,"91, Nehru Nagar, Janjgir-Champa",493663,Government Employee,85191,General,166088019948,9837550375
+1122,Brijlal Tandon,1977-07-05,48,Male,Narayanpur,Ward 22,"100, Gandhi Chowk, Narayanpur",490018,Government Employee,103055,SC,885102726149,9331637351
+1123,Pushpa Devi,1995-05-13,30,Female,Surajpur,Surajpur Nagar,"987, Nehru Nagar, Surajpur",490036,Housewife,295025,ST,978292216995,9866934654
+1124,Kanta Yadav 7,1989-02-12,36,Female,Narayanpur,Village XQ,"729, Indira Nagar, Narayanpur",495183,Teacher,101810,SC,522885158799,9684608106
+1125,Pushpa Devi,1952-12-30,73,Female,Bastar,Village ZF,"150, Main Road, Bastar",495658,Shop Owner,90932,General,571983863840,9666580043
+1126,Harish Tiwari,1974-10-24,51,Male,Janjgir-Champa,Village UW,"774, Indira Nagar, Janjgir-Champa",494478,Weaver,353463,OBC,472122816064,9842294057
+1127,Pushpa Devi 6,1988-08-11,37,Female,Bilaspur,Village UT,"503, Indira Nagar, Bilaspur",494507,Government Employee,112757,SC,832818268861,9533555439
+1128,Ashok Patle,2002-07-16,23,Male,Jashpur,Colony 6,"247, Indira Nagar, Jashpur",497526,Driver,25226,SC,616484085887,9704358112
+1129,Naresh Chandel 2,1953-12-21,72,Male,Kondagaon,Colony 14,"856, Main Road, Kondagaon",491685,Housewife,788695,ST,120750110248,9193466766
+1130,Ramesh Kumar,1945-09-04,80,Male,Mungeli,Ward 1,"775, Indira Nagar, Mungeli",490373,Weaver,587538,General,449147660728,9326842450
+1131,Harish Tiwari,1946-02-13,79,Male,Bilaspur,Ward 1,"313, Gandhi Chowk, Bilaspur",496131,Weaver,580278,OBC,682223943129,9087814141
+1132,Laxmi Tiwari,1964-09-29,61,Female,Kabirdham,Ward 5,"292, Indira Nagar, Kabirdham",490572,Teacher,79067,SC,949299556205,9336452577
+1133,Rani Netam,1978-10-02,47,Female,Mungeli,Ward 4,"862, Station Road, Mungeli",497035,Labour,502987,SC,110809969308,9488725639
+1134,Rajesh Verma,1980-11-08,45,Male,Durg,Durg Nagar,"869, Indira Nagar, Durg",495605,Labour,186798,ST,229927503731,9453038567
+1135,Nirmala Dhivar 6,1944-04-28,81,Female,Narayanpur,Village UI,"593, Indira Nagar, Narayanpur",494671,Labour,69613,SC,918463865577,9908272318
+1136,Vijay Singh 3,1967-07-24,58,Male,Balrampur,Colony 4,"831, Station Road, Balrampur",495901,Student,275519,ST,392603029922,9809202428
+1137,Poonam Kosare,1992-04-07,33,Female,Raipur,Village XX,"970, Main Road, Raipur",491775,Unemployed,273579,ST,236929298425,9799136621
+1138,Vijay Singh,1980-04-23,45,Male,Kondagaon,Kondagaon Nagar,"488, Indira Nagar, Kondagaon",494914,Farmer,678623,General,172980686508,9637659916
+1139,Mamta Dewangan,1955-12-03,70,Female,Durg,Village TR,"194, Main Road, Durg",495810,Weaver,301516,General,806356512694,9486959463
+1140,Chanda Thakur,1978-05-07,47,Female,Surguja,Village RR,"315, Indira Nagar, Surguja",492821,Weaver,38096,General,372138658902,9601279611
+1141,Santosh Dewangan,1989-09-13,36,Male,Bilaspur,Village MM,"729, Indira Nagar, Bilaspur",490471,Labour,265074,General,384309883920,9530214656
+1142,Hema Sinha 1,2001-03-05,24,Female,Narayanpur,Village CR,"356, Station Road, Narayanpur",491854,Driver,638425,ST,904268181845,9184894769
+1143,Bimla Mishra 6,2004-08-23,21,Female,Bemetara,Ward 22,"494, Main Road, Bemetara",492113,Student,123370,OBC,356588043416,9518275539
+1144,Anil Sharma,1996-05-07,29,Male,Raigarh,Raigarh Nagar,"894, Station Road, Raigarh",491694,Teacher,52728,SC,211179080759,9579472846
+1145,Bimla Mishra,1939-12-03,86,Female,Gariaband,Ward 26,"515, Station Road, Gariaband",493226,Carpenter,269852,General,875003691559,9428434795
+1146,Anil Sharma,1953-12-13,72,Male,Balod,Colony 6,"287, Nehru Nagar, Balod",491474,Driver,95483,OBC,143866322702,9672885744
+1147,Harish Tiwari,1970-10-21,55,Male,Rajnandgaon,Village FB,"488, Main Road, Rajnandgaon",493686,Weaver,67312,SC,884506159399,9824558771
+1148,Poonam Kosare 3,1950-02-05,75,Female,Jashpur,Colony 11,"870, Main Road, Jashpur",490649,Labour,61088,SC,449647598762,9202341326
+1149,Dinesh Patel 8,1984-04-07,41,Male,Bilaspur,Ward 1,"107, Station Road, Bilaspur",495064,Labour,142105,ST,433472282005,9577848728
+1150,Hema Sinha,1991-09-05,34,Female,Bijapur,Village SN,"931, Station Road, Bijapur",493946,Housewife,31738,ST,456424008254,9780774064
+1151,Santosh Dewangan,1984-03-30,41,Male,Kabirdham,Colony 7,"256, Gandhi Chowk, Kabirdham",495857,Weaver,367168,ST,341638944846,9312241797
+1152,Ramkumar Lahre,1951-11-29,74,Male,Kanker,Ward 1,"191, Main Road, Kanker",492312,Shop Owner,77464,General,312073564757,9051204618
+1153,Geeta Sharma 5,1969-04-18,56,Female,Raipur,Colony 4,"790, Nehru Nagar, Raipur",492025,Weaver,504428,ST,183764520881,9474350313
+1154,Shanta Markam 5,1987-07-09,38,Female,Rajnandgaon,Ward 13,"596, Nehru Nagar, Rajnandgaon",495640,Driver,121029,General,327195005281,9273585730
+1155,Rani Netam,1957-07-21,68,Female,Bilaspur,Village WO,"556, Nehru Nagar, Bilaspur",491555,Driver,65569,SC,749821827448,9570862095
+1156,Santosh Dewangan,1940-09-29,85,Male,Kondagaon,Colony 9,"785, Indira Nagar, Kondagaon",491263,Driver,73713,SC,118102203173,9109678994
+1157,Sunil Netam 2,1936-03-27,89,Male,Raigarh,Ward 21,"370, Indira Nagar, Raigarh",496091,Self Employed,771424,General,948014138113,9863383928
+1158,Bharat Mandavi,2003-10-23,22,Male,Jashpur,Colony 8,"905, Main Road, Jashpur",491367,Labour,282303,SC,289755855665,9939836845
+1159,Urmila Dhruv,1935-01-30,90,Female,Bijapur,Bijapur Nagar,"912, Station Road, Bijapur",490054,Shop Owner,512630,SC,048889921075,9224593344
+1160,Kailash Banjare,1954-07-27,71,Male,Bijapur,Colony 13,"178, Nehru Nagar, Bijapur",496765,Weaver,364832,General,940961055661,9390604805
+1161,Kailash Banjare 9,1997-08-30,28,Male,Janjgir-Champa,Colony 12,"995, Nehru Nagar, Janjgir-Champa",496168,Driver,173615,OBC,646225179086,9416862278
+1162,Kiran Banjare,1986-04-27,39,Female,Raigarh,Raigarh Nagar,"249, Main Road, Raigarh",492182,Self Employed,141128,General,166553559042,9597927033
+1163,Rajesh Verma,1942-10-05,83,Male,Rajnandgaon,Rajnandgaon Nagar,"890, Station Road, Rajnandgaon",490113,Government Employee,179171,SC,770538338848,9792069804
+1164,Pushpa Devi 5,1939-10-29,86,Female,Bemetara,Village AC,"679, Station Road, Bemetara",497081,Student,133693,ST,368157981238,9780038457
+1165,Laxmi Tiwari 6,1996-06-15,29,Female,Kabirdham,Village UJ,"832, Main Road, Kabirdham",495127,Shop Owner,415449,SC,325621689363,9926495782
+1166,Jyoti Porte 9,1996-06-06,29,Female,Raigarh,Raigarh Nagar,"441, Gandhi Chowk, Raigarh",495376,Driver,566460,General,881252056647,9423122099
+1167,Hemant Kosare,1955-10-12,70,Male,Balrampur,Village HV,"82, Nehru Nagar, Balrampur",491099,Housewife,645768,SC,267722330604,9633312797
+1168,Harish Tiwari,1957-03-15,68,Male,Balod,Colony 10,"738, Station Road, Balod",493229,Driver,699859,General,817703886086,9803476447
+1169,Saraswati Patle 1,1996-12-17,29,Female,Gariaband,Colony 14,"93, Indira Nagar, Gariaband",490928,Labour,395850,OBC,665702793714,9521117518
+1170,Laxmi Tiwari,1980-12-19,45,Female,Balrampur,Ward 6,"787, Gandhi Chowk, Balrampur",497474,Government Employee,322892,OBC,222064474212,9309407778
+1171,Hemant Kosare,1956-05-27,69,Male,Raigarh,Colony 8,"453, Main Road, Raigarh",494926,Driver,135627,SC,983022050209,9945101622
+1172,Hemant Kosare,1997-11-06,28,Male,Balrampur,Colony 3,"768, Indira Nagar, Balrampur",492951,Farmer,59229,SC,561681472145,9868339019
+1173,Mahesh Sahu,1996-11-04,29,Male,Balrampur,Colony 5,"624, Station Road, Balrampur",492128,Housewife,313380,SC,299787729343,9010713966
+1174,Prakash Pandey,1992-04-03,33,Male,Raigarh,Village UG,"261, Main Road, Raigarh",492522,Shop Owner,234915,General,155699023557,9702727857
+1175,Manju Tandon,1981-10-23,44,Female,Dantewada,Ward 19,"214, Indira Nagar, Dantewada",495616,Government Employee,382792,SC,124056829962,9914504617
+1176,Rani Netam,1962-03-19,63,Female,Raigarh,Village JF,"804, Main Road, Raigarh",496372,Teacher,632666,General,782357845218,9230768104
+1177,Dilip Nishad,1942-11-16,83,Male,Kanker,Village BD,"24, Indira Nagar, Kanker",496214,Shop Owner,205010,SC,334485714224,9109881385
+1178,Prakash Pandey 5,1986-07-26,39,Male,Janjgir-Champa,Village CJ,"554, Nehru Nagar, Janjgir-Champa",490416,Labour,138396,General,160166299795,9453817921
+1179,Kamla Sahu,1996-06-20,29,Female,Jashpur,Jashpur Nagar,"971, Gandhi Chowk, Jashpur",491178,Driver,67638,ST,255770171577,9245992816
+1180,Prakash Pandey,1941-06-05,84,Male,Dantewada,Colony 10,"245, Indira Nagar, Dantewada",491997,Housewife,83225,ST,153966958321,9971997581
+1181,Geeta Sharma,1971-06-21,54,Female,Durg,Colony 14,"336, Nehru Nagar, Durg",495284,Carpenter,48522,OBC,902278469973,9354946519
+1182,Hemant Kosare,1971-04-29,54,Male,Korba,Ward 28,"1, Indira Nagar, Korba",496724,Government Employee,56989,General,369656666832,9723865624
+1183,Rekha Verma 1,1947-12-25,78,Female,Bijapur,Bijapur Nagar,"87, Gandhi Chowk, Bijapur",495262,Self Employed,764585,ST,927868765326,9909738468
+1184,Sunil Netam 1,1986-01-13,39,Male,Baloda Bazar,Colony 10,"985, Main Road, Baloda Bazar",491164,Weaver,375274,SC,781891371894,9905807787
+1185,Santram Dhivar,1966-09-22,59,Male,Dantewada,Village FB,"745, Indira Nagar, Dantewada",492134,Farmer,301557,OBC,904904712814,9429444019
+1186,Manju Tandon,1948-08-15,77,Female,Kondagaon,Village LZ,"802, Gandhi Chowk, Kondagaon",493973,Labour,375972,General,512927663723,9950410276
+1187,Sudha Gupta,2002-07-26,23,Female,Mungeli,Colony 12,"486, Station Road, Mungeli",491190,Housewife,406220,SC,765801856945,9441496739
+1188,Meena Lahre,1996-12-28,29,Female,Surguja,Ward 11,"852, Main Road, Surguja",490098,Self Employed,33619,ST,534430091093,9911192692
+1189,Ramkumar Lahre 5,1976-12-15,49,Male,Kondagaon,Village CU,"788, Nehru Nagar, Kondagaon",495671,Carpenter,234779,SC,214066504427,9173962712
+1190,Brijlal Tandon,1990-02-22,35,Male,Jashpur,Ward 4,"36, Main Road, Jashpur",490577,Driver,353749,ST,072006425690,9877661830
+1191,Seema Chandel,1978-04-24,47,Female,Rajnandgaon,Village RL,"411, Main Road, Rajnandgaon",495180,Carpenter,90074,SC,174328063461,9571732030
+1192,Santosh Dewangan,1940-09-18,85,Male,Mungeli,Colony 9,"990, Main Road, Mungeli",490304,Government Employee,123255,General,613878293102,9707903202
+1193,Sanjay Mishra,2006-04-08,19,Male,Rajnandgaon,Ward 15,"838, Main Road, Rajnandgaon",490936,Unemployed,311384,OBC,136565198253,9092511426
+1194,Seema Chandel,1949-11-12,76,Female,Bemetara,Ward 8,"811, Indira Nagar, Bemetara",493082,Labour,83827,General,002194672324,9876329092
+1195,Poonam Kosare,1991-05-01,34,Female,Dantewada,Dantewada Nagar,"197, Main Road, Dantewada",494344,Student,376160,OBC,734031277220,9054364597
+1196,Dinesh Patel,1983-04-10,42,Male,Surguja,Ward 6,"73, Gandhi Chowk, Surguja",495910,Unemployed,235452,ST,353153136363,9179706239
+1197,Geeta Sharma,1947-04-20,78,Female,Bemetara,Village GU,"208, Station Road, Bemetara",491043,Farmer,165638,SC,217762534929,9298316873
+1198,Ashok Patle,1960-02-09,65,Male,Raipur,Raipur Nagar,"254, Station Road, Raipur",493558,Driver,141566,OBC,906007806867,9177318063
+1199,Rani Netam 2,1936-06-28,89,Female,Baloda Bazar,Colony 12,"879, Indira Nagar, Baloda Bazar",496122,Driver,79616,ST,262570165804,9649893195
+1200,Umesh Dhruv,1995-08-04,30,Male,Kabirdham,Village BD,"477, Indira Nagar, Kabirdham",490335,Government Employee,104957,General,832538179335,9548640155
+1201,Kiran Banjare,1946-01-26,79,Female,Baloda Bazar,Village RV,"463, Indira Nagar, Baloda Bazar",493016,Carpenter,434408,OBC,711624112412,9723804682
+1202,Rani Netam,2001-03-31,24,Female,Jashpur,Ward 1,"893, Gandhi Chowk, Jashpur",496840,Housewife,257923,SC,579887749242,9437540254
+1203,Geeta Sharma,1949-06-27,76,Female,Narayanpur,Narayanpur Nagar,"166, Gandhi Chowk, Narayanpur",490958,Farmer,701217,OBC,745238055257,9828410672
+1204,Manju Tandon,1935-06-13,90,Female,Bijapur,Village QK,"486, Station Road, Bijapur",497944,Driver,359605,ST,517028140693,9751509398
+1205,Kanta Yadav,1959-12-31,66,Female,Raigarh,Colony 14,"694, Main Road, Raigarh",497995,Housewife,84286,SC,998056265650,9455478137
+1206,Kanta Yadav,1949-10-04,76,Female,Bijapur,Colony 15,"143, Indira Nagar, Bijapur",494899,Student,59745,ST,851961064628,9792326487
+1207,Chandra Shekhar,1987-07-26,38,Male,Dantewada,Dantewada Nagar,"28, Main Road, Dantewada",491262,Shop Owner,103958,ST,146273014719,9597964715
+1208,Santram Dhivar,1958-05-07,67,Male,Surguja,Colony 6,"900, Gandhi Chowk, Surguja",492928,Labour,67338,ST,504481832192,9855445189
+1209,Chandra Shekhar 3,1981-07-20,44,Male,Dantewada,Village YP,"944, Gandhi Chowk, Dantewada",490840,Teacher,48981,OBC,898881671120,9754527985
+1210,Seema Chandel,2001-11-07,24,Female,Rajnandgaon,Rajnandgaon Nagar,"315, Gandhi Chowk, Rajnandgaon",491720,Labour,622721,General,107603108907,9140140119
+1211,Hema Sinha,1951-08-22,74,Female,Kondagaon,Village AC,"972, Indira Nagar, Kondagaon",492850,Government Employee,85619,OBC,891190833428,9013875927
+1212,Anil Sharma,1969-02-13,56,Male,Balod,Ward 7,"780, Station Road, Balod",491013,Unemployed,37814,ST,548015716479,9473864631
+1213,Vandana Nishad,1936-03-17,89,Female,Kondagaon,Colony 7,"536, Main Road, Kondagaon",490977,Labour,111099,General,215353961367,9499465796
+1214,Meena Lahre 8,1944-10-03,81,Female,Rajnandgaon,Rajnandgaon Nagar,"31, Main Road, Rajnandgaon",496045,Farmer,661167,General,269524991187,9734778485
+1215,Naresh Chandel 1,1973-09-04,52,Male,Rajnandgaon,Colony 14,"454, Nehru Nagar, Rajnandgaon",490295,Farmer,106430,SC,276246719788,9977828064
+1216,Hema Sinha,1990-05-30,35,Female,Kondagaon,Ward 12,"29, Indira Nagar, Kondagaon",490370,Labour,582912,General,561655650333,9491141520
+1217,Prakash Pandey 7,1986-01-09,39,Male,Gariaband,Colony 1,"603, Main Road, Gariaband",492593,Self Employed,234521,General,713578529456,9371834404
+1218,Ganesh Markam,1991-02-04,34,Male,Bijapur,Village WS,"280, Main Road, Bijapur",494641,Housewife,204982,SC,148468536649,9878208297
+1219,Vandana Nishad,2001-08-25,24,Female,Bemetara,Colony 13,"958, Indira Nagar, Bemetara",495953,Carpenter,46299,SC,723246651364,9424936312
+1220,Savita Bai 5,1976-09-14,49,Female,Baloda Bazar,Ward 18,"207, Gandhi Chowk, Baloda Bazar",492235,Labour,123503,SC,820700159416,9516231981
+1221,Dilip Nishad,2004-08-07,21,Male,Gariaband,Ward 9,"792, Station Road, Gariaband",492698,Driver,361247,OBC,632123476490,9785158673
+1222,Sanjay Mishra,1948-01-24,77,Male,Kabirdham,Village WL,"22, Indira Nagar, Kabirdham",490286,Weaver,396638,General,348645183760,9644134327
+1223,Sanjay Mishra,1992-11-16,33,Male,Balod,Ward 26,"843, Nehru Nagar, Balod",493860,Weaver,370506,SC,612481569857,9002720634
+1224,Kailash Banjare 3,1957-06-16,68,Male,Gariaband,Gariaband Nagar,"868, Indira Nagar, Gariaband",495618,Self Employed,233729,ST,724295431652,9669300893
+1225,Deepak Sinha 3,1939-07-13,86,Male,Mahasamund,Mahasamund Nagar,"92, Station Road, Mahasamund",491394,Driver,114186,ST,771333447626,9393436262
+1226,Ravi Gupta,1956-03-10,69,Male,Balrampur,Colony 10,"88, Main Road, Balrampur",493842,Labour,763344,ST,366941180053,9759900489
+1227,Sudha Gupta,1995-04-14,30,Female,Kabirdham,Kabirdham Nagar,"267, Gandhi Chowk, Kabirdham",494127,Unemployed,645412,OBC,158624150274,9564494856
+1228,Shanta Markam,1979-02-20,46,Female,Sukma,Colony 11,"55, Gandhi Chowk, Sukma",491218,Farmer,24700,ST,427617075877,9712151342
+1229,Laxmi Tiwari,1959-07-15,66,Female,Surajpur,Ward 29,"539, Indira Nagar, Surajpur",491480,Self Employed,529058,ST,150416591520,9177749050
+1230,Deepak Sinha,2000-09-10,25,Male,Bijapur,Bijapur Nagar,"884, Main Road, Bijapur",496567,Carpenter,124614,General,189616423610,9326642147
+1231,Laxmi Tiwari,1962-11-19,63,Female,Kondagaon,Ward 20,"853, Station Road, Kondagaon",494200,Teacher,382106,ST,749961659266,9108573278
+1232,Mahesh Sahu 7,1942-03-02,83,Male,Baloda Bazar,Village EE,"862, Gandhi Chowk, Baloda Bazar",494286,Self Employed,26255,General,081866179454,9918017226
+1233,Mahesh Sahu,1998-04-04,27,Male,Dantewada,Colony 8,"639, Station Road, Dantewada",492797,Labour,30252,SC,168006102776,9974995641
+1234,Rekha Verma 2,1936-06-27,89,Female,Narayanpur,Narayanpur Nagar,"666, Gandhi Chowk, Narayanpur",493570,Carpenter,682373,OBC,147276012277,9707933496
+1235,Prakash Pandey 7,1972-05-10,53,Male,Baloda Bazar,Village ST,"38, Nehru Nagar, Baloda Bazar",493275,Unemployed,339954,ST,308069581467,9179576024
+1236,Kiran Banjare,1955-11-20,70,Female,Gariaband,Colony 6,"135, Station Road, Gariaband",495923,Weaver,74638,SC,729341722329,9716743380
+1237,Sunil Netam,1967-02-04,58,Male,Kondagaon,Ward 6,"346, Nehru Nagar, Kondagaon",490934,Driver,93660,OBC,745508428910,9771199180
+1238,Dinesh Patel 2,1953-06-28,72,Male,Kabirdham,Colony 12,"781, Indira Nagar, Kabirdham",494083,Weaver,480896,SC,521376037548,9214565328
+1239,Kanta Yadav 7,1972-02-25,53,Female,Balod,Village OQ,"967, Main Road, Balod",493626,Labour,338122,General,155626060290,9846684550
+1240,Sanjay Mishra,1948-03-28,77,Male,Narayanpur,Colony 4,"715, Station Road, Narayanpur",497272,Carpenter,201720,SC,108562884318,9848520089
+1241,Santosh Dewangan,1962-05-01,63,Male,Bijapur,Ward 14,"862, Station Road, Bijapur",492128,Carpenter,182457,General,174907539989,9354492683
+1242,Prakash Pandey,1952-05-03,73,Male,Sukma,Colony 3,"849, Nehru Nagar, Sukma",490672,Student,136458,OBC,737158698864,9976776228
+1243,Kiran Banjare,1946-09-02,79,Female,Narayanpur,Narayanpur Nagar,"467, Nehru Nagar, Narayanpur",490268,Weaver,93272,SC,196115940821,9545447022
+1244,Bharat Mandavi 5,1960-06-30,65,Male,Raigarh,Ward 6,"561, Station Road, Raigarh",490554,Farmer,300225,SC,975679228777,9251996636
+1245,Naresh Chandel 8,2001-01-31,24,Male,Bastar,Ward 21,"586, Station Road, Bastar",494597,Carpenter,93315,General,398909837801,9820433971
+1246,Hemant Kosare,1987-11-23,38,Male,Bilaspur,Bilaspur Nagar,"425, Main Road, Bilaspur",497043,Housewife,53708,General,118242241246,9209520046
+1247,Prakash Pandey 6,1958-03-15,67,Male,Mahasamund,Mahasamund Nagar,"771, Indira Nagar, Mahasamund",494801,Teacher,347235,ST,140578617063,9048913824
+1248,Bharat Mandavi,1992-02-07,33,Male,Gariaband,Gariaband Nagar,"801, Gandhi Chowk, Gariaband",494404,Self Employed,691060,ST,007942007494,9653984028
+1249,Mahesh Sahu,1970-07-12,55,Male,Narayanpur,Village EX,"900, Nehru Nagar, Narayanpur",491728,Driver,360255,SC,547435537950,9209700268
+1250,Bimla Mishra,1942-05-06,83,Female,Jashpur,Colony 1,"689, Main Road, Jashpur",492892,Self Employed,587678,ST,201753703045,9319433750
+1251,Ashok Patle,1998-06-27,27,Male,Balrampur,Colony 14,"114, Station Road, Balrampur",494663,Housewife,294648,OBC,999219212493,9843089487
+1252,Bharat Mandavi,1993-05-19,32,Male,Bilaspur,Colony 14,"281, Main Road, Bilaspur",495572,Housewife,244758,General,304687506351,9903613325
+1253,Mahesh Sahu,1943-09-28,82,Male,Raipur,Village NZ,"861, Station Road, Raipur",492025,Student,239340,General,583199717911,9006512070
+1254,Hemant Kosare,1940-12-18,85,Male,Rajnandgaon,Village BR,"871, Nehru Nagar, Rajnandgaon",493291,Student,257770,OBC,990767699150,9785931109
+1255,Kailash Banjare,1952-06-07,73,Male,Surajpur,Village UQ,"432, Nehru Nagar, Surajpur",495937,Driver,213741,OBC,002496854982,9274954508
+1256,Dilip Nishad,1940-03-16,85,Male,Janjgir-Champa,Village RB,"201, Gandhi Chowk, Janjgir-Champa",495248,Teacher,239536,OBC,779599594652,9170730337
+1257,Vijay Singh 6,2001-06-16,24,Male,Mahasamund,Ward 7,"372, Main Road, Mahasamund",490605,Government Employee,35098,OBC,473950033423,9425832302
+1258,Virendra Soni 3,1969-01-21,56,Male,Jashpur,Jashpur Nagar,"313, Nehru Nagar, Jashpur",491968,Government Employee,746507,OBC,896112233865,9596309938
+1259,Mukesh Yadav 4,1939-11-04,86,Male,Jashpur,Colony 14,"215, Main Road, Jashpur",496428,Unemployed,311189,General,286857872558,9777496903
+1260,Nirmala Dhivar 4,1970-07-31,55,Female,Raigarh,Raigarh Nagar,"958, Station Road, Raigarh",492086,Housewife,118516,General,478539078956,9776657546
+1261,Anil Sharma,1958-11-22,67,Male,Jashpur,Ward 3,"805, Station Road, Jashpur",497591,Teacher,29351,SC,083535444392,9840445669
+1262,Ashok Patle,2003-05-08,22,Male,Korba,Korba Nagar,"486, Gandhi Chowk, Korba",494226,Driver,348606,ST,751536637780,9529240755
+1263,Saraswati Patle,2002-08-02,23,Female,Mahasamund,Village YW,"334, Indira Nagar, Mahasamund",490191,Driver,391735,OBC,259999663618,9637159741
+1264,Kamla Sahu,1950-12-31,75,Female,Bilaspur,Ward 27,"192, Gandhi Chowk, Bilaspur",490570,Self Employed,50544,SC,817058025662,9128671632
+1265,Sudha Gupta,1998-09-24,27,Female,Kondagaon,Village FT,"602, Gandhi Chowk, Kondagaon",494117,Weaver,222206,OBC,027169385977,9790147546
+1266,Chandra Shekhar,1950-10-10,75,Male,Balod,Colony 12,"469, Nehru Nagar, Balod",497462,Carpenter,94529,General,603248413768,9151185672
+1267,Vijay Singh,1976-07-11,49,Male,Raipur,Colony 11,"391, Station Road, Raipur",496111,Self Employed,607972,General,041257771183,9727422091
+1268,Sudha Gupta 7,1950-03-05,75,Female,Durg,Village YA,"158, Nehru Nagar, Durg",492934,Labour,24514,OBC,708164709006,9335331060
+1269,Prakash Pandey,1996-01-24,29,Male,Kondagaon,Kondagaon Nagar,"742, Gandhi Chowk, Kondagaon",490361,Self Employed,363812,SC,583938661331,9552065063
+1270,Anita Patel 5,1993-05-16,32,Female,Balrampur,Balrampur Nagar,"421, Station Road, Balrampur",496288,Driver,176690,OBC,419562525715,9099768389
+1271,Santosh Dewangan 2,1962-10-09,63,Male,Janjgir-Champa,Ward 24,"62, Gandhi Chowk, Janjgir-Champa",493069,Unemployed,39879,ST,303975245086,9403553380
+1272,Kanta Yadav,1999-08-12,26,Female,Janjgir-Champa,Janjgir-Champa Nagar,"453, Main Road, Janjgir-Champa",490530,Unemployed,45226,General,232129833816,9742336293
+1273,Ravi Gupta,1992-02-01,33,Male,Raigarh,Village ZP,"408, Nehru Nagar, Raigarh",491375,Unemployed,282460,ST,270661498282,9467474689
+1274,Sunita Yadav,1999-03-13,26,Female,Baloda Bazar,Ward 7,"883, Indira Nagar, Baloda Bazar",495984,Weaver,73025,ST,656749160169,9236458750
+1275,Manju Tandon,1957-03-15,68,Female,Janjgir-Champa,Ward 16,"715, Gandhi Chowk, Janjgir-Champa",492141,Driver,328538,OBC,439920116691,9836264488
+1276,Hema Sinha,1971-12-28,54,Female,Sukma,Village XC,"834, Gandhi Chowk, Sukma",492204,Weaver,118079,ST,402701168646,9225223728
+1277,Deepak Sinha,1954-02-18,71,Male,Surguja,Surguja Nagar,"266, Nehru Nagar, Surguja",493611,Carpenter,457250,OBC,141614150937,9710040901
+1278,Meena Lahre,1968-10-06,57,Female,Balrampur,Colony 15,"485, Station Road, Balrampur",494952,Self Employed,109372,SC,535669055107,9620918435
+1279,Poonam Kosare,1977-09-11,48,Female,Gariaband,Village VG,"18, Station Road, Gariaband",497156,Farmer,785778,SC,739769156716,9493289802
+1280,Kanta Yadav 9,1976-12-10,49,Female,Surguja,Surguja Nagar,"250, Gandhi Chowk, Surguja",491397,Carpenter,177649,ST,025643471287,9153991566
+1281,Harish Tiwari,1955-12-31,70,Male,Janjgir-Champa,Ward 9,"92, Station Road, Janjgir-Champa",496067,Driver,790395,General,952569040983,9665528993
+1282,Ganesh Markam 8,1963-05-29,62,Male,Korba,Colony 8,"151, Indira Nagar, Korba",492322,Labour,372594,General,954814973746,9052330276
+1283,Chandra Shekhar,1949-05-06,76,Male,Raipur,Colony 7,"357, Nehru Nagar, Raipur",493204,Student,224198,SC,386125904729,9277423330
+1284,Santram Dhivar,1944-03-17,81,Male,Kondagaon,Kondagaon Nagar,"949, Main Road, Kondagaon",490787,Government Employee,494180,General,185962630136,9749261764
+1285,Rani Netam 2,1942-06-23,83,Female,Rajnandgaon,Rajnandgaon Nagar,"24, Indira Nagar, Rajnandgaon",494694,Driver,331857,General,926764921518,9260688871
+1286,Chandra Shekhar,1999-02-05,26,Male,Jashpur,Ward 4,"186, Indira Nagar, Jashpur",495696,Labour,78619,SC,102932184011,9845826034
+1287,Umesh Dhruv,1961-05-21,64,Male,Kondagaon,Colony 10,"712, Station Road, Kondagaon",494282,Government Employee,283849,OBC,103032432983,9954296184
+1288,Ganesh Markam,1949-09-18,76,Male,Mahasamund,Colony 11,"963, Gandhi Chowk, Mahasamund",494391,Teacher,116033,SC,359892625660,9931418186
+1289,Prakash Pandey,1967-08-12,58,Male,Kanker,Kanker Nagar,"281, Main Road, Kanker",490803,Self Employed,516511,ST,112849718594,9849102562
+1290,Mukesh Yadav,2005-10-28,20,Male,Mungeli,Mungeli Nagar,"266, Main Road, Mungeli",495626,Housewife,322377,OBC,269405396727,9578446834
+1291,Ravi Gupta,1963-02-13,62,Male,Durg,Durg Nagar,"968, Main Road, Durg",491353,Driver,117440,SC,870682778816,9093068538
+1292,Suresh Yadav,1950-03-08,75,Male,Kondagaon,Kondagaon Nagar,"180, Main Road, Kondagaon",493007,Labour,399688,General,676251538144,9744309634
+1293,Chandra Shekhar,1976-08-09,49,Male,Balrampur,Ward 28,"631, Nehru Nagar, Balrampur",492692,Shop Owner,20675,SC,265016731882,9617024376
+1294,Ravi Gupta,1951-05-29,74,Male,Mungeli,Colony 8,"166, Gandhi Chowk, Mungeli",492898,Weaver,244172,OBC,134026650237,9416787256
+1295,Santram Dhivar,1969-12-12,56,Male,Korba,Korba Nagar,"160, Station Road, Korba",494097,Farmer,211999,General,569067447163,9928234143
+1296,Lalita Singh,2005-04-14,20,Female,Rajnandgaon,Rajnandgaon Nagar,"194, Indira Nagar, Rajnandgaon",495153,Carpenter,35789,OBC,604326093106,9684335670
+1297,Bharat Mandavi,1962-05-12,63,Male,Rajnandgaon,Colony 6,"253, Station Road, Rajnandgaon",497333,Farmer,20070,General,534749162475,9541108255
+1298,Santram Dhivar,1982-07-05,43,Male,Balrampur,Balrampur Nagar,"599, Nehru Nagar, Balrampur",490715,Student,117332,General,093371189547,9382023684
+1299,Sunil Netam,1975-04-19,50,Male,Jashpur,Colony 2,"430, Indira Nagar, Jashpur",497630,Housewife,193762,SC,240903678812,9786866943
+1300,Savita Bai 4,1988-03-08,37,Female,Narayanpur,Village ZQ,"311, Gandhi Chowk, Narayanpur",492428,Weaver,35611,OBC,308340242403,9381059551
+1301,Mohan Thakur,1971-09-12,54,Male,Balrampur,Ward 10,"844, Station Road, Balrampur",491797,Weaver,492661,SC,089164983735,9439627365
+1302,Nirmala Dhivar,1979-07-23,46,Female,Surguja,Colony 4,"966, Gandhi Chowk, Surguja",495305,Shop Owner,41354,OBC,693121637618,9209166010
+1303,Rajesh Verma 2,1959-01-28,66,Male,Korba,Ward 21,"981, Main Road, Korba",494444,Weaver,770911,General,327972457230,9848100184
+1304,Umesh Dhruv,1972-04-27,53,Male,Korba,Colony 4,"395, Gandhi Chowk, Korba",492895,Carpenter,140807,ST,172131451951,9510922685
+1305,Anil Sharma,1948-07-16,77,Male,Kondagaon,Village JT,"357, Main Road, Kondagaon",492221,Unemployed,394550,SC,102252677119,9642152265
+1306,Ashok Patle,1997-04-10,28,Male,Balod,Balod Nagar,"822, Gandhi Chowk, Balod",493140,Self Employed,291230,ST,883619689313,9503058721
+1307,Virendra Soni,2004-12-01,21,Male,Korba,Colony 14,"249, Gandhi Chowk, Korba",496782,Teacher,38061,General,260650191792,9025213109
+1308,Rekha Verma,1977-03-17,48,Female,Bijapur,Village XQ,"482, Nehru Nagar, Bijapur",495920,Government Employee,319043,General,412009282066,9784984362
+1309,Mahesh Sahu,1946-04-16,79,Male,Bijapur,Bijapur Nagar,"402, Gandhi Chowk, Bijapur",496738,Weaver,717238,General,775662056341,9115950342
+1310,Dinesh Patel 1,2002-12-07,23,Male,Dantewada,Ward 7,"247, Station Road, Dantewada",490697,Driver,297781,ST,005140546835,9652156818
+1311,Savita Bai,1969-05-06,56,Female,Baloda Bazar,Baloda Bazar Nagar,"699, Nehru Nagar, Baloda Bazar",490646,Carpenter,114170,OBC,322889857254,9596063399
+1312,Rajesh Verma,1979-09-12,46,Male,Rajnandgaon,Village AE,"561, Main Road, Rajnandgaon",494088,Student,194491,SC,214955112747,9472197054
+1313,Saraswati Patle,1996-02-14,29,Female,Korba,Village LQ,"383, Main Road, Korba",495589,Self Employed,218899,General,903802146296,9136715778
+1314,Kamla Sahu 2,1970-09-04,55,Female,Sukma,Ward 14,"325, Station Road, Sukma",494951,Unemployed,117161,ST,147082723590,9960567303
+1315,Brijlal Tandon,1959-04-10,66,Male,Bastar,Ward 21,"281, Nehru Nagar, Bastar",490670,Shop Owner,636675,ST,834201654235,9677826596
+1316,Naresh Chandel,1988-08-19,37,Male,Raigarh,Raigarh Nagar,"332, Station Road, Raigarh",490117,Labour,477326,ST,516480727910,9336829635
+1317,Lalita Singh,1986-10-24,39,Female,Raipur,Village LA,"515, Main Road, Raipur",495729,Unemployed,269538,ST,655868512765,9289286646
+1318,Ramkumar Lahre,1943-12-19,82,Male,Durg,Ward 26,"632, Nehru Nagar, Durg",490850,Unemployed,313533,General,789046337861,9371576605
+1319,Meena Lahre 5,1962-08-22,63,Female,Balod,Colony 15,"34, Main Road, Balod",490216,Labour,370403,SC,529638639609,9626265826
+1320,Kamla Sahu,1946-05-25,79,Female,Gariaband,Colony 13,"864, Station Road, Gariaband",496860,Housewife,62258,OBC,110609209819,9602752334
+1321,Chanda Thakur,2000-03-22,25,Female,Sukma,Village ZM,"676, Main Road, Sukma",492253,Student,728959,General,911791124421,9175361706
+1322,Ashok Patle,1941-11-28,84,Male,Raigarh,Village NM,"649, Nehru Nagar, Raigarh",496624,Labour,21329,OBC,990155799802,9841390808
+1323,Brijlal Tandon 6,1945-05-12,80,Male,Raigarh,Ward 1,"746, Gandhi Chowk, Raigarh",492193,Shop Owner,399884,General,584776863423,9461994237
+1324,Nirmala Dhivar,1988-07-24,37,Female,Bijapur,Colony 2,"440, Gandhi Chowk, Bijapur",494647,Government Employee,102929,General,720849649856,9012562531
+1325,Vandana Nishad,1948-01-28,77,Female,Sukma,Ward 11,"735, Station Road, Sukma",491752,Unemployed,234296,OBC,816493831849,9196655330
+1326,Kiran Banjare 5,1972-11-08,53,Female,Rajnandgaon,Village OF,"606, Nehru Nagar, Rajnandgaon",491937,Driver,22337,General,742608805017,9164455618
+1327,Ashok Patle,1970-05-08,55,Male,Dantewada,Ward 23,"864, Station Road, Dantewada",497682,Driver,49362,General,021563213580,9040104145
+1328,Mukesh Yadav,1959-04-12,66,Male,Narayanpur,Ward 6,"130, Station Road, Narayanpur",497061,Labour,382732,ST,718839774573,9144158331
+1329,Ashok Patle 1,1995-03-20,30,Male,Raigarh,Ward 15,"349, Gandhi Chowk, Raigarh",496669,Driver,284723,SC,472812356798,9363146249
+1330,Rajesh Verma,1944-09-04,81,Male,Bijapur,Colony 15,"192, Station Road, Bijapur",490235,Unemployed,268658,SC,418156326868,9507451066
+1331,Sudha Gupta 3,1988-05-10,37,Female,Bastar,Colony 9,"112, Main Road, Bastar",495295,Teacher,515124,General,009431814396,9661347323
+1332,Jagdish Porte 5,2000-11-25,25,Male,Raipur,Colony 15,"757, Station Road, Raipur",496985,Weaver,61302,General,225720765024,9120957907
+1333,Kiran Banjare 1,1985-12-15,40,Female,Kondagaon,Kondagaon Nagar,"774, Gandhi Chowk, Kondagaon",496351,Student,125367,SC,775847457054,9589714802
+1334,Pratibha Soni 3,1967-02-09,58,Female,Baloda Bazar,Colony 12,"369, Gandhi Chowk, Baloda Bazar",496098,Student,145149,ST,148782455696,9443098591
+1335,Kanta Yadav,2006-03-01,19,Female,Kabirdham,Kabirdham Nagar,"478, Gandhi Chowk, Kabirdham",494286,Shop Owner,324148,OBC,474140703491,9074065004
+1336,Rani Netam,2005-07-06,20,Female,Gariaband,Ward 22,"731, Station Road, Gariaband",491169,Weaver,96706,General,430753666144,9942965923
+1337,Rajesh Verma,1952-12-17,73,Male,Dantewada,Colony 10,"559, Gandhi Chowk, Dantewada",493080,Self Employed,89018,ST,585756766708,9061294398
+1338,Rajesh Verma,1985-10-20,40,Male,Dantewada,Colony 3,"687, Main Road, Dantewada",493792,Housewife,164247,General,041591497501,9980382872
+1339,Nirmala Dhivar,1948-12-12,77,Female,Dantewada,Ward 21,"825, Nehru Nagar, Dantewada",495110,Weaver,28800,General,291813317087,9601467238
+1340,Chandra Shekhar,1974-06-17,51,Male,Kondagaon,Ward 20,"190, Gandhi Chowk, Kondagaon",496706,Weaver,194768,OBC,774419754661,9766204719
+1341,Savita Bai,1938-02-13,87,Female,Jashpur,Ward 21,"930, Station Road, Jashpur",497888,Labour,339548,ST,402588358681,9225957244
+1342,Sunita Yadav,1992-12-09,33,Female,Baloda Bazar,Baloda Bazar Nagar,"590, Indira Nagar, Baloda Bazar",496353,Carpenter,183928,SC,995996100231,9177533126
+1343,Manju Tandon 5,1945-05-02,80,Female,Bilaspur,Village XC,"622, Main Road, Bilaspur",497566,Labour,111583,ST,629833477433,9268319013
+1344,Mukesh Yadav 1,1967-04-28,58,Male,Sukma,Ward 14,"349, Gandhi Chowk, Sukma",495590,Weaver,781831,ST,339785598217,9661912841
+1345,Ashok Patle 9,1964-10-01,61,Male,Raipur,Village JI,"70, Gandhi Chowk, Raipur",497931,Shop Owner,95413,OBC,898469081974,9005643502
+1346,Chanda Thakur,1964-08-19,61,Female,Sukma,Ward 22,"825, Indira Nagar, Sukma",497409,Driver,350691,General,516991872401,9078356743
+1347,Virendra Soni 4,1982-12-27,43,Male,Balrampur,Ward 28,"566, Nehru Nagar, Balrampur",490428,Self Employed,332306,OBC,668217195535,9603319036
+1348,Kailash Banjare 1,1999-08-23,26,Male,Janjgir-Champa,Janjgir-Champa Nagar,"450, Gandhi Chowk, Janjgir-Champa",492316,Farmer,98959,OBC,429671114837,9537458438
+1349,Prakash Pandey,1980-03-24,45,Male,Rajnandgaon,Colony 12,"287, Main Road, Rajnandgaon",491668,Labour,673152,OBC,483152037710,9704496410
+1350,Harish Tiwari,1979-07-03,46,Male,Raipur,Ward 28,"230, Gandhi Chowk, Raipur",493108,Labour,289590,General,408509549305,9966018648
+1351,Saraswati Patle,1986-01-18,39,Female,Sukma,Colony 7,"764, Gandhi Chowk, Sukma",491081,Farmer,109469,SC,138459609454,9490149542
+1352,Urmila Dhruv 1,1976-11-28,49,Female,Bilaspur,Bilaspur Nagar,"419, Main Road, Bilaspur",494748,Student,99996,SC,172444723229,9031028795
+1353,Naresh Chandel,1940-07-08,85,Male,Narayanpur,Village IA,"554, Main Road, Narayanpur",494920,Teacher,30155,ST,181335956164,9205955657
+1354,Hemant Kosare 6,1939-01-24,86,Male,Dantewada,Ward 30,"624, Gandhi Chowk, Dantewada",496620,Government Employee,354702,SC,369026113989,9868180978
+1355,Deepak Sinha,1952-07-23,73,Male,Surajpur,Village HK,"237, Nehru Nagar, Surajpur",492579,Weaver,763370,OBC,765158815793,9763928369
+1356,Poonam Kosare 5,1965-09-15,60,Female,Kanker,Kanker Nagar,"590, Nehru Nagar, Kanker",495183,Teacher,638064,General,216487120602,9128866526
+1357,Santosh Dewangan,1945-09-28,80,Male,Kanker,Ward 29,"740, Main Road, Kanker",490605,Weaver,635351,ST,764722981209,9957657289
+1358,Brijlal Tandon 5,1979-04-27,46,Male,Kanker,Colony 15,"293, Station Road, Kanker",493147,Government Employee,399958,OBC,036849951542,9144773244
+1359,Brijlal Tandon 4,1994-11-07,31,Male,Bastar,Bastar Nagar,"29, Indira Nagar, Bastar",497394,Farmer,683027,OBC,070534967827,9411767412
+1360,Santram Dhivar,1966-10-18,59,Male,Durg,Ward 24,"335, Gandhi Chowk, Durg",494154,Government Employee,102657,General,506185380032,9963347272
+1361,Sudha Gupta 2,1981-05-20,44,Female,Bijapur,Ward 24,"503, Indira Nagar, Bijapur",495008,Teacher,160175,ST,496935782434,9776958741
+1362,Kamla Sahu,2002-10-17,23,Female,Sukma,Sukma Nagar,"679, Nehru Nagar, Sukma",490949,Labour,233600,General,562779630448,9360854566
+1363,Saraswati Patle,1939-12-19,86,Female,Bastar,Ward 16,"316, Nehru Nagar, Bastar",493358,Teacher,193657,OBC,199529800615,9581083583
+1364,Sushila Pandey,1999-06-18,26,Female,Janjgir-Champa,Village ZF,"340, Nehru Nagar, Janjgir-Champa",491767,Housewife,396419,General,008186702440,9330416624
+1365,Mahesh Sahu 7,1936-11-14,89,Male,Raipur,Raipur Nagar,"98, Indira Nagar, Raipur",496494,Self Employed,99389,SC,568044731497,9646136847
+1366,Virendra Soni,1980-07-06,45,Male,Janjgir-Champa,Colony 12,"975, Station Road, Janjgir-Champa",496249,Housewife,268560,OBC,906375791452,9118237931
+1367,Durga Mandavi,1977-07-18,48,Female,Gariaband,Ward 24,"786, Nehru Nagar, Gariaband",492065,Self Employed,64285,OBC,059960438787,9535778811
+1368,Seema Chandel 3,2002-12-19,23,Female,Raipur,Raipur Nagar,"203, Nehru Nagar, Raipur",497125,Student,75598,ST,287286604164,9485959224
+1369,Dilip Nishad 6,1981-08-29,44,Male,Balrampur,Village PO,"950, Gandhi Chowk, Balrampur",491346,Housewife,274223,General,562271043318,9751097921
+1370,Jagdish Porte,1955-05-05,70,Male,Kabirdham,Village AG,"841, Nehru Nagar, Kabirdham",494788,Weaver,101854,ST,488319213424,9912896599
+1371,Mohan Thakur,2001-03-16,24,Male,Balrampur,Ward 22,"803, Gandhi Chowk, Balrampur",491774,Student,722398,OBC,227051028767,9548138666
+1372,Rani Netam,1981-11-22,44,Female,Kanker,Kanker Nagar,"979, Gandhi Chowk, Kanker",497746,Carpenter,772952,OBC,687741865205,9756398365
+1373,Manju Tandon,1936-01-08,89,Female,Raigarh,Ward 15,"601, Station Road, Raigarh",492691,Student,533044,General,940476044090,9797727810
+1374,Ramesh Kumar,1999-01-21,26,Male,Korba,Korba Nagar,"85, Nehru Nagar, Korba",496833,Student,103555,General,518439055295,9806601382
+1375,Mahesh Sahu 1,1959-10-13,66,Male,Balrampur,Balrampur Nagar,"651, Main Road, Balrampur",492550,Shop Owner,180859,SC,791971112125,9902035713
+1376,Chandra Shekhar,1952-03-16,73,Male,Bijapur,Ward 25,"389, Station Road, Bijapur",491459,Shop Owner,61358,ST,334324474175,9955872096
+1377,Chanda Thakur,1998-01-22,27,Female,Balod,Village UZ,"213, Station Road, Balod",495732,Housewife,344808,SC,183437401827,9279559690
+1378,Ramkumar Lahre 6,1935-10-09,90,Male,Surguja,Ward 14,"192, Station Road, Surguja",492510,Labour,198801,General,797996673459,9576403816
+1379,Bimla Mishra 7,1988-04-08,37,Female,Raipur,Village QF,"908, Indira Nagar, Raipur",497908,Weaver,504052,OBC,250142576270,9232441233
+1380,Sunita Yadav,1948-11-21,77,Female,Kondagaon,Colony 1,"164, Station Road, Kondagaon",490819,Unemployed,253298,OBC,767316252654,9696815790
+1381,Nirmala Dhivar,2003-12-13,22,Female,Janjgir-Champa,Ward 12,"626, Indira Nagar, Janjgir-Champa",496158,Self Employed,738469,OBC,273034615626,9244670462
+1382,Durga Mandavi,1944-08-11,81,Female,Bemetara,Ward 26,"672, Nehru Nagar, Bemetara",496583,Farmer,36874,ST,707660464197,9857585126
+1383,Brijlal Tandon,1995-08-06,30,Male,Durg,Village AK,"203, Indira Nagar, Durg",496659,Driver,269273,ST,074017750954,9654084245
+1384,Savita Bai,1961-10-08,64,Female,Jashpur,Ward 2,"545, Nehru Nagar, Jashpur",492037,Labour,32395,OBC,276457938970,9155029168
+1385,Prakash Pandey,2002-04-13,23,Male,Dantewada,Village MA,"739, Main Road, Dantewada",496856,Self Employed,500477,SC,498830597364,9248096244
+1386,Bharat Mandavi 7,1994-01-09,31,Male,Korba,Village IO,"100, Gandhi Chowk, Korba",491842,Farmer,207949,General,949796958678,9055557277
+1387,Chanda Thakur,1995-06-10,30,Female,Mahasamund,Ward 9,"647, Nehru Nagar, Mahasamund",494599,Government Employee,118043,SC,445770299295,9966048736
+1388,Rajesh Verma,1946-02-21,79,Male,Rajnandgaon,Village GG,"183, Gandhi Chowk, Rajnandgaon",496283,Weaver,688396,ST,536945515888,9636774722
+1389,Sudha Gupta 6,2003-07-05,22,Female,Bemetara,Ward 21,"393, Indira Nagar, Bemetara",495351,Self Employed,615113,OBC,093299819960,9593297150
+1390,Sanjay Mishra,1969-12-28,56,Male,Mungeli,Village GF,"741, Gandhi Chowk, Mungeli",491436,Unemployed,504746,SC,241039773973,9278195237
+1391,Ramesh Kumar,1996-04-01,29,Male,Kondagaon,Colony 14,"73, Nehru Nagar, Kondagaon",497845,Shop Owner,681722,General,980770460568,9761124912
+1392,Bharat Mandavi,1947-10-19,78,Male,Janjgir-Champa,Ward 26,"338, Main Road, Janjgir-Champa",493754,Weaver,214155,SC,547574949022,9840359544
+1393,Hema Sinha,1977-09-14,48,Female,Narayanpur,Narayanpur Nagar,"151, Indira Nagar, Narayanpur",492395,Self Employed,49873,General,394290458867,9925298585
+1394,Pratibha Soni,1993-03-26,32,Female,Surguja,Colony 3,"919, Nehru Nagar, Surguja",490117,Carpenter,579499,OBC,433249135779,9083350615
+1395,Mahesh Sahu 9,2001-07-25,24,Male,Mungeli,Colony 1,"581, Indira Nagar, Mungeli",492032,Teacher,116919,OBC,337209484131,9284033399
+1396,Urmila Dhruv 1,1963-09-02,62,Female,Jashpur,Colony 2,"86, Nehru Nagar, Jashpur",491618,Student,206360,ST,490961739970,9469472587
+1397,Ravi Gupta,1961-12-11,64,Male,Bastar,Village RH,"695, Indira Nagar, Bastar",494122,Shop Owner,179222,OBC,705877221641,9758231334
+1398,Ravi Gupta,1982-08-25,43,Male,Baloda Bazar,Baloda Bazar Nagar,"585, Gandhi Chowk, Baloda Bazar",492653,Labour,71935,OBC,292587964347,9452455574
+1399,Hema Sinha,1972-06-26,53,Female,Raipur,Village MB,"662, Gandhi Chowk, Raipur",497988,Unemployed,155107,OBC,344505665883,9398741132
+1400,Santram Dhivar,1999-10-09,26,Male,Surajpur,Colony 11,"705, Nehru Nagar, Surajpur",492047,Shop Owner,707293,ST,010548574172,9156229493
+1401,Mahesh Sahu,1964-06-22,61,Male,Surajpur,Village YV,"707, Main Road, Surajpur",491151,Student,766610,SC,573257375534,9490216667
+1402,Chandra Shekhar,1981-01-07,44,Male,Kabirdham,Village SN,"810, Indira Nagar, Kabirdham",494031,Shop Owner,316298,General,191818281979,9316477251
+1403,Jyoti Porte,1975-10-19,50,Female,Gariaband,Colony 14,"911, Main Road, Gariaband",493289,Driver,101748,ST,003562439587,9395923234
+1404,Kamla Sahu 1,2004-12-28,21,Female,Korba,Village LC,"951, Gandhi Chowk, Korba",495392,Teacher,41402,ST,433502716073,9607763369
+1405,Mahesh Sahu,1980-07-09,45,Male,Surajpur,Surajpur Nagar,"124, Nehru Nagar, Surajpur",496068,Driver,61534,ST,331857481700,9666155416
+1406,Santosh Dewangan,1942-08-22,83,Male,Jashpur,Colony 15,"17, Station Road, Jashpur",495978,Carpenter,423787,OBC,329028227009,9345962622
+1407,Rajesh Verma,1995-01-19,30,Male,Surguja,Ward 12,"510, Gandhi Chowk, Surguja",492508,Self Employed,388284,SC,950050702608,9698221053
+1408,Bharat Mandavi,1945-02-23,80,Male,Baloda Bazar,Baloda Bazar Nagar,"878, Indira Nagar, Baloda Bazar",496631,Carpenter,82422,ST,425859177932,9382231164
+1409,Dinesh Patel 5,1951-08-17,74,Male,Bijapur,Colony 12,"685, Indira Nagar, Bijapur",494260,Housewife,381626,SC,256529060320,9203265097
+1410,Pratibha Soni,1991-06-20,34,Female,Surajpur,Village OG,"559, Nehru Nagar, Surajpur",490966,Weaver,120730,SC,524578715841,9560821371
+1411,Naresh Chandel,1946-05-24,79,Male,Kabirdham,Ward 10,"990, Indira Nagar, Kabirdham",491496,Self Employed,667862,OBC,230358929880,9858382521
+1412,Jyoti Porte,1990-07-10,35,Female,Janjgir-Champa,Colony 3,"879, Gandhi Chowk, Janjgir-Champa",492281,Farmer,610173,SC,686775240148,9439910622
+1413,Sushila Pandey 4,1970-03-01,55,Female,Surguja,Surguja Nagar,"255, Station Road, Surguja",490578,Teacher,544818,OBC,619237245018,9481973741
+1414,Santram Dhivar,1948-11-06,77,Male,Durg,Village YX,"973, Main Road, Durg",493126,Shop Owner,81148,ST,927438119953,9766014448
+1415,Bharat Mandavi,1957-08-08,68,Male,Kabirdham,Colony 12,"249, Indira Nagar, Kabirdham",494055,Teacher,324491,SC,178996986091,9919113599
+1416,Sushila Pandey,2001-11-02,24,Female,Bilaspur,Colony 8,"588, Indira Nagar, Bilaspur",490306,Self Employed,729315,ST,039205146074,9555347057
+1417,Brijlal Tandon,1953-11-05,72,Male,Mungeli,Colony 6,"772, Station Road, Mungeli",496398,Labour,446594,SC,598354116597,9263475575
+1418,Geeta Sharma,1945-01-23,80,Female,Raigarh,Village JQ,"775, Indira Nagar, Raigarh",494410,Labour,111178,General,311964258562,9614991537
+1419,Santosh Dewangan,1994-12-13,31,Male,Bastar,Bastar Nagar,"252, Gandhi Chowk, Bastar",493608,Carpenter,476220,General,430977688936,9289696454
+1420,Rani Netam,1956-02-13,69,Female,Kanker,Kanker Nagar,"330, Gandhi Chowk, Kanker",496518,Housewife,175329,ST,851935837490,9797796120
+1421,Deepak Sinha,1940-03-23,85,Male,Kabirdham,Village WE,"67, Station Road, Kabirdham",494668,Shop Owner,781557,General,976263748453,9986289509
+1422,Ramkumar Lahre,1987-10-07,38,Male,Rajnandgaon,Colony 2,"748, Gandhi Chowk, Rajnandgaon",496002,Teacher,98843,OBC,207151169666,9725214526
+1423,Ashok Patle 5,1971-01-28,54,Male,Raigarh,Ward 8,"348, Nehru Nagar, Raigarh",496159,Student,155348,General,805120800564,9099512397
+1424,Chanda Thakur 6,1943-10-06,82,Female,Kondagaon,Kondagaon Nagar,"913, Nehru Nagar, Kondagaon",495787,Labour,363480,ST,090814415298,9217392957
+1425,Chandra Shekhar,1975-04-01,50,Male,Rajnandgaon,Rajnandgaon Nagar,"375, Gandhi Chowk, Rajnandgaon",491962,Unemployed,72990,General,507918158998,9868345273
+1426,Jagdish Porte,1974-02-06,51,Male,Mahasamund,Ward 3,"330, Indira Nagar, Mahasamund",493966,Driver,85223,SC,080314998250,9800463580
+1427,Laxmi Tiwari,1951-01-22,74,Female,Gariaband,Gariaband Nagar,"102, Nehru Nagar, Gariaband",497783,Labour,773509,SC,137399006314,9035263560
+1428,Rekha Verma,1990-11-04,35,Female,Kondagaon,Village NV,"210, Station Road, Kondagaon",493353,Weaver,127944,ST,643749060723,9111271285
+1429,Laxmi Tiwari 7,1960-08-12,65,Female,Mungeli,Ward 10,"780, Main Road, Mungeli",493236,Teacher,690849,ST,328077113062,9113695727
+1430,Brijlal Tandon 9,2003-11-09,22,Male,Raigarh,Ward 25,"583, Main Road, Raigarh",497771,Labour,144572,SC,257306624813,9235707139
+1431,Ravi Gupta,1947-12-04,78,Male,Mungeli,Ward 11,"420, Indira Nagar, Mungeli",494377,Farmer,194543,SC,502130609069,9130981079
+1432,Sudha Gupta,1969-10-05,56,Female,Bemetara,Colony 11,"628, Station Road, Bemetara",492828,Carpenter,391023,OBC,785324264250,9642076836
+1433,Sushila Pandey,1953-09-25,72,Female,Mahasamund,Colony 12,"455, Nehru Nagar, Mahasamund",493798,Government Employee,107211,ST,283333939578,9654362718
+1434,Sudha Gupta,2004-07-21,21,Female,Balrampur,Village BG,"565, Gandhi Chowk, Balrampur",495404,Self Employed,626380,OBC,703692492693,9265732759
+1435,Umesh Dhruv,1938-03-25,87,Male,Kondagaon,Ward 4,"9, Main Road, Kondagaon",492716,Student,138201,SC,323415959775,9244182226
+1436,Naresh Chandel,1971-10-26,54,Male,Surguja,Village RU,"707, Gandhi Chowk, Surguja",497997,Student,188443,ST,102676720957,9992707955
+1437,Sanjay Mishra,1950-12-18,75,Male,Korba,Korba Nagar,"114, Gandhi Chowk, Korba",497878,Carpenter,113245,General,597099625438,9480752034
+1438,Deepak Sinha,1965-05-05,60,Male,Bilaspur,Colony 11,"676, Main Road, Bilaspur",492728,Housewife,134300,General,904637660465,9586652548
+1439,Kiran Banjare 2,1975-06-04,50,Female,Kondagaon,Village ZV,"883, Indira Nagar, Kondagaon",497339,Student,36846,General,312512931100,9591297519
+1440,Suresh Yadav,1952-12-17,73,Male,Bijapur,Ward 30,"4, Nehru Nagar, Bijapur",496485,Carpenter,26553,General,658373792749,9072801234
+1441,Nirmala Dhivar,1952-01-19,73,Female,Narayanpur,Narayanpur Nagar,"192, Station Road, Narayanpur",496196,Teacher,103269,SC,968436453804,9421017509
+1442,Sunita Yadav,1999-04-23,26,Female,Bemetara,Village XV,"603, Station Road, Bemetara",495719,Carpenter,167270,SC,575757475833,9920567756
+1443,Pratibha Soni,1975-08-18,50,Female,Korba,Colony 7,"973, Main Road, Korba",497155,Labour,249997,OBC,650622923106,9724530762
+1444,Chandra Shekhar,1984-05-06,41,Male,Bastar,Colony 10,"444, Nehru Nagar, Bastar",497761,Labour,324533,General,511579423873,9670425496
+1445,Dinesh Patel,1982-07-31,43,Male,Dantewada,Dantewada Nagar,"379, Indira Nagar, Dantewada",497950,Unemployed,78599,SC,633535748595,9325939933
+1446,Hema Sinha,1936-10-20,89,Female,Kanker,Kanker Nagar,"639, Station Road, Kanker",490667,Housewife,307968,SC,176342507330,9559782457
+1447,Hemant Kosare,1953-01-04,72,Male,Jashpur,Village TT,"752, Main Road, Jashpur",496026,Teacher,282155,SC,366044324006,9157276829
+1448,Bimla Mishra,1959-08-09,66,Female,Bemetara,Colony 10,"292, Gandhi Chowk, Bemetara",494805,Labour,22222,General,058752568065,9625904599
+1449,Sanjay Mishra,1999-11-27,26,Male,Narayanpur,Ward 23,"144, Gandhi Chowk, Narayanpur",490838,Housewife,113566,OBC,155516517680,9866281372
+1450,Brijlal Tandon,1958-06-16,67,Male,Janjgir-Champa,Ward 8,"54, Gandhi Chowk, Janjgir-Champa",493922,Farmer,119421,OBC,228556608470,9681039033
+1451,Ashok Patle 2,1987-03-29,38,Male,Kabirdham,Kabirdham Nagar,"550, Main Road, Kabirdham",497498,Carpenter,223772,SC,858623945354,9614707986
+1452,Geeta Sharma 7,1944-08-21,81,Female,Bijapur,Village GG,"853, Gandhi Chowk, Bijapur",497264,Driver,589236,ST,039438040325,9376576927
+1453,Chanda Thakur,2006-05-21,19,Female,Kondagaon,Ward 28,"906, Main Road, Kondagaon",496986,Farmer,374701,General,404769210533,9651460401
+1454,Rajesh Verma 4,1945-11-09,80,Male,Jashpur,Colony 1,"179, Main Road, Jashpur",490923,Student,269340,SC,409712316600,9767620901
+1455,Ramkumar Lahre 8,1953-04-01,72,Male,Bastar,Bastar Nagar,"241, Nehru Nagar, Bastar",496639,Farmer,423134,ST,873045195778,9255882556
+1456,Hema Sinha,1977-01-01,48,Female,Kabirdham,Colony 14,"692, Indira Nagar, Kabirdham",493341,Government Employee,445323,SC,255778205829,9582923616
+1457,Umesh Dhruv,1981-09-04,44,Male,Rajnandgaon,Rajnandgaon Nagar,"758, Gandhi Chowk, Rajnandgaon",495604,Weaver,278236,General,558686395613,9723081721
+1458,Santosh Dewangan,1962-03-27,63,Male,Raigarh,Raigarh Nagar,"25, Main Road, Raigarh",490255,Shop Owner,44341,General,147165609456,9534699799
+1459,Dilip Nishad,1937-11-21,88,Male,Baloda Bazar,Colony 5,"882, Nehru Nagar, Baloda Bazar",496168,Housewife,260809,SC,706071748113,9176539705
+1460,Naresh Chandel,1975-07-17,50,Male,Raigarh,Raigarh Nagar,"608, Main Road, Raigarh",497664,Housewife,281616,OBC,749680491872,9742049561
+1461,Sushila Pandey 8,1978-09-08,47,Female,Janjgir-Champa,Janjgir-Champa Nagar,"792, Nehru Nagar, Janjgir-Champa",490360,Shop Owner,64573,ST,371122299077,9560858167
+1462,Mohan Thakur,1998-01-17,27,Male,Balod,Village CC,"487, Nehru Nagar, Balod",494155,Teacher,472104,General,021923785847,9129618033
+1463,Sudha Gupta 7,1936-01-25,89,Female,Kabirdham,Ward 2,"538, Station Road, Kabirdham",494798,Housewife,135393,OBC,537337773126,9881228217
+1464,Mahesh Sahu,1957-03-24,68,Male,Jashpur,Jashpur Nagar,"848, Station Road, Jashpur",493330,Farmer,161249,SC,603567932798,9623984716
+1465,Ramesh Kumar,1985-06-15,40,Male,Durg,Ward 23,"379, Station Road, Durg",493222,Shop Owner,361501,SC,489547876989,9992751758
+1466,Hemant Kosare,1957-08-20,68,Male,Jashpur,Jashpur Nagar,"321, Station Road, Jashpur",497432,Teacher,241361,SC,358644963924,9358853798
+1467,Kamla Sahu,1961-03-18,64,Female,Jashpur,Village GT,"188, Nehru Nagar, Jashpur",493072,Teacher,113984,SC,978524914168,9601347789
+1468,Umesh Dhruv,1952-12-07,73,Male,Bastar,Ward 2,"488, Nehru Nagar, Bastar",493170,Government Employee,43737,General,500141884216,9309001594
+1469,Bharat Mandavi 4,1990-07-14,35,Male,Balrampur,Village YI,"861, Gandhi Chowk, Balrampur",491243,Farmer,233026,OBC,263890219947,9113633792
+1470,Manju Tandon 2,1935-05-07,90,Female,Janjgir-Champa,Colony 10,"457, Gandhi Chowk, Janjgir-Champa",491903,Student,614190,ST,726960843768,9550789679
+1471,Rani Netam 2,1988-12-23,37,Female,Narayanpur,Colony 13,"213, Gandhi Chowk, Narayanpur",492575,Government Employee,215213,SC,369709317069,9556076761
+1472,Mamta Dewangan,1959-03-17,66,Female,Kabirdham,Kabirdham Nagar,"225, Indira Nagar, Kabirdham",495284,Housewife,362374,OBC,065031219804,9184724264
+1473,Anita Patel,1950-01-05,75,Female,Gariaband,Ward 3,"587, Gandhi Chowk, Gariaband",492362,Housewife,260957,OBC,303911142817,9852282305
+1474,Bimla Mishra 1,1980-01-01,45,Female,Gariaband,Gariaband Nagar,"50, Nehru Nagar, Gariaband",491278,Labour,99818,SC,947372132901,9620478768
+1475,Santram Dhivar,1982-03-02,43,Male,Bemetara,Colony 13,"770, Station Road, Bemetara",494289,Self Employed,132450,ST,203195419666,9450573036
+1476,Urmila Dhruv,2005-12-25,20,Female,Sukma,Village EU,"406, Gandhi Chowk, Sukma",491166,Farmer,630177,SC,767753726032,9145057661
+1477,Ravi Gupta,1981-01-17,44,Male,Mungeli,Village BP,"340, Gandhi Chowk, Mungeli",492543,Housewife,33277,OBC,840083850765,9975954508
+1478,Dinesh Patel,2003-02-10,22,Male,Baloda Bazar,Ward 14,"992, Gandhi Chowk, Baloda Bazar",497643,Self Employed,113620,ST,422319646300,9402369362
+1479,Chanda Thakur,1953-12-16,72,Female,Raipur,Colony 5,"806, Main Road, Raipur",491795,Unemployed,486825,ST,117595749885,9582984933
+1480,Bharat Mandavi,1964-07-02,61,Male,Gariaband,Ward 10,"975, Indira Nagar, Gariaband",492461,Shop Owner,39394,OBC,337218856669,9541329715
+1481,Bharat Mandavi,1973-11-01,52,Male,Korba,Village PA,"122, Station Road, Korba",491931,Unemployed,657877,ST,936634392529,9596111102
+1482,Bharat Mandavi,1943-05-06,82,Male,Narayanpur,Colony 1,"182, Main Road, Narayanpur",491094,Shop Owner,592292,SC,910245109109,9032671494
+1483,Chandra Shekhar,1990-01-13,35,Male,Dantewada,Village CO,"162, Indira Nagar, Dantewada",490788,Unemployed,330626,SC,065277584466,9345337220
+1484,Suresh Yadav,1945-08-16,80,Male,Korba,Ward 4,"290, Station Road, Korba",495634,Government Employee,338388,ST,661894370526,9351004627
+1485,Vandana Nishad,2005-05-17,20,Female,Narayanpur,Village KO,"764, Nehru Nagar, Narayanpur",495394,Government Employee,794010,OBC,024617520238,9974326005
+1486,Mukesh Yadav,1965-04-24,60,Male,Raipur,Raipur Nagar,"217, Gandhi Chowk, Raipur",492724,Carpenter,343081,SC,868999360798,9487045069
+1487,Ashok Patle,1972-06-30,53,Male,Bemetara,Village TS,"855, Indira Nagar, Bemetara",491826,Unemployed,136852,General,394640830373,9606014886
+1488,Umesh Dhruv,2000-10-19,25,Male,Sukma,Ward 21,"509, Indira Nagar, Sukma",491749,Housewife,225382,General,368528306153,9701242446
+1489,Nirmala Dhivar,2000-06-24,25,Female,Surguja,Village DY,"317, Indira Nagar, Surguja",495666,Housewife,169983,OBC,103142175188,9781794151
+1490,Anil Sharma,1952-01-17,73,Male,Mungeli,Ward 9,"65, Gandhi Chowk, Mungeli",491195,Government Employee,126852,OBC,750566186323,9979137876
+1491,Jagdish Porte,1938-10-30,87,Male,Bilaspur,Village GA,"18, Station Road, Bilaspur",495315,Government Employee,369551,General,571219881927,9788519053
+1492,Naresh Chandel,1961-05-22,64,Male,Bilaspur,Bilaspur Nagar,"713, Station Road, Bilaspur",496683,Self Employed,547151,SC,618517446004,9521289915
+1493,Dinesh Patel,2003-12-18,22,Male,Kanker,Kanker Nagar,"597, Main Road, Kanker",491897,Farmer,130292,General,898484160461,9540211901
+1494,Pushpa Devi,1967-06-18,58,Female,Mahasamund,Mahasamund Nagar,"84, Station Road, Mahasamund",491380,Labour,299164,General,073228360849,9378306396
+1495,Sushila Pandey,1965-12-12,60,Female,Korba,Village SN,"276, Gandhi Chowk, Korba",495050,Student,216847,ST,016934292913,9203301623
+1496,Dinesh Patel,1993-07-17,32,Male,Raigarh,Colony 1,"110, Station Road, Raigarh",491691,Unemployed,114937,General,556684732365,9337746040
+1497,Urmila Dhruv 1,2002-03-14,23,Female,Bemetara,Ward 17,"903, Station Road, Bemetara",491153,Shop Owner,75856,General,781975437347,9642737203
+1498,Durga Mandavi 9,1980-10-15,45,Female,Jashpur,Village ED,"535, Station Road, Jashpur",495652,Student,106283,SC,601913443899,9827802058
+1499,Hema Sinha,1978-03-21,47,Female,Raigarh,Colony 5,"258, Station Road, Raigarh",494803,Teacher,325594,SC,167933505573,9857368011
+1500,Sanjay Mishra 7,1938-12-31,87,Male,Raigarh,Ward 15,"106, Indira Nagar, Raigarh",493615,Weaver,116734,OBC,351040961497,9315391149
+1501,Santram Dhivar,2003-04-30,22,Male,Janjgir-Champa,Janjgir-Champa Nagar,"674, Main Road, Janjgir-Champa",497588,Unemployed,513435,ST,511893940655,9782019043
+1502,Sushila Pandey 1,2000-10-09,25,Female,Surguja,Village GG,"472, Main Road, Surguja",495421,Unemployed,37631,General,135462127602,9508261123
+1503,Rajesh Verma,1974-01-20,51,Male,Janjgir-Champa,Village FI,"908, Nehru Nagar, Janjgir-Champa",491290,Driver,298713,OBC,762974549303,9646871912
+1504,Santosh Dewangan,1982-12-06,43,Male,Rajnandgaon,Rajnandgaon Nagar,"55, Indira Nagar, Rajnandgaon",491473,Housewife,466285,OBC,089813881588,9144582206
+1505,Pratibha Soni,1947-08-07,78,Female,Janjgir-Champa,Janjgir-Champa Nagar,"640, Nehru Nagar, Janjgir-Champa",490586,Self Employed,293322,General,572450000001,9529113717
+1506,Jagdish Porte,2005-09-16,20,Male,Jashpur,Jashpur Nagar,"362, Station Road, Jashpur",493106,Carpenter,139833,SC,442182998747,9812248905
+1507,Kiran Banjare 7,1976-12-26,49,Female,Raipur,Village TB,"908, Gandhi Chowk, Raipur",493096,Government Employee,173250,SC,848266913624,9835505429
+1508,Laxmi Tiwari 1,1991-02-19,34,Female,Baloda Bazar,Colony 4,"617, Indira Nagar, Baloda Bazar",494574,Unemployed,356183,General,982210401648,9188044287
+1509,Nirmala Dhivar,1981-04-29,44,Female,Raigarh,Ward 13,"410, Station Road, Raigarh",491985,Labour,187094,ST,942894642036,9258631441
+1510,Pratibha Soni 7,1961-03-23,64,Female,Jashpur,Village FL,"776, Station Road, Jashpur",497097,Farmer,123371,OBC,558243017646,9448988031
+1511,Santosh Dewangan,1980-01-03,45,Male,Gariaband,Gariaband Nagar,"477, Indira Nagar, Gariaband",496814,Weaver,110211,SC,040433335384,9951632111
+1512,Deepak Sinha,1999-10-08,26,Male,Rajnandgaon,Rajnandgaon Nagar,"608, Main Road, Rajnandgaon",495169,Carpenter,48414,OBC,653060119875,9617868800
+1513,Lalita Singh,1937-09-13,88,Female,Surajpur,Ward 4,"563, Gandhi Chowk, Surajpur",496862,Driver,153440,OBC,657744916093,9659520149
+1514,Mukesh Yadav 9,1992-06-01,33,Male,Sukma,Village JD,"232, Gandhi Chowk, Sukma",493253,Housewife,369694,General,926322399821,9374556114
+1515,Ramkumar Lahre,2000-08-14,25,Male,Dantewada,Ward 5,"850, Station Road, Dantewada",495165,Farmer,238472,OBC,766608112600,9308356691
+1516,Ganesh Markam 8,1941-08-01,84,Male,Kanker,Kanker Nagar,"261, Station Road, Kanker",492915,Farmer,666903,OBC,691776829384,9401348087
+1517,Shanta Markam 8,1994-11-29,31,Female,Mungeli,Ward 24,"218, Gandhi Chowk, Mungeli",495285,Government Employee,182542,General,157090859914,9492074926
+1518,Ramkumar Lahre,1991-03-22,34,Male,Balod,Colony 13,"891, Station Road, Balod",496802,Housewife,349097,ST,184285969325,9914084993
+1519,Nirmala Dhivar 3,2005-01-26,20,Female,Janjgir-Champa,Colony 13,"414, Indira Nagar, Janjgir-Champa",494587,Farmer,333417,General,872617607234,9838935953
+1520,Rajesh Verma,1985-05-28,40,Male,Sukma,Village JA,"984, Nehru Nagar, Sukma",497269,Carpenter,38672,ST,508269582641,9869656130
+1521,Ashok Patle,1943-11-17,82,Male,Kondagaon,Kondagaon Nagar,"827, Indira Nagar, Kondagaon",492570,Driver,141087,General,434682394840,9027300869
+1522,Manju Tandon,1940-09-05,85,Female,Bilaspur,Bilaspur Nagar,"77, Main Road, Bilaspur",495475,Teacher,575554,General,016809414915,9076283976
+1523,Pushpa Devi,1954-11-05,71,Female,Jashpur,Colony 15,"452, Nehru Nagar, Jashpur",494906,Shop Owner,27626,ST,266292508177,9602991406
+1524,Dilip Nishad,1941-02-01,84,Male,Raigarh,Ward 7,"960, Gandhi Chowk, Raigarh",497817,Government Employee,141977,OBC,356178170321,9192061363
+1525,Dilip Nishad,1977-01-09,48,Male,Baloda Bazar,Ward 18,"195, Gandhi Chowk, Baloda Bazar",493666,Student,685836,SC,449029502648,9016440373
+1526,Chandra Shekhar 8,1982-12-27,43,Male,Rajnandgaon,Colony 12,"684, Indira Nagar, Rajnandgaon",491396,Labour,129308,OBC,179821348629,9857973638
+1527,Nirmala Dhivar 9,1950-12-18,75,Female,Mungeli,Village KN,"235, Indira Nagar, Mungeli",496147,Unemployed,412016,ST,986617706736,9820506821
+1528,Geeta Sharma 6,1964-06-24,61,Female,Kondagaon,Village CM,"16, Station Road, Kondagaon",494417,Unemployed,760054,SC,692182192596,9790898436
+1529,Hemant Kosare,2005-05-04,20,Male,Mungeli,Ward 28,"872, Station Road, Mungeli",496541,Farmer,762699,OBC,869484249598,9811457887
+1530,Ramkumar Lahre,1943-04-15,82,Male,Kabirdham,Colony 15,"459, Nehru Nagar, Kabirdham",493913,Teacher,322157,OBC,097461917798,9768299687
+1531,Sushila Pandey,1963-10-13,62,Female,Gariaband,Ward 19,"810, Indira Nagar, Gariaband",492608,Carpenter,254489,OBC,350405669579,9001248255
+1532,Mohan Thakur 9,1970-05-03,55,Male,Bemetara,Village MG,"847, Indira Nagar, Bemetara",492410,Labour,316186,OBC,894633891562,9415285725
+1533,Geeta Sharma,1950-06-25,75,Female,Mahasamund,Village HW,"543, Indira Nagar, Mahasamund",496404,Carpenter,49301,General,865507846850,9957443034
+1534,Dinesh Patel,1981-01-09,44,Male,Surajpur,Colony 10,"169, Main Road, Surajpur",491632,Housewife,574911,OBC,401536415471,9553132593
+1535,Kiran Banjare,1982-02-13,43,Female,Rajnandgaon,Village ZN,"47, Main Road, Rajnandgaon",497863,Driver,130966,OBC,141052769819,9878092704
+1536,Rajesh Verma 9,1982-04-28,43,Male,Mungeli,Mungeli Nagar,"912, Gandhi Chowk, Mungeli",497661,Government Employee,389310,ST,605986787442,9275854859
+1537,Rani Netam,1963-07-14,62,Female,Narayanpur,Narayanpur Nagar,"312, Indira Nagar, Narayanpur",497459,Student,763427,ST,502000245393,9132155130
+1538,Prakash Pandey,1981-11-15,44,Male,Raigarh,Raigarh Nagar,"699, Main Road, Raigarh",492326,Shop Owner,88132,ST,699727367746,9202582543
+1539,Umesh Dhruv 3,1998-07-17,27,Male,Mungeli,Mungeli Nagar,"857, Main Road, Mungeli",491035,Teacher,380337,General,491060183647,9238750827
+1540,Meena Lahre,1994-09-26,31,Female,Bemetara,Village ZF,"492, Nehru Nagar, Bemetara",492629,Shop Owner,245208,SC,726290529187,9683160827
+1541,Jagdish Porte,1940-09-28,85,Male,Bemetara,Bemetara Nagar,"949, Indira Nagar, Bemetara",495370,Driver,415345,SC,222999362165,9914388232
+1542,Jagdish Porte,1956-12-31,69,Male,Surajpur,Village RG,"274, Nehru Nagar, Surajpur",491001,Unemployed,271380,ST,326430954497,9912799702
+1543,Anil Sharma,1949-08-09,76,Male,Bilaspur,Colony 15,"778, Indira Nagar, Bilaspur",497461,Unemployed,206161,ST,529883220125,9608320048
+1544,Poonam Kosare,1996-08-10,29,Female,Bemetara,Colony 14,"358, Gandhi Chowk, Bemetara",495680,Weaver,380298,SC,852386003044,9361995171
+1545,Chandra Shekhar,1953-11-27,72,Male,Bijapur,Bijapur Nagar,"659, Indira Nagar, Bijapur",491372,Weaver,792838,SC,014374830930,9967139719
+1546,Rajesh Verma,1991-11-17,34,Male,Korba,Korba Nagar,"121, Nehru Nagar, Korba",493360,Unemployed,186605,General,191116612201,9907258733
+1547,Santram Dhivar,1938-05-21,87,Male,Dantewada,Village GN,"214, Indira Nagar, Dantewada",490110,Carpenter,105278,SC,812421140868,9250952294
+1548,Rekha Verma 4,1997-12-02,28,Female,Kabirdham,Ward 12,"830, Main Road, Kabirdham",496598,Teacher,299126,SC,297013712436,9585856423
+1549,Mohan Thakur,2001-09-09,24,Male,Sukma,Ward 5,"433, Main Road, Sukma",492965,Driver,50252,ST,402990716690,9632248155
+1550,Harish Tiwari 1,1954-12-19,71,Male,Narayanpur,Ward 23,"128, Main Road, Narayanpur",495048,Government Employee,612620,ST,975649157955,9462347124
+1551,Saraswati Patle 1,1984-11-06,41,Female,Bilaspur,Ward 25,"40, Gandhi Chowk, Bilaspur",490219,Weaver,295187,OBC,176417268080,9815712901
+1552,Ramkumar Lahre 2,1952-08-07,73,Male,Gariaband,Gariaband Nagar,"56, Nehru Nagar, Gariaband",495838,Teacher,146979,General,458474362130,9096258857
+1553,Seema Chandel,1957-10-30,68,Female,Baloda Bazar,Ward 1,"342, Gandhi Chowk, Baloda Bazar",495498,Teacher,191048,ST,466621591832,9700046661
+1554,Prakash Pandey,1937-04-20,88,Male,Sukma,Colony 1,"603, Nehru Nagar, Sukma",495461,Unemployed,53071,General,049388194905,9315204998
+1555,Mukesh Yadav,1993-01-26,32,Male,Balrampur,Colony 13,"655, Gandhi Chowk, Balrampur",495309,Student,97374,ST,166984166123,9740779433
+1556,Bimla Mishra,1951-06-26,74,Female,Raigarh,Village WQ,"597, Indira Nagar, Raigarh",497471,Student,633869,General,142620370878,9211602041
+1557,Mukesh Yadav 6,1996-06-16,29,Male,Narayanpur,Colony 9,"923, Gandhi Chowk, Narayanpur",497352,Student,78255,General,889480186448,9221758839
+1558,Meena Lahre,1936-02-05,89,Female,Mungeli,Village BZ,"554, Main Road, Mungeli",493431,Unemployed,107370,General,236914961128,9794296882
+1559,Laxmi Tiwari,1986-12-21,39,Female,Kondagaon,Ward 30,"274, Main Road, Kondagaon",494824,Government Employee,35455,SC,196156078327,9488356517
+1560,Mukesh Yadav,1994-02-25,31,Male,Kondagaon,Ward 21,"907, Indira Nagar, Kondagaon",497588,Self Employed,224198,ST,683496047842,9170285162
+1561,Manju Tandon,2003-04-02,22,Female,Janjgir-Champa,Janjgir-Champa Nagar,"1, Indira Nagar, Janjgir-Champa",497928,Driver,516394,SC,868839062467,9287991609
+1562,Mahesh Sahu 4,1945-03-13,80,Male,Surajpur,Village YX,"678, Indira Nagar, Surajpur",495244,Labour,507255,ST,133760523045,9881650254
+1563,Ashok Patle 2,1990-05-09,35,Male,Rajnandgaon,Rajnandgaon Nagar,"714, Station Road, Rajnandgaon",492242,Farmer,259155,ST,177182498980,9880678214
+1564,Deepak Sinha 9,1944-06-12,81,Male,Janjgir-Champa,Colony 3,"642, Nehru Nagar, Janjgir-Champa",497760,Shop Owner,311604,OBC,969874869415,9594501192
+1565,Dilip Nishad 8,1967-06-24,58,Male,Janjgir-Champa,Village MW,"117, Main Road, Janjgir-Champa",493887,Student,340893,General,398863653621,9894559067
+1566,Suresh Yadav 5,1947-04-03,78,Male,Dantewada,Ward 17,"301, Nehru Nagar, Dantewada",493073,Carpenter,788267,ST,676056420456,9577580974
+1567,Santosh Dewangan 9,1989-08-30,36,Male,Raipur,Village EH,"265, Nehru Nagar, Raipur",497176,Self Employed,373947,OBC,654016599530,9062212242
+1568,Saraswati Patle,1977-12-24,48,Female,Narayanpur,Narayanpur Nagar,"783, Station Road, Narayanpur",495024,Student,33586,General,241158488600,9801798677
+1569,Rajesh Verma 2,1950-07-29,75,Male,Surajpur,Ward 20,"954, Station Road, Surajpur",493655,Labour,614198,SC,261212038437,9536596807
+1570,Sunil Netam,1992-01-30,33,Male,Surguja,Village IQ,"131, Main Road, Surguja",495503,Housewife,210965,SC,454006445475,9231123274
+1571,Hemant Kosare,2000-08-22,25,Male,Baloda Bazar,Ward 22,"462, Nehru Nagar, Baloda Bazar",497383,Self Employed,213674,SC,272038862175,9080196304
+1572,Ramkumar Lahre,1938-01-15,87,Male,Mahasamund,Mahasamund Nagar,"274, Indira Nagar, Mahasamund",497322,Teacher,50083,SC,001816778481,9652444544
+1573,Pushpa Devi,1953-12-04,72,Female,Mungeli,Colony 2,"618, Indira Nagar, Mungeli",491782,Unemployed,294827,General,053912878848,9699969882
+1574,Suresh Yadav,1963-04-12,62,Male,Baloda Bazar,Colony 14,"108, Station Road, Baloda Bazar",496880,Unemployed,216531,ST,301986424238,9397283391
+1575,Kamla Sahu,1994-03-26,31,Female,Mungeli,Mungeli Nagar,"967, Indira Nagar, Mungeli",491722,Labour,284922,General,983221010232,9001867661
+1576,Virendra Soni 9,1995-10-11,30,Male,Baloda Bazar,Ward 23,"838, Station Road, Baloda Bazar",491552,Government Employee,32181,SC,038453198074,9682354695
+1577,Suresh Yadav 1,1976-01-25,49,Male,Sukma,Village FA,"967, Station Road, Sukma",497803,Weaver,264698,General,500666641106,9541134078
+1578,Dinesh Patel,1988-02-16,37,Male,Bastar,Ward 25,"377, Indira Nagar, Bastar",496228,Teacher,293717,OBC,482689996269,9708386888
+1579,Dinesh Patel,1996-04-04,29,Male,Kondagaon,Ward 21,"373, Main Road, Kondagaon",493040,Driver,245164,ST,197609320126,9578982604
+1580,Naresh Chandel,2003-05-05,22,Male,Surajpur,Colony 13,"370, Station Road, Surajpur",494182,Government Employee,461750,ST,774127469211,9882419962
+1581,Mamta Dewangan 3,1989-03-05,36,Female,Baloda Bazar,Colony 2,"55, Station Road, Baloda Bazar",495907,Weaver,140094,OBC,185457056820,9922570900
+1582,Jagdish Porte,1998-03-26,27,Male,Kanker,Kanker Nagar,"217, Gandhi Chowk, Kanker",492282,Unemployed,663769,OBC,895400178822,9473126168
+1583,Ramesh Kumar,1940-05-07,85,Male,Kabirdham,Ward 18,"94, Main Road, Kabirdham",494706,Government Employee,720036,OBC,711526105370,9923007169
+1584,Dilip Nishad 8,1958-01-25,67,Male,Narayanpur,Village UC,"576, Station Road, Narayanpur",495728,Shop Owner,104654,OBC,987698936529,9447161982
+1585,Lalita Singh,1983-05-14,42,Female,Durg,Ward 7,"37, Station Road, Durg",492723,Farmer,121539,ST,321743574835,9268064860
+1586,Urmila Dhruv 9,1954-09-18,71,Female,Narayanpur,Narayanpur Nagar,"561, Station Road, Narayanpur",497928,Labour,49864,ST,462805507740,9657955156
+1587,Lalita Singh,2000-06-24,25,Female,Raipur,Village BR,"924, Station Road, Raipur",490878,Farmer,333459,SC,091311178619,9025476022
+1588,Ganesh Markam,1968-05-05,57,Male,Janjgir-Champa,Janjgir-Champa Nagar,"1, Main Road, Janjgir-Champa",495463,Labour,138111,SC,950026015153,9259479507
+1589,Suresh Yadav,1979-03-26,46,Male,Rajnandgaon,Rajnandgaon Nagar,"475, Indira Nagar, Rajnandgaon",494512,Farmer,771352,SC,031006493403,9910452036
+1590,Umesh Dhruv,2003-04-11,22,Male,Dantewada,Ward 3,"979, Gandhi Chowk, Dantewada",495358,Government Employee,723276,OBC,855359520561,9006799006
+1591,Bharat Mandavi,1984-03-07,41,Male,Bilaspur,Colony 12,"489, Station Road, Bilaspur",490362,Weaver,651125,SC,233944953006,9776255032
+1592,Chandra Shekhar 8,1954-02-16,71,Male,Mahasamund,Colony 15,"189, Station Road, Mahasamund",490867,Unemployed,198175,General,292334511009,9060530886
+1593,Mohan Thakur 3,1945-07-12,80,Male,Durg,Durg Nagar,"632, Main Road, Durg",492307,Carpenter,147831,ST,598875921299,9642603362
+1594,Sanjay Mishra,1976-02-11,49,Male,Kabirdham,Village QF,"474, Nehru Nagar, Kabirdham",497291,Farmer,183052,General,711523802362,9192158189
+1595,Laxmi Tiwari 6,1985-10-19,40,Female,Rajnandgaon,Colony 2,"217, Indira Nagar, Rajnandgaon",493043,Government Employee,171379,SC,977216880053,9789318692
+1596,Virendra Soni,1950-07-12,75,Male,Gariaband,Ward 9,"674, Main Road, Gariaband",494210,Labour,118827,ST,200283948232,9204144743
+1597,Manju Tandon,1982-02-25,43,Female,Bijapur,Bijapur Nagar,"718, Main Road, Bijapur",495515,Labour,342620,General,203042322775,9213530281
+1598,Shanta Markam,1971-08-04,54,Female,Bastar,Ward 13,"353, Indira Nagar, Bastar",491891,Unemployed,243287,ST,919832102916,9174690298
+1599,Kamla Sahu,1937-09-05,88,Female,Bastar,Village XR,"69, Indira Nagar, Bastar",493172,Self Employed,94381,General,316708056856,9670636219
+1600,Mukesh Yadav,1967-07-06,58,Male,Bilaspur,Village SJ,"308, Main Road, Bilaspur",493613,Self Employed,45735,SC,933965049627,9322626114
+1601,Mamta Dewangan 7,1994-10-06,31,Female,Korba,Village XK,"273, Gandhi Chowk, Korba",490831,Carpenter,284543,General,879919623419,9964338532
+1602,Deepak Sinha,1951-10-23,74,Male,Kabirdham,Kabirdham Nagar,"231, Gandhi Chowk, Kabirdham",492136,Teacher,418211,OBC,115876054576,9947576945
+1603,Rani Netam,1974-03-26,51,Female,Kabirdham,Colony 7,"954, Indira Nagar, Kabirdham",496365,Housewife,125761,General,634212545080,9959481526
+1604,Rajesh Verma,1968-05-13,57,Male,Surajpur,Colony 14,"187, Main Road, Surajpur",496992,Teacher,134047,SC,235914261404,9893326145
+1605,Vijay Singh,1940-01-27,85,Male,Bemetara,Colony 11,"232, Main Road, Bemetara",497873,Carpenter,415723,General,785221158718,9452354268
+1606,Mamta Dewangan 8,1939-06-04,86,Female,Rajnandgaon,Ward 16,"709, Indira Nagar, Rajnandgaon",493367,Government Employee,477379,OBC,777296656337,9014005278
+1607,Ramesh Kumar,1968-01-12,57,Male,Kanker,Ward 21,"26, Gandhi Chowk, Kanker",493964,Carpenter,36780,General,425731609439,9136817203
+1608,Vijay Singh,1966-02-03,59,Male,Kabirdham,Colony 13,"181, Main Road, Kabirdham",494923,Carpenter,115191,ST,352595332227,9393899204
+1609,Harish Tiwari,1997-04-12,28,Male,Janjgir-Champa,Janjgir-Champa Nagar,"434, Nehru Nagar, Janjgir-Champa",490714,Housewife,24555,ST,610870826971,9823601071
+1610,Durga Mandavi 9,1955-01-02,70,Female,Mungeli,Ward 22,"987, Nehru Nagar, Mungeli",495458,Carpenter,335455,SC,846735742233,9222801944
+1611,Rani Netam,1995-03-16,30,Female,Bijapur,Bijapur Nagar,"183, Station Road, Bijapur",493318,Farmer,127617,SC,350637311804,9674130753
+1612,Ravi Gupta,1993-08-31,32,Male,Mungeli,Ward 11,"226, Nehru Nagar, Mungeli",491430,Self Employed,283358,SC,639756154705,9549121516
+1613,Mahesh Sahu 6,1964-08-30,61,Male,Balod,Ward 9,"591, Nehru Nagar, Balod",494854,Teacher,268191,ST,520702042620,9197121241
+1614,Hema Sinha 7,1990-09-18,35,Female,Mahasamund,Colony 11,"416, Main Road, Mahasamund",494640,Housewife,169450,OBC,677319227607,9598897865
+1615,Sushila Pandey,1953-09-21,72,Female,Jashpur,Village SW,"208, Main Road, Jashpur",494937,Student,250200,SC,430895231202,9191505764
+1616,Kailash Banjare,2006-10-17,19,Male,Dantewada,Ward 16,"144, Nehru Nagar, Dantewada",497932,Housewife,230261,SC,867649797416,9365604500
+1617,Anita Patel,1997-10-10,28,Female,Janjgir-Champa,Colony 10,"999, Station Road, Janjgir-Champa",494629,Self Employed,271741,ST,119529635305,9970255128
+1618,Urmila Dhruv,1953-07-30,72,Female,Balod,Village HC,"629, Station Road, Balod",497506,Housewife,296694,SC,965466345443,9441491699
+1619,Santosh Dewangan,1956-10-24,69,Male,Narayanpur,Colony 10,"292, Gandhi Chowk, Narayanpur",494710,Shop Owner,538305,General,882230958629,9739889413
+1620,Kamla Sahu,2003-04-08,22,Female,Surajpur,Surajpur Nagar,"118, Nehru Nagar, Surajpur",496240,Farmer,229000,SC,346557922030,9044964612
+1621,Santosh Dewangan,1937-07-09,88,Male,Korba,Korba Nagar,"798, Main Road, Korba",491672,Weaver,574755,ST,589635957086,9199314584
+1622,Mamta Dewangan,1970-08-22,55,Female,Mahasamund,Village CC,"50, Gandhi Chowk, Mahasamund",492430,Labour,73398,OBC,203347424631,9043796868
+1623,Suresh Yadav,1993-06-24,32,Male,Kanker,Village WE,"391, Indira Nagar, Kanker",497859,Farmer,125475,General,774174304350,9238502289
+1624,Bharat Mandavi,1951-04-26,74,Male,Bemetara,Bemetara Nagar,"204, Gandhi Chowk, Bemetara",491094,Housewife,726951,OBC,020256913303,9033467711
+1625,Kanta Yadav,1936-01-09,89,Female,Bemetara,Colony 13,"625, Indira Nagar, Bemetara",492846,Government Employee,118093,General,245301239847,9230342028
+1626,Deepak Sinha 1,1943-03-20,82,Male,Bemetara,Bemetara Nagar,"300, Main Road, Bemetara",497218,Government Employee,126735,ST,487177546199,9240658387
+1627,Kanta Yadav,1991-06-27,34,Female,Korba,Korba Nagar,"325, Indira Nagar, Korba",490329,Driver,239979,ST,684482373379,9121211018
+1628,Meena Lahre 6,1996-10-26,29,Female,Mungeli,Ward 14,"686, Main Road, Mungeli",493723,Farmer,654139,SC,039251999452,9951712227
+1629,Laxmi Tiwari 4,1985-01-31,40,Female,Bemetara,Village FA,"154, Gandhi Chowk, Bemetara",490926,Self Employed,109014,SC,496330833444,9704887899
+1630,Ramesh Kumar 1,1949-12-22,76,Male,Raipur,Colony 11,"785, Indira Nagar, Raipur",495607,Government Employee,120412,SC,377492663295,9634277752
+1631,Manju Tandon,1948-11-04,77,Female,Raipur,Ward 14,"146, Indira Nagar, Raipur",491097,Farmer,300132,OBC,294115630295,9596363726
+1632,Sushila Pandey,1961-09-04,64,Female,Kondagaon,Colony 7,"78, Station Road, Kondagaon",495434,Shop Owner,157096,SC,133138004983,9211221215
+1633,Umesh Dhruv,1945-03-03,80,Male,Narayanpur,Colony 14,"557, Nehru Nagar, Narayanpur",494390,Unemployed,556214,General,191854880644,9200629877
+1634,Ashok Patle 6,1981-10-13,44,Male,Kanker,Colony 11,"289, Nehru Nagar, Kanker",496136,Shop Owner,181131,ST,234219262213,9204104294
+1635,Vijay Singh,1945-03-07,80,Male,Dantewada,Ward 24,"93, Nehru Nagar, Dantewada",497068,Driver,366370,ST,999949812831,9800366602
+1636,Suresh Yadav 4,2002-03-03,23,Male,Surguja,Colony 9,"194, Main Road, Surguja",490032,Government Employee,235627,OBC,438380582692,9990076862
+1637,Bimla Mishra,1956-12-16,69,Female,Janjgir-Champa,Colony 15,"690, Gandhi Chowk, Janjgir-Champa",491758,Unemployed,345818,General,851862671368,9410132823
+1638,Seema Chandel,1943-12-16,82,Female,Kondagaon,Village QX,"920, Gandhi Chowk, Kondagaon",493778,Weaver,374432,General,875067761065,9920881431
+1639,Rajesh Verma,1974-12-13,51,Male,Balod,Ward 4,"361, Indira Nagar, Balod",493433,Driver,737250,OBC,845720266568,9629591257
+1640,Sudha Gupta,1988-04-12,37,Female,Surajpur,Surajpur Nagar,"617, Station Road, Surajpur",495499,Self Employed,152368,ST,429907472966,9941799670
+1641,Ramesh Kumar,1988-06-20,37,Male,Bemetara,Village VV,"573, Station Road, Bemetara",495617,Driver,549017,ST,418398416734,9785369881
+1642,Sudha Gupta,1982-12-11,43,Female,Raipur,Raipur Nagar,"679, Indira Nagar, Raipur",496605,Self Employed,571268,OBC,102627066489,9008248458
+1643,Brijlal Tandon 9,1983-06-23,42,Male,Surajpur,Ward 18,"338, Nehru Nagar, Surajpur",492500,Carpenter,688917,OBC,997418563027,9500030566
+1644,Kailash Banjare,2004-11-28,21,Male,Balrampur,Village UG,"397, Station Road, Balrampur",490796,Housewife,94099,OBC,784679087018,9726001365
+1645,Suresh Yadav 5,1962-04-01,63,Male,Bastar,Colony 1,"496, Station Road, Bastar",495450,Government Employee,692881,ST,524062215599,9672562221
+1646,Ramesh Kumar,1954-05-24,71,Male,Jashpur,Ward 21,"265, Nehru Nagar, Jashpur",492518,Unemployed,559161,SC,559396521383,9507124553
+1647,Anil Sharma,1988-07-11,37,Male,Bilaspur,Bilaspur Nagar,"675, Gandhi Chowk, Bilaspur",497754,Student,435647,ST,327726488395,9855852294
+1648,Vandana Nishad,1947-08-14,78,Female,Narayanpur,Ward 28,"515, Station Road, Narayanpur",494008,Government Employee,267605,General,050805491477,9447353524
+1649,Pratibha Soni,2001-10-02,24,Female,Bijapur,Colony 14,"122, Station Road, Bijapur",494757,Shop Owner,299705,ST,344930537880,9331836113
+1650,Sushila Pandey,1988-12-20,37,Female,Surguja,Surguja Nagar,"832, Indira Nagar, Surguja",490560,Government Employee,275808,ST,304862515217,9465353780
+1651,Umesh Dhruv,1944-09-11,81,Male,Kabirdham,Village VP,"286, Nehru Nagar, Kabirdham",494068,Student,266050,ST,296914336299,9946645099
+1652,Kailash Banjare,1996-12-02,29,Male,Bilaspur,Village BR,"492, Gandhi Chowk, Bilaspur",494731,Farmer,211330,SC,211896844246,9488499795
+1653,Geeta Sharma,1968-05-04,57,Female,Sukma,Village PK,"773, Indira Nagar, Sukma",491036,Housewife,370880,General,221797891248,9839717059
+1654,Ravi Gupta,1958-08-18,67,Male,Kanker,Kanker Nagar,"436, Nehru Nagar, Kanker",496231,Labour,252556,General,123038856811,9939781459
+1655,Sanjay Mishra,2001-04-06,24,Male,Balrampur,Balrampur Nagar,"854, Main Road, Balrampur",493648,Unemployed,247100,SC,286693351588,9070532601
+1656,Kailash Banjare 2,1935-12-31,90,Male,Janjgir-Champa,Colony 14,"315, Gandhi Chowk, Janjgir-Champa",495295,Government Employee,51896,ST,090858181045,9024373615
+1657,Ashok Patle 7,1947-08-11,78,Male,Bemetara,Colony 6,"582, Gandhi Chowk, Bemetara",491713,Government Employee,101091,General,058561547315,9663979255
+1658,Dinesh Patel,1957-02-21,68,Male,Mahasamund,Mahasamund Nagar,"859, Indira Nagar, Mahasamund",497464,Teacher,197635,ST,028966605342,9816441610
+1659,Hemant Kosare,1976-06-30,49,Male,Kanker,Village GK,"420, Station Road, Kanker",490352,Government Employee,419647,OBC,880273042763,9628144471
+1660,Brijlal Tandon,1988-03-03,37,Male,Kanker,Colony 10,"589, Main Road, Kanker",493428,Unemployed,332236,General,922884987455,9135872717
+1661,Sanjay Mishra 7,1984-08-28,41,Male,Mungeli,Colony 13,"860, Station Road, Mungeli",496355,Weaver,159206,OBC,439881873877,9583336477
+1662,Chandra Shekhar 4,1999-06-06,26,Male,Raipur,Ward 20,"965, Station Road, Raipur",491582,Housewife,619746,General,282625420412,9319057720
+1663,Brijlal Tandon 1,1940-02-21,85,Male,Narayanpur,Village PW,"103, Indira Nagar, Narayanpur",491763,Labour,122338,OBC,810979412248,9709872649
+1664,Lalita Singh 6,1942-01-27,83,Female,Baloda Bazar,Baloda Bazar Nagar,"297, Main Road, Baloda Bazar",492172,Weaver,206095,OBC,611890034686,9163070286
+1665,Seema Chandel,1940-02-04,85,Female,Korba,Village BB,"799, Gandhi Chowk, Korba",493203,Self Employed,168371,SC,368900577950,9017325900
+1666,Lalita Singh,1943-02-02,82,Female,Raigarh,Colony 11,"176, Gandhi Chowk, Raigarh",490767,Student,126561,ST,908716722104,9546171928
+1667,Ashok Patle,1975-11-12,50,Male,Bastar,Bastar Nagar,"845, Gandhi Chowk, Bastar",496223,Shop Owner,123090,OBC,252160252394,9120944772
+1668,Poonam Kosare 3,1972-10-20,53,Female,Jashpur,Jashpur Nagar,"946, Gandhi Chowk, Jashpur",493853,Self Employed,81029,SC,802455985160,9211915891
+1669,Kanta Yadav,1971-05-13,54,Female,Sukma,Colony 10,"262, Nehru Nagar, Sukma",494555,Self Employed,388106,ST,237600884474,9083781919
+1670,Ashok Patle 3,1942-10-03,83,Male,Balod,Balod Nagar,"403, Indira Nagar, Balod",497881,Weaver,368525,OBC,534848647082,9139865462
+1671,Seema Chandel,1950-02-24,75,Female,Durg,Colony 12,"703, Gandhi Chowk, Durg",497097,Farmer,63103,General,330000886346,9739190088
+1672,Brijlal Tandon,1943-02-19,82,Male,Rajnandgaon,Ward 9,"24, Indira Nagar, Rajnandgaon",497823,Student,118693,OBC,327379897906,9085481867
+1673,Ganesh Markam 1,1937-02-17,88,Male,Balrampur,Balrampur Nagar,"256, Nehru Nagar, Balrampur",490973,Student,214047,ST,118151985458,9294203401
+1674,Vijay Singh,1956-07-09,69,Male,Bastar,Village NA,"385, Indira Nagar, Bastar",494975,Driver,96284,SC,667201082402,9818223879
+1675,Ramesh Kumar 7,1947-09-09,78,Male,Bilaspur,Ward 17,"509, Station Road, Bilaspur",495643,Government Employee,645141,OBC,536423570041,9291828518
+1676,Dilip Nishad,1941-04-17,84,Male,Jashpur,Village ZU,"579, Main Road, Jashpur",492350,Carpenter,608448,General,007923046600,9128382710
+1677,Santram Dhivar,1950-10-31,75,Male,Raigarh,Colony 12,"71, Station Road, Raigarh",490734,Labour,138547,SC,850766534460,9422763460
+1678,Hemant Kosare 4,1935-09-05,90,Male,Kabirdham,Kabirdham Nagar,"988, Station Road, Kabirdham",494029,Labour,65838,ST,176822512726,9708666562
+1679,Mamta Dewangan,1990-10-24,35,Female,Bemetara,Village NR,"810, Indira Nagar, Bemetara",492404,Unemployed,171108,OBC,903500618489,9742235434
+1680,Ravi Gupta,2001-05-09,24,Male,Sukma,Sukma Nagar,"89, Station Road, Sukma",496477,Carpenter,216265,SC,254920644111,9973881827
+1681,Savita Bai,1973-07-21,52,Female,Janjgir-Champa,Village HK,"513, Indira Nagar, Janjgir-Champa",496606,Labour,288474,SC,968066405110,9212543412
+1682,Pratibha Soni 7,1939-08-20,86,Female,Dantewada,Ward 20,"844, Gandhi Chowk, Dantewada",494069,Labour,115680,ST,003203197899,9901140034
+1683,Sushila Pandey 2,2002-05-14,23,Female,Narayanpur,Colony 10,"781, Indira Nagar, Narayanpur",493400,Farmer,177516,ST,259084194785,9501137535
+1684,Anil Sharma,1937-02-03,88,Male,Baloda Bazar,Colony 9,"536, Main Road, Baloda Bazar",493864,Labour,306958,General,371616088197,9223996477
+1685,Naresh Chandel 6,1955-05-27,70,Male,Bilaspur,Ward 15,"922, Main Road, Bilaspur",491492,Shop Owner,326616,SC,578002443236,9221690696
+1686,Sunil Netam,1958-05-08,67,Male,Mahasamund,Colony 7,"699, Station Road, Mahasamund",490544,Self Employed,181037,OBC,952150164261,9070335084
+1687,Sudha Gupta,1998-02-11,27,Female,Bijapur,Bijapur Nagar,"592, Gandhi Chowk, Bijapur",492364,Housewife,663921,General,300416910530,9215167586
+1688,Ganesh Markam,1957-01-18,68,Male,Janjgir-Champa,Village TK,"564, Main Road, Janjgir-Champa",490766,Farmer,127503,General,476427896157,9385512817
+1689,Shanta Markam,1947-01-31,78,Female,Janjgir-Champa,Colony 10,"519, Main Road, Janjgir-Champa",492797,Government Employee,69332,General,972360244654,9677205171
+1690,Deepak Sinha 9,1976-09-04,49,Male,Rajnandgaon,Colony 5,"545, Gandhi Chowk, Rajnandgaon",493942,Carpenter,206758,General,754380274148,9572602925
+1691,Brijlal Tandon,1996-07-16,29,Male,Gariaband,Village EO,"47, Nehru Nagar, Gariaband",493413,Self Employed,21348,ST,632713538676,9259238687
+1692,Suresh Yadav,1995-05-03,30,Male,Narayanpur,Colony 9,"606, Gandhi Chowk, Narayanpur",491445,Farmer,354518,SC,340508927396,9159764053
+1693,Bharat Mandavi,2001-02-27,24,Male,Baloda Bazar,Village TO,"353, Station Road, Baloda Bazar",491301,Self Employed,707598,General,384227362732,9022271117
+1694,Jagdish Porte,1973-04-10,52,Male,Balrampur,Balrampur Nagar,"59, Station Road, Balrampur",491292,Driver,595009,General,448698305216,9903922026
+1695,Mukesh Yadav,1943-08-24,82,Male,Bastar,Colony 5,"849, Main Road, Bastar",490497,Self Employed,377634,General,770316370500,9493326724
+1696,Ganesh Markam,1945-03-19,80,Male,Bemetara,Colony 13,"444, Gandhi Chowk, Bemetara",497503,Housewife,49136,General,654025998519,9393272728
+1697,Anil Sharma,1945-08-21,80,Male,Mahasamund,Village LU,"999, Indira Nagar, Mahasamund",496694,Self Employed,128848,ST,676527284539,9749950708
+1698,Bharat Mandavi,1935-04-25,90,Male,Balod,Colony 13,"867, Main Road, Balod",491390,Farmer,324354,General,929022154390,9448909322
+1699,Vijay Singh 3,1935-08-26,90,Male,Surguja,Surguja Nagar,"830, Station Road, Surguja",497421,Carpenter,580383,General,193545036988,9843933324
+1700,Durga Mandavi,1988-03-07,37,Female,Balod,Ward 5,"356, Indira Nagar, Balod",496117,Weaver,319112,OBC,124412907596,9599920123
+1701,Durga Mandavi 8,1976-04-24,49,Female,Dantewada,Ward 19,"929, Main Road, Dantewada",493146,Labour,377270,SC,193759192267,9131753626
+1702,Ashok Patle,1994-12-21,31,Male,Gariaband,Ward 21,"919, Gandhi Chowk, Gariaband",495745,Farmer,623202,General,730099284524,9032115355
+1703,Prakash Pandey 4,1999-08-22,26,Male,Sukma,Ward 5,"307, Gandhi Chowk, Sukma",495458,Farmer,265768,ST,972479254221,9883458192
+1704,Ravi Gupta,1978-05-28,47,Male,Baloda Bazar,Colony 11,"850, Indira Nagar, Baloda Bazar",491625,Teacher,797177,OBC,998651590257,9846408585
+1705,Umesh Dhruv 9,1950-06-23,75,Male,Sukma,Colony 12,"139, Nehru Nagar, Sukma",496460,Labour,86573,SC,672925435519,9628222501
+1706,Anil Sharma,2006-06-17,19,Male,Kondagaon,Village UM,"458, Gandhi Chowk, Kondagaon",494526,Self Employed,119677,SC,201223414992,9900966270
+1707,Saraswati Patle,1958-08-05,67,Female,Kanker,Colony 6,"199, Gandhi Chowk, Kanker",490547,Unemployed,739223,General,039101933538,9922247119
+1708,Durga Mandavi,1997-05-26,28,Female,Bilaspur,Colony 3,"498, Main Road, Bilaspur",492625,Self Employed,34535,ST,076264385009,9537234617
+1709,Vandana Nishad 4,1995-06-20,30,Female,Rajnandgaon,Ward 7,"13, Indira Nagar, Rajnandgaon",492122,Shop Owner,264105,SC,231654413727,9768576063
+1710,Hemant Kosare 1,1959-12-15,66,Male,Balod,Village CP,"103, Indira Nagar, Balod",494510,Unemployed,31343,ST,999324202483,9744417234
+1711,Bharat Mandavi,2006-06-27,19,Male,Raigarh,Colony 5,"584, Main Road, Raigarh",491356,Government Employee,681054,SC,362689047238,9641009538
+1712,Jagdish Porte,1978-04-12,47,Male,Bijapur,Village FC,"241, Station Road, Bijapur",496392,Driver,368951,General,937814604761,9437884437
+1713,Ganesh Markam,1942-06-14,83,Male,Mungeli,Village OU,"900, Nehru Nagar, Mungeli",492101,Self Employed,468878,ST,368154185899,9002772910
+1714,Ravi Gupta,1997-08-21,28,Male,Bemetara,Village RM,"242, Station Road, Bemetara",493375,Self Employed,137889,General,337469833067,9730671822
+1715,Saraswati Patle,1977-09-17,48,Female,Surajpur,Ward 21,"790, Indira Nagar, Surajpur",493704,Housewife,262960,SC,385906739634,9289876055
+1716,Harish Tiwari,1962-03-21,63,Male,Surajpur,Colony 12,"61, Station Road, Surajpur",495308,Housewife,333543,General,867066320162,9907399289
+1717,Dilip Nishad,1983-03-13,42,Male,Surguja,Colony 3,"720, Station Road, Surguja",497912,Teacher,211180,ST,170864942694,9203983135
+1718,Dilip Nishad,1989-01-10,36,Male,Narayanpur,Colony 6,"461, Main Road, Narayanpur",493117,Driver,100862,SC,873054982438,9843021781
+1719,Kiran Banjare,1935-07-25,90,Female,Mahasamund,Mahasamund Nagar,"695, Main Road, Mahasamund",492816,Carpenter,376414,General,164928150370,9170926407
+1720,Vijay Singh 9,1937-11-19,88,Male,Gariaband,Colony 3,"154, Indira Nagar, Gariaband",491357,Driver,688499,OBC,448500728895,9927411680
+1721,Manju Tandon,1945-02-20,80,Female,Bijapur,Colony 3,"416, Nehru Nagar, Bijapur",491085,Farmer,289037,OBC,039170263444,9359624587
+1722,Mahesh Sahu 5,1994-06-12,31,Male,Kondagaon,Village JF,"221, Nehru Nagar, Kondagaon",494888,Farmer,396098,OBC,375302849760,9396702436
+1723,Rajesh Verma,1996-12-09,29,Male,Dantewada,Colony 4,"262, Indira Nagar, Dantewada",496176,Student,363688,ST,540364882159,9773854662
+1724,Rekha Verma 1,1969-04-04,56,Female,Mahasamund,Colony 13,"291, Indira Nagar, Mahasamund",490604,Labour,60686,ST,220429862269,9920666179
+1725,Bharat Mandavi 6,1968-11-18,57,Male,Balrampur,Balrampur Nagar,"603, Indira Nagar, Balrampur",496481,Weaver,206450,SC,876887779256,9041348208
+1726,Sanjay Mishra,1957-03-23,68,Male,Rajnandgaon,Rajnandgaon Nagar,"783, Indira Nagar, Rajnandgaon",490694,Labour,611001,General,001440762914,9304913410
+1727,Meena Lahre,1979-07-15,46,Female,Kanker,Kanker Nagar,"34, Indira Nagar, Kanker",495021,Housewife,235781,ST,422405920823,9530976691
+1728,Mohan Thakur,1990-09-22,35,Male,Mahasamund,Ward 5,"665, Station Road, Mahasamund",493296,Housewife,20565,General,753079661869,9572404347
+1729,Dinesh Patel,1963-08-04,62,Male,Janjgir-Champa,Village VG,"871, Nehru Nagar, Janjgir-Champa",490795,Farmer,84250,ST,321750361920,9259991938
+1730,Lalita Singh 1,1952-02-05,73,Female,Dantewada,Village FZ,"282, Nehru Nagar, Dantewada",492348,Housewife,354402,SC,760786235107,9651917085
+1731,Ashok Patle,1994-01-16,31,Male,Surguja,Ward 28,"275, Station Road, Surguja",493142,Teacher,419420,General,858055811574,9496539160
+1732,Sushila Pandey,1939-08-08,86,Female,Dantewada,Ward 1,"735, Station Road, Dantewada",492613,Shop Owner,56214,General,398221803966,9203858864
+1733,Dilip Nishad,1983-07-21,42,Male,Raipur,Village MK,"93, Nehru Nagar, Raipur",492315,Weaver,307369,OBC,335623039744,9088067089
+1734,Ashok Patle,1938-11-18,87,Male,Balrampur,Ward 6,"614, Indira Nagar, Balrampur",490760,Housewife,763204,SC,311326611584,9858052632
+1735,Dinesh Patel,1971-03-30,54,Male,Bilaspur,Bilaspur Nagar,"151, Main Road, Bilaspur",492569,Teacher,273309,General,774544708231,9714619953
+1736,Mohan Thakur,2006-03-06,19,Male,Baloda Bazar,Colony 3,"185, Gandhi Chowk, Baloda Bazar",492677,Weaver,248547,General,530261840257,9870368605
+1737,Ganesh Markam 7,1970-07-28,55,Male,Janjgir-Champa,Janjgir-Champa Nagar,"749, Indira Nagar, Janjgir-Champa",497268,Carpenter,103006,ST,409891039091,9203025209
+1738,Prakash Pandey 4,2003-11-28,22,Male,Bemetara,Village LS,"237, Main Road, Bemetara",494707,Carpenter,605743,General,098602757454,9492054894
+1739,Virendra Soni,1981-02-27,44,Male,Durg,Ward 4,"736, Indira Nagar, Durg",494877,Self Employed,65926,OBC,445662295217,9970566036
+1740,Mukesh Yadav,1947-08-01,78,Male,Dantewada,Ward 18,"304, Nehru Nagar, Dantewada",497076,Carpenter,75259,ST,023515850153,9017316715
+1741,Pushpa Devi,1974-07-17,51,Female,Surajpur,Village LE,"310, Main Road, Surajpur",491714,Teacher,230634,ST,940645315790,9571918986
+1742,Laxmi Tiwari,1999-07-10,26,Female,Mahasamund,Colony 6,"907, Main Road, Mahasamund",494537,Teacher,62240,ST,487680570237,9718430192
+1743,Savita Bai,1973-11-11,52,Female,Baloda Bazar,Baloda Bazar Nagar,"707, Indira Nagar, Baloda Bazar",495723,Unemployed,109471,OBC,396440282532,9676992427
+1744,Manju Tandon 3,1955-02-22,70,Female,Bijapur,Ward 18,"140, Gandhi Chowk, Bijapur",495620,Labour,32310,SC,016933284423,9471998290
+1745,Shanta Markam,1942-08-10,83,Female,Kanker,Kanker Nagar,"919, Nehru Nagar, Kanker",490472,Unemployed,94500,General,383100643322,9622777733
+1746,Bharat Mandavi,1980-06-24,45,Male,Narayanpur,Village MM,"748, Nehru Nagar, Narayanpur",490232,Unemployed,93205,SC,036059529842,9410740274
+1747,Dilip Nishad,1974-01-11,51,Male,Baloda Bazar,Baloda Bazar Nagar,"439, Nehru Nagar, Baloda Bazar",493443,Labour,141373,General,620036385646,9149745979
+1748,Kamla Sahu,1954-08-01,71,Female,Surajpur,Colony 11,"767, Indira Nagar, Surajpur",496871,Housewife,370756,General,498609955049,9326643223
+1749,Mohan Thakur,1944-02-29,81,Male,Korba,Ward 4,"677, Main Road, Korba",492700,Driver,142262,SC,340012762239,9847422567
+1750,Ramkumar Lahre,1981-02-13,44,Male,Sukma,Sukma Nagar,"210, Nehru Nagar, Sukma",494308,Carpenter,276637,General,584168061349,9564799846
+1751,Brijlal Tandon,1981-04-17,44,Male,Balod,Colony 5,"198, Indira Nagar, Balod",491978,Farmer,633190,OBC,361080926166,9201655578
+1752,Mamta Dewangan,1994-10-08,31,Female,Gariaband,Village KK,"910, Nehru Nagar, Gariaband",492885,Student,490256,SC,764000687586,9824051665
+1753,Prakash Pandey 3,1958-02-03,67,Male,Dantewada,Colony 9,"956, Station Road, Dantewada",490041,Labour,505758,OBC,868608357017,9036309442
+1754,Meena Lahre,1940-07-07,85,Female,Surguja,Ward 2,"554, Indira Nagar, Surguja",496029,Housewife,148859,SC,134909619797,9972452841
+1755,Rani Netam,1959-04-25,66,Female,Gariaband,Ward 1,"476, Gandhi Chowk, Gariaband",492900,Self Employed,279013,SC,809573940598,9026029442
+1756,Mukesh Yadav 2,1966-10-20,59,Male,Gariaband,Village YE,"626, Main Road, Gariaband",493840,Teacher,480513,General,319777486759,9514186482
+1757,Savita Bai,2002-10-06,23,Female,Bijapur,Colony 13,"714, Indira Nagar, Bijapur",496603,Shop Owner,75087,OBC,332605869427,9674831730
+1758,Durga Mandavi 4,1994-01-09,31,Female,Jashpur,Ward 30,"832, Indira Nagar, Jashpur",497564,Student,281244,OBC,426559469890,9623272371
+1759,Poonam Kosare,1987-01-12,38,Female,Raipur,Ward 5,"37, Nehru Nagar, Raipur",492592,Shop Owner,774587,ST,084779541767,9553981889
+1760,Chandra Shekhar,1953-11-30,72,Male,Bemetara,Ward 17,"329, Nehru Nagar, Bemetara",494936,Farmer,229299,SC,896268384887,9638020761
+1761,Anita Patel,1996-03-07,29,Female,Rajnandgaon,Ward 6,"648, Station Road, Rajnandgaon",496048,Student,361624,General,298861820706,9690107923
+1762,Bimla Mishra 9,1947-12-24,78,Female,Mahasamund,Village TH,"928, Indira Nagar, Mahasamund",495430,Self Employed,309246,ST,035067578968,9335570773
+1763,Brijlal Tandon 4,1944-01-18,81,Male,Kanker,Village KU,"451, Main Road, Kanker",492929,Labour,287573,ST,993844404588,9311414701
+1764,Manju Tandon 6,1939-06-24,86,Female,Raigarh,Village RO,"643, Nehru Nagar, Raigarh",496711,Housewife,344945,General,977978023445,9684467940
+1765,Sushila Pandey,2000-02-29,25,Female,Balod,Balod Nagar,"961, Gandhi Chowk, Balod",495023,Government Employee,348806,ST,831597572927,9318683029
+1766,Prakash Pandey,1998-05-01,27,Male,Kondagaon,Kondagaon Nagar,"233, Gandhi Chowk, Kondagaon",492459,Student,116519,SC,185483966073,9446746215
+1767,Sunil Netam,1993-05-28,32,Male,Durg,Ward 30,"435, Main Road, Durg",493621,Farmer,144296,OBC,218169814134,9476094837
+1768,Sudha Gupta 3,1988-02-16,37,Female,Bijapur,Village ER,"681, Gandhi Chowk, Bijapur",497956,Teacher,157517,OBC,650996218366,9771966661
+1769,Rajesh Verma,2002-01-16,23,Male,Mahasamund,Ward 30,"138, Gandhi Chowk, Mahasamund",491095,Carpenter,207719,SC,998013768367,9590177915
+1770,Jyoti Porte,1971-04-10,54,Female,Rajnandgaon,Rajnandgaon Nagar,"217, Gandhi Chowk, Rajnandgaon",496365,Government Employee,59851,ST,564260186372,9631995695
+1771,Kailash Banjare,1992-06-03,33,Male,Surguja,Village VO,"832, Main Road, Surguja",492447,Driver,48355,SC,025513444867,9228839047
+1772,Anita Patel 6,1959-10-28,66,Female,Mahasamund,Village XW,"704, Nehru Nagar, Mahasamund",492396,Driver,478023,SC,114978879531,9204095437
+1773,Jyoti Porte,1943-07-26,82,Female,Gariaband,Village BW,"515, Main Road, Gariaband",490490,Student,290487,ST,314391511436,9786210781
+1774,Deepak Sinha 7,1991-08-30,34,Male,Gariaband,Village NJ,"780, Nehru Nagar, Gariaband",496873,Farmer,293633,General,269331542306,9002302865
+1775,Virendra Soni,1995-08-24,30,Male,Kanker,Ward 30,"99, Station Road, Kanker",496458,Labour,73589,ST,015145992016,9633822224
+1776,Suresh Yadav,1955-11-20,70,Male,Surajpur,Ward 5,"382, Nehru Nagar, Surajpur",491146,Carpenter,145944,General,113484339133,9252861323
+1777,Mohan Thakur,1972-01-01,53,Male,Kondagaon,Village KE,"191, Indira Nagar, Kondagaon",493275,Shop Owner,228106,ST,602498663420,9953677349
+1778,Jagdish Porte,1950-12-22,75,Male,Balrampur,Ward 16,"343, Gandhi Chowk, Balrampur",493143,Self Employed,63583,General,476253809664,9147533695
+1779,Sudha Gupta,2004-10-23,21,Female,Bastar,Village YM,"683, Gandhi Chowk, Bastar",492770,Teacher,333172,ST,298532436792,9415712763
+1780,Virendra Soni 5,1954-02-16,71,Male,Kondagaon,Colony 6,"253, Indira Nagar, Kondagaon",490215,Self Employed,253101,OBC,497939981615,9381168371
+1781,Santosh Dewangan 4,1977-08-02,48,Male,Korba,Korba Nagar,"794, Main Road, Korba",497725,Student,100418,ST,780826493121,9463947625
+1782,Chandra Shekhar 3,1969-12-04,56,Male,Narayanpur,Narayanpur Nagar,"940, Gandhi Chowk, Narayanpur",494898,Student,346098,SC,036948112664,9971967068
+1783,Lalita Singh,1988-11-24,37,Female,Rajnandgaon,Rajnandgaon Nagar,"359, Indira Nagar, Rajnandgaon",490226,Student,338329,OBC,994901333443,9767348140
+1784,Naresh Chandel,1958-11-12,67,Male,Durg,Colony 14,"506, Indira Nagar, Durg",491774,Farmer,52905,General,160499100420,9288661680
+1785,Sanjay Mishra,1938-08-12,87,Male,Janjgir-Champa,Janjgir-Champa Nagar,"265, Indira Nagar, Janjgir-Champa",497335,Weaver,558526,SC,203531607917,9913860157
+1786,Harish Tiwari,1942-10-25,83,Male,Baloda Bazar,Ward 4,"597, Station Road, Baloda Bazar",497588,Farmer,559098,ST,028814112874,9527193678
+1787,Ashok Patle,1973-07-10,52,Male,Raigarh,Ward 20,"39, Nehru Nagar, Raigarh",492472,Driver,744783,ST,194232154013,9153506962
+1788,Sunita Yadav,1957-10-14,68,Female,Kabirdham,Colony 3,"758, Station Road, Kabirdham",497319,Student,102968,SC,471798994885,9669489930
+1789,Sunil Netam 6,1973-11-18,52,Male,Bemetara,Village VM,"373, Indira Nagar, Bemetara",492427,Labour,496591,ST,172662565046,9070014413
+1790,Chandra Shekhar,1993-03-22,32,Male,Balod,Colony 1,"797, Main Road, Balod",497184,Farmer,103646,ST,689041728207,9623811522
+1791,Rekha Verma,1951-04-20,74,Female,Surguja,Village EJ,"483, Station Road, Surguja",497097,Labour,243826,SC,004108479135,9113505357
+1792,Geeta Sharma,1982-09-01,43,Female,Surajpur,Colony 15,"297, Main Road, Surajpur",495240,Weaver,588421,ST,809783028010,9419453419
+1793,Harish Tiwari,2005-08-20,20,Male,Sukma,Village YD,"295, Nehru Nagar, Sukma",494553,Self Employed,225455,OBC,802188930635,9780378912
+1794,Santosh Dewangan,1990-09-26,35,Male,Bijapur,Bijapur Nagar,"842, Nehru Nagar, Bijapur",494885,Driver,126734,SC,855759940842,9906969045
+1795,Meena Lahre,1983-10-19,42,Female,Balod,Ward 1,"398, Station Road, Balod",493444,Unemployed,79290,SC,570165276136,9814980253
+1796,Umesh Dhruv 8,1999-12-01,26,Male,Mahasamund,Colony 11,"303, Station Road, Mahasamund",492469,Unemployed,280783,OBC,508423242348,9004172415
+1797,Santosh Dewangan,1970-10-19,55,Male,Balrampur,Village KR,"470, Station Road, Balrampur",496930,Driver,601418,OBC,796024257033,9329594523
+1798,Prakash Pandey,1947-07-24,78,Male,Gariaband,Ward 13,"934, Gandhi Chowk, Gariaband",494957,Self Employed,138596,General,721742922041,9678215392
+1799,Durga Mandavi,1977-08-30,48,Female,Raipur,Village HE,"770, Main Road, Raipur",497956,Teacher,50228,OBC,804850220619,9019333593
+1800,Poonam Kosare,1989-03-23,36,Female,Bilaspur,Bilaspur Nagar,"726, Indira Nagar, Bilaspur",495309,Government Employee,248772,OBC,256471855940,9799230453
+1801,Laxmi Tiwari 7,1993-06-16,32,Female,Jashpur,Ward 15,"292, Station Road, Jashpur",493088,Shop Owner,225482,OBC,701945391177,9666505276
+1802,Rajesh Verma 3,1984-09-29,41,Male,Durg,Colony 6,"561, Main Road, Durg",493333,Carpenter,114550,General,223116787067,9635322371
+1803,Sunil Netam,1941-06-27,84,Male,Korba,Village UQ,"663, Indira Nagar, Korba",493012,Self Employed,85271,General,142943000375,9398923132
+1804,Bharat Mandavi,1994-02-27,31,Male,Jashpur,Jashpur Nagar,"130, Nehru Nagar, Jashpur",496185,Housewife,177075,ST,837659153820,9114065266
+1805,Anil Sharma,2006-03-17,19,Male,Janjgir-Champa,Janjgir-Champa Nagar,"500, Gandhi Chowk, Janjgir-Champa",492291,Government Employee,515662,OBC,756569764878,9496224945
+1806,Ramesh Kumar,1991-03-06,34,Male,Korba,Korba Nagar,"994, Indira Nagar, Korba",493431,Government Employee,141740,SC,120627672935,9097934421
+1807,Hema Sinha 7,2005-04-09,20,Female,Kondagaon,Kondagaon Nagar,"300, Nehru Nagar, Kondagaon",493781,Housewife,761536,General,457972518407,9033982147
+1808,Dilip Nishad,1947-12-26,78,Male,Sukma,Sukma Nagar,"711, Main Road, Sukma",497590,Driver,220708,SC,167670636328,9630112200
+1809,Ravi Gupta,1959-02-22,66,Male,Korba,Korba Nagar,"210, Gandhi Chowk, Korba",493465,Unemployed,249884,General,828967136054,9946920856
+1810,Kailash Banjare,1939-09-23,86,Male,Rajnandgaon,Village GE,"782, Main Road, Rajnandgaon",497440,Driver,596189,General,011546175808,9038890441
+1811,Ravi Gupta 4,1940-10-17,85,Male,Kabirdham,Ward 13,"704, Gandhi Chowk, Kabirdham",496830,Government Employee,103139,General,483747558030,9901685647
+1812,Ashok Patle,1975-07-04,50,Male,Mungeli,Ward 9,"159, Nehru Nagar, Mungeli",496475,Carpenter,137631,OBC,716115866861,9199767598
+1813,Vandana Nishad 7,1940-12-14,85,Female,Baloda Bazar,Ward 28,"341, Indira Nagar, Baloda Bazar",491699,Government Employee,66732,General,956572853533,9998242662
+1814,Deepak Sinha,1997-11-24,28,Male,Baloda Bazar,Village RB,"553, Station Road, Baloda Bazar",497611,Self Employed,277108,OBC,030285327276,9698345150
+1815,Shanta Markam 9,1968-04-24,57,Female,Dantewada,Colony 1,"838, Gandhi Chowk, Dantewada",497712,Farmer,297929,ST,207382777711,9842527863
+1816,Brijlal Tandon,1935-11-02,90,Male,Bemetara,Ward 30,"848, Gandhi Chowk, Bemetara",495869,Shop Owner,58692,SC,730577719619,9971659656
+1817,Bimla Mishra,1961-08-14,64,Female,Bilaspur,Colony 11,"537, Gandhi Chowk, Bilaspur",491596,Shop Owner,154215,General,952242653793,9221914390
+1818,Savita Bai,1960-08-02,65,Female,Baloda Bazar,Ward 22,"343, Nehru Nagar, Baloda Bazar",496461,Carpenter,171658,SC,010162600802,9658934759
+1819,Pratibha Soni,1953-04-20,72,Female,Janjgir-Champa,Janjgir-Champa Nagar,"367, Nehru Nagar, Janjgir-Champa",497328,Student,178259,SC,967914638664,9320317266
+1820,Rajesh Verma,1947-10-20,78,Male,Dantewada,Dantewada Nagar,"738, Nehru Nagar, Dantewada",495488,Labour,25163,General,208601460519,9085432716
+1821,Laxmi Tiwari 4,1956-02-06,69,Female,Kanker,Kanker Nagar,"391, Indira Nagar, Kanker",495839,Teacher,446877,General,009089931878,9104802835
+1822,Mahesh Sahu,1988-11-26,37,Male,Sukma,Sukma Nagar,"51, Station Road, Sukma",495786,Teacher,259356,ST,136628081226,9815947470
+1823,Virendra Soni,1941-09-02,84,Male,Durg,Durg Nagar,"691, Gandhi Chowk, Durg",490069,Driver,393760,OBC,979842189142,9693765016
+1824,Saraswati Patle,1943-11-18,82,Female,Gariaband,Gariaband Nagar,"674, Indira Nagar, Gariaband",494446,Teacher,211916,ST,885016276292,9266678809
+1825,Urmila Dhruv,1942-09-29,83,Female,Mahasamund,Ward 27,"475, Station Road, Mahasamund",494758,Driver,61679,General,255977726597,9640838580
+1826,Ramesh Kumar,1998-10-24,27,Male,Dantewada,Colony 2,"338, Nehru Nagar, Dantewada",494518,Driver,29171,OBC,956518871148,9600500924
+1827,Hemant Kosare,1951-04-19,74,Male,Gariaband,Colony 6,"51, Gandhi Chowk, Gariaband",495264,Farmer,304574,OBC,011250186074,9290695222
+1828,Pratibha Soni 4,1945-09-29,80,Female,Jashpur,Ward 18,"14, Nehru Nagar, Jashpur",495235,Teacher,37839,SC,266249753740,9571446956
+1829,Mamta Dewangan 7,1983-10-03,42,Female,Baloda Bazar,Village GL,"260, Station Road, Baloda Bazar",491793,Shop Owner,28596,SC,668865834834,9835862673
+1830,Durga Mandavi,1981-07-01,44,Female,Kanker,Colony 14,"485, Station Road, Kanker",494297,Unemployed,86570,SC,326983443695,9805045050
+1831,Anil Sharma,1971-01-11,54,Male,Bemetara,Colony 1,"202, Station Road, Bemetara",491411,Driver,298674,General,773729545038,9016258515
+1832,Dilip Nishad 1,1961-12-20,64,Male,Kanker,Ward 1,"320, Gandhi Chowk, Kanker",492814,Teacher,473018,ST,943379531112,9359042652
+1833,Sushila Pandey 9,1974-01-04,51,Female,Kondagaon,Village FZ,"114, Main Road, Kondagaon",494290,Government Employee,288551,OBC,855451460919,9351174555
+1834,Seema Chandel,1937-11-13,88,Female,Sukma,Ward 14,"426, Nehru Nagar, Sukma",491637,Teacher,250997,General,215756264126,9084818762
+1835,Kailash Banjare,1940-05-17,85,Male,Balod,Colony 10,"247, Main Road, Balod",496473,Teacher,713374,SC,167045059982,9267312343
+1836,Virendra Soni,1938-07-07,87,Male,Dantewada,Village LC,"666, Gandhi Chowk, Dantewada",490469,Labour,126942,OBC,645028231342,9755767299
+1837,Dinesh Patel,1961-05-01,64,Male,Surajpur,Village XJ,"199, Main Road, Surajpur",494271,Weaver,59210,OBC,695310297711,9506291792
+1838,Nirmala Dhivar,1965-07-17,60,Female,Durg,Durg Nagar,"522, Main Road, Durg",496897,Self Employed,100528,General,087392219836,9915737671
+1839,Sunil Netam 9,1996-04-15,29,Male,Bemetara,Village AO,"355, Indira Nagar, Bemetara",496067,Driver,442455,SC,304450020268,9387890345
+1840,Anil Sharma,1980-03-10,45,Male,Mahasamund,Mahasamund Nagar,"665, Main Road, Mahasamund",492230,Farmer,338437,OBC,467541823688,9101382721
+1841,Harish Tiwari,1944-01-18,81,Male,Janjgir-Champa,Ward 8,"559, Station Road, Janjgir-Champa",491309,Labour,50804,OBC,532083168163,9603891736
+1842,Ramesh Kumar,1980-11-03,45,Male,Surajpur,Colony 8,"494, Gandhi Chowk, Surajpur",490379,Farmer,36960,General,410707163485,9089512370
+1843,Sunil Netam 2,2005-02-19,20,Male,Surajpur,Village CT,"371, Station Road, Surajpur",497658,Government Employee,273893,OBC,965561927671,9377188626
+1844,Hema Sinha,1944-08-15,81,Female,Korba,Colony 14,"946, Nehru Nagar, Korba",494456,Teacher,595169,SC,737138874022,9346144662
+1845,Saraswati Patle 4,1935-02-20,90,Female,Dantewada,Colony 13,"427, Main Road, Dantewada",495605,Shop Owner,107941,General,524831968636,9470465689
+1846,Hema Sinha,1978-05-26,47,Female,Raipur,Raipur Nagar,"4, Main Road, Raipur",492280,Housewife,109510,OBC,631592291270,9659341040
+1847,Laxmi Tiwari,1948-02-01,77,Female,Surajpur,Surajpur Nagar,"132, Indira Nagar, Surajpur",491286,Shop Owner,285947,OBC,018179607578,9984974997
+1848,Hemant Kosare 3,1947-02-27,78,Male,Rajnandgaon,Colony 5,"810, Station Road, Rajnandgaon",493421,Government Employee,174883,General,061735631631,9297557261
+1849,Poonam Kosare,1971-11-22,54,Female,Raigarh,Ward 16,"588, Gandhi Chowk, Raigarh",494306,Weaver,319941,General,682013071675,9321633613
+1850,Ashok Patle,1982-05-01,43,Male,Kanker,Ward 9,"318, Indira Nagar, Kanker",496839,Farmer,108153,OBC,954585835639,9981274392
+1851,Manju Tandon,1965-09-30,60,Female,Rajnandgaon,Rajnandgaon Nagar,"331, Indira Nagar, Rajnandgaon",497214,Student,370999,SC,762123601863,9994541384
+1852,Santosh Dewangan 7,1954-08-03,71,Male,Sukma,Colony 1,"613, Nehru Nagar, Sukma",494271,Carpenter,353207,General,964598724089,9921773516
+1853,Meena Lahre 4,1954-06-04,71,Female,Balrampur,Ward 16,"490, Gandhi Chowk, Balrampur",490992,Unemployed,335235,SC,024222419830,9632365401
+1854,Dinesh Patel,1962-11-16,63,Male,Dantewada,Village FJ,"160, Main Road, Dantewada",491289,Weaver,125973,SC,094765118615,9640994147
+1855,Vijay Singh,1990-09-09,35,Male,Narayanpur,Village GO,"319, Gandhi Chowk, Narayanpur",492459,Government Employee,758811,General,826110356594,9299202376
+1856,Saraswati Patle,1973-01-18,52,Female,Balrampur,Village YF,"240, Gandhi Chowk, Balrampur",494402,Self Employed,52774,General,183909342424,9066283463
+1857,Kanta Yadav 9,1983-05-27,42,Female,Balrampur,Colony 4,"380, Main Road, Balrampur",497693,Weaver,264342,SC,086542438269,9285507435
+1858,Kailash Banjare,1949-09-11,76,Male,Sukma,Village RU,"624, Station Road, Sukma",497202,Unemployed,404329,OBC,969645359176,9504718830
+1859,Brijlal Tandon,1987-11-17,38,Male,Kanker,Colony 9,"218, Station Road, Kanker",492334,Weaver,319098,ST,686679899470,9617069014
+1860,Deepak Sinha,1942-04-24,83,Male,Raipur,Village GZ,"816, Nehru Nagar, Raipur",490841,Government Employee,128693,SC,665051886016,9744923435
+1861,Sanjay Mishra,1974-01-31,51,Male,Surajpur,Village KA,"332, Main Road, Surajpur",495290,Government Employee,257094,OBC,754024286178,9925714025
+1862,Harish Tiwari,1956-08-28,69,Male,Mungeli,Mungeli Nagar,"774, Nehru Nagar, Mungeli",497165,Shop Owner,356986,General,638493680635,9853010127
+1863,Kailash Banjare,1964-12-23,61,Male,Durg,Ward 26,"778, Station Road, Durg",495266,Housewife,477296,ST,758670365620,9363444394
+1864,Meena Lahre,1968-12-06,57,Female,Bijapur,Ward 24,"551, Main Road, Bijapur",495524,Labour,68599,ST,617073174457,9762626367
+1865,Prakash Pandey,1980-10-07,45,Male,Balrampur,Colony 8,"272, Nehru Nagar, Balrampur",497916,Government Employee,329343,SC,348529537740,9376768740
+1866,Harish Tiwari 8,1972-11-08,53,Male,Bemetara,Colony 10,"360, Gandhi Chowk, Bemetara",492442,Student,118878,ST,330990009406,9565823445
+1867,Meena Lahre,2006-11-17,19,Female,Kanker,Kanker Nagar,"351, Gandhi Chowk, Kanker",497486,Teacher,468228,ST,600047091103,9495611998
+1868,Kailash Banjare,1963-04-07,62,Male,Durg,Village RD,"515, Gandhi Chowk, Durg",496135,Unemployed,222531,ST,614477618687,9047966682
+1869,Ramesh Kumar,1998-12-10,27,Male,Korba,Village MK,"18, Indira Nagar, Korba",495259,Driver,114152,OBC,330292764054,9739862214
+1870,Sunil Netam 2,1982-10-14,43,Male,Mahasamund,Village BJ,"462, Gandhi Chowk, Mahasamund",491747,Housewife,173669,SC,785247442035,9944102387
+1871,Sushila Pandey,1942-06-05,83,Female,Mungeli,Colony 12,"424, Station Road, Mungeli",497584,Unemployed,175038,OBC,135183025853,9465815398
+1872,Sunil Netam,1997-04-21,28,Male,Rajnandgaon,Village RT,"898, Indira Nagar, Rajnandgaon",496609,Driver,95672,SC,128655816759,9238319348
+1873,Mahesh Sahu,1999-05-05,26,Male,Sukma,Ward 2,"839, Station Road, Sukma",497096,Self Employed,36663,OBC,421959730912,9185273411
+1874,Santram Dhivar,1952-09-14,73,Male,Janjgir-Champa,Village KU,"201, Main Road, Janjgir-Champa",497801,Student,25110,OBC,044077811096,9598455766
+1875,Laxmi Tiwari,1964-04-08,61,Female,Dantewada,Dantewada Nagar,"612, Indira Nagar, Dantewada",490806,Labour,310924,SC,520641910616,9691008224
+1876,Kanta Yadav,1971-05-09,54,Female,Mungeli,Mungeli Nagar,"156, Main Road, Mungeli",495185,Unemployed,103628,ST,269962083479,9100593257
+1877,Bimla Mishra 8,1939-06-22,86,Female,Narayanpur,Ward 7,"984, Nehru Nagar, Narayanpur",497479,Shop Owner,311399,ST,243871295145,9205802860
+1878,Pushpa Devi 1,1950-08-18,75,Female,Surguja,Village AN,"868, Station Road, Surguja",497262,Unemployed,145123,ST,950904189856,9643016556
+1879,Anita Patel,1979-03-20,46,Female,Gariaband,Colony 12,"356, Nehru Nagar, Gariaband",495712,Driver,212300,General,360622901138,9604794719
+1880,Ramesh Kumar 1,1953-08-30,72,Male,Kanker,Village YX,"878, Indira Nagar, Kanker",494808,Government Employee,296832,OBC,944191479053,9472839516
+1881,Lalita Singh,1985-09-12,40,Female,Kanker,Colony 11,"506, Main Road, Kanker",496618,Housewife,86916,ST,865629258228,9280183235
+1882,Pushpa Devi,1980-10-24,45,Female,Gariaband,Village NR,"698, Nehru Nagar, Gariaband",493973,Self Employed,281697,General,964583744959,9752135317
+1883,Sanjay Mishra,2005-09-10,20,Male,Narayanpur,Colony 3,"282, Indira Nagar, Narayanpur",495805,Unemployed,445606,General,486267511997,9645349655
+1884,Brijlal Tandon,1992-08-06,33,Male,Balod,Colony 7,"543, Indira Nagar, Balod",493497,Teacher,404161,General,935820163015,9972242284
+1885,Mukesh Yadav,1962-06-15,63,Male,Sukma,Colony 8,"421, Indira Nagar, Sukma",490400,Driver,350879,SC,601804033480,9153735866
+1886,Kamla Sahu,1964-05-03,61,Female,Bastar,Bastar Nagar,"600, Gandhi Chowk, Bastar",497312,Self Employed,136723,ST,746272053649,9911928567
+1887,Kanta Yadav,2001-04-05,24,Female,Bilaspur,Bilaspur Nagar,"571, Gandhi Chowk, Bilaspur",497053,Farmer,269011,SC,582126264395,9678446078
+1888,Brijlal Tandon,1978-03-03,47,Male,Kanker,Ward 3,"622, Indira Nagar, Kanker",490530,Unemployed,247079,General,294414925316,9498283859
+1889,Mamta Dewangan,1974-01-12,51,Female,Kabirdham,Ward 13,"493, Main Road, Kabirdham",492963,Government Employee,100315,SC,343687715692,9209490763
+1890,Harish Tiwari 4,1967-05-10,58,Male,Surajpur,Ward 15,"113, Main Road, Surajpur",497781,Government Employee,271201,ST,349431487225,9578564135
+1891,Jagdish Porte,1991-12-06,34,Male,Baloda Bazar,Village DM,"897, Station Road, Baloda Bazar",493831,Teacher,232333,OBC,328555809579,9475816602
+1892,Brijlal Tandon,1991-05-30,34,Male,Jashpur,Jashpur Nagar,"245, Gandhi Chowk, Jashpur",496076,Weaver,317270,SC,704071469714,9797341855
+1893,Prakash Pandey,1981-07-21,44,Male,Narayanpur,Colony 6,"38, Main Road, Narayanpur",493781,Farmer,128087,ST,101759001706,9794907869
+1894,Meena Lahre,1996-01-23,29,Female,Rajnandgaon,Village WE,"593, Gandhi Chowk, Rajnandgaon",495445,Housewife,392050,ST,763536735589,9607072288
+1895,Mamta Dewangan,1954-03-25,71,Female,Janjgir-Champa,Janjgir-Champa Nagar,"627, Main Road, Janjgir-Champa",490610,Shop Owner,99115,ST,427493663579,9671480300
+1896,Vandana Nishad,1967-09-27,58,Female,Sukma,Sukma Nagar,"400, Main Road, Sukma",494208,Labour,579677,OBC,637941288669,9112232142
+1897,Harish Tiwari 7,1942-06-22,83,Male,Rajnandgaon,Rajnandgaon Nagar,"864, Station Road, Rajnandgaon",496636,Driver,606735,SC,744653255441,9181851367
+1898,Meena Lahre,1996-09-16,29,Female,Kanker,Ward 5,"707, Indira Nagar, Kanker",491773,Unemployed,778682,ST,841847146220,9148333540
+1899,Dinesh Patel 3,1983-08-30,42,Male,Raigarh,Ward 30,"521, Nehru Nagar, Raigarh",497197,Self Employed,645741,ST,090676183762,9950767162
+1900,Ashok Patle 5,1984-01-05,41,Male,Gariaband,Ward 28,"673, Station Road, Gariaband",490844,Housewife,95275,OBC,032645649674,9199160539
+1901,Ganesh Markam,1957-07-04,68,Male,Surajpur,Colony 12,"661, Main Road, Surajpur",491880,Shop Owner,126738,General,970181589136,9829670742
+1902,Prakash Pandey,1941-01-26,84,Male,Balrampur,Balrampur Nagar,"800, Station Road, Balrampur",497804,Labour,150904,OBC,216908875480,9293358384
+1903,Vandana Nishad,1992-05-15,33,Female,Durg,Durg Nagar,"907, Station Road, Durg",496974,Student,238624,SC,693510214012,9833195589
+1904,Hema Sinha,1954-11-06,71,Female,Kanker,Ward 26,"505, Nehru Nagar, Kanker",490668,Unemployed,200397,General,568709412460,9516483895
+1905,Anita Patel,1985-03-06,40,Female,Bastar,Colony 8,"469, Nehru Nagar, Bastar",497092,Carpenter,165897,General,643459731730,9332496757
+1906,Harish Tiwari,2004-12-29,21,Male,Raipur,Ward 10,"601, Station Road, Raipur",495742,Unemployed,206943,General,815605427079,9959476111
+1907,Ashok Patle,1986-10-01,39,Male,Baloda Bazar,Village JO,"690, Station Road, Baloda Bazar",493427,Government Employee,284149,ST,226934854039,9098468560
+1908,Durga Mandavi,2000-06-16,25,Female,Balrampur,Colony 14,"70, Gandhi Chowk, Balrampur",494255,Labour,687238,ST,097777957039,9962637792
+1909,Sunita Yadav,1942-09-22,83,Female,Bilaspur,Ward 15,"134, Indira Nagar, Bilaspur",494892,Self Employed,106597,General,682432333023,9993446060
+1910,Hema Sinha,1958-04-06,67,Female,Narayanpur,Village VA,"671, Gandhi Chowk, Narayanpur",491563,Government Employee,380675,ST,529412853700,9644885487
+1911,Santosh Dewangan 9,2005-05-03,20,Male,Raipur,Village FL,"927, Gandhi Chowk, Raipur",494337,Farmer,147720,ST,642550786887,9860203922
+1912,Santosh Dewangan,1978-03-05,47,Male,Bilaspur,Village CT,"574, Nehru Nagar, Bilaspur",497901,Self Employed,710309,OBC,879872873142,9495629179
+1913,Sudha Gupta,1973-05-19,52,Female,Raipur,Ward 8,"483, Main Road, Raipur",490159,Government Employee,25416,OBC,874512022017,9545416487
+1914,Rajesh Verma,1997-07-09,28,Male,Durg,Durg Nagar,"896, Nehru Nagar, Durg",492618,Carpenter,354452,General,526974420360,9785483309
+1915,Umesh Dhruv,1947-10-13,78,Male,Janjgir-Champa,Ward 23,"437, Main Road, Janjgir-Champa",496518,Student,575937,ST,923267148581,9970150196
+1916,Poonam Kosare,1978-06-06,47,Female,Kondagaon,Village AT,"76, Indira Nagar, Kondagaon",491071,Farmer,93708,OBC,852332970493,9795829158
+1917,Virendra Soni,1946-04-08,79,Male,Durg,Colony 10,"86, Station Road, Durg",494928,Labour,644657,SC,741424873962,9625918831
+1918,Sudha Gupta,2006-02-03,19,Female,Baloda Bazar,Colony 13,"726, Nehru Nagar, Baloda Bazar",493933,Labour,535205,SC,343549787296,9571564380
+1919,Poonam Kosare,1939-04-09,86,Female,Sukma,Ward 26,"657, Station Road, Sukma",491027,Shop Owner,376531,ST,000940916573,9762426622
+1920,Mohan Thakur,1938-01-11,87,Male,Janjgir-Champa,Ward 14,"610, Main Road, Janjgir-Champa",495881,Shop Owner,730055,General,152731172264,9147569001
+1921,Mohan Thakur 4,1954-07-27,71,Male,Kanker,Colony 5,"821, Station Road, Kanker",491341,Labour,317084,OBC,596677153902,9262473650
+1922,Santram Dhivar 1,1986-08-14,39,Male,Bilaspur,Village UB,"863, Nehru Nagar, Bilaspur",493331,Student,738125,SC,427873554042,9316979206
+1923,Rani Netam,1959-01-28,66,Female,Surajpur,Surajpur Nagar,"701, Indira Nagar, Surajpur",493279,Driver,61872,OBC,925287835733,9813307345
+1924,Jyoti Porte,1995-12-31,30,Female,Raigarh,Village FH,"104, Gandhi Chowk, Raigarh",491250,Shop Owner,394687,SC,098537203350,9516023251
+1925,Ashok Patle,1967-11-13,58,Male,Kabirdham,Village RP,"650, Main Road, Kabirdham",492240,Labour,104886,SC,564119925512,9538078191
+1926,Sushila Pandey,1966-01-14,59,Female,Raipur,Village WX,"626, Station Road, Raipur",497632,Student,379242,ST,157557166328,9246306162
+1927,Dilip Nishad,1983-03-11,42,Male,Kondagaon,Village WN,"135, Main Road, Kondagaon",497160,Farmer,396297,General,504205986856,9977143360
+1928,Suresh Yadav,1988-04-01,37,Male,Bilaspur,Village BC,"784, Nehru Nagar, Bilaspur",496003,Student,784136,OBC,927888818930,9461638816
+1929,Ashok Patle,2000-11-25,25,Male,Kabirdham,Colony 6,"954, Indira Nagar, Kabirdham",490375,Government Employee,323235,ST,568826728007,9272081472
+1930,Urmila Dhruv 7,1960-06-05,65,Female,Raipur,Ward 15,"983, Indira Nagar, Raipur",491819,Farmer,308246,ST,899951454983,9671467490
+1931,Durga Mandavi,1999-12-12,26,Female,Balod,Village LC,"782, Nehru Nagar, Balod",497318,Student,59888,SC,605956343180,9739200258
+1932,Bharat Mandavi,2006-01-10,19,Male,Raigarh,Colony 12,"494, Gandhi Chowk, Raigarh",490151,Carpenter,69614,ST,871926154872,9012402545
+1933,Ramesh Kumar,1965-10-02,60,Male,Dantewada,Ward 19,"682, Indira Nagar, Dantewada",494802,Housewife,697811,ST,673887246163,9034383000
+1934,Mahesh Sahu 6,1949-03-08,76,Male,Balrampur,Colony 1,"709, Station Road, Balrampur",490872,Unemployed,696954,ST,546628973518,9962252756
+1935,Ramesh Kumar 4,1938-06-01,87,Male,Korba,Colony 6,"762, Nehru Nagar, Korba",493700,Student,30330,SC,890418280516,9660812392
+1936,Meena Lahre,2004-04-05,21,Female,Bastar,Colony 1,"819, Gandhi Chowk, Bastar",493411,Student,82080,ST,958444202248,9248863137
+1937,Urmila Dhruv 6,1938-10-16,87,Female,Janjgir-Champa,Janjgir-Champa Nagar,"390, Nehru Nagar, Janjgir-Champa",495172,Driver,538187,General,939606104718,9911992569
+1938,Nirmala Dhivar,1978-09-06,47,Female,Balod,Balod Nagar,"297, Main Road, Balod",497937,Farmer,30288,SC,131811814051,9325179044
+1939,Pushpa Devi,1972-03-18,53,Female,Raipur,Ward 19,"827, Nehru Nagar, Raipur",493713,Student,127155,ST,831031456457,9227579407
+1940,Ramesh Kumar 8,1958-11-19,67,Male,Bastar,Colony 10,"4, Indira Nagar, Bastar",497722,Teacher,33964,OBC,694126410603,9267531805
+1941,Manju Tandon,1956-09-21,69,Female,Durg,Colony 1,"660, Station Road, Durg",492420,Self Employed,193449,SC,360640047486,9794869894
+1942,Mohan Thakur,1976-12-26,49,Male,Raipur,Ward 29,"26, Main Road, Raipur",497548,Unemployed,151030,General,773759493307,9811171960
+1943,Mohan Thakur,1950-05-02,75,Male,Durg,Village JJ,"343, Indira Nagar, Durg",493465,Unemployed,50456,OBC,849655239170,9335300499
+1944,Anil Sharma,1971-04-30,54,Male,Kabirdham,Ward 7,"981, Indira Nagar, Kabirdham",493913,Carpenter,523396,General,739462487238,9586539276
+1945,Deepak Sinha,1958-06-17,67,Male,Narayanpur,Narayanpur Nagar,"811, Main Road, Narayanpur",497329,Unemployed,604744,ST,060558173579,9211625069
+1946,Hemant Kosare 6,2002-05-11,23,Male,Bastar,Colony 4,"16, Main Road, Bastar",497690,Shop Owner,314730,SC,570393427186,9692552905
+1947,Hemant Kosare,1969-12-31,56,Male,Bilaspur,Ward 1,"684, Main Road, Bilaspur",490682,Government Employee,258863,General,973844981213,9008823846
+1948,Hemant Kosare 9,1971-05-22,54,Male,Baloda Bazar,Baloda Bazar Nagar,"76, Main Road, Baloda Bazar",492161,Carpenter,36366,ST,736556192218,9822063186
+1949,Dinesh Patel,1940-09-22,85,Male,Jashpur,Ward 21,"160, Gandhi Chowk, Jashpur",493388,Shop Owner,330953,ST,936835991676,9403239193
+1950,Shanta Markam 9,1948-06-12,77,Female,Jashpur,Ward 26,"180, Nehru Nagar, Jashpur",497276,Driver,96437,SC,999522529644,9484368681
+1951,Mahesh Sahu,1955-01-11,70,Male,Janjgir-Champa,Ward 2,"329, Indira Nagar, Janjgir-Champa",494094,Unemployed,63770,SC,590627879025,9912046372
+1952,Bharat Mandavi 7,1970-07-11,55,Male,Bijapur,Village GE,"521, Station Road, Bijapur",490594,Housewife,195931,SC,599977379395,9795519247
+1953,Dilip Nishad 2,1978-01-29,47,Male,Kondagaon,Kondagaon Nagar,"728, Indira Nagar, Kondagaon",493488,Labour,606017,ST,611258423300,9805630829
+1954,Jyoti Porte 9,1947-07-25,78,Female,Gariaband,Ward 15,"41, Nehru Nagar, Gariaband",495595,Weaver,203143,General,273654852207,9201970842
+1955,Ashok Patle 2,1974-04-03,51,Male,Kondagaon,Colony 10,"781, Gandhi Chowk, Kondagaon",495155,Self Employed,40579,SC,551005108194,9842262300
+1956,Saraswati Patle 8,1947-02-21,78,Female,Korba,Korba Nagar,"3, Gandhi Chowk, Korba",495486,Shop Owner,379942,SC,375391692809,9166316696
+1957,Ashok Patle,1962-06-23,63,Male,Raipur,Village GA,"286, Station Road, Raipur",490527,Farmer,77133,ST,497008445801,9517642962
+1958,Ramesh Kumar,1961-08-05,64,Male,Rajnandgaon,Ward 4,"670, Indira Nagar, Rajnandgaon",497900,Self Employed,334833,ST,131525523228,9058837743
+1959,Virendra Soni 1,1997-10-24,28,Male,Narayanpur,Village PM,"765, Gandhi Chowk, Narayanpur",494881,Government Employee,33960,General,152558627788,9826031748
+1960,Ramesh Kumar,1936-11-05,89,Male,Bastar,Ward 30,"724, Indira Nagar, Bastar",493858,Student,626370,General,422935545920,9559675779
+1961,Harish Tiwari 4,2005-07-06,20,Male,Bemetara,Ward 19,"726, Station Road, Bemetara",496215,Government Employee,187434,ST,451160895897,9015221336
+1962,Hemant Kosare,1940-07-07,85,Male,Raipur,Colony 5,"444, Main Road, Raipur",491065,Carpenter,301459,OBC,074611399799,9271560338
+1963,Laxmi Tiwari,1981-08-18,44,Female,Kondagaon,Colony 6,"525, Main Road, Kondagaon",494474,Shop Owner,300833,ST,630900737949,9994457444
+1964,Harish Tiwari,1975-08-09,50,Male,Mahasamund,Mahasamund Nagar,"395, Station Road, Mahasamund",492334,Carpenter,120740,ST,591604359839,9859079965
+1965,Harish Tiwari,1980-07-31,45,Male,Sukma,Colony 6,"682, Indira Nagar, Sukma",490591,Self Employed,231116,OBC,407307177613,9500788369
+1966,Rekha Verma 9,1963-11-29,62,Female,Dantewada,Village HG,"134, Indira Nagar, Dantewada",492729,Carpenter,340853,OBC,312653273551,9497249032
+1967,Anita Patel 8,1941-10-11,84,Female,Dantewada,Ward 14,"600, Gandhi Chowk, Dantewada",495820,Government Employee,65177,ST,020061741364,9459476121
+1968,Kailash Banjare 2,1992-01-08,33,Male,Korba,Ward 16,"863, Nehru Nagar, Korba",492662,Farmer,256227,General,222830564468,9530455559
+1969,Suresh Yadav 7,1954-02-07,71,Male,Narayanpur,Colony 8,"499, Indira Nagar, Narayanpur",494963,Carpenter,124016,OBC,327639904600,9823696269
+1970,Anil Sharma,1951-07-20,74,Male,Korba,Village SO,"693, Main Road, Korba",493281,Student,308727,General,670151200393,9449076972
+1971,Ganesh Markam 2,1984-07-07,41,Male,Jashpur,Jashpur Nagar,"603, Main Road, Jashpur",496068,Driver,140568,ST,921053071226,9008228377
+1972,Anil Sharma,1939-12-03,86,Male,Kanker,Colony 6,"753, Indira Nagar, Kanker",494387,Unemployed,383483,OBC,063228012698,9044665895
+1973,Laxmi Tiwari,1979-02-13,46,Female,Balod,Ward 1,"663, Nehru Nagar, Balod",497260,Shop Owner,332131,SC,525737874778,9840709465
+1974,Urmila Dhruv,1939-10-22,86,Female,Balod,Colony 9,"977, Gandhi Chowk, Balod",494471,Shop Owner,88478,General,928261641700,9537186056
+1975,Chanda Thakur,2006-05-18,19,Female,Raigarh,Colony 7,"313, Nehru Nagar, Raigarh",497942,Driver,733436,General,279831242853,9541601991
+1976,Naresh Chandel,1984-12-16,41,Male,Raipur,Ward 17,"483, Main Road, Raipur",495671,Housewife,329610,ST,715207710740,9433689579
+1977,Urmila Dhruv,1993-03-17,32,Female,Dantewada,Village CV,"998, Main Road, Dantewada",490751,Farmer,699185,General,070178502050,9254972392
+1978,Mahesh Sahu 3,1990-09-11,35,Male,Baloda Bazar,Colony 10,"276, Nehru Nagar, Baloda Bazar",495526,Weaver,375469,SC,396597442526,9942041641
+1979,Brijlal Tandon,1974-08-11,51,Male,Dantewada,Village ZZ,"96, Gandhi Chowk, Dantewada",491953,Unemployed,721184,OBC,766997681608,9557174905
+1980,Ravi Gupta,1970-02-20,55,Male,Gariaband,Ward 17,"528, Main Road, Gariaband",491733,Government Employee,194805,SC,057445099986,9324535279
+1981,Dinesh Patel,1943-03-09,82,Male,Narayanpur,Ward 2,"986, Indira Nagar, Narayanpur",492051,Self Employed,385161,SC,932135961830,9734800226
+1982,Rajesh Verma,1979-07-03,46,Male,Kondagaon,Village EA,"304, Indira Nagar, Kondagaon",496769,Labour,671079,ST,819214749847,9460429371
+1983,Laxmi Tiwari,1957-09-04,68,Female,Kondagaon,Village ZF,"441, Main Road, Kondagaon",493753,Labour,290335,General,452926769889,9798877544
+1984,Umesh Dhruv 8,2003-02-10,22,Male,Dantewada,Ward 3,"941, Indira Nagar, Dantewada",497588,Labour,302370,OBC,605962751934,9638901248
+1985,Mukesh Yadav 4,1972-11-30,53,Male,Bijapur,Ward 26,"944, Main Road, Bijapur",492951,Self Employed,255399,OBC,230706594805,9316022743
+1986,Pushpa Devi 8,1995-08-21,30,Female,Surguja,Colony 13,"70, Indira Nagar, Surguja",493391,Carpenter,224520,SC,756311213807,9828780661
+1987,Ramkumar Lahre,1966-03-03,59,Male,Balrampur,Colony 9,"386, Gandhi Chowk, Balrampur",492898,Self Employed,129232,SC,180288252128,9866905946
+1988,Virendra Soni,1982-04-02,43,Male,Sukma,Sukma Nagar,"710, Indira Nagar, Sukma",492348,Unemployed,572144,OBC,031329887123,9203668642
+1989,Manju Tandon,1978-03-05,47,Female,Mungeli,Village EN,"191, Nehru Nagar, Mungeli",491180,Housewife,249279,General,320877834710,9628334557
+1990,Shanta Markam,1950-08-17,75,Female,Raigarh,Colony 14,"512, Main Road, Raigarh",490459,Shop Owner,64519,SC,973027322857,9042402555
+1991,Virendra Soni,1989-03-20,36,Male,Bijapur,Colony 4,"914, Nehru Nagar, Bijapur",495319,Farmer,33631,ST,788159646738,9656904484
+1992,Kiran Banjare,1953-08-27,72,Female,Surguja,Ward 23,"988, Gandhi Chowk, Surguja",492322,Housewife,242341,ST,700623945994,9264076089
+1993,Vijay Singh 3,1999-07-07,26,Male,Bilaspur,Ward 8,"711, Main Road, Bilaspur",491977,Weaver,661515,General,628335689058,9108015337
+1994,Chandra Shekhar,1964-04-25,61,Male,Mahasamund,Colony 11,"503, Gandhi Chowk, Mahasamund",494191,Unemployed,61781,ST,596957945759,9599550553
+1995,Rekha Verma,1991-09-21,34,Female,Durg,Village DJ,"897, Station Road, Durg",497353,Student,313648,SC,252520788216,9511921457
+1996,Ramkumar Lahre 3,1940-06-13,85,Male,Raigarh,Raigarh Nagar,"485, Nehru Nagar, Raigarh",496268,Driver,642866,OBC,088240353212,9440293634
+1997,Kailash Banjare 3,2006-08-02,19,Male,Narayanpur,Narayanpur Nagar,"363, Nehru Nagar, Narayanpur",494684,Government Employee,166026,General,479412325460,9189113434
+1998,Ramkumar Lahre,1941-03-22,84,Male,Raigarh,Colony 11,"709, Gandhi Chowk, Raigarh",497312,Unemployed,259055,General,273421120291,9381301494
+1999,Suresh Yadav 9,1989-02-06,36,Male,Bilaspur,Ward 18,"593, Nehru Nagar, Bilaspur",495550,Self Employed,67246,OBC,319199082133,9568317236
+2000,Kiran Banjare 5,1998-11-24,27,Female,Narayanpur,Narayanpur Nagar,"708, Indira Nagar, Narayanpur",497389,Driver,35093,ST,405013320344,9956071487

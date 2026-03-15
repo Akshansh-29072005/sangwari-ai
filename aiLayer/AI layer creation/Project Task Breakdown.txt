@@ -1,0 +1,168 @@
+# Project Task Breakdown
+
+## Phase 1 — Database Setup
+
+Create PostgreSQL database.
+
+Tables to implement:
+
+citizens
+citizen_master
+complaints
+schemes
+scheme_applications
+documents
+operators
+
+Tasks:
+
+* design schema
+* create tables
+* add indexes
+* add sample data
+
+---
+
+# Phase 2 — Backend Development
+
+Setup FastAPI project.
+
+Tasks:
+
+* project structure setup
+* API routing
+* database connection
+* authentication system
+
+APIs to build:
+
+Authentication APIs
+Citizen APIs
+Complaint APIs
+Scheme APIs
+Document APIs
+Operator APIs
+
+---
+
+# Phase 3 — ML Model Integration
+
+Integrate trained models.
+
+Models:
+
+complaint department classifier
+resolution time predictor
+scheme eligibility predictor
+
+Tasks:
+
+* load .pkl models
+* build prediction functions
+* integrate with APIs
+
+---
+
+# Phase 4 — Multilingual Complaint Handling
+
+Integrate multilingual embeddings.
+
+Model:
+
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+Tasks:
+
+* embed complaint text
+* pass embedding to classifier
+* test multilingual inputs
+
+---
+
+# Phase 5 — OCR Integration
+
+Implement document extraction.
+
+Possible libraries:
+
+Tesseract OCR
+PaddleOCR
+
+Tasks:
+
+* document upload API
+* OCR processing pipeline
+* structured data extraction
+* update citizen master table
+
+---
+
+# Phase 6 — AI Verification Engine
+
+Build verification pipeline.
+
+Steps:
+
+rule validation
+database matching
+anomaly detection
+LLM reasoning
+
+Tasks:
+
+* rule validator
+* anomaly model integration
+* LLM prompt design
+* result scoring
+
+---
+
+# Phase 7 — Scheme Application Flow
+
+Tasks:
+
+* scheme eligibility API
+* dynamic form generation using `form_fields` JSON property
+* autofill fields from citizen profile
+* manual field completion (with document upload)
+* application submission API with immediate OCR validation
+* auto-rejection mechanism (if OCR data mismatches inputted/database data)
+
+---
+
+# Phase 8 — Operator Dashboard Backend
+
+Tasks:
+
+* complaint listing API
+* complaint forwarding API
+* scheme application review API
+
+---
+
+# Phase 9 — Testing
+
+Tasks:
+
+* API testing
+* ML model validation
+* OCR testing
+* multilingual complaint testing
+* application verification testing
+
+---
+
+# Phase 10 — Hackathon Demo Preparation
+
+Prepare demonstration scenarios:
+
+Complaint routing demo
+Scheme eligibility demo
+Document upload demo
+Application verification demo
+
+Prepare:
+
+slides
+system architecture diagram
+live demo dataset

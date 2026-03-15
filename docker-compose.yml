@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: sangwari_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER:-sangwari}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-sangwari_pass}
+      POSTGRES_DB: ${DB_NAME:-sangwari_ai}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - sangwari_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-sangwari} -d ${DB_NAME:-sangwari_ai}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  adminer:
+    image: adminer:latest
+    container_name: sangwari_adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: sangwari_go_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ai_layer:
+        condition: service_started
+    volumes:
+      - './aiLayer/AI layer creation/datasets:/aiLayer/AI layer creation/datasets'
+    environment:
+      - APP_ENV=development
+      - PORT=8000
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=sangwari
+      - DB_PASSWORD=sangwari_pass
+      - DB_NAME=sangwari_ai
+      - JWT_SECRET=super_secret_key
+      - JWT_EXPIRY_HOURS=24
+      - AI_LAYER_URL=http://ai_layer:8001
+
+  ai_layer:
+    build:
+      context: ./aiLayer/AI layer creation
+      dockerfile: Dockerfile
+    container_name: sangwari_ai_layer
+    restart: always
+    ports:
+      - "8001:8001"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://sangwari:sangwari_pass@postgres:5432/sangwari_ai
+      - SECRET_KEY=a_very_secret_key_for_development
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=1440
+      - AI_LAYER_URL=http://ai_layer:8001
+    volumes:
+      - './aiLayer/AI layer creation/models:/app/models'
+
+volumes:
+  sangwari_pgdata:

@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: sangwari_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER:-sangwari}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-sangwari_pass}
+      POSTGRES_DB: ${DB_NAME:-sangwari_ai}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - sangwari_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-sangwari}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  adminer:
+    image: adminer:latest
+    container_name: sangwari_adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+volumes:
+  sangwari_pgdata:
